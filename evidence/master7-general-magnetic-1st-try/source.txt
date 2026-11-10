@@ -1,0 +1,1154 @@
+# PINN پارامتری برای کنترل مسیر ذره با تحریک مغناطیسیِ تابع زمان
+
+این نسخه از معادلات کاهش‌یافتهٔ فایل `Magnetic_Two_Way_Channel (2).ipynb` استفاده می‌کند. کد اعتبارسنجی اولیه در پیوست نگه داشته شده است. در این مرحله **فقط تابع تحریک مغناطیسی متغیر است**؛ مشخصات ذره، سیال، هندسه و نقطهٔ رهاسازی ثابت‌اند.
+
+**خروجی عملی:** یک شبکهٔ مشترک برای پیش‌بینی مسیر از روی تحریک زمانی، و یک بهینه‌ساز که برای مسیر هدف جدید، ضرایب تحریک را از طریق همین شبکه تعیین می‌کند. وزن‌های شبکه برای هر هدف دوباره آموزش داده نمی‌شوند.
+
+**اجرا:** سلول‌ها را به ترتیب اجرا کنید. وزن‌های آموزش‌دیده داخل همین فایل قرار دارند و حالت پیش‌فرض آن‌ها را بارگذاری می‌کند. برای آموزش کامل باقیمانده‌محور، `TRAIN_FROM_SCRATCH = True` بگذارید. گزارش‌ها، شکل‌ها و CSVهای حاصل در پوشهٔ `parametric_magnetic_results` نوشته می‌شوند.
+
+**دامنهٔ فیزیکی:** جریان تجویزی و یک‌طرفه، ذرهٔ منفرد و حدّ بدون اینرسی. عنوان فایل قبلی به معنای اعتبارسنجی two-way نیست. میدان ماکسول، مدار سیم‌پیچ، اشباع گذرا، بازخورد تجربی و برهم‌کنش ذرات در این نسخه حل نمی‌شوند.
+
+## ۱. چه چیزی به ورودی شبکه اضافه شده است؟
+
+قرار دادن فقط $(t,B(t))$ در ورودی کافی نیست: دو تحریک می‌توانند در لحظهٔ فعلی مقدار یکسان و تا آن لحظه تاریخچهٔ متفاوت داشته باشند. اینجا **کل تابع زمانی** با پنج ضریب مشخص می‌شود:
+
+$$s=\tau/T,\quad u(s;\mathbf a)=\sum_{k=0}^{4}a_k {4\choose k}s^k(1-s)^{4-k},\qquad a_k\in[-0.5,0.5].$$
+
+توابع پایهٔ برنشتاین نامنفی‌اند و مجموعشان یک است؛ بنابراین کران ضرایب، $|u(s)|\le0.5$ را در تمام بازه تضمین می‌کند. این یک خانوادهٔ هموارِ درجهٔ چهار است؛ تابع دلخواه با فرکانس و پیچیدگی نامحدود را شامل نمی‌شود. افزایش `K` یا تغییر بازه به آموزش مجدد نیاز دارد.
+
+$$\boxed{(s,a_0,a_1,a_2,a_3,a_4)\ \longmapsto\ (X_\theta,Z_\theta)}$$
+
+این پیاده‌سازی **PINN با ورودی پارامتری** و یک MLP مشترک است، نه شبکه‌های مستقل برای هر مورد و نه معماری branch/trunk از نوع DeepONet. ایدهٔ یادگیری نگاشتِ تابع ورودی به حل، با ادبیات physics-informed operator learning مرتبط است [۲].
+
+## ۲. معادلات و معنای متغیر مغناطیسی
+
+همان بی‌بعدسازی فایل اصلی حفظ شده است:
+
+$$X=x/R_v,\quad Z=z/d,\quad d=(1+\beta)R_{mag},\quad \tau=2\bar v_f t/d.$$
+
+$$\frac{dX}{d\tau}=\frac{C\,u(\tau)}{(1+Z^2)^3},\qquad
+\frac{dZ}{d\tau}=1-X^2,\qquad (X(0),Z(0))=(0,-2),$$
+
+$$C=\frac{\mu_0 R_p^2\,3M_s^2}{18\eta R_v\bar v_f(1+\beta)^4}.$$
+
+حالت اصلی یک آهنربا در سمت منفی $x$ داشت و با $u=-1$ بازیابی می‌شود [۱]. **این مقدار در بازهٔ آموزش نسخهٔ حاضر نیست**؛ آزمون حد ثابت این نسخه از $u=\pm0.3$ استفاده می‌کند. در حالت `single_left` فقط $u\le0$ مجاز است.
+
+برای تغییر جهت، این نسخه یک **فرض سخت‌افزاری جدید** اضافه می‌کند: دو منبع کنترل‌پذیرِ روبه‌رو با هندسهٔ مؤثر آینه‌ای. $u$ ضریبِ نیروی مؤثر است، نه میدان مغناطیسیِ علامت‌دار. در پاسخ القاییِ غیر اشباع، نیرو با مربع دامنهٔ منبع تناسب دارد:
+
+$$m_R=\sqrt{\max(u,0)},\qquad m_L=\sqrt{\max(-u,0)},\qquad u=m_R^2-m_L^2.$$
+
+در هر لحظه فقط یک منبع فعال است؛ بنابراین جمع‌کردنِ نادرست نیروهای دو میدان هم‌زمان و حذف ترم متقاطع رخ نمی‌دهد. منبع چپ همان جهت مدل اولیه را می‌دهد. تغییر علامت جریانِ **یک** آهنربا به‌تنهایی جهت نیروی القایی را برعکس نمی‌کند.
+
+در تقریب نزدیک محورِ همین مدل:
+
+$$M_{L,R}(t)=M_s m_{L,R}(t),\qquad
+|B(t)|\simeq\frac{\mu_0M_s}{2(1+\beta)^2(1+Z(t)^2)}\sqrt{|u(t)|},$$
+
+$$F_{m,x}(t)=6\pi\eta R_p\frac{2\bar v_f R_v}{d}\frac{C\,u(t)}{(1+Z(t)^2)^3}.$$
+
+این دامنه‌ها معادلِ منبع ایدئال‌اند؛ تبدیل به جریان واقعی به هندسه و کالیبراسیون سیم‌پیچ نیاز دارد. مدار، محدودیت سرعت تغییر جریان و زمان سوئیچینگ مدل نشده‌اند؛ مخصوصاً ریشهٔ دومِ $u$ نزدیک عبور از صفر می‌تواند شیب تندی داشته باشد. بنابراین جدول خروجی، فرمان آمادهٔ اتصال مستقیم به سخت‌افزار نیست.
+
+## ۳. محدودهٔ این مرحله و روش آموزش
+
+| کمیت | مقدار ثابت یا بازه |
+|---|---|
+| شعاع ذره | ۵۰۰ نانومتر |
+| شعاع کانال | ۷۵ میکرومتر |
+| شعاع منبع مؤثر | ۲۰ میلی‌متر |
+| $\beta$ و $d$ | $1$ و $40$ میلی‌متر |
+| سرعت متوسط سیال | ۱۵ میلی‌متر بر ثانیه |
+| ویسکوزیتهٔ مؤثر | $0.003276913272013514$ پاسکال‌ثانیه؛ همان مقدار فایل اصلی |
+| رهاسازی | $x=0$, $z=-80$ میلی‌متر |
+| افق زمانی | $\tau\in[0,4]$؛ $t\in[0,5.333\ldots]$ ثانیه |
+| ضرایب متغیر | پنج ضریب مستقل در $[-0.5,0.5]$ |
+
+شبکه سه لایهٔ پنهانِ ۶۴ نورونی با `tanh` و `float64` دارد. شرط اولیه به‌صورت سخت در ساختار خروجی اعمال می‌شود. مشتق زمانی هنگام آموزش با **ثابت نگه‌داشتن ضرایب** محاسبه می‌شود:
+
+$$\mathcal L_{physics}=\left\langle\left(\frac{1}{T}\partial_sX_\theta-\frac{Cu(s;\mathbf a)}{(1+Z_\theta^2)^3}\right)^2+
+\left(\frac{1}{T}\partial_sZ_\theta-(1-X_\theta^2)\right)^2\right\rangle_{s,\mathbf a}.$$
+
+آموزش از نقاط Sobol، مرزهای فضای ضرایب و تحریک‌های ثابت استفاده می‌کند. هیچ مسیر عددی یا تحلیلی، و هیچ مسیر هدفی، برچسب آموزش شبکهٔ پیشرو نیست. Adam، سپس L-BFGS و تقویتِ باقیمانده‌محور روی مرزهای دامنه اجرا می‌شوند.
+
+در این بازه، جواب دقیق از خروجی طولی عبور نمی‌کند چون $Z\le Z_0+\tau\le2$. همچنین با $h(X)=X-X^3/3$ و تابع $I$ تعریف‌شده در [۱]، کران $|h(X)|\le C\,0.5\,[I(\infty)-I(-2)]<h(0.8)$ یک حاشیهٔ دیواره برای مدل دقیق می‌دهد. دقت شبکه در این دامنه **به‌طور تجربی آزموده می‌شود**؛ این کران، تضمین خطای شبکه نیست.
+
+import importlib.util
+required = ['torch','numpy','scipy','matplotlib','IPython']
+missing = [m for m in required if importlib.util.find_spec(m) is None]
+if missing:
+    raise ImportError('Install first: %pip install torch numpy "scipy>=1.12" matplotlib ipython; then restart. Missing: '+', '.join(missing))
+from IPython.display import display, Markdown, Image, HTML
+import matplotlib.pyplot as plt
+
+
+"""Parameter-conditioned, residual-only PINN and bounded magnetic trajectory control.
+
+The validated source notebook supplies the reduced one-way particle equations.
+This file adds a bounded *effective signed force* input; it is not Maxwell/coil CFD.
+No ODE trajectory or target path is used to train the forward PINN.
+"""
+from dataclasses import dataclass, asdict
+from pathlib import Path
+import json
+import math
+import time
+import numpy as np
+import torch
+from torch import nn
+
+
+@dataclass(frozen=True)
+class Config:
+    # Fixed physical parameters: only the magnetic waveform varies in this stage.
+    mu0: float = 4 * math.pi * 1e-7
+    Ms: float = 1e6
+    Msp: float = 4.78e5
+    Rmag: float = 0.02
+    Rv: float = 75e-6
+    rp: float = 500e-9
+    mean: float = 0.015
+    eta: float = 0.003276913272013514
+    beta: float = 1.0
+    X0: float = 0.0
+    Z0: float = -2.0
+    T: float = 4.0  # dimensionless horizon tau; physical time is tau*d/(2*mean)
+    umax: float = 0.5
+    K: int = 5      # degree-four Bernstein waveform, five bounded coefficients
+    width: int = 64
+    depth: int = 3
+    seed: int = 42
+
+    @property
+    def d(self):
+        return (1 + self.beta) * self.Rmag
+
+    @property
+    def time_scale(self):
+        return self.d / (2 * self.mean)
+
+    @property
+    def C(self):
+        return self.mu0 * self.rp**2 * 3 * self.Ms**2 / (
+            18 * self.eta * self.Rv * self.mean * (1 + self.beta)**4)
+
+    @property
+    def drag(self):
+        return 6 * math.pi * self.eta * self.rp
+
+
+def bernstein(s, K):
+    """s: [N,1], result [N,K], partition of unity on [0,1]."""
+    return torch.cat([math.comb(K-1,k) * s**k * (1-s)**(K-1-k)
+                      for k in range(K)], dim=1)
+
+
+def waveform(s, a):
+    """a are signed force coefficients, not signed magnetic field strengths."""
+    return (bernstein(s, a.shape[1]) * a).sum(dim=1, keepdim=True)
+
+
+def waveform_numpy(s, a):
+    a = np.asarray(a, dtype=float)
+    s = np.atleast_1d(s).astype(float)
+    b = np.column_stack([math.comb(len(a)-1,k) * s**k * (1-s)**(len(a)-1-k)
+                         for k in range(len(a))])
+    return b @ a
+
+
+class ParametricPINN(nn.Module):
+    """A single shared network: (s, a0,...,a4) -> (X,Z)."""
+    def __init__(self, cfg=Config()):
+        super().__init__()
+        self.cfg = cfg
+        layers = []
+        n = cfg.K + 1
+        for _ in range(cfg.depth):
+            layers += [nn.Linear(n, cfg.width), nn.Tanh()]
+            n = cfg.width
+        layers += [nn.Linear(n, 2)]
+        self.net = nn.Sequential(*layers)
+        for layer in self.net:
+            if isinstance(layer, nn.Linear):
+                nn.init.xavier_normal_(layer.weight)
+                nn.init.zeros_(layer.bias)
+        nn.init.zeros_(self.net[-1].weight)
+
+    def forward(self, s, a):
+        c = self.cfg
+        h = self.net(torch.cat((2*s-1, a/c.umax), dim=1))
+        # Exact fixed release; the baseline is unforced prescribed Poiseuille flow.
+        return torch.cat((c.X0+s*h[:,0:1], c.Z0+c.T*s+s*h[:,1:2]), dim=1)
+
+
+def residual(model, s, a, create_graph=True):
+    c = model.cfg
+    q = model(s,a)
+    dx = torch.autograd.grad(q[:,0].sum(),s,create_graph=create_graph,retain_graph=True)[0]/c.T
+    dz = torch.autograd.grad(q[:,1].sum(),s,create_graph=create_graph,retain_graph=True)[0]/c.T
+    rx = dx - c.C*waveform(s,a)/(1+q[:,1:2]**2)**3
+    rz = dz - (1-q[:,0:1]**2)
+    return torch.cat((rx,rz), dim=1)
+
+
+def train(cfg=Config(), adam_steps=6000, lbfgs_steps=600, batch=768,
+          device='cpu', verbose=True, boundary_steps=500):
+    """Pure physics training. Independent references are in reference_solve only."""
+    torch.set_num_threads(1)
+    torch.manual_seed(cfg.seed)
+    model = ParametricPINN(cfg).to(device=device,dtype=torch.float64)
+    sampler = torch.quasirandom.SobolEngine(cfg.K+1,scramble=True,seed=cfg.seed)
+    optimizer = torch.optim.Adam(model.parameters(),lr=0.002)
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer,adam_steps,eta_min=0.0001)
+    history=[]
+    tic=time.perf_counter()
+    for step in range(adam_steps):
+        points=sampler.draw(batch).to(device=device,dtype=torch.float64)
+        s=points[:,0:1].detach().requires_grad_(True)
+        a=cfg.umax*(2*points[:,1:]-1)
+        # Include coefficient-domain faces, constant controls and the no-field case.
+        a[:batch//8]=torch.sign(a[:batch//8])*cfg.umax
+        a[batch//8:batch//4]=a[batch//8:batch//4,0:1]
+        a[batch//4:batch//4+8]=0
+        optimizer.zero_grad(set_to_none=True)
+        r=residual(model,s,a)
+        loss=(r*r).mean()
+        loss.backward()
+        optimizer.step()
+        scheduler.step()
+        if step%1000==0 or step==adam_steps-1:
+            value=float(loss.detach())
+            history.append(dict(stage='adam',step=step+1,loss=value))
+            if verbose: print(f'Adam {step+1}/{adam_steps}: residual MSE={value:.3e}',flush=True)
+    # Fixed collocation set for deterministic L-BFGS. No solution labels.
+    points=sampler.draw(6144).to(device=device,dtype=torch.float64)
+    s=points[:,0:1].detach().requires_grad_(True)
+    a=cfg.umax*(2*points[:,1:]-1)
+    a[:768]=torch.sign(a[:768])*cfg.umax
+    a[768:1280]=a[768:1280,0:1]
+    a[1280:1312]=0
+    optimizer=torch.optim.LBFGS(model.parameters(),lr=1.0,max_iter=lbfgs_steps,
+        tolerance_grad=1e-10,tolerance_change=1e-13,history_size=40,line_search_fn='strong_wolfe')
+    calls=[0]
+    def closure():
+        optimizer.zero_grad(set_to_none=True)
+        if s.grad is not None: s.grad=None
+        r=residual(model,s,a)
+        loss=(r*r).mean()
+        loss.backward()
+        calls[0]+=1
+        if verbose and calls[0]%200==0:
+            print(f'L-BFGS closure {calls[0]}: residual MSE={float(loss.detach()):.3e}',flush=True)
+        return loss
+    optimizer.step(closure)
+    final=float((residual(model,s,a)**2).mean().detach())
+    history.append(dict(stage='lbfgs',step=calls[0],loss=final))
+    metadata=dict(config=asdict(cfg),seconds=time.perf_counter()-tic,history=history,
+        training='ODE residuals + hard fixed initial conditions only; no solve_ivp or target trajectories',
+        settings=dict(adam_steps=adam_steps,lbfgs_steps=lbfgs_steps,batch=batch,lbfgs_points=6144),
+        device=device,dtype='float64')
+    if boundary_steps:
+        refinement=boundary_refine(model,steps=boundary_steps,verbose=verbose)
+        metadata['history'].append(refinement)
+        metadata['settings']['boundary_steps']=boundary_steps
+        metadata['seconds']=time.perf_counter()-tic
+    model.eval()
+    return model,metadata
+
+
+def boundary_refine(model,steps=500,verbose=True):
+    """Residual-only refinement on systematic control-domain boundaries.
+
+    These are collocation constraints, never reference-solution observations.
+    """
+    from itertools import product
+    c=model.cfg
+    device=next(model.parameters()).device
+    dtype=next(model.parameters()).dtype
+    base=torch.quasirandom.SobolEngine(c.K+1,scramble=True,seed=c.seed+190).draw(3072).to(device=device,dtype=dtype)
+    controls=np.array(list(product([-c.umax,c.umax],repeat=c.K)))
+    controls=np.vstack((controls,np.repeat(np.linspace(-c.umax,c.umax,9)[:,None],c.K,axis=1)))
+    grid=(np.arange(97)+.319)/97
+    ss=torch.tensor(np.tile(grid,len(controls))[:,None],dtype=dtype,device=device)
+    aa=torch.tensor(np.repeat(controls,len(grid),axis=0),dtype=dtype,device=device)
+    s=torch.cat((base[:,0:1],ss)).detach().requires_grad_(True)
+    a=torch.cat((c.umax*(2*base[:,1:]-1),aa))
+    opt=torch.optim.LBFGS(model.parameters(),lr=1,max_iter=steps,line_search_fn='strong_wolfe',
+        tolerance_grad=2e-11,tolerance_change=1e-14,history_size=50)
+    calls=[0]
+    def closure():
+        opt.zero_grad(set_to_none=True)
+        if s.grad is not None: s.grad=None
+        r=residual(model,s,a)
+        loss=(r*r).mean()
+        loss.backward()
+        calls[0]+=1
+        if verbose and calls[0]%200==0:
+            print(f'Boundary refinement {calls[0]}: residual MSE={float(loss.detach()):.3e}',flush=True)
+        return loss
+    opt.step(closure)
+    return dict(stage='boundary_lbfgs',calls=calls[0],loss=float((residual(model,s,a)**2).mean().detach()),
+                points=len(s),control_data='PDE/ODE collocation only')
+
+
+
+
+def check_coefficients(a,cfg):
+    a=np.asarray(a,dtype=float)
+    if a.shape != (cfg.K,) or not np.all(np.isfinite(a)):
+        raise ValueError(f'Expected {cfg.K} finite coefficients.')
+    if np.max(np.abs(a))>cfg.umax+1e-12:
+        raise ValueError('Magnetic coefficients outside the trained domain; retraining is required.')
+    return a
+
+
+def predict(model,a,t_seconds,physical=True):
+    c=model.cfg
+    a=check_coefficients(a,c)
+    tt=np.atleast_1d(t_seconds).astype(float)
+    if not np.all(np.isfinite(tt)) or np.any(tt<0) or np.any(tt>c.T*c.time_scale+1e-12):
+        raise ValueError('Time outside the trained pre-event horizon.')
+    device=next(model.parameters()).device
+    s=torch.tensor(tt[:,None]/(c.T*c.time_scale),dtype=torch.float64,device=device)
+    aa=torch.tensor(a,dtype=torch.float64,device=device)[None].expand(len(tt),-1)
+    with torch.no_grad(): q=model(s,aa).cpu().numpy()
+    # The exact axial solution obeys Z <= Z0+tau <= 2 on this fixed horizon.
+    # A small surrogate error near the endpoint is assessed by validation, not
+    # mistaken for an actual outlet event in the exactly unforced case.
+    if np.any(np.abs(q[:,0])>=1):
+        raise RuntimeError('Predicted wall event; post-event motion is outside this model.')
+    return q*np.array([c.Rv,c.d]) if physical else q
+
+
+def reference_solve(a,s,cfg=Config()):
+    """Independent high-accuracy numerical validation ONLY, never forward training."""
+    from scipy.integrate import solve_ivp
+    a=check_coefficients(a,cfg)
+    ss=np.asarray(s,dtype=float)
+    def rhs(tau,q):
+        u=float(waveform_numpy(tau/cfg.T,a)[0])
+        return [cfg.C*u/(1+q[1]**2)**3, 1-q[0]**2]
+    def wall(tau,q):return 1-abs(q[0])
+    wall.terminal=True
+    wall.direction=-1
+    def outlet(tau,q):return 4/(1+cfg.beta)-q[1]
+    outlet.terminal=True
+    outlet.direction=-1
+    sol=solve_ivp(rhs,[0,cfg.T],[cfg.X0,cfg.Z0],method='DOP853',rtol=2e-11,
+        atol=2e-13,dense_output=True,events=(wall,outlet),max_step=cfg.T/100)
+    if not sol.success or sol.t[-1]<cfg.T-1e-8:
+        raise RuntimeError('Reference trajectory terminated before the requested horizon.')
+    return sol.sol(ss*cfg.T).T
+
+
+def validate(model,n_random=48,seed=20261103):
+    c=model.cfg
+    rng=np.random.default_rng(seed)
+    corners=np.array(list(__import__('itertools').product([-c.umax,c.umax],repeat=c.K)))
+    aa=np.vstack((rng.uniform(-c.umax,c.umax,(n_random,c.K)),corners,
+                  np.zeros((1,c.K)),np.full((1,c.K),-.3),np.full((1,c.K),.3)))
+    s=np.linspace(0,1,257)
+    rows=[]
+    for i,a in enumerate(aa):
+        pred=predict(model,a,s*c.T*c.time_scale,physical=False)
+        ref=reference_solve(a,s,c)
+        error=np.abs(pred-ref)
+        rows.append(dict(case=i,kind='random' if i<n_random else 'boundary/constant',
+            max_X_error_Rv=float(error[:,0].max()),max_Z_error_d=float(error[:,1].max()),
+            max_abs_X=float(np.max(np.abs(ref[:,0])))))
+    device=next(model.parameters()).device
+    points=torch.quasirandom.SobolEngine(c.K+1,scramble=True,seed=seed).draw(12000)
+    points=points.to(device=device,dtype=torch.float64)
+    st=points[:,0:1].detach().requires_grad_(True)
+    at=c.umax*(2*points[:,1:]-1)
+    r=residual(model,st,at,create_graph=False).detach().cpu().numpy()
+    initial=predict(model,aa[0],0,physical=False)[0]
+    zero=predict(model,np.zeros(c.K),s*c.T*c.time_scale,physical=False)
+    zero_exact=np.column_stack((np.zeros_like(s),c.Z0+c.T*s))
+    checks=dict(
+        heldout_max_X_error_below_0_005_Rv=max(v['max_X_error_Rv'] for v in rows)<.005,
+        heldout_max_Z_error_below_0_005_d=max(v['max_Z_error_d'] for v in rows)<.005,
+        heldout_residual_rms_below_0_002=float(np.sqrt(np.mean(r*r)))<.002,
+        hard_initial_condition=float(np.max(abs(initial-[c.X0,c.Z0])))<1e-12,
+        zero_control_matches_exact_flow=float(np.max(abs(zero-zero_exact)))<.002,
+        heldout_no_wall_capture=max(v['max_abs_X'] for v in rows)<.8,
+        single_active_actuator_unsaturated=(c.Ms/(2*(1+c.beta)**2)*math.sqrt(c.umax))<c.Msp/3)
+    return dict(checks=checks,all_passed=all(checks.values()),n_cases=len(aa),seed=seed,
+        max_X_error_Rv=max(v['max_X_error_Rv'] for v in rows),
+        max_Z_error_d=max(v['max_Z_error_d'] for v in rows),
+        residual_rms=float(np.sqrt(np.mean(r*r))),
+        residual_abs_max=float(np.max(abs(r))),cases=rows)
+
+
+
+
+## ۴. مسیر هدف و کنترل معکوس
+
+`target_from_x` مسیر عرضی دلخواهِ تابع زمان را می‌گیرد و مختصات طولی سازگار با جریان را تعیین می‌کند. `target_from_spatial_path` مسیر هندسی $X(Z)$ را به زمان‌بندی سازگار تبدیل می‌کند. اگر هر دو مختصات را مستقل می‌دهید، `audit_target` سازگاری آن‌ها را بررسی می‌کند.
+
+برای هدف زمان‌دار باید هم $dZ_d/d	au=1-X_d^2$ برقرار باشد و هم تحریک لازم
+
+$$u_{req}(	au)=
+rac{(1+Z_d^2)^3}{C}
+rac{dX_d}{d	au}$$
+
+در حد مجاز باشد. هدفِ دارای برگشت طولی، شتاب عرضی بیش از توان منبع، یا نقطهٔ شروع متفاوت، با این مدل قابل اجرا نیست. علاوه بر امکان‌پذیری فیزیکی، محدودبودن به پنج ضریب هم ممکن است مانع تطابق دقیق شود؛ خطای تقریب تابع تحریک در گزارش ثبت می‌شود.
+
+بهینه‌ساز، وزن‌های شبکه را ثابت نگه می‌دارد و فقط پنج ضریب را در کران مجاز تغییر می‌دهد. جریمهٔ کوچک اختلاف ضرایب برای همواری نیروی مؤثر است؛ محدودیت سخت سرعت تغییر جریان محسوب نمی‌شود. پس از بهینه‌سازی، تحریک به‌دست‌آمده با `solve_ivp / DOP853` بازپخش می‌شود و خطای واقعیِ مدل کاهش‌یافته در برابر هدف گزارش می‌گردد. خروجی کنترل فقط با `all_passed=True` پذیرفته می‌شود.
+
+def target_from_x(s,X,cfg=Config()):
+    """User supplies a transverse time path; axial timing follows the fixed flow.
+
+    This quadrature defines a target, not the forward PINN's training labels.
+    """
+    from scipy.integrate import cumulative_simpson
+    s=np.asarray(s,dtype=float)
+    X=np.asarray(X,dtype=float)
+    if X.shape != s.shape or len(s)<9 or not np.all(np.diff(s)>0):
+        raise ValueError('Supply matching increasing time and X arrays, at least nine points.')
+    Z=cfg.Z0+cfg.T*cumulative_simpson(1-X**2,x=s,initial=0)
+    return np.column_stack((X,Z))
+
+
+def target_from_spatial_path(Z,X,cfg=Config(),n=801):
+    """Convert x(z), with increasing z, to a compatible timed target.
+
+    Input coordinates are dimensionless. The path must cover the fixed horizon.
+    An axial backtrack or a loop cannot be made by this transverse-only actuator.
+    """
+    from scipy.integrate import cumulative_simpson
+    from scipy.interpolate import PchipInterpolator
+    Z=np.asarray(Z,dtype=float); X=np.asarray(X,dtype=float)
+    if X.shape!=Z.shape or len(Z)<9 or not np.all(np.diff(Z)>0):
+        raise ValueError('A spatial path must have matching arrays and strictly increasing Z.')
+    if abs(Z[0]-cfg.Z0)>1e-10 or abs(X[0]-cfg.X0)>1e-10 or np.max(abs(X))>=.8:
+        raise ValueError('Wrong release point or insufficient wall clearance.')
+    tau=cumulative_simpson(1/(1-X**2),x=Z,initial=0)
+    if tau[-1]<cfg.T-1e-8:
+        raise ValueError('Spatial path is too short for the fixed trained horizon.')
+    s=np.linspace(0,1,n)
+    zz=PchipInterpolator(tau,Z)(cfg.T*s)
+    xx=PchipInterpolator(Z,X)(zz)
+    return s,np.column_stack((xx,zz))
+
+
+def audit_target(s,target,cfg=Config(),mode='opposed'):
+    """Check the reduced-model physical reachability of a supplied timed path."""
+    from scipy.interpolate import CubicSpline
+    from scipy.optimize import lsq_linear
+    if mode not in ('opposed','single_left'):
+        raise ValueError("mode must be 'opposed' or 'single_left'")
+    s=np.asarray(s,dtype=float); target=np.asarray(target,dtype=float)
+    if s.ndim!=1 or len(s)<9 or target.shape!=(len(s),2) or not np.all(np.isfinite(target)):
+        raise ValueError('Expected finite target coordinates [N,2] on a 1D time grid.')
+    if not np.all(np.diff(s)>0) or abs(s[0])>1e-12 or abs(s[-1]-1)>1e-12:
+        raise ValueError('Target time grid must increase from 0 to 1.')
+    spline=CubicSpline(s,target,axis=0)
+    dense=np.linspace(0,1,max(1601,len(s)))
+    q=spline(dense); deriv=spline(dense,1)/cfg.T
+    required=deriv[:,0]*(1+q[:,1]**2)**3/cfg.C
+    axial_defect=float(np.max(abs(deriv[:,1]-(1-q[:,0]**2))))
+    reasons=[]
+    if np.max(abs(target[0]-[cfg.X0,cfg.Z0]))>1e-8: reasons.append('initial position differs from the fixed release')
+    if np.max(abs(q[:,0]))>=.8: reasons.append('target violates the declared wall margin')
+    if np.max(q[:,1])>4/(1+cfg.beta)+1e-7: reasons.append('target exits the trained channel segment')
+    if axial_defect>2e-3: reasons.append('axial timing is incompatible with dZ/dtau=1-X^2')
+    if np.max(abs(required))>cfg.umax+1e-3: reasons.append('target exceeds available magnetic force')
+    if mode=='single_left' and np.max(required)>1e-4: reasons.append('a single left magnet cannot produce positive transverse drift')
+    st=torch.tensor(dense[:,None],dtype=torch.float64)
+    B=bernstein(st,cfg.K).numpy()
+    upper=0.0 if mode=='single_left' else cfg.umax
+    fit=lsq_linear(B,required,bounds=(-cfg.umax,upper),tol=1e-12)
+    projection=float(np.sqrt(np.mean((B@fit.x-required)**2)))
+    return dict(feasible=not reasons,reasons=reasons,required_u_max=float(np.max(abs(required))),
+        axial_compatibility_error=axial_defect,degree_four_force_projection_rms=projection,
+        coefficients_initial=fit.x.tolist(),mode=mode)
+
+
+def control_to_target(model,s,target,mode='opposed',smooth_weight=1e-7,maxiter=350):
+    """Optimize waveform coefficients through the frozen forward PINN.
+
+    No network weight is retrained for a new target; gradients pass to a only.
+    A final independent ODE replay is mandatory because control can exploit a surrogate.
+    """
+    from scipy.optimize import minimize
+    c=model.cfg
+    audit=audit_target(s,target,c,mode)
+    if not audit['feasible']:
+        raise ValueError('Unreachable target: '+'; '.join(audit['reasons']))
+    s=np.asarray(s,dtype=float); target=np.asarray(target,dtype=float)
+    device=next(model.parameters()).device
+    st=torch.tensor(s[:,None],dtype=torch.float64,device=device)
+    qt=torch.tensor(target,dtype=torch.float64,device=device)
+    states=[p.requires_grad for p in model.parameters()]
+    for param in model.parameters(): param.requires_grad_(False)
+    history=[]
+    def objective(coeff):
+        at=torch.tensor(coeff,dtype=torch.float64,device=device,requires_grad=True)
+        q=model(st,at[None].expand(len(st),-1))
+        # X and Z are normalized by their own physical coordinate scales.
+        tracking=((q-qt)**2).mean()
+        slew=((at[1:]-at[:-1])**2).mean()
+        loss=tracking+smooth_weight*slew
+        grad=torch.autograd.grad(loss,at)[0]
+        history.append(float(loss.detach()))
+        return float(loss.detach()),grad.detach().cpu().numpy()
+    hi=0.0 if mode=='single_left' else c.umax
+    try:
+        result=minimize(objective,audit['coefficients_initial'],jac=True,method='L-BFGS-B',
+            bounds=[(-c.umax,hi)]*c.K,options=dict(maxiter=maxiter,ftol=1e-15,gtol=1e-10,maxls=30))
+    finally:
+        for param,state in zip(model.parameters(),states): param.requires_grad_(state)
+    a=check_coefficients(result.x,c)
+    pred=predict(model,a,s*c.T*c.time_scale,physical=False)
+    replay=reference_solve(a,s,c)
+    # Re-audit the *actual optimized control*, at times distinct from the objective grid.
+    extra=(np.arange(1021)+.371)/1021
+    ss=torch.tensor(extra[:,None],dtype=torch.float64,device=device,requires_grad=True)
+    aa=torch.tensor(a,dtype=torch.float64,device=device)[None].expand(len(extra),-1)
+    rr=residual(model,ss,aa,create_graph=False).detach().cpu().numpy()
+    err_ref=np.abs(replay-target)
+    err_sur=np.abs(replay-pred)
+    u=waveform_numpy(s,a)
+    left=np.sqrt(np.maximum(-u,0));right=np.sqrt(np.maximum(u,0))
+    # Exclusive activation avoids unmodelled cross terms in grad|B_L+B_R|^2.
+    controls=dict(s=s,t_seconds=s*c.T*c.time_scale,u=u,left_amplitude=left,right_amplitude=right,
+        magnetization_left_A_m=c.Ms*left,magnetization_right_A_m=c.Ms*right,
+        field_magnitude_T=c.mu0*c.Ms/(2*(1+c.beta)**2)/(1+replay[:,1]**2)*np.sqrt(abs(u)),
+        force_x_N=c.drag*(2*c.mean*c.Rv/c.d)*c.C*u/(1+replay[:,1]**2)**3)
+    checks=dict(optimizer_converged=bool(result.success),
+        replay_X_tracking_below_0_005_Rv=float(err_ref[:,0].max())<.005,
+        replay_Z_tracking_below_0_005_d=float(err_ref[:,1].max())<.005,
+        surrogate_replay_X_below_0_005_Rv=float(err_sur[:,0].max())<.005,
+        surrogate_replay_Z_below_0_005_d=float(err_sur[:,1].max())<.005,
+        control_specific_residual_below_0_002=float(np.sqrt(np.mean(rr**2)))<.002,
+        force_bounds_respected=float(np.max(abs(u)))<=c.umax+1e-12,
+        no_simultaneous_actuation=bool(np.all(left*right==0)),
+        no_wall_or_exit=bool(np.max(abs(replay[:,0]))<.8 and replay[:,1].max()<=2+1e-8))
+    report=dict(coefficients=a.tolist(),mode=mode,audit=audit,checks=checks,
+        all_passed=all(checks.values()),optimizer_message=str(result.message),
+        max_replay_X_tracking_Rv=float(err_ref[:,0].max()),
+        max_replay_X_tracking_um=float(err_ref[:,0].max()*c.Rv*1e6),
+        max_replay_Z_tracking_d=float(err_ref[:,1].max()),
+        max_surrogate_replay_X_Rv=float(err_sur[:,0].max()),
+        control_residual_rms=float(np.sqrt(np.mean(rr**2))),
+        objective_history=history)
+    return dict(report=report,target=target,prediction=pred,replay=replay,controls=controls)
+
+
+def demo_target(s,cfg=Config(),kind='bump'):
+    """Analytic user-style targets, not trajectories generated by hidden coefficients."""
+    znom=cfg.Z0+cfg.T*np.asarray(s)
+    if kind=='bump':
+        X=.05*((1+znom**2)**-2-(1+cfg.Z0**2)**-2)
+    elif kind=='deflection':
+        def primitive(z):
+            return 3*np.arctan(z)/8+z*(3*z*z+5)/(8*(1+z*z)**2)
+        X=.20*(primitive(znom)-primitive(cfg.Z0))/(primitive(cfg.Z0+cfg.T)-primitive(cfg.Z0))
+    else:
+        raise ValueError("kind must be 'bump' or 'deflection'")
+    return target_from_x(s,X,cfg)
+
+
+def additional_audits(model):
+    """Independent analytic limit, SI force reduction, AD, reload and input guards."""
+    import io
+    c=model.cfg
+    s=np.linspace(0,1,401)
+    def primitive(z):
+        return 3*np.arctan(z)/8+z*(3*z*z+5)/(8*(1+z*z)**2)
+    implicit_error=0.0
+    for u in [-.3,0,.3]:
+        q=predict(model,np.full(c.K,u),s*c.T*c.time_scale,physical=False)
+        h=q[:,0]-q[:,0]**3/3
+        ref=c.X0-c.X0**3/3+c.C*u*(primitive(q[:,1])-primitive(c.Z0))
+        implicit_error=max(implicit_error,float(np.max(abs(h-ref))))
+    Vp=4*math.pi*c.rp**3/3
+    alpha=3*Vp/c.mu0
+    force_error=0.0
+    # Independently differentiate the single cylindrical-source field in SI units.
+    # Coordinate y is distance away from the active source; it is mirrored for right/left.
+    for amp in [0.1,0.4,math.sqrt(c.umax)]:
+        for Z in np.linspace(-2,2,23):
+            d=c.d; z=d*Z; r2=d*d+z*z; A=amp*c.Ms*c.Rmag**2
+            B=c.mu0*np.array([A*(d*d-z*z)/(2*r2*r2),A*d*z/r2**2])
+            G=c.mu0*A/r2**3*np.array([[d*(3*z*z-d*d),z*(z*z-3*d*d)],
+                                      [z*(z*z-3*d*d),d*(d*d-3*z*z)]])
+            F=alpha*np.einsum('ij,i->j',G,B)
+            reduced=F[0]/c.drag*c.time_scale/c.Rv
+            expected=-c.C*amp**2/(1+Z**2)**3
+            force_error=max(force_error,float(abs(reduced-expected)/max(abs(expected),1e-30)))
+    device=next(model.parameters()).device
+    st=torch.tensor([[.413]],dtype=torch.float64,device=device,requires_grad=True)
+    at=torch.tensor([[.2,-.1,.3,.1,-.2]],dtype=torch.float64,device=device)
+    q=model(st,at)
+    ad=torch.cat([torch.autograd.grad(q[:,i].sum(),st,retain_graph=True)[0] for i in range(2)],dim=1)
+    with torch.no_grad(): fd=(model(st+1e-5,at)-model(st-1e-5,at))/(2e-5)
+    ad_error=float((ad-fd).abs().max().detach())
+    coeff=at[0].detach().cpu().numpy()
+    pred=predict(model,coeff,s*c.T*c.time_scale,physical=False)
+    buffer=io.BytesIO()
+    torch.save(model.state_dict(),buffer); buffer.seek(0)
+    clone=ParametricPINN(c).to(device=device,dtype=torch.float64)
+    clone.load_state_dict(torch.load(buffer,map_location=device,weights_only=True))
+    reload_error=float(np.max(abs(pred-predict(clone,coeff,s*c.T*c.time_scale,physical=False))))
+    guards=0
+    for bad_a,bad_t in [(np.full(c.K,c.umax+.1),0),(np.zeros(c.K),-1),
+                        (np.zeros(c.K),c.T*c.time_scale+.01),(np.full(c.K,np.nan),0)]:
+        try: predict(model,bad_a,bad_t)
+        except ValueError: guards+=1
+    # A deliberately impossible timed axial path must be rejected before optimization.
+    target=demo_target(s,c)
+    target[:,1]+=0.05*s
+    invalid=audit_target(s,target,c)
+    bump=demo_target(s,c,'bump')
+    single=audit_target(s,bump,c,'single_left')
+    checks=dict(constant_control_matches_published_implicit_law=implicit_error<.002,
+        SI_force_matches_reduced_rhs=force_error<1e-12,autodiff_matches_finite_difference=ad_error<1e-7,
+        checkpoint_reload_exact=reload_error<1e-12,out_of_domain_inputs_rejected=guards==4,
+        incompatible_axial_target_rejected=not invalid['feasible'],
+        single_magnet_rejects_bidirectional_target=not single['feasible'])
+    return dict(checks=checks,all_passed=all(checks.values()),
+        analytic_implicit_error=implicit_error,force_relative_error=force_error,
+        autodiff_absolute_error=ad_error,reload_error=reload_error)
+
+
+
+
+## ۵. وزن‌های آموزش‌دیدهٔ داخل فایل
+
+سلول زیر فقط محتوای باینریِ وزن‌ها و تنظیمات آموزش را نگه می‌دارد. بارگذاری با `weights_only=True` انجام می‌شود. برای استفادهٔ معمول نیازی به ویرایش این سلول نیست.
+
+EMBEDDED_CHECKPOINT = '''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kChoiGiJaIpNiRNoi0c+kHCr8bq6vXV9cZEoaIhoiWiKTXAXaItHPpFwEjqADWl1fXGSKGiIWAUAAABsYmZnc3GTaIpN7gJoi0c+gO2v2sGm4HV9cZQoWAUAAABzdGFnZXGVWA4AAABib3VuZGFyeV9sYmZnc3GWWAUAAABjYWxsc3GXTXECWAQAAABsb3NzcZhHPoqwpg4rBapYBgAAAHBvaW50c3GZTYkbWAwAAABjb250cm9sX2RhdGFxmlgYAAAAUERFL09ERSBjb2xsb2NhdGlvbiBvbmx5cZt1ZVgIAAAAdHJhaW5pbmdxnFhXAAAAT0RFIHJlc2lkdWFscyArIGhhcmQgZml4ZWQgaW5pdGlhbCBjb25kaXRpb25zIG9ubHk7IG5vIHNvbHZlX2l2cCBvciB0YXJnZXQgdHJhamVjdG9yaWVzcZ1YCAAAAHNldHRpbmdzcZ59cZ8oWAoAAABhZGFtX3N0ZXBzcaBNcBdYCwAAAGxiZmdzX3N0ZXBzcaFNWAJYBQAAAGJhdGNocaJNAANYDAAAAGxiZmdzX3BvaW50c3GjTQAYWA4AAABib3VuZGFyeV9zdGVwc3GkTfQBdVgGAAAAZGV2aWNlcaVYAwAAAGNwdXGmWAUAAABkdHlwZXGnWAcAAABmbG9hdDY0cah1dS5QSwcIlVOFZMIIAADCCAAAUEsDBAAACAgAAAAAAAAAAAAAAAAAAAAAAAAdADMAcmVmaW5lZF9tb2RlbC8uZm9ybWF0X3ZlcnNpb25GQi8AWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWloxUEsHCLfv3IMBAAAAAQAAAFBLAwQAAAgIAAAAAAAAAAAAAAAAAAAAAAAAIAAxAHJlZmluZWRfbW9kZWwvLnN0b3JhZ2VfYWxpZ25tZW50RkItAFpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWjY0UEsHCD93cekCAAAAAgAAAFBLAwQAAAgIAAAAAAAAAAAAAAAAAAAAAAAAFwA5AHJlZmluZWRfbW9kZWwvYnl0ZW9yZGVyRkI1AFpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpabGl0dGxlUEsHCIU9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'''
+
+import io, base64
+OUT = Path('parametric_magnetic_results')
+OUT.mkdir(exist_ok=True)
+TRAIN_FROM_SCRATCH = False
+DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
+CFG = Config()  # Keep fixed for this magnetic-waveform-only stage.
+torch.set_num_threads(1)
+if TRAIN_FROM_SCRATCH:
+    model, training = train(CFG, device=DEVICE)
+else:
+    checkpoint = torch.load(io.BytesIO(base64.b64decode(EMBEDDED_CHECKPOINT)),
+                            map_location=DEVICE, weights_only=True)
+    if checkpoint['config'] != asdict(CFG):
+        raise ValueError('Settings differ from embedded weights: restore CFG or retrain.')
+    model = ParametricPINN(CFG).to(device=DEVICE,dtype=torch.float64)
+    model.load_state_dict(checkpoint['state_dict'])
+    training = checkpoint['training']
+model.eval()
+torch.save(dict(state_dict=model.state_dict(), config=asdict(CFG), training=training),OUT/'parametric_pinn.pt')
+(OUT/'training.json').write_text(json.dumps(training,indent=2))
+print('Device:',DEVICE,'| C =',CFG.C)
+print('Fixed release [m]:', [CFG.X0*CFG.Rv,CFG.Z0*CFG.d])
+print('Time interval [s]:', [0,CFG.T*CFG.time_scale])
+print('Physics-only training seconds:',round(training['seconds'],2))
+print('Mode:', 'trained from scratch' if TRAIN_FROM_SCRATCH else 'loaded trained weights embedded in this notebook')
+
+
+## ۶. اعتبارسنجی مستقل شبکهٔ پیشرو
+
+۴۸ تحریک با ضرایب تصادفی مستقل، ۳۲ گوشهٔ دامنه و سه حالت ثابت/صفر بررسی می‌شوند: مجموعاً ۸۳ حالت. نقاط داخلی تصادفی برای آزمون نگه داشته شده‌اند. گوشه‌ها آزمون مرزی‌اند؛ پروفایل آن‌ها در آموزشِ باقیمانده‌محور هم حضور دارد، ولی زمان‌های ارزیابی و حل مرجع مستقل‌اند.
+
+آستانه‌ها پیش از پذیرش: بیشینهٔ خطای $X<0.005R_v$، خطای $Z<0.005d$ و RMS باقیمانده در نقاط جدید $<0.002$. آزمون‌های تکمیلی شامل حد تحلیلیِ تحریک ثابت، کاهش نیروی SI، مشتق خودکار، بارگذاری مجدد و رد ورودی/هدف نامعتبر است. `solve_ivp` فقط در این اعتبارسنجی و بازپخش کنترل فراخوانی می‌شود.
+
+validation = validate(model)
+audits = additional_audits(model)
+(OUT/'validation.json').write_text(json.dumps(validation,indent=2))
+(OUT/'additional_audits.json').write_text(json.dumps(audits,indent=2))
+summary = {k:v for k,v in validation.items() if k!='cases'}
+print(json.dumps(summary,indent=2))
+print('Additional audits:',audits['checks'])
+assert validation['all_passed'] and audits['all_passed'], 'Forward validation failed; inspect reports before using control.'
+print('PASS: forward model and independent audits.')
+
+
+new_controls = [
+    np.array([-.35,-.10,.25,.40,.10]),
+    np.array([.20,.35,-.20,-.30,-.10]),
+    np.array([-.20,-.20,-.20,-.20,-.20]),
+]
+grid = np.linspace(0,1,401)
+fig,axs=plt.subplots(1,3,figsize=(13,3.5),layout='constrained')
+colors=['#236DAD','#D06B37','#278C77']
+for a,color in zip(new_controls,colors):
+    q=predict(model,a,grid*CFG.T*CFG.time_scale,physical=False)
+    ref=reference_solve(a,grid,CFG)
+    axs[0].plot(grid*CFG.T*CFG.time_scale,waveform_numpy(grid,a),color=color)
+    axs[1].plot(ref[:,1]*CFG.d*1e3,ref[:,0]*CFG.Rv*1e6,color=color,lw=2)
+    axs[1].plot(q[::16,1]*CFG.d*1e3,q[::16,0]*CFG.Rv*1e6,'o',mfc='white',mec=color,ms=3)
+    axs[2].plot(grid*CFG.T*CFG.time_scale,(q[:,0]-ref[:,0])*CFG.Rv*1e6,color=color)
+axs[0].set(xlabel='Time [s]',ylabel='Signed effective magnetic input u',title='Different time-dependent inputs')
+axs[1].set(xlabel='Axial z [mm]',ylabel='Transverse x [um]',title='DOP853 lines / PINN markers')
+axs[2].set(xlabel='Time [s]',ylabel='Transverse error [um]',title='Independent forward error')
+for ax in axs: ax.grid(alpha=.2)
+fig.savefig(OUT/'forward_examples.png',dpi=160)
+plt.show()
+
+
+## ۷. تعیین تحریک برای سه مسیر نمونه
+
+دو مسیر تحلیلیِ مشخص‌شده توسط کاربر شبیه‌سازی می‌شوند: یک انحراف عرضی، و یک مسیر که ابتدا از محور دور و سپس به آن نزدیک می‌شود. این اهداف از ضرایب پنهانِ کنترل تولید نشده‌اند. نمونهٔ سوم، انحراف به سمت چپ با همان محدودیت یک آهنربا است. هیچ‌کدام دادهٔ آموزش شبکهٔ پیشرو نیستند.
+
+s_target=np.linspace(0,1,801)
+targets = {
+    'return_path': (demo_target(s_target,CFG,'bump'),'opposed'),
+    'deflection': (demo_target(s_target,CFG,'deflection'),'opposed'),
+}
+left_target=targets['deflection'][0].copy()
+left_target[:,0]*=-1
+targets['single_left']=(left_target,'single_left')
+solutions={}
+for name,(target,mode) in targets.items():
+    result=control_to_target(model,s_target,target,mode=mode)
+    solutions[name]=result
+    (OUT/f'{name}_report.json').write_text(json.dumps(result['report'],indent=2))
+    c=result['controls']; q=result['replay']; qp=result['prediction']
+    table=np.column_stack((c['t_seconds'],target[:,0]*CFG.Rv,target[:,1]*CFG.d,
+        qp[:,0]*CFG.Rv,qp[:,1]*CFG.d,q[:,0]*CFG.Rv,q[:,1]*CFG.d,
+        c['u'],c['left_amplitude'],c['right_amplitude'],c['field_magnitude_T'],c['force_x_N']))
+    np.savetxt(OUT/f'{name}_trajectory_and_control.csv',table,delimiter=',',comments='',
+        header='time_s,x_target_m,z_target_m,x_PINN_m,z_PINN_m,x_replay_m,z_replay_m,u,left_relative_amplitude,right_relative_amplitude,axis_approx_B_T,force_x_N')
+    print(name,'| accepted:',result['report']['all_passed'],
+          '| replay max transverse tracking error [um]:',result['report']['max_replay_X_tracking_um'])
+    assert result['report']['all_passed'], 'Control failed its independent acceptance checks: '+name
+display(Markdown('| Target | Control mode | Max replay error x [um] | Max replay error z [um] | Accepted |\n|---|---|---:|---:|---|\n' + '\n'.join(
+    f"| {name} | {r['report']['mode']} | {r['report']['max_replay_X_tracking_um']:.4f} | {r['report']['max_replay_Z_tracking_d']*CFG.d*1e6:.3f} | {r['report']['all_passed']} |"
+    for name,r in solutions.items())))
+
+
+fig,axs=plt.subplots(3,3,figsize=(13,10),layout='constrained')
+for row,(name,r) in enumerate(solutions.items()):
+    q=r['target'];qp=r['prediction'];qr=r['replay'];c=r['controls'];t=c['t_seconds']
+    ax=axs[row,0]
+    ax.plot(q[:,1]*CFG.d*1e3,q[:,0]*CFG.Rv*1e6,'k--',lw=2,label='Target')
+    ax.plot(qr[:,1]*CFG.d*1e3,qr[:,0]*CFG.Rv*1e6,color='#278C77',lw=1.7,label='Independent replay')
+    ax.plot(qp[::30,1]*CFG.d*1e3,qp[::30,0]*CFG.Rv*1e6,'o',mfc='white',mec='#236DAD',ms=3,label='PINN')
+    ax.set(title=name,xlabel='Axial z [mm]',ylabel='Transverse x [um]')
+    ax.legend(fontsize=7)
+    axs[row,1].plot(t,c['u'],color='#236DAD',label='Effective u(t)')
+    axs[row,1].axhline(CFG.umax,c='gray',ls=':',lw=1)
+    axs[row,1].axhline(-CFG.umax,c='gray',ls=':',lw=1)
+    axs[row,1].set(xlabel='Time [s]',ylabel='Signed force coefficient',ylim=(-.56,.56))
+    axs[row,2].plot(t,c['left_amplitude'],color='#D06B37',label='Left amplitude')
+    axs[row,2].plot(t,c['right_amplitude'],color='#278C77',label='Right amplitude')
+    axs[row,2].set(xlabel='Time [s]',ylabel='Relative source amplitude',ylim=(-.03,.76))
+    axs[row,2].legend(fontsize=7)
+for ax in axs.flat:ax.grid(alpha=.2)
+fig.suptitle('Frozen parametric PINN + bounded waveform optimization + independent replay',fontsize=12)
+fig.savefig(OUT/'trajectory_control.png',dpi=160)
+plt.show()
+
+
+## ۸. محل تغییر مسیر دلخواه
+
+برای تغییر تحریک، فقط `MY_COEFFICIENTS` را عوض کنید. برای حل معکوس، تابع `desired_X` را ویرایش و `RUN_CUSTOM_CONTROL = True` کنید. `X` بی‌بعد است: مثلاً `0.1` برابر ۷٫۵ میکرومتر است. تغییر شعاع ذره، رهاسازی، مدت حل یا تعداد ضرایب، استفاده از وزن‌های حاضر را معتبر نمی‌کند و به آموزش مجدد نیاز دارد.
+
+برای یک مسیر هندسیِ نمونه‌برداری‌شده در واحد متر، ابتدا `Z=z_m/CFG.d` و `X=x_m/CFG.Rv` را بسازید؛ سپس `s_custom,q_custom=target_from_spatial_path(Z,X,CFG)` و `control_to_target(model,s_custom,q_custom)` را فراخوانی کنید. برای مسیرِ زمان‌دار CSV، زمان را به `s=t_seconds/(CFG.T*CFG.time_scale)` و مختصات را به همین صورت بی‌بعد کنید. کل بازهٔ زمان آموزش باید پوشش داده شود.
+
+MY_COEFFICIENTS = np.array([-.2,-.1,.1,.3,.2])
+times_seconds = np.linspace(0,CFG.T*CFG.time_scale,6)
+print('Columns: t [s], x [m], z [m]')
+print(np.column_stack((times_seconds,predict(model,MY_COEFFICIENTS,times_seconds))))
+
+RUN_CUSTOM_CONTROL = False
+def desired_X(s):
+    # Example: replace with YOUR smooth transverse path, preserving X(0)=0.
+    z=CFG.Z0+CFG.T*s
+    return .04*((1+z*z)**-2-(1+CFG.Z0**2)**-2)
+
+if RUN_CUSTOM_CONTROL:
+    custom_s=np.linspace(0,1,801)
+    custom_target=target_from_x(custom_s,desired_X(custom_s),CFG)
+    custom_result=control_to_target(model,custom_s,custom_target,mode='opposed')
+    print(json.dumps(custom_result['report'],indent=2))
+    if not custom_result['report']['all_passed']:
+        raise RuntimeError('Custom target did not pass independent tracking checks; do not use this control.')
+
+
+## ۹. تشخیص هدف ناممکن
+
+در این سلول خطاها عمداً ساخته می‌شوند: زمان‌بندی طولیِ ناسازگار، و تلاش برای اجرای مسیر رفت‌وبرگشتی با یک آهنربای یک‌طرفه. هدف ناممکن پیش از بهینه‌سازی گزارش می‌شود.
+
+invalid_target=demo_target(s_target,CFG,'bump')
+invalid_target[:,1]+=.05*s_target
+bad=audit_target(s_target,invalid_target,CFG)
+one_sided=audit_target(s_target,demo_target(s_target,CFG,'bump'),CFG,mode='single_left')
+print('Incompatible axial target:',bad['reasons'])
+print('Bidirectional target / one left magnet:',one_sided['reasons'])
+assert not bad['feasible'] and not one_sided['feasible']
+print('PASS: impossible requests are identified explicitly.')
+
+
+## ۱۰. برداشت درست از نتیجه و منابع
+
+این فایل یک **مدل پیشروِ پارامتریِ واقعاً آموزش‌دیده** و بهینه‌سازی مسیر از طریق آن ارائه می‌کند. برای تحریک جدیدِ داخل خانوادهٔ آموزش، ارزیابی شبکه به حل‌کردن دوبارهٔ ODE نیاز ندارد؛ حل مستقل فقط برای بررسی دقت به کار می‌رود. کنترل فعلی **حلقه‌باز** است. حرکتِ چند ذرهٔ همسان از یک نقطه با این مدل مسیر یکسان دارد؛ کنترل مستقل ذرات متفاوت با یک فرمان مشترک از این نتیجه به دست نمی‌آید.
+
+«هر مسیر» در اینجا یعنی هدفی که با جریان، جهت و توان عملگر، بازهٔ زمانی و خانوادهٔ پنج‌پارامتری سازگار باشد و آزمون بازپخش را بگذراند. کنترل دو مختصهٔ مستقل با زمان‌بندی دلخواه، حلقهٔ طولی یا مسیر خارج از دامنه، از معادلات حاضر نتیجه نمی‌شود. نسخهٔ دو عملگر یک **توسعهٔ نظری جدید** است؛ موفقیتِ مقایسه با ODE همان مدل، اعتبارسنجی تجربی یا تأیید سخت‌افزار نیست.
+
+۱. Furlani, E. P. & Ng, K. C. (2006). *Analytical model of magnetic nanoparticle transport and capture in the microvasculature.* Physical Review E 73, 061919. معادلات ۵۳ و ۵۶–۵۹ و فرض‌های کاهش مدل. [DOI](https://doi.org/10.1103/PhysRevE.73.061919) · [متن نویسنده](https://www.photonics.buffalo.edu/docs/Analytical%20Analysis%20of%20Magnetic%20Nanoparticle%20Transport%20in%20Microvasculature.pdf)
+
+۲. Wang, S., Wang, H. & Perdikaris, P. (2021). *Learning the solution operator of parametric partial differential equations with physics-informed DeepONets.* Science Advances 7, eabi8605. منبع ایدهٔ یادگیری فیزیک‌محورِ نگاشتِ تابع ورودی به حل؛ معماری این فایل MLP با ورودی ضرایب است. [DOI](https://doi.org/10.1126/sciadv.abi8605) · [متن کامل](https://pmc.ncbi.nlm.nih.gov/articles/PMC8480920/)
+
+
+## پیوست: کد اعتبارسنجی اولیه
+
+الگوریتم و تنظیمات اعتبارسنجی فایل ارسالی در ادامه حفظ شده‌اند. برای اجرای دوبارهٔ این بخش، متغیر زیر را `True` کنید و سلول‌های پیوست را اجرا کنید؛ آموزش حالت‌های اولیه دوباره انجام می‌شود. خروجی‌های قدیمیِ ذخیره‌شده پاک شده‌اند تا با نتایج تازه اشتباه نشوند. حالت پیش‌فرض این بخش را رد می‌کند، چون مدل پارامتری در بخش‌های بالا مستقلاً آزموده شده است. پس از اجرای اختیاری این پیوست، برای بازگشت به توابع کنترل، سلول‌های بخش پارامتری را دوباره اجرا کنید.
+
+RUN_ORIGINAL_BENCHMARK = False
+
+# Magnetic particle transport — PINN literature validation
+
+**An actual trained time-input PINN.** The trajectories plotted below are predictions of trained neural networks, compared after training with the published analytical relation. No trajectory data or analytical solution is used as a training target.
+
+Reference: E. P. Furlani & K. C. Ng, *Physical Review E* **73**, 061919 (2006). [DOI](https://doi.org/10.1103/PhysRevE.73.061919) · [Author full text](https://www.photonics.buffalo.edu/docs/Analytical%20Analysis%20of%20Magnetic%20Nanoparticle%20Transport%20in%20Microvasculature.pdf). Conditions of Fig. 8(a,b), Eqs. (53), (56)–(59).
+
+**Scope:** this is the reduced, prescribed-flow **one-way theoretical benchmark** from the paper. It validates the PINN magnetic particle-transport component. It does not validate full two-way CFD, a magnetic controller, or experiments. The former direct numerical channel demonstration is not included in this validation-only notebook.
+
+Run all cells in order. CPU or CUDA is selected automatically. This file is self-contained; no companion Python files are needed.
+
+if RUN_ORIGINAL_BENCHMARK:
+    import importlib.util
+    required = ['torch', 'numpy', 'scipy', 'matplotlib', 'PIL', 'IPython']
+    missing = [m for m in required if importlib.util.find_spec(m) is None]
+    if missing:
+        raise ImportError('Install dependencies first: %pip install torch numpy scipy matplotlib pillow ipython; then restart and Run all. Missing: ' + ', '.join(missing))
+
+
+## Physical model, coordinates and network
+
+The axial coordinate is $z$ and the transverse coordinate $x$ is negative toward the magnet. Define
+$$d=(1+\beta)R_{mag},\quad X=x/R_v,\quad Z=z/d,\quad \tau=2\bar v_f t/d.$$
+The particle is overdamped. Stokes drag balances the induced-dipole force; the paper neglects axial magnetic drift and uses $R_v/d\ll1$ for its reduced solution:
+$$\mathbf F_m={\alpha\over2}\nabla B^2,\quad \alpha={3V_p\over\mu_0},\quad 6\pi\eta R_p\dot x=F_{m,x},\quad \dot z=2\bar v_f[1-(x/R_v)^2].$$
+Thus the **trained equations** are
+$$r_x={dX_\theta\over d\tau}+{C\over(1+Z_\theta^2)^3}=0,\qquad
+r_z={dZ_\theta\over d\tau}-(1-X_\theta^2)=0,$$
+$$C={\mu_0 R_p^2(3)M_s^2\over18\eta R_v\bar v_f(1+\beta)^4}.$$
+
+Each case has an independent network: **local time $s\in[0,1]$ → two coordinates $(X,Z)$**. Two hidden layers of 24 tanh units; float64; Adam followed by L-BFGS. The physical interval is $\tau=\tau_k+\Delta\tau s$.
+
+Hard initial conditions: $\mathbf q_\theta(s)=\mathbf q_k+\Delta\tau\,s\,N_\theta(s)$. Training minimizes $\mathcal L=\langle r_x^2+r_z^2\rangle$ using automatic differentiation. After each time slab, its predicted final state initializes the next slab. **No numerical ODE integrator supplies these states.** First wall capture $X=-1$ or axial exit $z/R_{mag}=4$ terminates a case; scalar root finding is applied only to network outputs.
+
+The ten configurations are trained independently (vectorized for speed), not as a model that interpolates particle radius or magnet distance. Since flow is prescribed by the benchmark, there is no fluid network in this notebook.
+
+if RUN_ORIGINAL_BENCHMARK:
+    """Time-input, data-free PINN benchmark: Furlani & Ng, PRE 73 061919 (2006).
+    Training uses ONLY ODE residuals and initial conditions. No reference trajectory,
+    numerical ODE solver, or analytic trajectory is called by train().
+    """
+    import os, json, time, math
+    from pathlib import Path
+    import numpy as np
+    import torch
+    from torch import nn
+
+    DOI='10.1103/PhysRevE.73.061919'
+
+    def parameters():
+        mu0=4*np.pi*1e-7; Ms=1e6; Rmag=.02; Rv=75e-6; mean=.015
+        D=2*Rv*1e6; HD=.45; plasma=.0012
+        eta045=6*np.exp(-.085*D)+3.2-2.44*np.exp(-.06*D**.645)
+        cc=(.8+np.exp(-.075*D))*(1/(1+1e-11*D**12)-1)+1/(1+1e-11*D**12)
+        eta=plasma*(1+(eta045-1)*((1-HD)**cc-1)/((1-.45)**cc-1)*(D/(D-1.1))**2)*(D/(D-1.1))**2
+        beta=np.repeat([1.,1.25],5); rp=np.tile(np.arange(400,601,50),2)*1e-9
+        d=(1+beta)*Rmag
+        C=mu0*rp**2*3*Ms**2/(18*eta*Rv*mean*(1+beta)**4)
+        return dict(mu0=mu0,Ms=Ms,Rmag=Rmag,Rv=Rv,mean=mean,eta=eta,beta=beta,rp=rp,d=d,C=C,
+                    z0=-4/(1+beta),zend=4/(1+beta))
+
+    # Each of the 10 trajectories has its own weights. Vectorization is only for speed.
+    class ParallelPINN(nn.Module):
+        def __init__(self,q0,slab,width=24):
+            super().__init__(); self.register_buffer('q0',q0.clone()); self.slab=slab
+            sizes=[1,width,width,2];self.weights=nn.ParameterList();self.biases=nn.ParameterList()
+            for a,b in zip(sizes[:-1],sizes[1:]):
+                self.weights.append(nn.Parameter(torch.randn(10,a,b,device=q0.device,dtype=q0.dtype)*math.sqrt(2/(a+b))))
+                self.biases.append(nn.Parameter(torch.zeros(10,1,b,device=q0.device,dtype=q0.dtype)))
+        def forward(self,s): # s shape [case, point, 1]; each case independent
+            h=2*s-1
+            for j,(w,b) in enumerate(zip(self.weights,self.biases)):
+                h=torch.bmm(h,w)+b
+                if j<len(self.weights)-1:h=torch.tanh(h)
+            return self.q0[:,None,:]+self.slab*s*h # hard initial condition
+
+    def residual(model,s,C):
+        q=model(s);X=q[...,0:1];Z=q[...,1:2]
+        dx=torch.autograd.grad(X.sum(),s,create_graph=True)[0]/model.slab
+        dz=torch.autograd.grad(Z.sum(),s,create_graph=True)[0]/model.slab
+        # Induced-dipole magnetic force / Stokes drag, reduced Eqs.56-57.
+        return torch.cat((dx+C[:,None,None]/(1+Z*Z)**3,dz-(1-X*X)),dim=-1)
+
+    def train(out='pinn_results',seed=42,slab=.5,adam_steps=200,lbfgs_steps=800,
+              collocation=129,max_slabs=40,device=None):
+        """No analytic/reference data allowed here. Time marching transfers PINN states only."""
+        out=Path(out);out.mkdir(parents=True,exist_ok=True)
+        torch.set_num_threads(1);torch.manual_seed(seed)
+        device=device or ('cuda' if torch.cuda.is_available() else 'cpu')
+        dtype=torch.float64;p=parameters();C=torch.tensor(p['C'],device=device,dtype=dtype)
+        q0=torch.tensor(np.column_stack((np.zeros(10),p['z0'])),device=device,dtype=dtype)
+        active=np.ones(10,dtype=bool);paths=[[] for _ in range(10)];events=[None]*10
+        from scipy.optimize import brentq # scalar roots on PINN outputs only; NOT ODE integration
+        history=[];tic=time.perf_counter()
+        for seg in range(max_slabs):
+            model=ParallelPINN(q0,slab).to(device)
+            # Fixed collocation only, unrelated to validation coordinates.
+            s=torch.linspace(0,1,collocation,device=device,dtype=dtype)[None,:,None].repeat(10,1,1).requires_grad_(True)
+            mask=torch.tensor(active,device=device,dtype=dtype)[:,None,None]
+            def loss():
+                r=residual(model,s,C)
+                return (r*r*mask).sum()/(mask.sum()*collocation*2)
+            opt=torch.optim.Adam(model.parameters(),lr=.003)
+            for _ in range(adam_steps):
+                opt.zero_grad();l=loss();l.backward();opt.step()
+            opt=torch.optim.LBFGS(model.parameters(),lr=1.,max_iter=lbfgs_steps,
+                  tolerance_grad=1e-11,tolerance_change=1e-14,line_search_fn='strong_wolfe',history_size=40)
+            def closure():
+                opt.zero_grad();l=loss();l.backward();return l
+            opt.step(closure)
+            # Disjoint dense residual audit; no analytic trajectory used.
+            sa=((torch.arange(193,device=device,dtype=dtype)+.37)/193)[None,:,None].repeat(10,1,1).requires_grad_(True)
+            rr=residual(model,sa,C).detach().cpu().numpy()
+            rms=float(np.sqrt(np.mean(rr[active]**2)))
+            history.append(dict(segment=seg,tau_start=seg*slab,loss=float(loss().detach()),heldout_residual_rms=rms))
+            grid=np.linspace(0,1,201)
+            def evaluate(ss):
+                with torch.no_grad():
+                    st=torch.tensor(np.atleast_1d(ss),device=device,dtype=dtype)[None,:,None].repeat(10,1,1)
+                    return model(st).cpu().numpy()
+            pred=evaluate(grid)
+            for i in np.where(active)[0]:
+                gcap=pred[i,:,0]+1;gexit=p['zend'][i]-pred[i,:,1]
+                cand=[]
+                for name,g,col,target in [('capture',gcap,0,-1.),('exit',gexit,1,p['zend'][i])]:
+                    crossings=np.where(g<=0)[0]
+                    if len(crossings):
+                        k=int(crossings[0]);root=brentq(lambda a:evaluate(a)[i,0,col]-target,grid[max(k-1,0)],grid[k],xtol=1e-13)
+                        cand.append((root,name))
+                end,ename=min(cand) if cand else (1.,None)
+                sg=np.linspace(0,end,101);qq=evaluate(sg)[i]
+                piece=np.column_stack(((seg+sg)*slab,qq))
+                paths[i].extend(piece if seg==0 else piece[1:])
+                if ename:
+                    active[i]=False;events[i]=ename
+            torch.save({'state_dict':model.state_dict(),'slab':slab,'width':24,'tau_start':seg*slab},out/f'segment_{seg:02d}.pt')
+            with torch.no_grad():
+                nxt=model(torch.ones((10,1,1),device=device,dtype=dtype))[:,0,:]
+                q0=torch.where(torch.tensor(active,device=device)[:,None],nxt,q0).detach()
+            print(f'Slab {seg+1}: held-out residual RMS={rms:.2e}; active={active.sum()}',flush=True)
+            if not active.any():break
+        if active.any():raise RuntimeError('Some particles did not terminate. Increase max_slabs; do not report a pass.')
+        for i,pa in enumerate(paths):
+            np.savetxt(out/f'case_{i:02d}.csv',pa,delimiter=',',header='tau,X_PINN,Z_PINN',comments='')
+        run=dict(seed=seed,device=device,dtype='float64',seconds=time.perf_counter()-tic,events=events,history=history,
+          settings=dict(slab=slab,adam_steps=adam_steps,lbfgs_steps=lbfgs_steps,collocation=collocation,max_slabs=max_slabs),
+          training_data='ODE residuals + hard initial conditions only; no analytical trajectories, no solve_ivp, no fitted physical parameters')
+        (out/'training.json').write_text(json.dumps(run,indent=2))
+        return run
+
+    # Reference evaluation is deliberately isolated and runs only after train() finishes.
+    def validate(out='pinn_results'):
+        from scipy.optimize import brentq
+        import matplotlib.pyplot as plt
+        from matplotlib.lines import Line2D
+        out=Path(out);p=parameters();run=json.loads((out/'training.json').read_text())
+        def I(z):return 3*np.arctan(z)/8+z*(3*z*z+5)/(8*(1+z*z)**2)
+        def inverse_h(y):return brentq(lambda x:x-x*x*x/3-y,-1,0,xtol=1e-14)
+        rows=[];arrays=[];fig,axs=plt.subplots(1,2,figsize=(12,4.8),layout='constrained')
+        ef,ea=plt.subplots(figsize=(10,4),layout='constrained');colors=plt.cm.viridis(np.linspace(.05,.9,5))
+        for i in range(10):
+            tau,X,Z=np.loadtxt(out/f'case_{i:02d}.csv',delimiter=',',skiprows=1).T
+            h=-p['C'][i]*(I(Z)-I(p['z0'][i]))
+            ok=(h>=-2/3)&(h<=0)&(abs(X)<.98)
+            ref=np.array([inverse_h(v) for v in h[ok]]);err=abs(X[ok]-ref)
+            capref=p['C'][i]*(I(p['zend'][i])-I(p['z0'][i]))>=2/3
+            zr=brentq(lambda z:p['C'][i]*(I(z)-I(p['z0'][i]))-2/3,p['z0'][i],p['zend'][i]) if capref else None
+            row=dict(beta=float(p['beta'][i]),radius_nm=float(p['rp'][i]*1e9),max_error_Rv=float(err.max()),
+              rms_error_Rv=float(np.sqrt(np.mean(err**2))),pinn_captured=run['events'][i]=='capture',reference_captured=bool(capref),
+              capture_location_error_Rmag=float(abs(Z[-1]-zr)*(1+p['beta'][i])) if capref and run['events'][i]=='capture' else None,
+              initial_error=float(max(abs(X[0]),abs(Z[0]-p['z0'][i]))))
+            rows.append(row);arrays.append((tau,X,Z))
+            zend=zr if capref else p['zend'][i];zg=np.linspace(p['z0'][i],zend,450)
+            xr=np.array([inverse_h(np.clip(-p['C'][i]*(I(z)-I(p['z0'][i])),-2/3,0)) for z in zg])
+            ax=axs[i//5];co=colors[i%5]
+            ax.plot(zg*(1+p['beta'][i]),-xr,color=co,lw=2,label=f'{p["rp"][i]*1e9:.0f} nm')
+            ix=np.linspace(0,len(Z)-1,36).astype(int)
+            ax.plot(Z[ix]*(1+p['beta'][i]),-X[ix],ls='none',marker='o',mfc='white',mec=co,ms=3.5)
+            ea.semilogy(Z[ok]*(1+p['beta'][i]),np.maximum(err,1e-12),color=co,ls='-' if i<5 else '--',label=f'β={p["beta"][i]:g}, {p["rp"][i]*1e9:.0f} nm')
+            np.savetxt(out/f'comparison_{i:02d}.csv',np.column_stack((Z[ok]*(1+p['beta'][i]),X[ok],ref,err)),delimiter=',',header='z_Rmag,X_PINN,X_analytic,abs_error_Rv',comments='')
+        for ax,b in zip(axs,[1.,1.25]):
+            ax.set(title=f'β = {b:g}',xlabel='z / Rmag',ylabel='|x| / Rv',xlim=(-4,4),ylim=(0,1.03));ax.grid(alpha=.2);ax.legend(fontsize=8)
+        fig.suptitle('Time-input PINN vs Furlani & Ng (2006), Fig. 8 / Eq. 59')
+        fig.legend(handles=[Line2D([0],[0],c='gray',label='Published analytical relation'),Line2D([0],[0],ls='none',marker='o',mfc='white',mec='gray',label='PINN prediction')],loc='outside lower center',ncol=2)
+        fig.savefig(out/'pinn_overlay.png',dpi=190);plt.close(fig)
+        ea.set(xlabel='z / Rmag',ylabel='Absolute transverse error / Rv',title='Held-out trajectory comparison (|X| < 0.98)');ea.grid(alpha=.2);ea.legend(ncol=2,fontsize=7);ef.tight_layout();ef.savefig(out/'pinn_error.png',dpi=170);plt.close(ef)
+        lf,la=plt.subplots(figsize=(8,3.5),layout='constrained')
+        la.semilogy([r['segment']+1 for r in run['history']],[r['heldout_residual_rms'] for r in run['history']],'o-');la.set(xlabel='Time slab',ylabel='Residual RMS',title='Physics residual at unseen time points');la.grid(alpha=.2);lf.savefig(out/'pinn_residual.png',dpi=170);plt.close(lf)
+        checks=dict(all_events_match=all(r['pinn_captured']==r['reference_captured'] for r in rows),
+           max_path_error_below_0_005_Rv=max(r['max_error_Rv'] for r in rows)<.005,
+           capture_position_below_0_01_Rmag=all(r['capture_location_error_Rmag']<.01 for r in rows if r['capture_location_error_Rmag'] is not None),
+           hard_initial_condition=max(r['initial_error'] for r in rows)<1e-12,
+           heldout_residual_below_0_001=max(r['heldout_residual_rms'] for r in run['history'])<.001,
+           no_saturation=float(np.max(p['Ms']*p['Rmag']**2/(2*p['d']**2)/(4.78e5/3)))<1.)
+        report=dict(doi=DOI,results=rows,checks=checks,all_passed=all(checks.values()),seconds=run['seconds'],device=run['device'],
+          max_path_error_Rv=max(r['max_error_Rv'] for r in rows),
+          scope='PINN validation of reduced magnetic particle transport only. Prescribed one-way flow; NOT full two-way CFD, controller or experimental validation.')
+        (out/'validation.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
+        return report
+
+
+
+    def predict(case_index,t_seconds,out='pinn_results',device='cpu'):
+        """Evaluate saved trained networks at physical times. Returns physical x,z in m.
+        Valid only up to first predicted wall capture / axial exit. No ODE solver.
+        """
+        out=Path(out);p=parameters();i=int(case_index)
+        if i not in range(10):raise ValueError('case_index must be 0..9')
+        tt=np.atleast_1d(t_seconds).astype(float);tau=2*p['mean']*tt/p['d'][i]
+        path=np.loadtxt(out/f'case_{i:02d}.csv',delimiter=',',skiprows=1)
+        if np.any(tau<0) or np.any(tau>path[-1,0]+1e-10):raise ValueError('Time outside pre-event interval')
+        result=np.empty((len(tt),2))
+        meta=json.loads((out/'training.json').read_text());slab=meta['settings']['slab'];n=len(meta['history'])
+        for j in np.unique(np.minimum((tau/slab).astype(int),n-1)):
+            use=np.minimum((tau/slab).astype(int),n-1)==j
+            ck=torch.load(out/f'segment_{j:02d}.pt',map_location=device,weights_only=True)
+            model=ParallelPINN(ck['state_dict']['q0'],ck['slab'],ck['width']).to(device)
+            model.load_state_dict(ck['state_dict']);model.eval()
+            s=torch.tensor((tau[use]-ck['tau_start'])/slab,dtype=torch.float64,device=device)[None,:,None].repeat(10,1,1)
+            with torch.no_grad():q=model(s)[i].cpu().numpy()
+            result[use]=q*np.array([p['Rv'],p['d'][i]])
+        return result
+
+
+    def additional_checks(out='pinn_results'):
+        """SI force reduction + automatic derivative + saved-model inference audits."""
+        out=Path(out);p=parameters();max_force_error=0.;max_reload_error=0.
+        mu0=p['mu0']
+        for i in range(10):
+            d=p['d'][i];rp=p['rp'][i];Vp=4*np.pi*rp**3/3;alpha=3*Vp/mu0
+            for Z in np.linspace(-2,2,19):
+                z=Z*d;r2=d*d+z*z;a=p['Ms']*p['Rmag']**2
+                B=mu0*np.array([a*(d*d-z*z)/(2*r2*r2),a*d*z/r2**2])
+                G=mu0*a/r2**3*np.array([[d*(3*z*z-d*d),z*(z*z-3*d*d)],[z*(z*z-3*d*d),d*(d*d-3*z*z)]])
+                F=alpha*np.einsum('ij,i->j',G,B)
+                reduced=F[0]/(6*np.pi*p['eta']*rp)*d/(2*p['mean']*p['Rv'])
+                target=-p['C'][i]/(1+Z*Z)**3
+                max_force_error=max(max_force_error,abs(reduced-target)/max(abs(target),1e-30))
+            pa=np.loadtxt(out/f'case_{i:02d}.csv',delimiter=',',skiprows=1)
+            ids=np.linspace(0,len(pa)-1,7).astype(int)
+            q=predict(i,pa[ids,0]*d/(2*p['mean']),out)/np.array([p['Rv'],d])
+            max_reload_error=max(max_reload_error,float(np.max(abs(q-pa[ids,1:]))))
+        ck=torch.load(out/'segment_00.pt',map_location='cpu',weights_only=True)
+        model=ParallelPINN(ck['state_dict']['q0'],ck['slab'],ck['width']);model.load_state_dict(ck['state_dict'])
+        s=torch.full((10,1,1),.431,dtype=torch.float64,requires_grad=True);q=model(s)
+        ad=torch.autograd.grad(q[...,0].sum(),s)[0].detach().numpy()[...,0]
+        with torch.no_grad():fd=((model(s+1e-5)-model(s-1e-5))/(2e-5)).numpy()[...,0]
+        derr=float(np.max(abs(ad-fd)))
+        extra=dict(SI_dipole_force_matches_PINN_rhs=bool(max_force_error<1e-12),
+                   checkpoint_predictions_match_saved_paths=max_reload_error<1e-10,
+                   autodiff_matches_finite_difference=derr<1e-8)
+        report=json.loads((out/'validation.json').read_text());report['checks'].update(extra)
+        report['all_passed']=all(report['checks'].values())
+        report['audit_errors']=dict(force_relative=max_force_error,reloaded_coordinates=max_reload_error,AD_absolute=derr)
+        (out/'validation.json').write_text(json.dumps(report,indent=2))
+        print(json.dumps(extra,indent=2))
+        return report
+
+
+
+## Published parameters and training settings
+
+Magnet radius 20 mm; vessel radius 75 µm; mean flow 15 mm/s; magnet magnetization $10^6$ A/m; particle saturation magnetization $4.78\times10^5$ A/m. Effective viscosity follows the paper's hematocrit correction at 0.45 (implemented with both diameter correction factors). Particle radii: 400, 450, 500, 550, 600 nm; $\beta=1,1.25$. Initial $x=0$, $z/R_{mag}=-4$.
+
+Seeds are fixed. CUDA and CPU may follow slightly different optimizer paths; inspect the checks rather than assuming a guaranteed pass or runtime.
+
+if RUN_ORIGINAL_BENCHMARK:
+    OUT = Path('pinn_validation_results')
+    SETTINGS = dict(seed=42, slab=0.5, adam_steps=200, lbfgs_steps=800,
+                    collocation=129, max_slabs=40)
+    p = parameters()
+    print('Effective viscosity:', p['eta'], 'Pa s')
+    print('Device:', 'cuda' if torch.cuda.is_available() else 'cpu')
+    training_run = train(OUT, **SETTINGS)
+    print('Training seconds:', round(training_run['seconds'], 2))
+
+## Independent comparison after training
+
+The published implicit analytical solution (Eq. 59) is used **only here**:
+$$h(X)=-C[I(Z)-I(Z_0)],\quad h(X)=X-X^3/3,$$
+$$I(Z)={3\over8}\tan^{-1}Z+{Z(3Z^2+5)\over8(1+Z^2)^2}.$$
+Its physical inverse branch is $-1\le X\le0$. Compare trajectory error before $|X|=0.98$ because this spatial inverse becomes singular at the wall; compare capture location separately. Both capture and passage cases are included. No parameters are fitted.
+
+Acceptance criteria are explicit in code: maximum path error $<0.005R_v$; capture-location error $<0.01R_{mag}$; held-out residual RMS $<0.001$; all capture/exit classifications correct; exact initial conditions; unsaturated response. Additional audits check SI force reduction, derivatives, and saved-weight inference. These are numerical acceptance criteria, not claims of experimental accuracy.
+
+if RUN_ORIGINAL_BENCHMARK:
+    report = validate(OUT)
+    report = additional_checks(OUT)
+    from IPython.display import display, Markdown, Image, HTML
+    header = '| β | Radius (nm) | Max error / Rv | PINN capture | Reference capture | Capture error / Rmag |\n|---|---:|---:|---|---|---:|\n'
+    rows = []
+    for r in report['results']:
+        ce = r['capture_location_error_Rmag']
+        cs = '—' if ce is None else f'{ce:.3e}'
+        rows.append(f"| {r['beta']} | {r['radius_nm']:.0f} | {r['max_error_Rv']:.3e} | {r['pinn_captured']} | {r['reference_captured']} | {cs} |")
+    display(Markdown(header + '\n'.join(rows)))
+    print('Checks:', report['checks'])
+    print('All passed:', report['all_passed'])
+    print('Worst trajectory error / Rv:', report['max_path_error_Rv'])
+    for name in ['pinn_overlay.png', 'pinn_error.png', 'pinn_residual.png']:
+        display(Image(filename=str(OUT/name)))
+
+## Motion from trained PINN predictions
+
+Markers follow the learned trajectories. Each panel is a separate magnet distance. Time below is the dimensionless time $\tau$; its physical time scale differs between panels. A marker stays at its last point after capture or exit; post-event dynamics are not modeled. Animation resampling is only for display and is not part of the solver.
+
+if RUN_ORIGINAL_BENCHMARK:
+    import matplotlib.pyplot as plt
+    from matplotlib.animation import FuncAnimation, PillowWriter
+    paths = [np.loadtxt(OUT/f'case_{i:02d}.csv', delimiter=',', skiprows=1) for i in range(10)]
+    fig, axes = plt.subplots(1, 2, figsize=(10, 3.8), layout='constrained')
+    markers=[]
+    colors=plt.cm.viridis(np.linspace(.05,.9,5))
+    for i, pa in enumerate(paths):
+        ax=axes[i//5]
+        ax.plot(pa[:,2]*(1+p['beta'][i]), -pa[:,1], color=colors[i%5], alpha=.45)
+        dot,=ax.plot([],[], 'o', color=colors[i%5], label=f"{p['rp'][i]*1e9:.0f} nm")
+        markers.append(dot)
+    for ax,b in zip(axes,[1.,1.25]):
+        ax.set(xlim=(-4,4), ylim=(0,1.05), xlabel='z / Rmag', ylabel='|x| / Rv', title=f'PINN: β={b}')
+        ax.legend(fontsize=7);ax.grid(alpha=.2)
+    clock=fig.suptitle('')
+    times=np.linspace(0,max(pa[-1,0] for pa in paths),90)
+    def update(k):
+        tau=times[k]
+        for i,pa in enumerate(paths):
+            x=np.interp(tau,pa[:,0],pa[:,1]);z=np.interp(tau,pa[:,0],pa[:,2])
+            markers[i].set_data([z*(1+p['beta'][i])],[-x])
+        clock.set_text(f'PINN trajectories — τ = {tau:.2f}')
+        return markers+[clock]
+    ani=FuncAnimation(fig,update,frames=len(times),interval=70,blit=False)
+    ani.save(OUT/'pinn_motion.gif',writer=PillowWriter(fps=14))
+    plt.close(fig)
+    import base64
+    gif64=base64.b64encode((OUT/'pinn_motion.gif').read_bytes()).decode()
+    display(HTML(f'<img src="data:image/gif;base64,{gif64}" alt="PINN particle trajectories"/>'))
+
+## Evaluate the saved PINN at physical times
+
+`predict` reloads trained weights; it does not integrate an ODE. Input time is seconds, output columns are physical transverse $x$ and axial $z$ in metres. Valid up to the first capture or exit. Checkpoints, CSV trajectories and JSON diagnostics are written to `pinn_validation_results` when running the notebook.
+
+if RUN_ORIGINAL_BENCHMARK:
+    case_index=0  # beta=1, particle radius=400 nm
+    pa=paths[case_index]
+    times_s=np.linspace(0,pa[-1,0]*p['d'][case_index]/(2*p['mean']),5)
+    print('Times [s]:',times_s)
+    print('PINN [x,z] [m]:\n',predict(case_index,times_s,OUT))
+    assert report['all_passed'], 'PINN acceptance criteria failed: inspect validation.json before presenting results.'
+    print('PASS: all numerical validation checks passed.')
+
+## Interpretation
+
+This notebook validates a trained particle PINN under the assumptions of Furlani & Ng. It is a theoretical component benchmark with a prescribed cylindrical flow, and **does not demonstrate two-way fluid–particle coupling**. A two-way PINN needs a separately trained fluid network and the drag-reaction source in its fluid momentum residual. No success on this benchmark should be presented as validation of that full coupled problem.
+
+The previous direct-CFD notebook and its numerical checks are separate work; they are not included or relabeled as PINN here.
+

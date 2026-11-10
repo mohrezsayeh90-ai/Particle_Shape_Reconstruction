@@ -1,0 +1,19 @@
+{
+  "id": "mohrezsayeh/master-5-2d-magnetic-notpinn",
+  "id_no": 142469842,
+  "title": "master_5_2d_magnetic_notPINN",
+  "code_file": "master-5-2d-magnetic-notpinn.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:de153e6d303881930c51286216393d56f56b26458d0661350305a1e8144eea01",
+  "machine_shape": "None"
+}

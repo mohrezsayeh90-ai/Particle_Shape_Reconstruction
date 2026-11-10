@@ -1,0 +1,49 @@
+{
+  "ref": "mohrezsayeh/dense-duck-formation-20261104-211d7de258",
+  "version": 0,
+  "version_pinned": false,
+  "source_endpoint": "mohrezsayeh/dense-duck-formation-20261104-211d7de258",
+  "captured_utc": "20261110T121301.539857Z",
+  "errors": {},
+  "download_sha256": {
+    "dense-duck-formation-20261104-211d7de258.ipynb": "7f297dab45cbf38e3243de69cc5a83b731365d4e1d806216cc84d9b278f63d68",
+    "kernel-metadata.json": "949f777d289a3ced9bab27ec35c61d9787327ab8f7eef1775664fe48b8bc1c7d"
+  },
+  "status": {
+    "status": "COMPLETE"
+  },
+  "output_inventory": [
+    "rectangular_wall_launchers_1793802215782330829/config.json",
+    "rectangular_wall_launchers_1793802215782330829/dense_duck_independent_wall_ports/release_schedule.csv",
+    "rectangular_wall_launchers_1793802215782330829/dense_duck_independent_wall_ports/result.json",
+    "rectangular_wall_launchers_1793802215782330829/dense_duck_independent_wall_ports/weight_integrity.json",
+    "rectangular_wall_launchers_1793802215782330829/dense_duck_results.zip",
+    "rectangular_wall_launchers_1793802215782330829/dense_duck_six_fixed/release_schedule.csv",
+    "rectangular_wall_launchers_1793802215782330829/dense_duck_six_fixed/result.json",
+    "rectangular_wall_launchers_1793802215782330829/dense_duck_six_fixed/weight_integrity.json",
+    "rectangular_wall_launchers_1793802215782330829/flow_validation.npz",
+    "rectangular_wall_launchers_1793802215782330829/optimization_config.json",
+    "rectangular_wall_launchers_1793802215782330829/original_frozen_checkpoint.pt",
+    "rectangular_wall_launchers_1793802215782330829/presentation/duck_presentation.pdf",
+    "rectangular_wall_launchers_1793802215782330829/presentation/duck_presentation.png",
+    "rectangular_wall_launchers_1793802215782330829/presentation/duck_presentation.svg",
+    "rectangular_wall_launchers_1793802215782330829/presentation/duck_replay.html",
+    "rectangular_wall_launchers_1793802215782330829/presentation/duck_validation.pdf",
+    "rectangular_wall_launchers_1793802215782330829/presentation/duck_validation.png",
+    "rectangular_wall_launchers_1793802215782330829/presentation/fixed_duck_trajectories.png",
+    "rectangular_wall_launchers_1793802215782330829/presentation/fixed_release_schedule.csv",
+    "rectangular_wall_launchers_1793802215782330829/presentation/fixed_result.json",
+    "rectangular_wall_launchers_1793802215782330829/presentation/fixed_weight_integrity.json",
+    "rectangular_wall_launchers_1793802215782330829/presentation/independent_duck_trajectories.png",
+    "rectangular_wall_launchers_1793802215782330829/presentation/independent_release_schedule.csv",
+    "rectangular_wall_launchers_1793802215782330829/presentation/independent_result.json",
+    "rectangular_wall_launchers_1793802215782330829/presentation/independent_weight_integrity.json",
+    "rectangular_wall_launchers_1793802215782330829/presentation/validation_summary.json",
+    "rectangular_wall_launchers_1793802215782330829/validation.json"
+  ],
+  "files": {
+    "dense-duck-formation-20261104-211d7de258.ipynb": "7f297dab45cbf38e3243de69cc5a83b731365d4e1d806216cc84d9b278f63d68",
+    "kernel-metadata.json": "949f777d289a3ced9bab27ec35c61d9787327ab8f7eef1775664fe48b8bc1c7d",
+    "run-readable.log": "8457f3eed44f6bd0d25dd101ee32c844dbd16c163a0b863e23b0fc53c99c6285"
+  }
+}

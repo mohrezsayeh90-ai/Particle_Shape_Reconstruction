@@ -1,0 +1,17 @@
+gpu_used_for_training {'passed': True, 'device': 'cuda', 'gpu': 'Tesla T4'}
+fluid_Re_and_U_profile {'passed': True, 'max_normalized_error': 0.00024176572777911964, 'Re_range': [0.11875, 4.95]}
+fluid_no_slip_and_mass_flux {'passed': True, 'max_wall_velocity': 0.0, 'max_normalized_flux_error': 1.6432769447627393e-05}
+Re_viscosity_consistency {'passed': True, 'Re_roundtrip_error': 0.0, 'invalid_combination_rejected': True}
+release_position_hard_IC {'passed': True, 'max_dimensionless_error': 0.0}
+initial_particle_velocity_hard_IC {'passed': True, 'max_dimensionless_error': 0.0}
+initial_speed_Stokes_relaxation {'passed': True, 'max_velocity_error_m_s': 7.254552492244313e-06, 'max_position_error_m': 4.3643733071974556e-11, 'relaxation_time_s': [5.2777777777777776e-08, 3.166666666666666e-07]}
+heldout_inertial_equation {'passed': True, 'residual_rms': 0.00023410699048383336}
+independent_parametric_Radau {'passed': True, 'cases': 48, 'max_x_error_um': 0.0007086005235579229, 'max_z_error_um': 0.6177926734451944}
+viscosity_magnetic_mobility {'passed': True, 'mobility_ratio': np.float64(5.999999999999999), 'expected': 6.0}
+density_Re_invariance {'passed': True, 'max_difference_um': [8.828633515093202e-05, 0.0007819887315463347]}
+Stokes_drag_validity {'passed': True, 'max_conservative_particle_Re': 0.06709999999999999}
+control nominal {'parameters': {'mean': 0.015, 'eta': 0.003276913272013514, 'rho': 1000.0, 'x0': 0.0, 'z0': -0.08, 'vx0': 0.0, 'vz0': 0.03}, 'Re': 0.6866217727567374, 'max_independent_tracking_error_um': 0.004292146025238084, 'max_model_oracle_x_difference_um': 0.00446551448516625, 'max_model_oracle_z_difference_um': 32.20684259327283, 'completed': True, 'steps': 138, 'max_abs_u': 0.08429161449309906, 'passed': True}
+control low_speed_high_viscosity {'parameters': {'mean': 0.005, 'eta': 0.006, 'rho': 1000.0, 'x0': -1.1249999999999999e-05, 'z0': -0.07200000000000001, 'vx0': 0.001, 'vz0': 0}, 'Re': 0.12499999999999999, 'max_independent_tracking_error_um': 0.08647122198314483, 'max_model_oracle_x_difference_um': 0.08629319226951339, 'max_model_oracle_z_difference_um': 10.367765572436017, 'completed': True, 'steps': 392, 'max_abs_u': 0.04797174721085789, 'passed': True}
+control high_Re_fast_release {'parameters': {'mean': 0.03, 'eta': 0.001, 'rho': 1100, 'x0': 1.1249999999999999e-05, 'z0': -0.068, 'vx0': -0.001, 'vz0': 0.06}, 'Re': 4.949999999999999, 'max_independent_tracking_error_um': 0.008424627499395664, 'max_model_oracle_x_difference_um': 0.008412557209242884, 'max_model_oracle_z_difference_um': 12.036126988336504, 'completed': True, 'steps': 65, 'max_abs_u': 0.04920316228777292, 'passed': True}
+control shifted_release {'parameters': {'mean': 0.02, 'eta': 0.004, 'rho': 950, 'x0': -1.875e-05, 'z0': -0.064, 'vx0': 0.0005, 'vz0': 0.005}, 'Re': 0.7124999999999999, 'max_independent_tracking_error_um': 0.0030981485907763374, 'max_model_oracle_x_difference_um': 0.003385405156014297, 'max_model_oracle_z_difference_um': 10.008930501466395, 'completed': True, 'steps': 96, 'max_abs_u': 0.12920156692681573, 'passed': True}
+CPU inference / validation complete; original training provenance is retained.

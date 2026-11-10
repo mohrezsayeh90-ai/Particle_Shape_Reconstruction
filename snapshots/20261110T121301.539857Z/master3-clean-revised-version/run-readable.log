@@ -1,0 +1,200 @@
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+PyTorch: 2.11.0+cu128 | CUDA: True
+Run: /kaggle/working/rectangular_wall_launchers_1793798513712878373
+MLP: ['x', 'y', 'x_bottom', 'u_bottom', 'v_bottom', 'x_top', 'u_top', 'v_top'] -> [u,v,p]
+Fixed Re/d/rho ratio: 10.0 0.025 1000.0
+Stokes relaxation time: 0.34722222222222227
+{"total": 60.551517486572266, "continuity": 0.0003824853920377791, "momentum": 60.53301239013672, "developed": 0.0008321935893036425, "invariance": 0.0002561548026278615, "flux": 5.784298264188692e-05, "phase": "initial", "iteration": 0, "seconds": 0.6203758400000083}
+{"total": 0.03803849592804909, "continuity": 0.00011430053564254194, "momentum": 0.03266578167676926, "developed": 0.00018151584663428366, "invariance": 8.314145088661462e-05, "flux": 2.011807737289928e-05, "phase": "Adam", "iteration": 200, "seconds": 15.970810561999997}
+{"total": 0.006677296478301287, "continuity": 2.122710611729417e-05, "momentum": 0.005730700679123402, "developed": 1.885481833596714e-05, "invariance": 1.6945201423368417e-05, "flux": 8.298774218928884e-07, "phase": "Adam", "iteration": 400, "seconds": 24.903632889999983}
+{"total": 0.0026207563932985067, "continuity": 8.137702025123872e-06, "momentum": 0.0022393246181309223, "developed": 9.425903044757433e-06, "invariance": 6.753611160092987e-06, "flux": 5.416147814685246e-07, "phase": "Adam", "iteration": 600, "seconds": 33.67749687000003}
+{"total": 0.0014940788969397545, "continuity": 4.276216714060865e-06, "momentum": 0.001282968558371067, "developed": 6.27401823294349e-06, "invariance": 3.6442340842768317e-06, "flux": 6.220335535545019e-07, "phase": "Adam", "iteration": 800, "seconds": 42.33363851600001}
+{"total": 0.0009671153966337442, "continuity": 2.554357024564524e-06, "momentum": 0.0008309073746204376, "developed": 4.5846659304515924e-06, "invariance": 2.35517882174463e-06, "flux": 6.636182092734089e-07, "phase": "Adam", "iteration": 1000, "seconds": 51.01573045600003}
+{"total": 0.000697178824339062, "continuity": 1.8423285155222402e-06, "momentum": 0.000595719669945538, "developed": 3.80585333914496e-06, "invariance": 1.7103426444009528e-06, "flux": 5.649468448609696e-07, "phase": "Adam", "iteration": 1200, "seconds": 59.84111375200001}
+{"total": 0.0005328482948243618, "continuity": 1.2806390259356704e-06, "momentum": 0.00045757193583995104, "developed": 2.9267412173794582e-06, "invariance": 1.324881168329739e-06, "flux": 3.815701461462595e-07, "phase": "Adam", "iteration": 1400, "seconds": 69.038218244}
+{"total": 0.0004416600277181715, "continuity": 1.0069099971588003e-06, "momentum": 0.0003802157298196107, "developed": 2.4921027943491936e-06, "invariance": 1.078734157999861e-06, "flux": 3.7544725728366757e-07, "phase": "Adam", "iteration": 1600, "seconds": 77.66211867800001}
+{"total": 0.00037346265162341297, "continuity": 8.572790193284163e-07, "momentum": 0.0003209216520190239, "developed": 2.167735146940686e-06, "invariance": 9.237041922460776e-07, "flux": 2.9282406899255875e-07, "phase": "Adam", "iteration": 1800, "seconds": 86.16407312500002}
+{"total": 0.0003340692783240229, "continuity": 7.528926744271303e-07, "momentum": 0.00028764427406713367, "developed": 1.932239001689595e-06, "invariance": 8.172926300176186e-07, "flux": 2.547303097344411e-07, "phase": "Adam", "iteration": 2000, "seconds": 94.81874663800005}
+{"total": 0.0003041225136257708, "continuity": 6.913971901667537e-07, "momentum": 0.00026165982126258314, "developed": 1.7715839248921839e-06, "invariance": 7.488738447136711e-07, "flux": 2.1099315006267716e-07, "phase": "Adam", "iteration": 2200, "seconds": 103.454844272}
+{"total": 0.0002843207912519574, "continuity": 6.36980246326857e-07, "momentum": 0.0002445730206090957, "developed": 1.6825291595523595e-06, "invariance": 7.000892310315976e-07, "flux": 2.186631462564037e-07, "phase": "Adam", "iteration": 2400, "seconds": 112.33464587300006}
+{"total": 0.00027050997596234083, "continuity": 6.150283979877713e-07, "momentum": 0.00023217083071358502, "developed": 1.6243910749835777e-06, "invariance": 6.727011054863397e-07, "flux": 2.1982366149586596e-07, "phase": "Adam", "iteration": 2600, "seconds": 121.30817048800003}
+{"total": 0.0002652802795637399, "continuity": 5.973609518150624e-07, "momentum": 0.0002280086191603914, "developed": 1.5821722172404407e-06, "invariance": 6.547963948833058e-07, "flux": 2.0873000039500766e-07, "phase": "Adam", "iteration": 2800, "seconds": 129.62577525499995}
+{"total": 0.0002611217787489295, "continuity": 5.866544938726292e-07, "momentum": 0.00022461761545855552, "developed": 1.5511013771174476e-06, "invariance": 6.436778221541317e-07, "flux": 1.84720306606323e-07, "phase": "Adam", "iteration": 3000, "seconds": 138.20908986800004}
+{"total": 0.0002611217787489295, "continuity": 5.866544938726292e-07, "momentum": 0.00022461761545855552, "developed": 1.5511013771174476e-06, "invariance": 6.436778221541317e-07, "flux": 1.84720306606323e-07, "phase": "Adam_final", "iteration": 3000, "seconds": 138.23855434}
+{"total": 0.0002714346337597817, "continuity": 5.856662710357341e-07, "momentum": 0.00023506939760409296, "developed": 1.5320116517614224e-06, "invariance": 6.340656000247691e-07, "flux": 2.2804130139775225e-07, "phase": "LBFGS_1", "iteration": 3025, "seconds": 139.58504009799998}
+{"total": 0.00019875721773132682, "continuity": 4.458770206383633e-07, "momentum": 0.00017241426394321024, "developed": 1.3418688240562915e-06, "invariance": 3.4896450529231515e-07, "flux": 3.98389346401018e-07, "phase": "LBFGS_2", "iteration": 3050, "seconds": 141.00087667099996}
+{"total": 0.00013361332821659744, "continuity": 4.410097744766972e-07, "momentum": 0.00011513616482261568, "developed": 8.452187216789753e-07, "invariance": 1.9605658962973393e-07, "flux": 1.0589140941874575e-07, "phase": "LBFGS_3", "iteration": 3075, "seconds": 142.19672542300003}
+{"total": 9.859810961643234e-05, "continuity": 3.625050624123105e-07, "momentum": 8.390445145778358e-05, "developed": 7.813951015123166e-07, "invariance": 1.3536580922846042e-07, "flux": 3.048816310524671e-08, "phase": "LBFGS_4", "iteration": 3100, "seconds": 143.519113366}
+{"total": 7.530122820753604e-05, "continuity": 2.8729658652082435e-07, "momentum": 6.232464511413127e-05, "developed": 7.673077107028803e-07, "invariance": 1.1876917938025144e-07, "flux": 8.497660530792928e-08, "phase": "LBFGS_5", "iteration": 3125, "seconds": 144.79433557299996}
+{"total": 6.0383379604900256e-05, "continuity": 2.385260700066283e-07, "momentum": 4.996889765607193e-05, "developed": 5.825019115945906e-07, "invariance": 9.577717463571389e-08, "flux": 6.740408764471795e-08, "phase": "LBFGS_6", "iteration": 3150, "seconds": 146.07199495900005}
+{
+  "passed": true,
+  "cases": 81,
+  "grid": [
+    81,
+    33
+  ],
+  "worst": {
+    "velocity_relative_l2": 0.0010533384426765482,
+    "pressure_relative_l2": 0.0013384841895079937,
+    "transverse_max_abs": 0.0010157959768548608,
+    "max_condition_velocity_delta": 0.0012412667274475098,
+    "max_condition_pressure_delta_normalized": 0.0015301271341741085
+  },
+  "velocity_boundary_max_error": 2.086162567138672e-07,
+  "flux_max_relative_error": 2.5259589798043436e-05,
+  "thresholds": {
+    "velocity_relative_l2": 0.002,
+    "pressure_relative_l2": 0.005,
+    "transverse_abs": 0.002,
+    "conditioning_abs": 0.002
+  },
+  "reference": "Analytical plane Poiseuille solution; no interior reference samples in training",
+  "cases_include": "All 64 corners of the six-dimensional control box, its midpoint, and random controls",
+  "scope": "Finite validation samples, not a proof over the continuum"
+}
+bottom outlet age: 1.6984636772426098
+top outlet age: 1.5855386656996453
+/usr/local/lib/python3.13/dist-packages/IPython/core/display.py:724: UserWarning: Consider using IPython.display.IFrame instead
+  warnings.warn("Consider using IPython.display.IFrame instead")
+
+/usr/local/lib/python3.13/dist-packages/IPython/core/display.py:724: UserWarning: Consider using IPython.display.IFrame instead
+  warnings.warn("Consider using IPython.display.IFrame instead")
+Independent seed bank: 90 reusable paths; controls can differ for every particle.
+
+Optimizing: triangle
+triangle candidate counts per particle: [16, 16, 16]
+triangle start 1: max error=4.128e-10; min separation=0.1299; 12 independent continuous decisions
+triangle start 2: max error=4.128e-10; min separation=0.1299; 12 independent continuous decisions
+triangle start 3: max error=4.128e-10; min separation=0.1299; 12 independent continuous decisions
+{"kind": "triangle", "success": true, "reason": "all numerical checks passed", "max_error": 2.597725263663327e-09, "min_pair_distance": 0.12990380971217813, "max_reference_error": 9.083507305792277e-07}
+
+Optimizing: square
+square candidate counts per particle: [16, 16, 16, 16]
+square start 1: max error=2.264e-10; min separation=0.10607; 16 independent continuous decisions
+square start 2: max error=2.264e-10; min separation=0.10607; 16 independent continuous decisions
+square start 3: max error=2.264e-10; min separation=0.10607; 16 independent continuous decisions
+{"kind": "square", "success": true, "reason": "all numerical checks passed", "max_error": 4.426638374594627e-09, "min_pair_distance": 0.10606590648706053, "max_reference_error": 7.550077632606226e-07}
+
+Optimizing: circle_10
+circle_10 candidate counts per particle: [16, 16, 16, 16, 16, 16, 16, 16, 16, 16]
+circle_10 start 1: max error=6.95e-10; min separation=0.04595; 40 independent continuous decisions
+circle_10 start 2: max error=6.95e-10; min separation=0.04595; 40 independent continuous decisions
+circle_10 start 3: max error=6.95e-10; min separation=0.04595; 40 independent continuous decisions
+{"kind": "circle_10", "success": true, "reason": "all numerical checks passed", "max_error": 3.748608071484486e-09, "min_pair_distance": 0.04595032166324762, "max_reference_error": 1.7986695405943006e-06}
+
+Optimizing: s_8
+s_8 candidate counts per particle: [16, 16, 16, 16, 16, 16, 16, 16]
+s_8 start 1: max error=1.921e-10; min separation=0.039173; 32 independent continuous decisions
+s_8 start 2: max error=1.921e-10; min separation=0.039173; 32 independent continuous decisions
+s_8 start 3: max error=1.921e-10; min separation=0.039173; 32 independent continuous decisions
+{"kind": "s_8", "success": true, "reason": "all numerical checks passed", "max_error": 4.249070867761213e-09, "min_pair_distance": 0.0391726249672529, "max_reference_error": 2.005782371936913e-06}
+
+Optimizing: chevron_7
+chevron_7 candidate counts per particle: [16, 16, 16, 16, 16, 16, 16]
+chevron_7 start 1: max error=2.721e-10; min separation=0.05; 28 independent continuous decisions
+chevron_7 start 2: max error=2.721e-10; min separation=0.05; 28 independent continuous decisions
+chevron_7 start 3: max error=2.721e-10; min separation=0.05; 28 independent continuous decisions
+{"kind": "chevron_7", "success": true, "reason": "all numerical checks passed", "max_error": 3.0804914672394523e-09, "min_pair_distance": 0.04999999888040234, "max_reference_error": 1.6277378954255604e-06}
+Combined interactive application:
+Results, checkpoints, diagnostics, schedules and offline viewers:
+Offline launcher viewer:
+Flow validated: True | formation passes: 5 / 5
+All experiments in one offline app:
+SIX FIXED STATIONS: [('B1', 0.55), ('B2', 1.1), ('B3', 1.6500000000000001), ('T1', 0.55), ('T2', 1.1), ('T3', 1.6500000000000001)]
+Target centre: [1.8920000000000001, 0.15] | output: /kaggle/working/rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095
+Seed bank B1 60 paths; x fixed at 0.55
+Seed bank B2 60 paths; x fixed at 1.1
+Seed bank B3 60 paths; x fixed at 1.6500000000000001
+Seed bank T1 60 paths; x fixed at 0.55
+Seed bank T2 60 paths; x fixed at 1.1
+Seed bank T3 60 paths; x fixed at 1.6500000000000001
+
+DESIGN S — 6 fixed stations / 18 continuous variables
+S B1 individual errors: [0.0, 0.0, 0.0, 0.0, 0.00766, 0.0075]
+S B2 individual errors: [0.0, 0.0, 0.0, 0.0, 0.00578, 0.00378]
+S B3 individual errors: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+S T1 individual errors: [0.00779, 0.00761, 0.0, 0.0, 0.0, 0.0]
+S T2 individual errors: [0.00583, 0.00382, 0.0, 0.0, 0.0, 0.0]
+S T3 individual errors: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+S joint start 1 lookup error 8.579007916638717e-12
+S joint start 2 lookup error 1.9243387712624735e-11
+S joint start 3 lookup error 1.9243387712624735e-11
+{"kind": "S_6", "success": true, "reason": "all numerical checks passed", "max_error": 1.595171410303373e-08, "min_pair_distance": 0.03358017098418163}
+
+DESIGN C — 6 fixed stations / 18 continuous variables
+C B1 individual errors: [0.0, 0.0, 0.0, 0.0, 0.00641, 0.0]
+C B2 individual errors: [0.0, 0.0, 0.0, 0.0, 0.00362, 0.0]
+C B3 individual errors: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+C T1 individual errors: [0.0, 0.00653, 0.0, 0.0, 0.0, 0.0]
+C T2 individual errors: [0.0, 0.00366, 0.0, 0.0, 0.0, 0.0]
+C T3 individual errors: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+C joint start 1 lookup error 2.0644261746625803e-12
+C joint start 2 lookup error 1.4516961983417156e-11
+C joint start 3 lookup error 1.50187861956922e-11
+{"kind": "C_6", "success": true, "reason": "all numerical checks passed", "max_error": 7.059822790681017e-09, "min_pair_distance": 0.03485328583533577}
+
+DESIGN T — 6 fixed stations / 18 continuous variables
+T B1 individual errors: [0.0, 0.0, 0.0, 0.0, 0.0, 0.00759]
+T B2 individual errors: [0.0, 0.0, 0.0, 0.0, 0.0, 0.00495]
+T B3 individual errors: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+T T1 individual errors: [0.00761, 0.00772, 0.00779, 0.0, 0.0, 0.0]
+T T2 individual errors: [0.00382, 0.00499, 0.00583, 0.0, 0.0, 0.0]
+T T3 individual errors: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+T joint start 1 lookup error 1.9243387712624735e-11
+T joint start 2 lookup error 4.040475125015406e-11
+T joint start 3 lookup error 6.603393052139471e-11
+{"kind": "T_6", "success": true, "reason": "all numerical checks passed", "max_error": 6.918778733615354e-09, "min_pair_distance": 0.027400497227164623}
+Finished: 3 / 3 passed.
+A failed finite search is not a proof of impossibility; station positions and target sizes were never relaxed.
+duck_six_fixed : 20 particles; original diameter = 0.025
+Reusing verified direct-PINN trajectories: exact weight/config/target signature matched.
+{
+  "kind": "duck_six_fixed",
+  "success": true,
+  "max_error": 0.0007242859897110402,
+  "min_pair_distance": 0.029612009816152775,
+  "max_reference_error": 0.0007615873560147537,
+  "max_PINN_reference_delta": 0.00038097732265486215
+}
+duck_independent_wall_ports : 28 particles; original diameter = 0.025
+Reusing verified direct-PINN trajectories: exact weight/config/target signature matched.
+{
+  "kind": "duck_independent_wall_ports",
+  "success": true,
+  "max_error": 2.9397120983577508e-06,
+  "min_pair_distance": 0.02869044004866986,
+  "max_reference_error": 1.4515976111156053e-06,
+  "max_PINN_reference_delta": 1.8933293322664154e-06
+}
+/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 9894181 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Support files will be in __results___files/
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Writing 9258134 bytes to __results__.html

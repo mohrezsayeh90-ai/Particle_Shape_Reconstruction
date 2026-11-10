@@ -1,0 +1,64 @@
+fluid Adam 0 1.7819180251343898
+fluid Adam 500 0.0002115180503070842
+fluid finished 5.909181450024003e-08 seconds 7.8505269470000485
+magnetic Adam 0 12.038644610607042
+magnetic Adam 500 0.044105540579021
+magnetic Adam 1000 0.007883973571330808
+magnetic Adam 1500 0.0026482569532026903
+magnetic Adam 2000 0.0015215950392653685
+magnetic finished 2.078130684076515e-05 seconds 122.10054636799998
+{
+  "fluid_velocity_max_error": 2.132947778732408e-05,
+  "fluid_pressure_max_error": 1.2495576038995537e-05,
+  "magnetic_B_relative_L2": 0.00041288502835335237,
+  "magnetic_force_relative_L2": 0.001750667181558541,
+  "channel_B_relative_L2": 0.0004840353750118951,
+  "channel_force_relative_L2": 0.0028406118151555536,
+  "channel_force_max_absolute": 0.008248260028228982,
+  "heldout_laplace_rms": 0.0043609689823325415,
+  "checks": {
+    "flow_velocity": true,
+    "flow_pressure": true,
+    "B_field": true,
+    "force_gradient": true,
+    "laplace_residual": true
+  },
+  "all_passed": true,
+  "compression": {
+    "max_force_interpolation_error": 0.0003378572246321432,
+    "all_passed": true
+  }
+}
+
+<Figure size 1300x350 with 3 Axes>
+<Figure size 1100x400 with 4 Axes>
+Adam 1/6000: residual MSE=2.828e-03
+Adam 1001/6000: residual MSE=3.661e-06
+Adam 2001/6000: residual MSE=1.379e-06
+Adam 3001/6000: residual MSE=5.918e-07
+Adam 4001/6000: residual MSE=3.094e-07
+Adam 5001/6000: residual MSE=2.672e-07
+Adam 6000/6000: residual MSE=2.903e-07
+L-BFGS closure 200: residual MSE=1.807e-07
+L-BFGS closure 400: residual MSE=1.789e-07
+L-BFGS closure 600: residual MSE=1.779e-07
+Boundary refinement 200: residual MSE=2.220e-07
+Boundary refinement 400: residual MSE=1.652e-07
+{
+  "n_cases": 35,
+  "residual_rms": 0.000342431717083756,
+  "max_X_Rv": 0.0012110500737079633,
+  "max_Z_d": 0.0024183255283782845,
+  "checks": {
+    "end_to_end_X": true,
+    "end_to_end_Z": true,
+    "residual": true
+  },
+  "all_passed": true
+}
+
+{'coefficients': [0.37501289151584377, 0.18426933943240617, 0.01319372569241943, -0.14092396838900728, -0.33842394695965006], 'max_tracking_error_Rv': 0.0003080922369847576, 'accepted': True, 'message': 'CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL'}
+Maximum H/(Msp/3): 0.18994251214525662
+
+<Figure size 1300x350 with 3 Axes>
+PASS: solved fields, parameter-conditioned particle motion, and independent target replay.

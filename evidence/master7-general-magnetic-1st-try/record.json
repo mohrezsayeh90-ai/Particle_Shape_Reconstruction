@@ -1,0 +1,19 @@
+{
+  "ref": "mohrezsayeh/master7-general-magnetic-1st-try",
+  "title": "Master7_general_magnetic_1st_try",
+  "last_run": "2026-11-03 11:18:34.677000",
+  "listed_version": 0,
+  "is_private": false,
+  "source_sha256": "b5ff80c60642f56daea4dd4e9dcc91102787818c5a28fd1afb99babef7e69ca2",
+  "error": "HTTPError",
+  "operation_errors": {
+    "status": {
+      "type": "HTTPError",
+      "http_status": 404
+    },
+    "outputs": {
+      "type": "HTTPError",
+      "http_status": 404
+    }
+  }
+}

@@ -1,0 +1,190 @@
+off two-way 16.62s
+target two-way 21.56s
+target two-way 21.01s
+wave two-way 20.94s
+static two-way 19.36s
+{
+  "backend": "CuPy / CUDA",
+  "original_notebook_zero_field_regression": 0.0,
+  "force_law_tests": {
+    "field_derivative_fd_error": 3.050348862387864e-11,
+    "force_vs_potential_gradient_error": 1.1114772296982878e-12,
+    "finite_difference_divB": 5.551115123125783e-11,
+    "finite_difference_curlB": 1.3877787807814457e-11,
+    "uniform_field_force": 0.0,
+    "zero_alpha_force": 0.0,
+    "reverse_all_B_force_change": 0.0,
+    "double_field_force_scaling_error": 0.0,
+    "x_periodicity_error": 9.43689570931383e-16
+  },
+  "analytic_particle_benchmark": {
+    "coarse_error": 1.7220654467468853e-06,
+    "fine_error": 4.275630725660254e-07,
+    "error_ratio": 4.027629038241977
+  },
+  "original_structural_checks": {
+    "projection_divergence": 3.730349362740526e-13,
+    "projection_idempotence": 2.6645352591003757e-15,
+    "kernel_normalization": 2.220446049250313e-16,
+    "interaction_force_residual": 2.797157557069881e-17,
+    "interaction_power_residual": 5.551115123125783e-17,
+    "convective_energy_residual": 8.758426083154012e-16
+  },
+  "shear_relative_L2_24": 0.00014085838730972067,
+  "shear_relative_L2_48": 3.5228901379436385e-05,
+  "case_metrics": {
+    "off": {
+      "max_divergence": 4.843002491010037e-13,
+      "momentum_x_residual": 7.398595625041082e-16,
+      "energy_residual": 1.896322842330489e-07,
+      "drag_reaction_residual": 4.163336342344337e-17,
+      "drag_power_identity_residual": 2.7755575615628914e-17,
+      "max_fluid_disturbance": 0.058716301693265506,
+      "final_y": 0.5,
+      "saturated_saved_fraction": 0.0,
+      "max_magnetic_force": 0.0
+    },
+    "uniform": {
+      "max_divergence": 4.843002491010037e-13,
+      "momentum_x_residual": 7.398595625041082e-16,
+      "energy_residual": 1.896322842330489e-07,
+      "drag_reaction_residual": 4.163336342344337e-17,
+      "drag_power_identity_residual": 2.7755575615628914e-17,
+      "max_fluid_disturbance": 0.058716301693265506,
+      "final_y": 0.5,
+      "saturated_saved_fraction": 0.0,
+      "max_magnetic_force": 0.0
+    },
+    "up": {
+      "max_divergence": 5.579052844706389e-13,
+      "momentum_x_residual": 7.906002241764298e-16,
+      "energy_residual": 1.8952505784902707e-07,
+      "drag_reaction_residual": 4.163336342344337e-17,
+      "drag_power_identity_residual": 4.85722573273506e-17,
+      "max_fluid_disturbance": 0.058786897178012214,
+      "final_y": 0.5799999948676265,
+      "saturated_saved_fraction": 0.0,
+      "max_magnetic_force": 0.02550889081821402,
+      "max_tracking_error": 1.8802575163512358e-07,
+      "final_tracking_error": 5.132373415150937e-09,
+      "max_force_command_error": 6.938893903907228e-18
+    },
+    "down": {
+      "max_divergence": 5.515002517164636e-13,
+      "momentum_x_residual": 9.443222251336432e-16,
+      "energy_residual": 1.8952505804678554e-07,
+      "drag_reaction_residual": 4.163336342344337e-17,
+      "drag_power_identity_residual": 2.7755575615628914e-17,
+      "max_fluid_disturbance": 0.05878689717801222,
+      "final_y": 0.4200000051323727,
+      "saturated_saved_fraction": 0.0,
+      "max_magnetic_force": 0.02550889081821438,
+      "max_tracking_error": 1.8802575130205668e-07,
+      "final_tracking_error": 5.132372693505971e-09,
+      "max_force_command_error": 6.938893903907228e-18
+    },
+    "wave": {
+      "max_divergence": 5.488266091591143e-13,
+      "momentum_x_residual": 6.34041430469523e-16,
+      "energy_residual": 1.893077780090735e-07,
+      "drag_reaction_residual": 4.163336342344337e-17,
+      "drag_power_identity_residual": 2.7755575615628914e-17,
+      "max_fluid_disturbance": 0.058755502098594564,
+      "final_y": 0.49999989239892595,
+      "saturated_saved_fraction": 0.0,
+      "max_magnetic_force": 0.035708018475483536,
+      "max_tracking_error": 3.1649785026122146e-07,
+      "final_tracking_error": 1.0760107405083374e-07,
+      "max_force_command_error": 6.938893903907228e-18
+    },
+    "static": {
+      "max_divergence": 5.224130047824793e-13,
+      "momentum_x_residual": 1.0026701691145945e-15,
+      "energy_residual": 1.667110740219413e-07,
+      "drag_reaction_residual": 4.163336342344337e-17,
+      "drag_power_identity_residual": 2.7755575615628914e-17,
+      "max_fluid_disturbance": 0.06074483933234102,
+      "final_y": 0.5444739166015826,
+      "saturated_saved_fraction": 0.0,
+      "max_magnetic_force": 0.014423190326251098
+    },
+    "limited": {
+      "max_divergence": 4.876224044349681e-13,
+      "momentum_x_residual": 9.428222091933947e-16,
+      "energy_residual": 1.8962854277451702e-07,
+      "drag_reaction_residual": 4.163336342344337e-17,
+      "drag_power_identity_residual": 2.7755575615628914e-17,
+      "max_fluid_disturbance": 0.05872318288413901,
+      "final_y": 0.5107954328239657,
+      "saturated_saved_fraction": 0.9876543209876543,
+      "max_magnetic_force": 0.0007857775061090796
+    }
+  },
+  "uniform_vs_off_solution_change": 0.0,
+  "up_down_reflection_error": 1.1102230246251565e-15,
+  "static_magnetic_work_plus_potential_change": 1.75697426919863e-08,
+  "static_saved_sample_work_potential_error": 6.063678145894202e-06,
+  "up_vs_off_max_fluid_change": 0.02474143507790785,
+  "one_way_max_fluid_change": 2.42861286636753e-16,
+  "grid_refinement": {
+    "disturbance_relative_L2": 0.009368875061930255,
+    "path_max": 0.0025037090553758764
+  },
+  "time_refinement_disturbance_relative_L2": 2.2503463137057877e-05,
+  "time_refinement_path_max": 4.4852264402600063e-07,
+  "up_vs_off_final_y_change": 0.07999999486762654,
+  "down_vs_off_final_y_change": -0.07999999486762732,
+  "checks": {
+    "magnetic_force_matches_potential_gradient": true,
+    "analytic_field_derivatives": true,
+    "solenoidal_field_fd": true,
+    "curl_free_field_fd": true,
+    "uniform_field_has_no_force": true,
+    "zero_polarizability_has_no_force": true,
+    "field_sign_reversal_does_not_reverse_induced_force": true,
+    "field_strength_squared_scaling": true,
+    "magnetic_x_periodicity": true,
+    "analytic_particle_second_order": true,
+    "original_solver_regression": true,
+    "uniform_field_same_motion_as_off": true,
+    "independent_shear_benchmark": true,
+    "incompressible_all_cases": true,
+    "hydrodynamic_action_reaction_all_cases": true,
+    "hydrodynamic_power_identity_all_cases": true,
+    "momentum_includes_external_magnet_force": true,
+    "energy_includes_magnetic_work": true,
+    "static_force_work_potential_check": true,
+    "bidirectional_steering": true,
+    "reflection_symmetry": true,
+    "targets_and_wave_tracked": true,
+    "bounded_field_command_achieved": true,
+    "one_way_control_no_fluid_feedback": true,
+    "magnetic_two_way_fluid_response": true,
+    "magnetic_steering_changes_fluid_vs_unactuated": true,
+    "limited_actuator_saturates_and_cannot_teleport": true,
+    "spatial_refinement_disturbance": true,
+    "spatial_refinement_particle": true,
+    "time_refinement_disturbance": true,
+    "time_refinement_particle": true
+  },
+  "all_passed": true,
+  "compute_seconds": 229.93789570699994
+}
+
+target two-way 21.02s
+Selected final y: 0.5799999948676265
+Actuator saturated fraction at saved times: 0.0
+Selected maximum tracking error: 1.8802575163512358e-07
+Selected final tracking error: 5.132373415150937e-09
+
+<IPython.core.display.Image object>
+<IPython.core.display.Image object>
+Animation: 61 frames; rendered in 43.7s
+
+<IPython.core.display.HTML object>
+Total simulation + selected run + plots + animation: 303.9 s
+
+ALL DEFAULT CHECKS PASSED: True
+Checks: 31
+
+/kaggle/working/Magnetic_Channel_Run_Outputs.zip

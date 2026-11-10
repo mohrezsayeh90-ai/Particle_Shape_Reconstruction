@@ -1,0 +1,19 @@
+{
+  "ref": "mohrezsayeh/master8-general-magnetic-particl-2ndtry",
+  "title": "Master8_general_magnetic_particl_2ndtry",
+  "last_run": "2026-11-03 11:23:30.830000",
+  "listed_version": 0,
+  "is_private": false,
+  "source_sha256": "f2234a60c186e25e4694ec1ee7c594a08f347239a7fb55d31358709698e11aee",
+  "error": "HTTPError",
+  "operation_errors": {
+    "status": {
+      "type": "HTTPError",
+      "http_status": 404
+    },
+    "outputs": {
+      "type": "HTTPError",
+      "http_status": 404
+    }
+  }
+}

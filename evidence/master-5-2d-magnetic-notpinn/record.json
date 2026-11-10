@@ -1,0 +1,19 @@
+{
+  "ref": "mohrezsayeh/master-5-2d-magnetic-notpinn",
+  "title": "master_5_2d_magnetic_notPINN",
+  "last_run": "2026-11-03 08:32:07.620000",
+  "listed_version": 0,
+  "is_private": false,
+  "source_sha256": "c032ec9d58c15d1cb3874920c816674fc26799ca4d55a9ca522c1338d66e344d",
+  "error": "HTTPError",
+  "operation_errors": {
+    "status": {
+      "type": "HTTPError",
+      "http_status": 404
+    },
+    "outputs": {
+      "type": "HTTPError",
+      "http_status": 404
+    }
+  }
+}

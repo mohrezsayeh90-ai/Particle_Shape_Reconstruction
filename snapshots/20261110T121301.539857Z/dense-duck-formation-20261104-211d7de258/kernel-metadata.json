@@ -1,0 +1,19 @@
+{
+  "id": "mohrezsayeh/dense-duck-formation-20261104-211d7de258",
+  "id_no": 142717574,
+  "title": "Dense Duck Formation 20261104 211d7de258",
+  "code_file": "dense-duck-formation-20261104-211d7de258.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:9a6bcfda6d03b2cd9aa347ee8c1bae62043328ed0f4afe9bda014e4f8bbf9435",
+  "machine_shape": "None"
+}

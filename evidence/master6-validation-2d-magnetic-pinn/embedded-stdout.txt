@@ -1,0 +1,170 @@
+Effective viscosity: 0.003276913272013514 Pa s
+Device: cpu
+Slab 1: held-out residual RMS=2.17e-04; active=10
+Slab 2: held-out residual RMS=2.46e-04; active=10
+Slab 3: held-out residual RMS=2.66e-04; active=10
+Slab 4: held-out residual RMS=2.23e-04; active=10
+Slab 5: held-out residual RMS=5.90e-04; active=8
+Slab 6: held-out residual RMS=2.25e-04; active=5
+Slab 7: held-out residual RMS=2.28e-04; active=4
+Slab 8: held-out residual RMS=3.20e-04; active=3
+Slab 9: held-out residual RMS=1.30e-04; active=2
+Slab 10: held-out residual RMS=1.94e-04; active=2
+Slab 11: held-out residual RMS=1.43e-04; active=2
+Slab 12: held-out residual RMS=5.00e-05; active=2
+Slab 13: held-out residual RMS=1.23e-04; active=1
+Slab 14: held-out residual RMS=6.01e-05; active=1
+Slab 15: held-out residual RMS=1.63e-04; active=1
+Slab 16: held-out residual RMS=1.01e-04; active=1
+Slab 17: held-out residual RMS=2.90e-04; active=1
+Slab 18: held-out residual RMS=1.69e-04; active=1
+Slab 19: held-out residual RMS=2.58e-04; active=1
+Slab 20: held-out residual RMS=1.22e-04; active=1
+Slab 21: held-out residual RMS=5.81e-05; active=1
+Slab 22: held-out residual RMS=3.27e-04; active=0
+Training seconds: 196.36
+
+/tmp/ipykernel_49/2167795437.py:149: UserWarning: The figure layout has changed to tight
+  ea.set(xlabel='z / Rmag',ylabel='Absolute transverse error / Rv',title='Held-out trajectory comparison (|X| < 0.98)');ea.grid(alpha=.2);ea.legend(ncol=2,fontsize=7);ef.tight_layout();ef.savefig(out/'pinn_error.png',dpi=170);plt.close(ef)
+
+{
+  "doi": "10.1103/PhysRevE.73.061919",
+  "results": [
+    {
+      "beta": 1.0,
+      "radius_nm": 400.00000000000006,
+      "max_error_Rv": 5.251355923918677e-05,
+      "rms_error_Rv": 2.185691485909018e-05,
+      "pinn_captured": false,
+      "reference_captured": false,
+      "capture_location_error_Rmag": null,
+      "initial_error": 0.0
+    },
+    {
+      "beta": 1.0,
+      "radius_nm": 450.00000000000006,
+      "max_error_Rv": 0.00012060705649052927,
+      "rms_error_Rv": 1.9387888785952492e-05,
+      "pinn_captured": true,
+      "reference_captured": true,
+      "capture_location_error_Rmag": 1.7933564213978848e-05,
+      "initial_error": 0.0
+    },
+    {
+      "beta": 1.0,
+      "radius_nm": 500.00000000000006,
+      "max_error_Rv": 0.00025874791208813086,
+      "rms_error_Rv": 5.355656696425879e-05,
+      "pinn_captured": true,
+      "reference_captured": true,
+      "capture_location_error_Rmag": 2.3132909774625787e-05,
+      "initial_error": 0.0
+    },
+    {
+      "beta": 1.0,
+      "radius_nm": 550.0,
+      "max_error_Rv": 0.0014147297420625815,
+      "rms_error_Rv": 0.00014388389926818306,
+      "pinn_captured": true,
+      "reference_captured": true,
+      "capture_location_error_Rmag": 9.580695449680487e-05,
+      "initial_error": 0.0
+    },
+    {
+      "beta": 1.0,
+      "radius_nm": 600.0000000000001,
+      "max_error_Rv": 0.00114617606566636,
+      "rms_error_Rv": 0.00016328734075210635,
+      "pinn_captured": true,
+      "reference_captured": true,
+      "capture_location_error_Rmag": 5.8647692942698226e-05,
+      "initial_error": 0.0
+    },
+    {
+      "beta": 1.25,
+      "radius_nm": 400.00000000000006,
+      "max_error_Rv": 2.9383195729038025e-05,
+      "rms_error_Rv": 1.1430343708220934e-05,
+      "pinn_captured": false,
+      "reference_captured": false,
+      "capture_location_error_Rmag": null,
+      "initial_error": 0.0
+    },
+    {
+      "beta": 1.25,
+      "radius_nm": 450.00000000000006,
+      "max_error_Rv": 2.8656879051042194e-05,
+      "rms_error_Rv": 1.1591981486969563e-05,
+      "pinn_captured": false,
+      "reference_captured": false,
+      "capture_location_error_Rmag": null,
+      "initial_error": 0.0
+    },
+    {
+      "beta": 1.25,
+      "radius_nm": 500.00000000000006,
+      "max_error_Rv": 2.8008537453438898e-05,
+      "rms_error_Rv": 9.470875092885487e-06,
+      "pinn_captured": false,
+      "reference_captured": false,
+      "capture_location_error_Rmag": null,
+      "initial_error": 0.0
+    },
+    {
+      "beta": 1.25,
+      "radius_nm": 550.0,
+      "max_error_Rv": 0.0002175346171058301,
+      "rms_error_Rv": 4.4400959705863785e-05,
+      "pinn_captured": true,
+      "reference_captured": true,
+      "capture_location_error_Rmag": 5.2544517772312727e-05,
+      "initial_error": 0.0
+    },
+    {
+      "beta": 1.25,
+      "radius_nm": 600.0000000000001,
+      "max_error_Rv": 0.00021054876843107362,
+      "rms_error_Rv": 3.107568691538354e-05,
+      "pinn_captured": true,
+      "reference_captured": true,
+      "capture_location_error_Rmag": 3.5848811393152102e-06,
+      "initial_error": 0.0
+    }
+  ],
+  "checks": {
+    "all_events_match": true,
+    "max_path_error_below_0_005_Rv": true,
+    "capture_position_below_0_01_Rmag": true,
+    "hard_initial_condition": true,
+    "heldout_residual_below_0_001": true,
+    "no_saturation": true
+  },
+  "all_passed": true,
+  "seconds": 196.36381246399992,
+  "device": "cpu",
+  "max_path_error_Rv": 0.0014147297420625815,
+  "scope": "PINN validation of reduced magnetic particle transport only. Prescribed one-way flow; NOT full two-way CFD, controller or experimental validation."
+}
+{
+  "SI_dipole_force_matches_PINN_rhs": true,
+  "checkpoint_predictions_match_saved_paths": true,
+  "autodiff_matches_finite_difference": true
+}
+
+<IPython.core.display.Markdown object>
+Checks: {'all_events_match': True, 'max_path_error_below_0_005_Rv': True, 'capture_position_below_0_01_Rmag': True, 'hard_initial_condition': True, 'heldout_residual_below_0_001': True, 'no_saturation': True, 'SI_dipole_force_matches_PINN_rhs': True, 'checkpoint_predictions_match_saved_paths': True, 'autodiff_matches_finite_difference': True}
+All passed: True
+Worst trajectory error / Rv: 0.0014147297420625815
+
+<IPython.core.display.Image object>
+<IPython.core.display.Image object>
+<IPython.core.display.Image object>
+<IPython.core.display.HTML object>
+Times [s]: [ 0.          3.60429298  7.20858595 10.81287893 14.4171719 ]
+PINN [x,z] [m]:
+ [[ 0.00000000e+00 -8.00000000e-02]
+ [-4.88292494e-05  1.96168054e-02]
+ [-6.75273462e-05  5.37268652e-02]
+ [-7.05556461e-05  6.94934791e-02]
+ [-7.18287926e-05  8.00000000e-02]]
+PASS: all numerical validation checks passed.

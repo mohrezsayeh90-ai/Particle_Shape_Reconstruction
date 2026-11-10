@@ -1,0 +1,19 @@
+{
+  "ref": "mohrezsayeh/master6-validation-2d-magnetic-pinn",
+  "title": "Master6_Validation_2d_magnetic_PINN",
+  "last_run": "2026-11-03 10:34:06.763000",
+  "listed_version": 0,
+  "is_private": false,
+  "source_sha256": "e3a213114e435717f82472c250108eea08b20bf2a5c39214c0c7be286f9e5b47",
+  "error": "HTTPError",
+  "operation_errors": {
+    "status": {
+      "type": "HTTPError",
+      "http_status": 404
+    },
+    "outputs": {
+      "type": "HTTPError",
+      "http_status": 404
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "base_git_commit": "f3443d97c339e5a28414e923efb4844e383d2835",
+  "paper": "arXiv:2103.10974v1, user-provided PDF",
+  "paper_sha256": "7c3ab418cbab0a449556b28b68e2abc5f43ec4e31cfe1309e336031760bc1b43",
+  "upstream_reference_notebook": "PredictiveIntelligenceLab/Physics-informed-DeepONets/Antiderivative/PI_DeepONet_antideriv.ipynb",
+  "upstream_reference_blob_sha": "a231ebadf7126b6ca1dc1526f3c8afd730e10271",
+  "kaggle_kernel": "mohrezsayeh/master10-magnetic-function-deeponet",
+  "training_version": 2,
+  "training_submission_sha256": "1014a7d915eb8eed8c0998589b3705f389ebc16368c608acb97c1d90b4997a80",
+  "training_source_sha256": {
+    "magnetic_operator/__init__.py": "dae637bff2a613d05ae3447fdc567f3f503a0dbb36283da28899542653b57d0f",
+    "magnetic_operator/inference.py": "a2a3639f4f2c2ae736b4a4341460ba0be851e1c5c11fec675ad9c400c000fa0f",
+    "magnetic_operator/model.py": "0277d9a93848cd768ac9602e135ff0f97b6067059c1d14c4441ddf9b56067993",
+    "magnetic_operator/physics.py": "6327c55052cf0487101e367054210aee88dbb8e06651874e55f4ff24ac3becd3",
+    "magnetic_operator/train.py": "1bb84a0bb9660523a9765b9104f36ca27c879db19c62eef5c82a0c66ef5c2f12",
+    "magnetic_operator/validate.py": "12bd166638e912a2e2f0f1d37f0025e704afe06487a119e2fe8d6203bf4cd1fd",
+    "magnetic_operator/waveforms.py": "7784f61cca05ca73c06ee27e6e2c18adf5f568df459317194a4942c5d1c197ad"
+  },
+  "distribution_source_sha256": {
+    "magnetic_operator/inference.py": "60d8a38d704740ff6710f6a96dcb3b4b30cb4d36e0355cb21b4d66aeaefdcdbc",
+    "magnetic_operator/model.py": "0277d9a93848cd768ac9602e135ff0f97b6067059c1d14c4441ddf9b56067993",
+    "magnetic_operator/validate.py": "013fc42020c11e443b1310229c26e466386d38f398c57bbcbd0f758334db3660",
+    "magnetic_operator/physics.py": "6327c55052cf0487101e367054210aee88dbb8e06651874e55f4ff24ac3becd3",
+    "magnetic_operator/train.py": "1bb84a0bb9660523a9765b9104f36ca27c879db19c62eef5c82a0c66ef5c2f12",
+    "magnetic_operator/__init__.py": "dae637bff2a613d05ae3447fdc567f3f503a0dbb36283da28899542653b57d0f",
+    "magnetic_operator/waveforms.py": "7784f61cca05ca73c06ee27e6e2c18adf5f568df459317194a4942c5d1c197ad",
+    "magnetic_operator/extended_checks.py": "8bc6e1d4cedd4b6fba23ce508427b1b51d309ab636859171290223249357b275"
+  },
+  "validation_uses_numerical_reference_only_after_training": true,
+  "validation_thresholds_not_relaxed_after_pilot": true,
+  "pilot_changes": "Conservative default rollout window reduced from tau .1 to .05; training includes explicit amplitude faces and one-source waveforms.",
+  "distribution_version": 4,
+  "training_run_status": "Training completed on Tesla T4; original long-step validation failed.",
+  "posttraining_changes": [
+    "Compose raw neural maps for local horizons above tau .05, preserving all input interpolation knots.",
+    "Test future-prefix sensitivity within one raw .05 window.",
+    "Add independent parametric rollouts, Maxwell/Jacobian, amplitude-face and domain-exit checks."
+  ],
+  "training_checkpoint_sha256": "080b7e5dd76c98a75fca7f92cc4ec314907a7f7340c809b739b1e2eabc0e3133",
+  "distribution_note": "Version 4 bundles GPU weights from training version 2, validates short-map composition and exports a downloadable source/weights/reports ZIP."
+}

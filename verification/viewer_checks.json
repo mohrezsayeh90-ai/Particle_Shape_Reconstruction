@@ -1,0 +1,9 @@
+{
+  "browser": "Chromium",
+  "four_cases": true,
+  "64_particle_case": true,
+  "not_yet_released_particles_hidden": true,
+  "playback_advances": true,
+  "target_button": true,
+  "javascript_errors": []
+}

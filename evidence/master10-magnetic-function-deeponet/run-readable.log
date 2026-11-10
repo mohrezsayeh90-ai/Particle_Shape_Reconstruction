@@ -1,0 +1,151 @@
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+{
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "steps": 24000,
+  "batch": 1024,
+  "seconds": 450.094929327,
+  "seed": 1041,
+  "torch": "2.11.0+cu130",
+  "labelled_trajectories": 0,
+  "method": "physics-lifted branch/trunk DeepONet; overdamped ODE residual only",
+  "sensors_per_source": 17,
+  "h_tau": [
+    0.00625,
+    0.1
+  ],
+  "amplitude_constraint": "abs(a_left)+abs(a_right)<=sqrt(0.5)",
+  "checkpoint_sha256": "080b7e5dd76c98a75fca7f92cc4ec314907a7f7340c809b739b1e2eabc0e3133"
+}
+gpu_training {'passed': True, 'device': 'cuda', 'gpu': 'Tesla T4'}
+independent_field_and_cross_terms {'passed': True, 'max_force_error': 1.8041124150158794e-16}
+Master9_single_source_reduction {'passed': True, 'max_error': 3.3306690738754696e-16}
+global_polarity_invariance {'passed': True}
+quadratic_waveform_integrals {'passed': True, 'max_error': 1.1102230246251565e-16}
+heldout_physics_residual {'passed': True, 'scaled_residual_rms': 0.010560929716199612}
+exact_initial_position {'passed': True, 'max_error': 0}
+independent_local_DOP853 {'passed': True, 'cases': 64, 'max_x_um': 0.004819467060326876, 'max_z_um': 1.6188420016671756}
+unseen_callable_rollouts {'passed': True, 'cases': [{'name': 'zero', 'x_um': 0.0, 'z_um': 2.2863655413374318e-09, 'inference_seconds': 0.1676563910000084, 'reference_seconds': 0.8970687489999989, 'windows': 45}, {'name': 'constant_left', 'x_um': 0.019405830476667316, 'z_um': 0.855928477790438, 'inference_seconds': 0.12273885400000495, 'reference_seconds': 0.8888971780000077, 'windows': 45}, {'name': 'constant_right', 'x_um': 0.02867178196263204, 'z_um': 1.3337234481599487, 'inference_seconds': 0.12081144200001859, 'reference_seconds': 0.8790326779999873, 'windows': 45}, {'name': 'sinusoidal_two_sources', 'x_um': 0.008873255603557563, 'z_um': 0.9781046869904164, 'inference_seconds': 0.12891967699999896, 'reference_seconds': 0.9529164190000188, 'windows': 45}, {'name': 'chirp', 'x_um': 0.01328065498149166, 'z_um': 0.7949322633439213, 'inference_seconds': 0.12445313099999566, 'reference_seconds': 0.9214167539999778, 'windows': 45}, {'name': 'gaussian_pulse', 'x_um': 0.01017620000289072, 'z_um': 1.2136080044938824, 'inference_seconds': 0.1306983359999947, 'reference_seconds': 0.9233917159999976, 'windows': 45}, {'name': 'triangular', 'x_um': 0.0138667016011648, 'z_um': 0.8628194664520722, 'inference_seconds': 0.12064139200001023, 'reference_seconds': 0.9197842659999935, 'windows': 45}]}
+overdamped_vs_inertial_position {'passed': True, 'max_x_um': 0.00031755489308844803, 'max_z_um': 0.00959365820119018, 'relaxation_s': 3.166666666666666e-07, 'note': 'Position only. Initial velocity and submicrosecond velocity transient are not predicted.'}
+invalid_or_underresolved_inputs_rejected {'passed': True, 'cases': {'excess_amplitude': True, 'nan': True, 'underresolved': True}}
+future_prefix_sensitivity {'passed': True, 'max_x_um': 0.002056983600856447, 'max_z_um': 0.044047500742383505, 'note': 'Approximate check, architecture is not strictly causal within each supplied window.'}
+ALL_TESTS_PASSED: True
+{
+  "source_Maxwell_and_Jacobian": {
+    "passed": true,
+    "max_Jacobian_error": 2.220446049250313e-16
+  },
+  "parametric_rollouts": {
+    "passed": true,
+    "cases": [
+      {
+        "eta": 0.001,
+        "mean": 0.005,
+        "rho": 950,
+        "X0": -0.3,
+        "x_um": 0.001376353609083375,
+        "z_um": 0.292972817526882,
+        "passed": true
+      },
+      {
+        "eta": 0.006,
+        "mean": 0.03,
+        "rho": 1100,
+        "X0": 0.3,
+        "x_um": 0.0028113474752727006,
+        "z_um": 0.910296216679457,
+        "passed": true
+      },
+      {
+        "eta": 0.001,
+        "mean": 0.03,
+        "rho": 1100,
+        "X0": 0.0,
+        "x_um": 0.019906161676597287,
+        "z_um": 0.7171753390947111,
+        "passed": true
+      },
+      {
+        "eta": 0.006,
+        "mean": 0.005,
+        "rho": 950,
+        "X0": 0.4,
+        "x_um": 0.0008295757219595147,
+        "z_um": 0.42255274705985113,
+        "passed": true
+      }
+    ]
+  },
+  "maximum_amplitude_faces": {
+    "passed": true,
+    "h_tau": 0.05,
+    "cases": [
+      {
+        "amplitudes": [
+          0.7071067811865476,
+          0
+        ],
+        "x_um": 0.01414660543717361,
+        "z_um": 1.5908824486343676,
+        "passed": true
+      },
+      {
+        "amplitudes": [
+          0,
+          0.7071067811865476
+        ],
+        "x_um": 0.0157667453352571,
+        "z_um": 0.6141179601359958,
+        "passed": true
+      },
+      {
+        "amplitudes": [
+          0.3535533905932738,
+          0.3535533905932738
+        ],
+        "x_um": 0.002746119574172784,
+        "z_um": 0.6294873287759906,
+        "passed": true
+      },
+      {
+        "amplitudes": [
+          0.3535533905932738,
+          -0.3535533905932738
+        ],
+        "x_um": 0.00028917951354553995,
+        "z_um": 1.6582054401070856,
+        "passed": true
+      }
+    ]
+  },
+  "domain_exit_rejected": {
+    "passed": true
+  },
+  "density_invariance": {
+    "passed": true,
+    "x_um": 2.4065305190279496e-05,
+    "z_um": 0.008848110966130918
+  },
+  "all_passed": true
+}
+ALL_EXTENDED_TESTS_PASSED: True
+{'seconds': 0.13647221499999773, 'windows': [{'start_s': 0.0, 'end_s': 0.06666666666666668, 'h_tau': 0.05, 'sampling_error': 1.858830664641653e-06}, {'start_s': 0.06666666666666668, 'end_s': 0.13333333333333336, 'h_tau': 0.05, 'sampling_error': 3.661422362591371e-06}, {'start_s': 0.13333333333333336, 'end_s': 0.20000000000000004, 'h_tau': 0.05, 'sampling_error': 5.233953427691285e-06}, {'start_s': 0.20000000000000004, 'end_s': 0.2666666666666667, 'h_tau': 0.05, 'sampling_error': 6.477615949823656e-06}, {'start_s': 0.2666666666666667, 'end_s': 0.33333333333333337, 'h_tau': 0.05, 'sampling_error': 7.3142660388103575e-06}, {'start_s': 0.33333333333333337, 'end_s': 0.4, 'h_tau': 0.05, 'sampling_error': 7.691333892612118e-06}, {'start_s': 0.4, 'end_s': 0.4666666666666667, 'h_tau': 0.05, 'sampling_error': 7.710350989842407e-06}, {'start_s': 0.4666666666666667, 'end_s': 0.5333333333333333, 'h_tau': 0.05, 'sampling_error': 7.562432000784991e-06}, {'start_s': 0.5333333333333333, 'end_s': 0.6, 'h_tau': 0.05, 'sampling_error': 6.950749732032024e-06}, {'start_s': 0.6, 'end_s': 0.6666666666666666, 'h_tau': 0.05, 'sampling_error': 5.902326294521254e-06}, {'start_s': 0.6666666666666666, 'end_s': 0.7333333333333333, 'h_tau': 0.05, 'sampling_error': 4.483037988667338e-06}, {'start_s': 0.7333333333333333, 'end_s': 0.7999999999999999, 'h_tau': 0.05, 'sampling_error': 2.782063918557731e-06}, {'start_s': 0.7999999999999999, 'end_s': 0.8666666666666666, 'h_tau': 0.05, 'sampling_error': 9.062825407253616e-07}, {'start_s': 0.8666666666666666, 'end_s': 0.9333333333333332, 'h_tau': 0.05, 'sampling_error': 2.782063918571609e-06}, {'start_s': 0.9333333333333332, 'end_s': 0.9999999999999999, 'h_tau': 0.05, 'sampling_error': 4.483037988695093e-06}, {'start_s': 0.9999999999999999, 'end_s': 1.0666666666666667, 'h_tau': 0.05, 'sampling_error': 5.9023262944934984e-06}, {'start_s': 1.0666666666666667, 'end_s': 1.1333333333333333, 'h_tau': 0.05, 'sampling_error': 6.9507497320875355e-06}, {'start_s': 1.1333333333333333, 'end_s': 1.2, 'h_tau': 0.05, 'sampling_error': 7.562432000812747e-06}, {'start_s': 1.2, 'end_s': 1.2666666666666666, 'h_tau': 0.05, 'sampling_error': 7.710350989842407e-06}, {'start_s': 1.2666666666666666, 'end_s': 1.3333333333333333, 'h_tau': 0.05, 'sampling_error': 7.691333892584362e-06}, {'start_s': 1.3333333333333333, 'end_s': 1.4, 'h_tau': 0.05, 'sampling_error': 7.314266038754846e-06}, {'start_s': 1.4, 'end_s': 1.4666666666666666, 'h_tau': 0.05, 'sampling_error': 6.934669139979643e-06}, {'start_s': 1.4666666666666666, 'end_s': 1.5333333333333332, 'h_tau': 0.05, 'sampling_error': 7.2325754010005294e-06}, {'start_s': 1.5333333333333332, 'end_s': 1.5999999999999999, 'h_tau': 0.05, 'sampling_error': 6.934669139951888e-06}, {'start_s': 1.5999999999999999, 'end_s': 1.6666666666666665, 'h_tau': 0.05, 'sampling_error': 4.950761840344375e-06}, {'start_s': 1.6666666666666665, 'end_s': 1.7333333333333332, 'h_tau': 0.05, 'sampling_error': 1.935728494592559e-06}, {'start_s': 1.7333333333333332, 'end_s': 1.7999999999999998, 'h_tau': 0.05, 'sampling_error': 3.66142236266076e-06}, {'start_s': 1.7999999999999998, 'end_s': 1.8666666666666665, 'h_tau': 0.05, 'sampling_error': 5.233953427746796e-06}, {'start_s': 1.8666666666666665, 'end_s': 1.9333333333333331, 'h_tau': 0.05, 'sampling_error': 6.477615949795901e-06}, {'start_s': 1.9333333333333331, 'end_s': 1.9999999999999998, 'h_tau': 0.05, 'sampling_error': 7.3142660388103575e-06}, {'start_s': 1.9999999999999998, 'end_s': 2.0666666666666664, 'h_tau': 0.05, 'sampling_error': 7.691333892584362e-06}, {'start_s': 2.0666666666666664, 'end_s': 2.1333333333333333, 'h_tau': 0.05, 'sampling_error': 7.710350989870163e-06}, {'start_s': 2.1333333333333333, 'end_s': 2.2, 'h_tau': 0.05, 'sampling_error': 7.562432000896013e-06}, {'start_s': 2.2, 'end_s': 2.266666666666667, 'h_tau': 0.05, 'sampling_error': 6.950749732198558e-06}, {'start_s': 2.266666666666667, 'end_s': 2.333333333333334, 'h_tau': 0.05, 'sampling_error': 5.902326294521254e-06}, {'start_s': 2.333333333333334, 'end_s': 2.400000000000001, 'h_tau': 0.05, 'sampling_error': 4.483037988695093e-06}, {'start_s': 2.400000000000001, 'end_s': 2.4666666666666677, 'h_tau': 0.05, 'sampling_error': 2.782063918557731e-06}, {'start_s': 2.4666666666666677, 'end_s': 2.5333333333333345, 'h_tau': 0.05, 'sampling_error': 9.062825411625119e-07}, {'start_s': 2.5333333333333345, 'end_s': 2.6000000000000014, 'h_tau': 0.05, 'sampling_error': 2.782063918557731e-06}, {'start_s': 2.6000000000000014, 'end_s': 2.6666666666666683, 'h_tau': 0.05, 'sampling_error': 4.483037988667338e-06}, {'start_s': 2.6666666666666683, 'end_s': 2.733333333333335, 'h_tau': 0.05, 'sampling_error': 5.902326294243698e-06}, {'start_s': 2.733333333333335, 'end_s': 2.800000000000002, 'h_tau': 0.05, 'sampling_error': 6.95074973180998e-06}, {'start_s': 2.800000000000002, 'end_s': 2.866666666666669, 'h_tau': 0.05, 'sampling_error': 7.562432000812747e-06}, {'start_s': 2.866666666666669, 'end_s': 2.933333333333336, 'h_tau': 0.05, 'sampling_error': 7.710350989870163e-06}, {'start_s': 2.933333333333336, 'end_s': np.float64(3.0), 'h_tau': 0.05, 'sampling_error': 7.691333892584362e-06}], 'ode_solves': 0, 'retraining_steps': 0}
+/kaggle/working/magnetic_operator_run/results/operator/REPORT_FA.md
+DOWNLOAD: /kaggle/working/Master10_Magnetic_Operator.zip
+/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 653770 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Support files will be in __results___files/
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Writing 676644 bytes to __results__.html

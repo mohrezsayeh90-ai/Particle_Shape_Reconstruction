@@ -1,0 +1,45 @@
+Device: cuda | C = 0.8876896778137311
+Fixed release [m]: [0.0, -0.08]
+Time interval [s]: [0, 5.333333333333334]
+Physics-only training seconds: 296.44
+Mode: loaded trained weights embedded in this notebook
+
+{
+  "checks": {
+    "heldout_max_X_error_below_0_005_Rv": true,
+    "heldout_max_Z_error_below_0_005_d": true,
+    "heldout_residual_rms_below_0_002": true,
+    "hard_initial_condition": true,
+    "zero_control_matches_exact_flow": true,
+    "heldout_no_wall_capture": true,
+    "single_active_actuator_unsaturated": true
+  },
+  "all_passed": true,
+  "n_cases": 83,
+  "seed": 20261103,
+  "max_X_error_Rv": 0.0026934275179493206,
+  "max_Z_error_d": 0.004666823775783868,
+  "residual_rms": 0.0003623488853848974,
+  "residual_abs_max": 0.0032385590615514603
+}
+Additional audits: {'constant_control_matches_published_implicit_law': True, 'SI_force_matches_reduced_rhs': True, 'autodiff_matches_finite_difference': True, 'checkpoint_reload_exact': True, 'out_of_domain_inputs_rejected': True, 'incompatible_axial_target_rejected': True, 'single_magnet_rejects_bidirectional_target': True}
+PASS: forward model and independent audits.
+
+<Figure size 1300x350 with 3 Axes>
+return_path | accepted: True | replay max transverse tracking error [um]: 0.024956837947797975
+deflection | accepted: True | replay max transverse tracking error [um]: 0.015978340744388777
+single_left | accepted: True | replay max transverse tracking error [um]: 0.05421323679426562
+
+<IPython.core.display.Markdown object>
+<Figure size 1300x1000 with 9 Axes>
+Columns: t [s], x [m], z [m]
+[[ 0.00000000e+00  0.00000000e+00 -8.00000000e-02]
+ [ 1.06666667e+00 -2.01063383e-07 -4.80107777e-02]
+ [ 2.13333333e+00 -4.44391301e-07 -1.60197775e-02]
+ [ 3.20000000e+00  3.54967916e-06  1.59658288e-02]
+ [ 4.26666667e+00  6.06998948e-06  4.78144346e-02]
+ [ 5.33333333e+00  6.38445179e-06  7.95797904e-02]]
+
+Incompatible axial target: ['target exits the trained channel segment', 'axial timing is incompatible with dZ/dtau=1-X^2', 'target exceeds available magnetic force']
+Bidirectional target / one left magnet: ['a single left magnet cannot produce positive transverse drift']
+PASS: impossible requests are identified explicitly.

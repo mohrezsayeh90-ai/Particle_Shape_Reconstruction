@@ -1,0 +1,47 @@
+{
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "seed": 903,
+  "batch": 2048,
+  "labelled_trajectories": 0,
+  "labelled_controls": 0,
+  "loss": "fluid momentum residual; inertial Stokes residual + hard position/velocity IC",
+  "flow_steps": 6000,
+  "particle_steps": 15000,
+  "training_seconds": 291.877161026001,
+  "ranges": {
+    "eta_Pas": [
+      0.001,
+      0.006
+    ],
+    "mean_m_s": [
+      0.005,
+      0.03
+    ],
+    "rho_kg_m3": [
+      950.0,
+      1100.0
+    ],
+    "release_X": [
+      -0.7,
+      0.7
+    ],
+    "release_Z": [
+      -2.0,
+      1.7
+    ],
+    "initial_vx_m_s": [
+      -0.001,
+      0.001
+    ],
+    "initial_vz_m_s": [
+      0.0,
+      0.06
+    ],
+    "u": [
+      -0.5,
+      0.5
+    ]
+  }
+}

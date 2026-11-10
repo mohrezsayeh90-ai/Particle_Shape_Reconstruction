@@ -1,0 +1,188 @@
+PyTorch: 2.11.0+cu128 | CUDA: True
+
+Run: /kaggle/working/rectangular_wall_launchers_1793531860808680981
+MLP: ['x', 'y', 'x_bottom', 'u_bottom', 'v_bottom', 'x_top', 'u_top', 'v_top'] -> [u,v,p]
+Fixed Re/d/rho ratio: 10.0 0.025 1000.0
+Stokes relaxation time: 0.34722222222222227
+
+{"total": 60.551517486572266, "continuity": 0.0003824853920377791, "momentum": 60.53301239013672, "developed": 0.0008321935893036425, "invariance": 0.0002561548026278615, "flux": 5.784298264188692e-05, "phase": "initial", "iteration": 0, "seconds": 0.02186654499996621}
+{"total": 0.03803849592804909, "continuity": 0.00011430053564254194, "momentum": 0.03266578167676926, "developed": 0.00018151584663428366, "invariance": 8.314145088661462e-05, "flux": 2.011807737289928e-05, "phase": "Adam", "iteration": 200, "seconds": 7.81282601099997}
+{"total": 0.006677296478301287, "continuity": 2.122710611729417e-05, "momentum": 0.005730700679123402, "developed": 1.885481833596714e-05, "invariance": 1.6945201423368417e-05, "flux": 8.298774218928884e-07, "phase": "Adam", "iteration": 400, "seconds": 16.126205422999988}
+{"total": 0.0026207563932985067, "continuity": 8.137702025123872e-06, "momentum": 0.0022393246181309223, "developed": 9.425903044757433e-06, "invariance": 6.753611160092987e-06, "flux": 5.416147814685246e-07, "phase": "Adam", "iteration": 600, "seconds": 24.09731604199999}
+{"total": 0.0014940788969397545, "continuity": 4.276216714060865e-06, "momentum": 0.001282968558371067, "developed": 6.27401823294349e-06, "invariance": 3.6442340842768317e-06, "flux": 6.220335535545019e-07, "phase": "Adam", "iteration": 800, "seconds": 32.287294315}
+{"total": 0.0009671153966337442, "continuity": 2.554357024564524e-06, "momentum": 0.0008309073746204376, "developed": 4.5846659304515924e-06, "invariance": 2.35517882174463e-06, "flux": 6.636182092734089e-07, "phase": "Adam", "iteration": 1000, "seconds": 40.382506901}
+{"total": 0.000697178824339062, "continuity": 1.8423285155222402e-06, "momentum": 0.000595719669945538, "developed": 3.80585333914496e-06, "invariance": 1.7103426444009528e-06, "flux": 5.649468448609696e-07, "phase": "Adam", "iteration": 1200, "seconds": 48.54180262599999}
+{"total": 0.0005328482948243618, "continuity": 1.2806390259356704e-06, "momentum": 0.00045757193583995104, "developed": 2.9267412173794582e-06, "invariance": 1.324881168329739e-06, "flux": 3.815701461462595e-07, "phase": "Adam", "iteration": 1400, "seconds": 56.781599890999985}
+{"total": 0.0004416600277181715, "continuity": 1.0069099971588003e-06, "momentum": 0.0003802157298196107, "developed": 2.4921027943491936e-06, "invariance": 1.078734157999861e-06, "flux": 3.7544725728366757e-07, "phase": "Adam", "iteration": 1600, "seconds": 64.76711121599993}
+{"total": 0.00037346265162341297, "continuity": 8.572790193284163e-07, "momentum": 0.0003209216520190239, "developed": 2.167735146940686e-06, "invariance": 9.237041922460776e-07, "flux": 2.9282406899255875e-07, "phase": "Adam", "iteration": 1800, "seconds": 72.68721481699998}
+{"total": 0.0003340692783240229, "continuity": 7.528926744271303e-07, "momentum": 0.00028764427406713367, "developed": 1.932239001689595e-06, "invariance": 8.172926300176186e-07, "flux": 2.547303097344411e-07, "phase": "Adam", "iteration": 2000, "seconds": 80.57535781500002}
+{"total": 0.0003041225136257708, "continuity": 6.913971901667537e-07, "momentum": 0.00026165982126258314, "developed": 1.7715839248921839e-06, "invariance": 7.488738447136711e-07, "flux": 2.1099315006267716e-07, "phase": "Adam", "iteration": 2200, "seconds": 88.60774374700003}
+{"total": 0.0002843207912519574, "continuity": 6.36980246326857e-07, "momentum": 0.0002445730206090957, "developed": 1.6825291595523595e-06, "invariance": 7.000892310315976e-07, "flux": 2.186631462564037e-07, "phase": "Adam", "iteration": 2400, "seconds": 96.80768357300002}
+{"total": 0.00027050997596234083, "continuity": 6.150283979877713e-07, "momentum": 0.00023217083071358502, "developed": 1.6243910749835777e-06, "invariance": 6.727011054863397e-07, "flux": 2.1982366149586596e-07, "phase": "Adam", "iteration": 2600, "seconds": 104.67215400799995}
+{"total": 0.0002652802795637399, "continuity": 5.973609518150624e-07, "momentum": 0.0002280086191603914, "developed": 1.5821722172404407e-06, "invariance": 6.547963948833058e-07, "flux": 2.0873000039500766e-07, "phase": "Adam", "iteration": 2800, "seconds": 112.36161798899997}
+{"total": 0.0002611217787489295, "continuity": 5.866544938726292e-07, "momentum": 0.00022461761545855552, "developed": 1.5511013771174476e-06, "invariance": 6.436778221541317e-07, "flux": 1.84720306606323e-07, "phase": "Adam", "iteration": 3000, "seconds": 120.14650190000003}
+{"total": 0.0002611217787489295, "continuity": 5.866544938726292e-07, "momentum": 0.00022461761545855552, "developed": 1.5511013771174476e-06, "invariance": 6.436778221541317e-07, "flux": 1.84720306606323e-07, "phase": "Adam_final", "iteration": 3000, "seconds": 120.170320871}
+{"total": 0.0002714346337597817, "continuity": 5.856662710357341e-07, "momentum": 0.00023506939760409296, "developed": 1.5320116517614224e-06, "invariance": 6.340656000247691e-07, "flux": 2.2804130139775225e-07, "phase": "LBFGS_1", "iteration": 3025, "seconds": 121.29861291100002}
+{"total": 0.00019875721773132682, "continuity": 4.458770206383633e-07, "momentum": 0.00017241426394321024, "developed": 1.3418688240562915e-06, "invariance": 3.4896450529231515e-07, "flux": 3.98389346401018e-07, "phase": "LBFGS_2", "iteration": 3050, "seconds": 122.58739112199993}
+{"total": 0.00013361332821659744, "continuity": 4.410097744766972e-07, "momentum": 0.00011513616482261568, "developed": 8.452187216789753e-07, "invariance": 1.9605658962973393e-07, "flux": 1.0589140941874575e-07, "phase": "LBFGS_3", "iteration": 3075, "seconds": 123.78959268900002}
+{"total": 9.859810961643234e-05, "continuity": 3.625050624123105e-07, "momentum": 8.390445145778358e-05, "developed": 7.813951015123166e-07, "invariance": 1.3536580922846042e-07, "flux": 3.048816310524671e-08, "phase": "LBFGS_4", "iteration": 3100, "seconds": 125.11643362599995}
+{"total": 7.530122820753604e-05, "continuity": 2.8729658652082435e-07, "momentum": 6.232464511413127e-05, "developed": 7.673077107028803e-07, "invariance": 1.1876917938025144e-07, "flux": 8.497660530792928e-08, "phase": "LBFGS_5", "iteration": 3125, "seconds": 126.29994601599998}
+{"total": 6.0383379604900256e-05, "continuity": 2.385260700066283e-07, "momentum": 4.996889765607193e-05, "developed": 5.825019115945906e-07, "invariance": 9.577717463571389e-08, "flux": 6.740408764471795e-08, "phase": "LBFGS_6", "iteration": 3150, "seconds": 127.59344503400001}
+
+<Figure size 1080x480 with 1 Axes>
+{
+  "passed": true,
+  "cases": 81,
+  "grid": [
+    81,
+    33
+  ],
+  "worst": {
+    "velocity_relative_l2": 0.0010533384426765482,
+    "pressure_relative_l2": 0.0013384841895079937,
+    "transverse_max_abs": 0.0010157959768548608,
+    "max_condition_velocity_delta": 0.0012412667274475098,
+    "max_condition_pressure_delta_normalized": 0.0015301271341741085
+  },
+  "velocity_boundary_max_error": 2.086162567138672e-07,
+  "flux_max_relative_error": 2.5259589798043436e-05,
+  "thresholds": {
+    "velocity_relative_l2": 0.002,
+    "pressure_relative_l2": 0.005,
+    "transverse_abs": 0.002,
+    "conditioning_abs": 0.002
+  },
+  "reference": "Analytical plane Poiseuille solution; no interior reference samples in training",
+  "cases_include": "All 64 corners of the six-dimensional control box, its midpoint, and random controls",
+  "scope": "Finite validation samples, not a proof over the continuum"
+}
+
+<Figure size 1440x720 with 7 Axes>
+<Figure size 1440x360 with 1 Axes>
+bottom outlet age: 1.6984636772426098
+top outlet age: 1.5855386656996453
+
+/kaggle/working/rectangular_wall_launchers_1793531860808680981/wall_launchers_viewer.html
+634
+Reusing trained model; fresh flow validation: True
+Independent seed bank: 90 reusable paths; controls can differ for every particle.
+
+Optimizing: triangle
+triangle candidate counts per particle: [16, 16, 16]
+triangle start 1: max error=4.128e-10; min separation=0.1299; 12 independent continuous decisions
+triangle start 2: max error=4.128e-10; min separation=0.1299; 12 independent continuous decisions
+triangle start 3: max error=4.128e-10; min separation=0.1299; 12 independent continuous decisions
+
+<Figure size 1440x720 with 2 Axes>
+/kaggle/working/independent_particle_launch_1793532257819790971/formations/triangle/replay.html
+/usr/local/lib/python3.13/dist-packages/IPython/core/display.py:724: UserWarning: Consider using IPython.display.IFrame instead
+  warnings.warn("Consider using IPython.display.IFrame instead")
+
+<IPython.core.display.HTML object>
+{"kind": "triangle", "success": true, "reason": "all numerical checks passed", "max_error": 2.597725263663327e-09, "min_pair_distance": 0.12990380971217813, "max_reference_error": 9.083507305792277e-07}
+
+Optimizing: square
+square candidate counts per particle: [16, 16, 16, 16]
+square start 1: max error=2.264e-10; min separation=0.10607; 16 independent continuous decisions
+square start 2: max error=2.264e-10; min separation=0.10607; 16 independent continuous decisions
+square start 3: max error=2.264e-10; min separation=0.10607; 16 independent continuous decisions
+
+<Figure size 1440x720 with 2 Axes>
+/kaggle/working/independent_particle_launch_1793532257819790971/formations/square/replay.html
+<IPython.core.display.HTML object>
+{"kind": "square", "success": true, "reason": "all numerical checks passed", "max_error": 4.426638374594627e-09, "min_pair_distance": 0.10606590648706053, "max_reference_error": 7.550077632606226e-07}
+
+Optimizing: circle_10
+circle_10 candidate counts per particle: [16, 16, 16, 16, 16, 16, 16, 16, 16, 16]
+circle_10 start 1: max error=6.95e-10; min separation=0.04595; 40 independent continuous decisions
+circle_10 start 2: max error=6.95e-10; min separation=0.04595; 40 independent continuous decisions
+circle_10 start 3: max error=6.95e-10; min separation=0.04595; 40 independent continuous decisions
+
+<Figure size 1440x720 with 2 Axes>
+/kaggle/working/independent_particle_launch_1793532257819790971/formations/circle_10/replay.html
+<IPython.core.display.HTML object>
+{"kind": "circle_10", "success": true, "reason": "all numerical checks passed", "max_error": 3.748608071484486e-09, "min_pair_distance": 0.04595032166324762, "max_reference_error": 1.7986695405943006e-06}
+
+Optimizing: s_8
+s_8 candidate counts per particle: [16, 16, 16, 16, 16, 16, 16, 16]
+s_8 start 1: max error=1.921e-10; min separation=0.039173; 32 independent continuous decisions
+s_8 start 2: max error=1.921e-10; min separation=0.039173; 32 independent continuous decisions
+s_8 start 3: max error=1.921e-10; min separation=0.039173; 32 independent continuous decisions
+
+<Figure size 1440x720 with 2 Axes>
+/kaggle/working/independent_particle_launch_1793532257819790971/formations/s_8/replay.html
+<IPython.core.display.HTML object>
+{"kind": "s_8", "success": true, "reason": "all numerical checks passed", "max_error": 4.249070867761213e-09, "min_pair_distance": 0.0391726249672529, "max_reference_error": 2.005782371936913e-06}
+
+Optimizing: chevron_7
+chevron_7 candidate counts per particle: [16, 16, 16, 16, 16, 16, 16]
+chevron_7 start 1: max error=2.721e-10; min separation=0.05; 28 independent continuous decisions
+chevron_7 start 2: max error=2.721e-10; min separation=0.05; 28 independent continuous decisions
+chevron_7 start 3: max error=2.721e-10; min separation=0.05; 28 independent continuous decisions
+
+<Figure size 1440x720 with 2 Axes>
+/kaggle/working/independent_particle_launch_1793532257819790971/formations/chevron_7/replay.html
+<IPython.core.display.HTML object>
+{"kind": "chevron_7", "success": true, "reason": "all numerical checks passed", "max_error": 3.0804914672394523e-09, "min_pair_distance": 0.04999999888040234, "max_reference_error": 1.6277378954255604e-06}
+
+/kaggle/working/independent_particle_launch_1793532257819790971/formation_laboratory.html
+Independent launch results:
+
+/kaggle/working/independent_particle_launch_1793532257819790971.zip
+Scout 16/73: 16 usable two-launcher cases
+Scout 32/73: 32 usable two-launcher cases
+Scout 48/73: 48 usable two-launcher cases
+Scout 64/73: 64 usable two-launcher cases
+
+Optimizing: triangle
+triangle start 1: lookup max error=2.9479e-05, min separation=0.024765
+triangle start 2: lookup max error=0.0036018, min separation=0.024926
+triangle start 3: lookup max error=7.4549e-05, min separation=0.034078
+
+<Figure size 1440x720 with 2 Axes>
+/kaggle/working/rectangular_wall_launchers_1793526873435880082/formations/triangle/replay.html
+{"kind": "triangle", "success": true, "reason": "all numerical checks passed", "max_error": 5.827744906741368e-05, "min_pair_distance": 0.03174763006047407, "max_reference_error": 0.00016951057312002021}
+
+Optimizing: square
+square start 1: lookup max error=0.00010182, min separation=0.034744
+square start 2: lookup max error=8.0613e-05, min separation=0.025733
+square start 3: lookup max error=0.010346, min separation=0.024805
+
+<Figure size 1440x720 with 2 Axes>
+/kaggle/working/rectangular_wall_launchers_1793526873435880082/formations/square/replay.html
+{"kind": "square", "success": true, "reason": "all numerical checks passed", "max_error": 7.40201533397645e-05, "min_pair_distance": 0.031990379027550135, "max_reference_error": 0.0008416581205806273}
+
+Optimizing: circle_10
+circle_10 start 1: lookup max error=0.03214, min separation=0.025915
+circle_10 start 2: lookup max error=0.036648, min separation=0.02099
+circle_10 start 3: lookup max error=0.027392, min separation=0.025715
+
+<Figure size 1440x720 with 2 Axes>
+/kaggle/working/rectangular_wall_launchers_1793526873435880082/formations/circle_10/replay.html
+{"kind": "circle_10", "success": false, "reason": "target tolerance missed or trajectory ended before target time; particle clearance failed; analytical-flow cross-check failed", "max_error": 0.027353989311334873, "min_pair_distance": 0.02572350531154204, "max_reference_error": 0.027428925627314485}
+
+Optimizing: s_8
+s_8 start 1: lookup max error=0.054361, min separation=0.025058
+s_8 start 2: lookup max error=0.043866, min separation=0.025226
+s_8 start 3: lookup max error=0.053785, min separation=0.025417
+
+<Figure size 1440x720 with 2 Axes>
+/kaggle/working/rectangular_wall_launchers_1793526873435880082/formations/s_8/replay.html
+{"kind": "s_8", "success": false, "reason": "target tolerance missed or trajectory ended before target time; particle clearance failed; analytical-flow cross-check failed", "max_error": 0.04387088895552221, "min_pair_distance": 0.025230617570569314, "max_reference_error": 0.043934255417007774}
+
+Optimizing: chevron_7
+chevron_7 start 1: lookup max error=0.0010617, min separation=0.049345
+chevron_7 start 2: lookup max error=0.0010617, min separation=0.049345
+chevron_7 start 3: lookup max error=0.037444, min separation=0.025727
+
+<Figure size 1440x720 with 2 Axes>
+/kaggle/working/rectangular_wall_launchers_1793526873435880082/formations/chevron_7/replay.html
+{"kind": "chevron_7", "success": true, "reason": "all numerical checks passed", "max_error": 0.0010612763556725074, "min_pair_distance": 0.04934506109551275, "max_reference_error": 0.001066028365304835}
+
+Results, checkpoints, diagnostics, schedules and offline viewers:
+
+/kaggle/working/rectangular_wall_launchers_1793526873435880082.zip
+Offline launcher viewer:
+
+/kaggle/working/rectangular_wall_launchers_1793526873435880082/wall_launchers_viewer.html
+Flow validated: True | formation passes: 3 / 5

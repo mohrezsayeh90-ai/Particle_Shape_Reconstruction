@@ -1,0 +1,25 @@
+{
+  "source": "dense-duck-formation-20261104-211d7de258",
+  "case": "dense_duck_six_fixed",
+  "particles": 42,
+  "accepted": true,
+  "max_reference_target_error": 0.0006621383092195549,
+  "max_replayed_PINN_target_error": 0.0006503290025497087,
+  "max_reference_saved_discrepancy": 7.914941269979647e-11,
+  "max_PINN_saved_discrepancy": 1.5981014701065107e-08,
+  "reference_minimum_separation": 0.02604813281194892,
+  "reference_nearest_pair": [
+    7,
+    30
+  ],
+  "PINN_minimum_separation": 0.026226042434550557,
+  "PINN_nearest_pair": [
+    10,
+    36
+  ],
+  "required_separation": 0.026000000000000002,
+  "separation_401_to_1601_delta": 9.71445146547012e-17,
+  "nearest_pair_half_step_endpoint_delta": 9.036560719766055e-16,
+  "clock_shift_negative_control_rejected": true,
+  "elapsed_seconds": 5.351673670000309
+}

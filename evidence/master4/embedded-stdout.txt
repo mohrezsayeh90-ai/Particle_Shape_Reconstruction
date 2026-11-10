@@ -1,0 +1,200 @@
+Device: cuda | dtype: float64 | particles: 1
+Physical fluid inputs: 6 | particle-network inputs: 4
+Independent equations: fluid PDE + particle kinematics + particle acceleration
+Particle mass per fluid slab: 0.00818123086872342 | tau: 0.34722222222222227 | sigma: 0.035
+Run: /kaggle/working/two_way_point_pinn_1793551007180694732
+
+{
+  "hard_particle_initial_max_error": 0.0,
+  "hard_fluid_initial_max_error": 0.0,
+  "gaussian_integral_max_error": 1.4432899320127035e-15,
+  "manufactured_NS_max_residual": 1.58757691237979e-16,
+  "manufactured_continuity_max_residual": 1.1102230246251565e-16,
+  "flux_relative_max_error": 2.55351295663786e-15,
+  "hard_wall_velocity_max_error": 0.0,
+  "fluid_residual_gradient_to_particle_net": 3.3660637820231063,
+  "particle_residual_gradient_to_fluid_net": 2.138409661042467,
+  "exchange_power_identity_error": 3.469446951953614e-18,
+  "passed": true
+}
+
+{"stage": "coarse fluid data initialization", "step": 0, "loss": 5.405453922988944, "seconds": 0.02438148600001}
+{"stage": "coarse fluid data initialization", "step": 200, "loss": 0.9878066596688546, "seconds": 11.761407544000008}
+{"stage": "coarse fluid data initialization", "step": 400, "loss": 0.7604407852601861, "seconds": 23.182713758000006}
+{"stage": "coarse fluid data initialization", "step": 600, "loss": 0.6714523471937487, "seconds": 34.962955799000014}
+{"stage": "coarse fluid data initialization", "step": 800, "loss": 0.608349359130021, "seconds": 46.37035311400001}
+{"stage": "coarse fluid data initialization", "step": 1000, "loss": 0.443002949714947, "seconds": 57.669990106}
+{"stage": "coarse fluid data initialization", "step": 1200, "loss": 0.42358478591205906, "seconds": 69.15472685099999}
+{"stage": "coarse fluid data initialization", "step": 1400, "loss": 0.3885069545513082, "seconds": 80.696757281}
+{"stage": "coarse fluid data initialization", "step": 1600, "loss": 0.38108103933821963, "seconds": 92.22031078900002}
+{"total": 1.1877398931067638, "momentum": 0.09258792018771139, "continuity": 3.9730175242013477e-35, "kinematic": 1.3803645864802032e-05, "dynamic": 0.5319015145308353, "outlet": 2.8243143289846246e-10, "domain": 0.0, "pressure_poisson": 0.21754277216222795, "fluid_data": 0.4978495902244142, "stage": "initial", "step": 0, "seconds": 0.14695947999996406}
+{"total": 1.5683002984139653, "momentum": 0.05808435459936549, "continuity": 3.511803411754336e-35, "kinematic": 8.010678473181982e-05, "dynamic": 0.0006391093252054883, "outlet": 3.1566381497922366e-10, "domain": 0.0, "pressure_poisson": 0.05448387709550858, "fluid_data": 1.4924306034502908, "stage": "Adam", "step": 200, "seconds": 66.52915558199999}
+{"total": 0.6693900978041197, "momentum": 0.047305894307173836, "continuity": 4.42973482402383e-35, "kinematic": 3.998657974010547e-05, "dynamic": 0.00039264340948429047, "outlet": 1.6350181282271114e-10, "domain": 0.0, "pressure_poisson": 0.04434969698755607, "fluid_data": 0.6079867851610934, "stage": "Adam", "step": 400, "seconds": 133.124855417}
+{"total": 0.5811705383055301, "momentum": 0.043223388776723104, "continuity": 5.706532664092444e-35, "kinematic": 2.1083954513876337e-05, "dynamic": 0.00026024468153249144, "outlet": 2.967727167241556e-10, "domain": 0.0, "pressure_poisson": 0.05790916774316003, "fluid_data": 0.5201033149198332, "stage": "Adam", "step": 600, "seconds": 199.97017989999995}
+{"total": 1.1644496096208192, "momentum": 0.036196819138097434, "continuity": 6.037400002126365e-35, "kinematic": 2.5952500515615876e-05, "dynamic": 0.00020581134116522918, "outlet": 1.620946946206113e-10, "domain": 0.0, "pressure_poisson": 0.03278549628154891, "fluid_data": 1.1179518052195168, "stage": "Adam", "step": 800, "seconds": 266.2433137969999}
+{"total": 0.48686470879650084, "momentum": 0.027091610266605618, "continuity": 7.380190986488659e-35, "kinematic": 1.0059645547879715e-05, "dynamic": 0.000284881356846544, "outlet": 1.3966785702036676e-10, "domain": 0.0, "pressure_poisson": 0.030397078478569414, "fluid_data": 0.4502684971460655, "stage": "Adam", "step": 1000, "seconds": 332.50080018899996}
+{"total": 0.4984506687193208, "momentum": 0.027104202271238085, "continuity": 6.148151419244652e-35, "kinematic": 1.2104200772349002e-05, "dynamic": 0.0006092630121606278, "outlet": 7.250501194517548e-11, "domain": 0.0, "pressure_poisson": 0.033111744802563604, "fluid_data": 0.4606826379729285, "stage": "Adam", "step": 1200, "seconds": 398.283370699}
+{"total": 0.19326755200788112, "momentum": 0.02199613294379495, "continuity": 9.379090616902214e-35, "kinematic": 1.0501876300365043e-05, "dynamic": 9.152522406899505e-05, "outlet": 3.0717978238321495e-11, "domain": 0.0, "pressure_poisson": 0.03681530389711268, "fluid_data": 0.16003028390173613, "stage": "Adam", "step": 1400, "seconds": 464.335400854}
+{"total": 0.4720067005263195, "momentum": 0.020894597964386235, "continuity": 1.2070152506972118e-34, "kinematic": 9.277712465863288e-06, "dynamic": 4.2443589159711204e-05, "outlet": 8.610332028997069e-11, "domain": 0.0, "pressure_poisson": 0.028826510108925615, "fluid_data": 0.44232892879821656, "stage": "Adam", "step": 1600, "seconds": 530.413638754}
+{"total": 0.2737662611146217, "momentum": 0.019617035794566477, "continuity": 9.180331261801924e-35, "kinematic": 1.6072477990841026e-06, "dynamic": 4.275430320060491e-05, "outlet": 3.791824643421826e-11, "domain": 0.0, "pressure_poisson": 0.02810577092805322, "fluid_data": 0.24565866725286417, "stage": "Adam", "step": 1800, "seconds": 596.468533314}
+{"total": 0.1973833276370835, "momentum": 0.018446702828188492, "continuity": 8.71252933973473e-35, "kinematic": 5.732311057180956e-06, "dynamic": 9.368514727641433e-05, "outlet": 1.5382119373290175e-11, "domain": 0.0, "pressure_poisson": 0.030087923458000432, "fluid_data": 0.16975923951057023, "stage": "Adam", "step": 2000, "seconds": 662.4669336329999}
+{"total": 0.26140147150336157, "momentum": 0.01670289052893871, "continuity": 1.2114981274412752e-34, "kinematic": 3.5307677023625243e-06, "dynamic": 7.22160832647137e-05, "outlet": 1.4437568624445694e-11, "domain": 0.0, "pressure_poisson": 0.03337521313861328, "fluid_data": 0.23457849326966304, "stage": "Adam", "step": 2200, "seconds": 728.304232255}
+{"total": 0.1343914719130451, "momentum": 0.01622639320492859, "continuity": 1.1513441202171978e-34, "kinematic": 1.9129647902569903e-06, "dynamic": 6.591437071868305e-05, "outlet": 1.5136284451263626e-11, "domain": 0.0, "pressure_poisson": 0.028569437761344508, "fluid_data": 0.10950920335806465, "stage": "Adam", "step": 2400, "seconds": 794.3002645400001}
+{"total": 0.13597328285811403, "momentum": 0.01567450094655581, "continuity": 1.0569647543887032e-34, "kinematic": 1.7069832407386713e-06, "dynamic": 4.1230460785511435e-05, "outlet": 1.8691162151155735e-11, "domain": 0.0, "pressure_poisson": 0.027994893194638534, "fluid_data": 0.11184201365623551, "stage": "Adam", "step": 2600, "seconds": 860.38287738}
+{"total": 0.12410064651567826, "momentum": 0.015497429589698738, "continuity": 1.2081203023250878e-34, "kinematic": 1.5137049321686844e-06, "dynamic": 2.6489452768217477e-05, "outlet": 1.5722229909534966e-11, "domain": 0.0, "pressure_poisson": 0.02091660857861779, "fluid_data": 0.10228660784715983, "stage": "Adam", "step": 2800, "seconds": 926.762880181}
+{"total": 0.08049634679936243, "momentum": 0.01442633939893243, "continuity": 1.218703664280339e-34, "kinematic": 2.933573475748401e-06, "dynamic": 2.7545557417573648e-05, "outlet": 3.295707368868842e-11, "domain": 0.0, "pressure_poisson": 0.02828991550820275, "fluid_data": 0.057526151449202714, "stage": "Adam", "step": 3000, "seconds": 993.8152944269999}
+{"total": 0.07856638956860765, "momentum": 0.013874404478714198, "continuity": 1.2746174498152256e-34, "kinematic": 1.7552467739280397e-06, "dynamic": 1.3382030410707816e-05, "outlet": 3.8859558440101515e-11, "domain": 0.0, "pressure_poisson": 0.02770534096499452, "fluid_data": 0.056349448294473185, "stage": "Adam", "step": 3200, "seconds": 1060.82784639}
+{"total": 0.08005150225419172, "momentum": 0.013985765218343552, "continuity": 1.2721883955345653e-34, "kinematic": 1.247307958900947e-06, "dynamic": 1.0640798195631058e-05, "outlet": 3.6093506117426226e-11, "domain": 0.0, "pressure_poisson": 0.022370987621386628, "fluid_data": 0.05933132686442883, "stage": "Adam", "step": 3400, "seconds": 1127.703264761}
+{"total": 0.07864661833314582, "momentum": 0.013467854368198565, "continuity": 1.3835924882095705e-34, "kinematic": 1.4383107528425694e-06, "dynamic": 1.3121469639838825e-05, "outlet": 4.2272083290021356e-11, "domain": 0.0, "pressure_poisson": 0.024214890329038, "fluid_data": 0.05788679228061318, "stage": "Adam", "step": 3600, "seconds": 1195.95609225}
+{"total": 0.0691602968770778, "momentum": 0.01343753451753765, "continuity": 1.3309924772292141e-34, "kinematic": 1.1645910358760383e-06, "dynamic": 9.890051609641574e-06, "outlet": 6.652381470473882e-11, "domain": 0.0, "pressure_poisson": 0.02164012654494703, "fluid_data": 0.04920918842078287, "stage": "Adam", "step": 3800, "seconds": 1263.741488137}
+{"total": 0.0662383145438702, "momentum": 0.012859105947907375, "continuity": 1.4507590824725678e-34, "kinematic": 1.7530043822959213e-06, "dynamic": 1.0742772387716369e-05, "outlet": 6.383475925225767e-11, "domain": 0.0, "pressure_poisson": 0.02232295567800772, "fluid_data": 0.046654049063582885, "stage": "Adam", "step": 4000, "seconds": 1330.539622623}
+{"total": 0.0662383145438702, "momentum": 0.012859105947907375, "continuity": 1.4507590824725678e-34, "kinematic": 1.7530043822959213e-06, "dynamic": 1.0742772387716369e-05, "outlet": 6.383475925225767e-11, "domain": 0.0, "pressure_poisson": 0.02232295567800772, "fluid_data": 0.046654049063582885, "stage": "Adam final", "step": 4000, "seconds": 1330.703654844}
+{"total": 0.06970596324887915, "momentum": 0.012968248956622797, "continuity": 1.6199384482172833e-34, "kinematic": 1.7619459380778533e-06, "dynamic": 1.4279419881036041e-05, "outlet": 8.939446359789381e-11, "domain": 0.0, "pressure_poisson": 0.02395028717495728, "fluid_data": 0.04952072924262847, "stage": "LBFGS", "step": 4020, "seconds": 1338.317815464}
+{"total": 0.06229260905526074, "momentum": 0.013174036296729918, "continuity": 1.255043765090635e-34, "kinematic": 1.596380495923983e-06, "dynamic": 1.6583691892884027e-05, "outlet": 1.2355627719811304e-10, "domain": 0.0, "pressure_poisson": 0.022964013006085027, "fluid_data": 0.04219682133514194, "stage": "LBFGS", "step": 4040, "seconds": 1345.3669745450002}
+{"total": 0.060883041383942585, "momentum": 0.012919272493145267, "continuity": 1.4006312068381286e-34, "kinematic": 1.4301727541100875e-06, "dynamic": 1.2775874928493488e-05, "outlet": 1.2500562402177822e-10, "domain": 0.0, "pressure_poisson": 0.023421145914794182, "fluid_data": 0.04091034748888834, "stage": "LBFGS", "step": 4060, "seconds": 1352.415450773}
+{"total": 0.06056333075682551, "momentum": 0.012847989840234879, "continuity": 1.419913838880115e-34, "kinematic": 1.2507455172973763e-06, "dynamic": 1.0913213914963388e-05, "outlet": 1.4265435125591164e-10, "domain": 0.0, "pressure_poisson": 0.023382813804710457, "fluid_data": 0.04067707607755869, "stage": "LBFGS", "step": 4080, "seconds": 1360.1163296680002}
+{"total": 0.06589673840866853, "momentum": 0.012573586678270823, "continuity": 2.0267679046881473e-34, "kinematic": 1.2176661841105649e-06, "dynamic": 1.727443674324513e-05, "outlet": 1.3278721074432614e-10, "domain": 0.0, "pressure_poisson": 0.024210996460528638, "fluid_data": 0.04603040166709732, "stage": "LBFGS", "step": 4100, "seconds": 1367.4882613280001}
+{"total": 0.0717318048702709, "momentum": 0.012722301491943167, "continuity": 1.933257538723313e-34, "kinematic": 1.2698251063208562e-06, "dynamic": 1.5542635579922468e-05, "outlet": 1.207663814640798e-10, "domain": 0.0, "pressure_poisson": 0.024190527193941807, "fluid_data": 0.05172410430934877, "stage": "LBFGS", "step": 4120, "seconds": 1375.199940892}
+Particle and fluid weights are now trained/loaded. Accuracy is checked next.
+
+Independent MAC reference: 128 48
+Independent MAC reference: 160 60
+
+<Figure size 1200x800 with 5 Axes>
+{
+  "position_max_abs": 0.0001208534379814,
+  "velocity_max_abs": 0.0003010518094213457,
+  "streamwise_velocity_relative_l2": 0.00010268827112289084,
+  "transverse_velocity_rms_abs": 6.084083995711728e-05,
+  "disturbance_u_rms_abs": 7.499354251655668e-05,
+  "disturbance_u_relative_l2": 0.30437413634995025,
+  "pressure_perturbation_rms_abs": 0.001249682653451832,
+  "pressure_perturbation_relative_l2": 0.2521367222460306,
+  "disturbance_vector_relative_l2": 0.28322515455862324,
+  "numerical_fluid_data_in_training": true,
+  "particle_inside_domain": true,
+  "min_sampled_pair_distance": null,
+  "independent_residuals": {
+    "total": 0.01998423682847118,
+    "momentum": 0.013973986352229162,
+    "continuity": 1.570536971493394e-34,
+    "kinematic": 9.443312124118835e-07,
+    "dynamic": 1.4870783472088965e-05,
+    "outlet": 1.6070398197932287e-10,
+    "domain": 0.0,
+    "pressure_poisson": 0.019953121161683372
+  },
+  "reference_max_divergence": 3.713522545023551e-13,
+  "reference_dt": 3.2786885245901635e-05,
+  "reference_grid": [
+    160,
+    60
+  ],
+  "scope": "One configured scenario only. Parameter generalization is not certified.",
+  "reference_note": "Independent low-order MAC solution; inspect refinement before accepting.",
+  "reference_position_refinement_max_abs": 6.591597424122765e-07,
+  "reference_u_refinement_rms_abs": 0.00031781050599708377,
+  "reference_disturbance_refinement_relative_l2": 0.009652720453028719,
+  "thresholds": {
+    "position_max_abs": 0.003,
+    "velocity_max_abs": 0.03,
+    "streamwise_velocity_relative_l2": 0.01,
+    "transverse_velocity_rms_abs": 0.005,
+    "disturbance_u_rms_abs": 0.005,
+    "disturbance_u_relative_l2": 0.25,
+    "pressure_perturbation_rms_abs": 0.03,
+    "pressure_perturbation_relative_l2": 0.25,
+    "disturbance_vector_relative_l2": 0.25,
+    "reference_disturbance_refinement_relative_l2": 0.25,
+    "reference_position_refinement_max_abs": 0.001,
+    "reference_u_refinement_rms_abs": 0.003,
+    "dynamic_residual_rms": 0.04,
+    "momentum_residual_rms": 0.15,
+    "divergence_rms": 0.02
+  },
+  "checks": {
+    "position_max_abs": true,
+    "velocity_max_abs": true,
+    "streamwise_velocity_relative_l2": true,
+    "transverse_velocity_rms_abs": true,
+    "disturbance_u_rms_abs": true,
+    "disturbance_u_relative_l2": false,
+    "pressure_perturbation_rms_abs": true,
+    "pressure_perturbation_relative_l2": false,
+    "disturbance_vector_relative_l2": false,
+    "reference_disturbance_refinement_relative_l2": true,
+    "reference_position_refinement_max_abs": true,
+    "reference_u_refinement_rms_abs": true,
+    "dynamic_residual_rms": true,
+    "momentum_residual_rms": true,
+    "divergence_rms": true,
+    "valid_domain": true,
+    "sampled_clearance": true,
+    "two_way_enabled": true,
+    "exchange_audit": true,
+    "reference_time_refinement": true
+  },
+  "passed": false,
+  "exchange_audit": {
+    "momentum_exchange_max_abs": 2.6020852139652106e-17,
+    "independently_integrated_power_error_max_abs": 1.6511023616036513e-07,
+    "measured_interphase_power": [
+      -0.003135931593508054,
+      -0.0020674695529978773,
+      -0.001659387533180904
+    ],
+    "expected_nonpositive_power": [
+      -0.0031360967037442145,
+      -0.0020674591382065705,
+      -0.0016594601020270118
+    ],
+    "velocity_quadrature_refinement_max_abs": 7.31370405236409e-05,
+    "passed": true
+  },
+  "reference_time_refinement_position_max_abs": 1.5097871193945378e-10,
+  "kernel_width_sensitivity_reference_only": [
+    {
+      "sigma": 0.028000000000000004,
+      "final_particle_state": [
+        [
+          0.9768727083011022,
+          0.04788259055840513,
+          0.4442449473981574,
+          0.2458368396642565
+        ]
+      ]
+    },
+    {
+      "sigma": 0.035,
+      "final_particle_state": [
+        [
+          0.9776229434330785,
+          0.047881426610666473,
+          0.4541861412463474,
+          0.24579000078224808
+        ]
+      ]
+    },
+    {
+      "sigma": 0.042,
+      "final_particle_state": [
+        [
+          0.9783488243799937,
+          0.04787990512996957,
+          0.4641992043028589,
+          0.24574893733564285
+        ]
+      ]
+    }
+  ],
+  "kernel_note": "Sigma changes the regularized model. These are separate reference solutions, not predictions by the same trained network."
+}
+
+/kaggle/working/two_way_point_pinn_1793551007180694732/two_way_replay.html
+/usr/local/lib/python3.13/dist-packages/IPython/core/display.py:724: UserWarning: Consider using IPython.display.IFrame instead
+  warnings.warn("Consider using IPython.display.IFrame instead")
+
+<IPython.core.display.HTML object>
+FINAL STATUS: NOT ACCEPTED
+
+/kaggle/working/two_way_point_pinn_1793551007180694732.zip

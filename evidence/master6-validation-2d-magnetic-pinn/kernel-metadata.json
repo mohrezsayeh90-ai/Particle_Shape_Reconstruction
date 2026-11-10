@@ -1,0 +1,19 @@
+{
+  "id": "mohrezsayeh/master6-validation-2d-magnetic-pinn",
+  "id_no": 142476034,
+  "title": "Master6_Validation_2d_magnetic_PINN",
+  "code_file": "master6-validation-2d-magnetic-pinn.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:de153e6d303881930c51286216393d56f56b26458d0661350305a1e8144eea01",
+  "machine_shape": "None"
+}

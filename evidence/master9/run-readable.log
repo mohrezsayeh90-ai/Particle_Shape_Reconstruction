@@ -1,0 +1,156 @@
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+GPU: Tesla T4
+{
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "seed": 903,
+  "batch": 2048,
+  "labelled_trajectories": 0,
+  "labelled_controls": 0,
+  "loss": "fluid momentum residual; inertial Stokes residual + hard position/velocity IC",
+  "flow_steps": 6000,
+  "particle_steps": 15000,
+  "training_seconds": 291.877161026001,
+  "ranges": {
+    "eta_Pas": [
+      0.001,
+      0.006
+    ],
+    "mean_m_s": [
+      0.005,
+      0.03
+    ],
+    "rho_kg_m3": [
+      950.0,
+      1100.0
+    ],
+    "release_X": [
+      -0.7,
+      0.7
+    ],
+    "release_Z": [
+      -2.0,
+      1.7
+    ],
+    "initial_vx_m_s": [
+      -0.001,
+      0.001
+    ],
+    "initial_vz_m_s": [
+      0.0,
+      0.06
+    ],
+    "u": [
+      -0.5,
+      0.5
+    ]
+  }
+}
+gpu_used_for_training {'passed': True, 'device': 'cuda', 'gpu': 'Tesla T4'}
+fluid_Re_and_U_profile {'passed': True, 'max_normalized_error': 0.0002417657277788976, 'Re_range': [0.11875, 4.95]}
+fluid_no_slip_and_mass_flux {'passed': True, 'max_wall_velocity': 0.0, 'max_normalized_flux_error': 1.6432769447627393e-05}
+Re_viscosity_consistency {'passed': True, 'Re_roundtrip_error': 0.0, 'invalid_combination_rejected': True}
+release_position_hard_IC {'passed': True, 'max_dimensionless_error': 0.0}
+initial_particle_velocity_hard_IC {'passed': True, 'max_dimensionless_error': 0.0}
+initial_speed_Stokes_relaxation {'passed': True, 'max_velocity_error_m_s': 7.254552492244313e-06, 'max_position_error_m': 4.3643733071974556e-11, 'relaxation_time_s': [5.2777777777777776e-08, 3.166666666666666e-07]}
+heldout_inertial_equation {'passed': True, 'residual_rms': 0.00023410699048383388}
+independent_parametric_Radau {'passed': True, 'cases': 48, 'max_x_error_um': 0.0007086005235579229, 'max_z_error_um': 0.6177926734451944}
+viscosity_magnetic_mobility {'passed': True, 'mobility_ratio': np.float64(5.999999999999999), 'expected': 6.0}
+density_Re_invariance {'passed': True, 'max_difference_um': [8.828633515094269e-05, 0.0007819887315463347]}
+Stokes_drag_validity {'passed': True, 'max_conservative_particle_Re': 0.06709999999999999}
+{
+  "gpu_used_for_training": {
+    "passed": true,
+    "device": "cuda",
+    "gpu": "Tesla T4"
+  },
+  "fluid_Re_and_U_profile": {
+    "passed": true,
+    "max_normalized_error": 0.0002417657277788976,
+    "Re_range": [
+      0.11875,
+      4.95
+    ]
+  },
+  "fluid_no_slip_and_mass_flux": {
+    "passed": true,
+    "max_wall_velocity": 0.0,
+    "max_normalized_flux_error": 1.6432769447627393e-05
+  },
+  "Re_viscosity_consistency": {
+    "passed": true,
+    "Re_roundtrip_error": 0.0,
+    "invalid_combination_rejected": true
+  },
+  "release_position_hard_IC": {
+    "passed": true,
+    "max_dimensionless_error": 0.0
+  },
+  "initial_particle_velocity_hard_IC": {
+    "passed": true,
+    "max_dimensionless_error": 0.0
+  },
+  "initial_speed_Stokes_relaxation": {
+    "passed": true,
+    "max_velocity_error_m_s": 7.254552492244313e-06,
+    "max_position_error_m": 4.3643733071974556e-11,
+    "relaxation_time_s": [
+      5.2777777777777776e-08,
+      3.166666666666666e-07
+    ]
+  },
+  "heldout_inertial_equation": {
+    "passed": true,
+    "residual_rms": 0.00023410699048383388
+  },
+  "independent_parametric_Radau": {
+    "passed": true,
+    "cases": 48,
+    "max_x_error_um": 0.0007086005235579229,
+    "max_z_error_um": 0.6177926734451944
+  },
+  "viscosity_magnetic_mobility": {
+    "passed": true,
+    "mobility_ratio": 5.999999999999999,
+    "expected": 6.0
+  },
+  "density_Re_invariance": {
+    "passed": true,
+    "max_difference_um": [
+      8.828633515094269e-05,
+      0.0007819887315463347
+    ]
+  },
+  "Stokes_drag_validity": {
+    "passed": true,
+    "max_conservative_particle_Re": 0.06709999999999999
+  },
+  "all_passed": true
+}
+control nominal {'parameters': {'mean': 0.015, 'eta': 0.003276913272013514, 'rho': 1000.0, 'x0': 0.0, 'z0': -0.08, 'vx0': 0.0, 'vz0': 0.03}, 'Re': 0.6866217727567374, 'max_independent_tracking_error_um': 0.004292146025238826, 'max_model_oracle_x_difference_um': 0.004465514485168792, 'max_model_oracle_z_difference_um': 32.206842593446304, 'completed': True, 'steps': 138, 'max_abs_u': 0.08429161449309916, 'passed': True}
+control low_speed_high_viscosity {'parameters': {'mean': 0.005, 'eta': 0.006, 'rho': 1000.0, 'x0': -1.1249999999999999e-05, 'z0': -0.07200000000000001, 'vx0': 0.001, 'vz0': 0}, 'Re': 0.12499999999999999, 'max_independent_tracking_error_um': 0.08647122198314144, 'max_model_oracle_x_difference_um': 0.08629319226950831, 'max_model_oracle_z_difference_um': 10.367765572338872, 'completed': True, 'steps': 392, 'max_abs_u': 0.04797174721085789, 'passed': True}
+control high_Re_fast_release {'parameters': {'mean': 0.03, 'eta': 0.001, 'rho': 1100, 'x0': 1.1249999999999999e-05, 'z0': -0.068, 'vx0': -0.001, 'vz0': 0.06}, 'Re': 4.949999999999999, 'max_independent_tracking_error_um': 0.008424627499409218, 'max_model_oracle_x_difference_um': 0.008412557209256438, 'max_model_oracle_z_difference_um': 12.036126988246298, 'completed': True, 'steps': 65, 'max_abs_u': 0.04920316228777292, 'passed': True}
+control shifted_release {'parameters': {'mean': 0.02, 'eta': 0.004, 'rho': 950, 'x0': -1.875e-05, 'z0': -0.064, 'vx0': 0.0005, 'vz0': 0.005}, 'Re': 0.7124999999999999, 'max_independent_tracking_error_um': 0.0030981485907763374, 'max_model_oracle_x_difference_um': 0.003385405156014297, 'max_model_oracle_z_difference_um': 10.008930501466395, 'completed': True, 'steps': 96, 'max_abs_u': 0.12920156692681573, 'passed': True}
+Parameters: Parameters(mean=0.015, eta=0.0028124999999999995, rho=1000, x0=0, z0=-0.08, vx0=0.0005, vz0=0.02)
+Re: 0.8 relaxation_s: 1.1259259259259261e-07
+OUTPUTS: /kaggle/working/master9_run/outputs
+ALL_PHYSICS_TESTS_PASSED: True
+ALL_CONTROL_TESTS_PASSED: True
+/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 338898 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Support files will be in __results___files/
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Writing 425856 bytes to __results__.html

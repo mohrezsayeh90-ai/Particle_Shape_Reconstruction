@@ -1,0 +1,40 @@
+{
+  "ref": "mohrezsayeh/master9",
+  "title": "master9",
+  "last_run": "2026-11-03 13:22:20.840000",
+  "listed_version": 0,
+  "is_private": false,
+  "source_sha256": "b5bb1bfafcd2e3152f73d1bba86cd8b1bd8c365184daba470f7f2ae9181522d0",
+  "status": {
+    "status": "COMPLETE"
+  },
+  "output_files": [
+    "master9_run/examples/master9_target.csv",
+    "master9_run/master9/__init__.py",
+    "master9_run/master9/__pycache__/__init__.cpython-313.pyc",
+    "master9_run/master9/__pycache__/control.cpython-313.pyc",
+    "master9_run/master9/__pycache__/models.cpython-313.pyc",
+    "master9_run/master9/__pycache__/physics.cpython-313.pyc",
+    "master9_run/master9/__pycache__/train.cpython-313.pyc",
+    "master9_run/master9/__pycache__/validate.cpython-313.pyc",
+    "master9_run/master9/control.py",
+    "master9_run/master9/models.py",
+    "master9_run/master9/physics.py",
+    "master9_run/master9/train.py",
+    "master9_run/master9/validate.py",
+    "master9_run/outputs/checkpoint.pt",
+    "master9_run/outputs/control_high_Re_fast_release.csv",
+    "master9_run/outputs/control_low_speed_high_viscosity.csv",
+    "master9_run/outputs/control_nominal.csv",
+    "master9_run/outputs/control_results.png",
+    "master9_run/outputs/control_shifted_release.csv",
+    "master9_run/outputs/control_tests.json",
+    "master9_run/outputs/physics_tests.json",
+    "master9_run/outputs/training.json",
+    "master9_run/outputs/training_progress.json",
+    "master9_run/pretrained/checkpoint.pt",
+    "master9_run/pretrained/training.json",
+    "master9_run/pretrained/training_progress.json"
+  ],
+  "log_chars": 16081
+}

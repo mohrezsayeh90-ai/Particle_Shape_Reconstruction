@@ -1,0 +1,19 @@
+{
+  "id": "mohrezsayeh/master9-flexible-magnetic-path-controller",
+  "id_no": 142516812,
+  "title": "Master9 Flexible Magnetic Path Controller",
+  "code_file": "master9-flexible-magnetic-path-controller.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:0717e81990be591f8c5f98f033d29ab23e9ffde057e5b3a6bd4371f93969e962",
+  "machine_shape": "None"
+}

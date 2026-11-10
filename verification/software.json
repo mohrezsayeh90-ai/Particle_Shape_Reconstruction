@@ -1,0 +1,10 @@
+{
+  "python": "3.12",
+  "numerical_packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "torch_environment": "/workspace/.venvs/particle-audit",
+  "torch_cpu_version": "2.15.0+cpu"
+}

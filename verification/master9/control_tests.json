@@ -1,0 +1,79 @@
+{
+  "nominal": {
+    "parameters": {
+      "mean": 0.015,
+      "eta": 0.003276913272013514,
+      "rho": 1000.0,
+      "x0": 0.0,
+      "z0": -0.08,
+      "vx0": 0.0,
+      "vz0": 0.03
+    },
+    "Re": 0.6866217727567374,
+    "max_independent_tracking_error_um": 0.004292146025238084,
+    "max_model_oracle_x_difference_um": 0.00446551448516625,
+    "max_model_oracle_z_difference_um": 32.20684259327283,
+    "completed": true,
+    "steps": 138,
+    "max_abs_u": 0.08429161449309906,
+    "passed": true
+  },
+  "low_speed_high_viscosity": {
+    "parameters": {
+      "mean": 0.005,
+      "eta": 0.006,
+      "rho": 1000.0,
+      "x0": -1.1249999999999999e-05,
+      "z0": -0.07200000000000001,
+      "vx0": 0.001,
+      "vz0": 0
+    },
+    "Re": 0.12499999999999999,
+    "max_independent_tracking_error_um": 0.08647122198314483,
+    "max_model_oracle_x_difference_um": 0.08629319226951339,
+    "max_model_oracle_z_difference_um": 10.367765572436017,
+    "completed": true,
+    "steps": 392,
+    "max_abs_u": 0.04797174721085789,
+    "passed": true
+  },
+  "high_Re_fast_release": {
+    "parameters": {
+      "mean": 0.03,
+      "eta": 0.001,
+      "rho": 1100,
+      "x0": 1.1249999999999999e-05,
+      "z0": -0.068,
+      "vx0": -0.001,
+      "vz0": 0.06
+    },
+    "Re": 4.949999999999999,
+    "max_independent_tracking_error_um": 0.008424627499395664,
+    "max_model_oracle_x_difference_um": 0.008412557209242884,
+    "max_model_oracle_z_difference_um": 12.036126988336504,
+    "completed": true,
+    "steps": 65,
+    "max_abs_u": 0.04920316228777292,
+    "passed": true
+  },
+  "shifted_release": {
+    "parameters": {
+      "mean": 0.02,
+      "eta": 0.004,
+      "rho": 950,
+      "x0": -1.875e-05,
+      "z0": -0.064,
+      "vx0": 0.0005,
+      "vz0": 0.005
+    },
+    "Re": 0.7124999999999999,
+    "max_independent_tracking_error_um": 0.0030981485907763374,
+    "max_model_oracle_x_difference_um": 0.003385405156014297,
+    "max_model_oracle_z_difference_um": 10.008930501466395,
+    "completed": true,
+    "steps": 96,
+    "max_abs_u": 0.12920156692681573,
+    "passed": true
+  },
+  "all_passed": true
+}
