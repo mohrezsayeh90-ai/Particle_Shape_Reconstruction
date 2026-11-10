@@ -1,0 +1,204 @@
+{
+  "related_notebooks": 13,
+  "embedded_checkpoint_files": 10,
+  "unique_checkpoint_hashes": 7,
+  "original_outputs_listed": 347,
+  "original_outputs_downloaded": 0,
+  "all_original_outputs_recovered": false,
+  "runs": [
+    {
+      "ref": "mohrezsayeh/dense-duck-formation-20261104-211d7de258",
+      "notebook": "evidence/dense-duck-formation-20261104-211d7de258/dense-duck-formation-20261104-211d7de258.ipynb",
+      "notebook_sha256": "68211cb08980aabdbc6075bd2e294351d0fd2efc64e8b3b9323449ca1b30c413",
+      "asset_index": "assets/dense-duck-formation-20261104-211d7de258/extraction.json",
+      "checkpoint_files": [
+        "assets/dense-duck-formation-20261104-211d7de258/checkpoints/literal_01.pt"
+      ],
+      "embedded_artifacts": 2,
+      "original_outputs_listed": 27,
+      "original_outputs_downloaded": 0,
+      "original_outputs_complete": false
+    },
+    {
+      "ref": "mohrezsayeh/master-1",
+      "notebook": "evidence/master-1/master-1.ipynb",
+      "notebook_sha256": "15a3a9e6f18c69a3e3e64ac6f4890dda54d6db6ea2afb3444cc62eb7b0e1e0b7",
+      "asset_index": "assets/master-1/extraction.json",
+      "checkpoint_files": [],
+      "embedded_artifacts": 6,
+      "original_outputs_listed": 0,
+      "original_outputs_downloaded": 0,
+      "original_outputs_complete": false,
+      "output_listing_error": {
+        "type": "HTTPError",
+        "http_status": 404
+      },
+      "checkpoint_note": "No trained tensor checkpoint embedded in the available source. Full training code is archived; original weights are not claimed recovered."
+    },
+    {
+      "ref": "mohrezsayeh/master-2",
+      "notebook": "evidence/master-2/master-2.ipynb",
+      "notebook_sha256": "b27b90274dda6c6b78770580881f7f9f96cec74758a50301b21a480636afb03e",
+      "asset_index": "assets/master-2/extraction.json",
+      "checkpoint_files": [],
+      "embedded_artifacts": 1,
+      "original_outputs_listed": 126,
+      "original_outputs_downloaded": 0,
+      "original_outputs_complete": false,
+      "checkpoint_note": "No trained tensor checkpoint embedded in the available source. Full training code is archived; original weights are not claimed recovered."
+    },
+    {
+      "ref": "mohrezsayeh/master-5-2d-magnetic-notpinn",
+      "notebook": "evidence/master-5-2d-magnetic-notpinn/master-5-2d-magnetic-notpinn.ipynb",
+      "notebook_sha256": "c032ec9d58c15d1cb3874920c816674fc26799ca4d55a9ca522c1338d66e344d",
+      "asset_index": "assets/master-5-2d-magnetic-notpinn/extraction.json",
+      "checkpoint_files": [],
+      "embedded_artifacts": 65,
+      "original_outputs_listed": 0,
+      "original_outputs_downloaded": 0,
+      "original_outputs_complete": false,
+      "output_listing_error": {
+        "type": "HTTPError",
+        "http_status": 404
+      },
+      "checkpoint_note": "No neural checkpoint needed: direct numerical method."
+    },
+    {
+      "ref": "mohrezsayeh/master10-magnetic-function-deeponet",
+      "notebook": "evidence/master10-magnetic-function-deeponet/master10-magnetic-function-deeponet.ipynb",
+      "notebook_sha256": "bbc833bea39f3c5d1e778a02e8335934462bbd3df45231923a0017ad777a78ff",
+      "asset_index": "assets/master10-magnetic-function-deeponet/extraction.json",
+      "checkpoint_files": [
+        "assets/master10-magnetic-function-deeponet/packages/package_01/pretrained/checkpoint.pt"
+      ],
+      "embedded_artifacts": 1,
+      "original_outputs_listed": 64,
+      "original_outputs_downloaded": 0,
+      "original_outputs_complete": false
+    },
+    {
+      "ref": "mohrezsayeh/master3-2dsimplechannel-general-up-down-particle",
+      "notebook": "evidence/master3-2dsimplechannel-general-up-down-particle/master3-2dsimplechannel-general-up-down-particle.ipynb",
+      "notebook_sha256": "c25bf3dae14f525c163fbe6803b8e3e4672e87d03065bc0d683bdc3f4b2afe70",
+      "asset_index": "assets/master3-2dsimplechannel-general-up-down-particle/extraction.json",
+      "checkpoint_files": [],
+      "embedded_artifacts": 33,
+      "original_outputs_listed": 0,
+      "original_outputs_downloaded": 0,
+      "original_outputs_complete": false,
+      "output_listing_error": {
+        "type": "HTTPError",
+        "http_status": 404
+      },
+      "checkpoint_note": "No trained tensor checkpoint embedded in the available source. Full training code is archived; original weights are not claimed recovered."
+    },
+    {
+      "ref": "mohrezsayeh/master3-clean-revised-version",
+      "notebook": "evidence/master3-clean-revised-version/master3-clean-revised-version.ipynb",
+      "notebook_sha256": "5a1db78e11222f30aeafc925eac31517c819a9ac78b34138b3c7083394dfe4ee",
+      "asset_index": "assets/master3-clean-revised-version/extraction.json",
+      "checkpoint_files": [],
+      "embedded_artifacts": 1,
+      "original_outputs_listed": 74,
+      "original_outputs_downloaded": 0,
+      "original_outputs_complete": false,
+      "checkpoint_note": "Original best_model.pt is pending CDN download; the frozen flow tensor used to independently replay its two cached duck cases is present in verification/original_frozen_checkpoint.pt."
+    },
+    {
+      "ref": "mohrezsayeh/master4",
+      "notebook": "evidence/master4/master4.ipynb",
+      "notebook_sha256": "649811b80be1dabf6f9da1d0690bdfae477e38da29bbd28aedae8f557241a2e0",
+      "asset_index": "assets/master4/extraction.json",
+      "checkpoint_files": [],
+      "embedded_artifacts": 4,
+      "original_outputs_listed": 0,
+      "original_outputs_downloaded": 0,
+      "original_outputs_complete": false,
+      "output_listing_error": {
+        "type": "HTTPError",
+        "http_status": 404
+      },
+      "checkpoint_note": "No trained tensor checkpoint embedded in the available source. Full training code is archived; original weights are not claimed recovered."
+    },
+    {
+      "ref": "mohrezsayeh/master6-validation-2d-magnetic-pinn",
+      "notebook": "evidence/master6-validation-2d-magnetic-pinn/master6-validation-2d-magnetic-pinn.ipynb",
+      "notebook_sha256": "e3a213114e435717f82472c250108eea08b20bf2a5c39214c0c7be286f9e5b47",
+      "asset_index": "assets/master6-validation-2d-magnetic-pinn/extraction.json",
+      "checkpoint_files": [],
+      "embedded_artifacts": 5,
+      "original_outputs_listed": 0,
+      "original_outputs_downloaded": 0,
+      "original_outputs_complete": false,
+      "output_listing_error": {
+        "type": "HTTPError",
+        "http_status": 404
+      },
+      "checkpoint_note": "No trained tensor checkpoint embedded in the available source. Full training code is archived; original weights are not claimed recovered."
+    },
+    {
+      "ref": "mohrezsayeh/master7-general-magnetic-1st-try",
+      "notebook": "evidence/master7-general-magnetic-1st-try/master7-general-magnetic-1st-try.ipynb",
+      "notebook_sha256": "b5ff80c60642f56daea4dd4e9dcc91102787818c5a28fd1afb99babef7e69ca2",
+      "asset_index": "assets/master7-general-magnetic-1st-try/extraction.json",
+      "checkpoint_files": [
+        "assets/master7-general-magnetic-1st-try/checkpoints/embedded_checkpoint_01.pt"
+      ],
+      "embedded_artifacts": 3,
+      "original_outputs_listed": 0,
+      "original_outputs_downloaded": 0,
+      "original_outputs_complete": false,
+      "output_listing_error": {
+        "type": "HTTPError",
+        "http_status": 404
+      }
+    },
+    {
+      "ref": "mohrezsayeh/master8-general-magnetic-particl-2ndtry",
+      "notebook": "evidence/master8-general-magnetic-particl-2ndtry/master8-general-magnetic-particl-2ndtry.ipynb",
+      "notebook_sha256": "f2234a60c186e25e4694ec1ee7c594a08f347239a7fb55d31358709698e11aee",
+      "asset_index": "assets/master8-general-magnetic-particl-2ndtry/extraction.json",
+      "checkpoint_files": [
+        "assets/master8-general-magnetic-particl-2ndtry/checkpoints/embedded_checkpoint_03.pt",
+        "assets/master8-general-magnetic-particl-2ndtry/checkpoints/field_weights_01.pt",
+        "assets/master8-general-magnetic-particl-2ndtry/checkpoints/particle_weights_02.pt"
+      ],
+      "embedded_artifacts": 6,
+      "original_outputs_listed": 0,
+      "original_outputs_downloaded": 0,
+      "original_outputs_complete": false,
+      "output_listing_error": {
+        "type": "HTTPError",
+        "http_status": 404
+      }
+    },
+    {
+      "ref": "mohrezsayeh/master9",
+      "notebook": "evidence/master9/master9.ipynb",
+      "notebook_sha256": "b5bb1bfafcd2e3152f73d1bba86cd8b1bd8c365184daba470f7f2ae9181522d0",
+      "asset_index": "assets/master9/extraction.json",
+      "checkpoint_files": [
+        "assets/master9/packages/package_01/pretrained/checkpoint.pt"
+      ],
+      "embedded_artifacts": 1,
+      "original_outputs_listed": 26,
+      "original_outputs_downloaded": 0,
+      "original_outputs_complete": false
+    },
+    {
+      "ref": "mohrezsayeh/master9-flexible-magnetic-path-controller",
+      "notebook": "evidence/master9-flexible-magnetic-path-controller/master9-flexible-magnetic-path-controller.ipynb",
+      "notebook_sha256": "337b25a0f98dd03b06db7f1e2337480d86398005b305ff2233c2e1434555a924",
+      "asset_index": "assets/master9-flexible-magnetic-path-controller/extraction.json",
+      "checkpoint_files": [
+        "assets/master9-flexible-magnetic-path-controller/packages/package_01/checkpoints/fields.pt",
+        "assets/master9-flexible-magnetic-path-controller/packages/package_01/checkpoints/inverse_policy.pt",
+        "assets/master9-flexible-magnetic-path-controller/packages/package_01/checkpoints/particle.pt"
+      ],
+      "embedded_artifacts": 1,
+      "original_outputs_listed": 30,
+      "original_outputs_downloaded": 0,
+      "original_outputs_complete": false
+    }
+  ]
+}

@@ -6,3 +6,6 @@ __pycache__/
 kaggle.json
 access_token
 .DS_Store
+
+.ipynb_checkpoints/
+*.part

@@ -1,0 +1,189 @@
+{
+  "ref": "mohrezsayeh/master9-flexible-magnetic-path-controller",
+  "captured_utc": "2026-11-10T13:28:34.899211+00:00",
+  "files": [
+    {
+      "name": "magnetic_controller/checkpoints/fields.pt",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/checkpoints/inverse_policy.pt",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/checkpoints/particle.pt",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/examples/bump.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/examples/deflection.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/examples/reverse.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/examples/unreachable.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/magnetic_control/__init__.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/magnetic_control/__pycache__/__init__.cpython-313.pyc",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/magnetic_control/__pycache__/export.cpython-313.pyc",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/magnetic_control/__pycache__/fields.cpython-313.pyc",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/magnetic_control/__pycache__/policy.cpython-313.pyc",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/magnetic_control/__pycache__/runtime.cpython-313.pyc",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/magnetic_control/__pycache__/tracking.cpython-313.pyc",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/magnetic_control/export.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/magnetic_control/fields.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/magnetic_control/policy.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/magnetic_control/runtime.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/magnetic_control/tracking.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/results/bump.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/results/custom/control.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/results/custom/report.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/results/deflection.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/results/field_validation.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/results/reverse.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/results/tracking.png",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/results/unreachable.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/results/validation.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/scripts/train_policy.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_controller/scripts/validate.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    }
+  ],
+  "listed_files": 30,
+  "downloaded_files": 0,
+  "complete": false
+}

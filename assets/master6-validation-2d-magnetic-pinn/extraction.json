@@ -1,0 +1,26 @@
+{
+  "notebook": "master6-validation-2d-magnetic-pinn",
+  "source": "evidence/master6-validation-2d-magnetic-pinn/master6-validation-2d-magnetic-pinn.ipynb",
+  "artifacts": [
+    {
+      "kind": "embedded_figure",
+      "path": "assets/master6-validation-2d-magnetic-pinn/notebook_figures/cell_007_output_04.png"
+    },
+    {
+      "kind": "embedded_figure",
+      "path": "assets/master6-validation-2d-magnetic-pinn/notebook_figures/cell_007_output_05.png"
+    },
+    {
+      "kind": "embedded_figure",
+      "path": "assets/master6-validation-2d-magnetic-pinn/notebook_figures/cell_007_output_06.png"
+    },
+    {
+      "kind": "embedded_html",
+      "path": "assets/master6-validation-2d-magnetic-pinn/notebook_figures/cell_009_output_00.html"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master6-validation-2d-magnetic-pinn/notebook_figures/cell_009_output_00_media_00.gif"
+    }
+  ]
+}

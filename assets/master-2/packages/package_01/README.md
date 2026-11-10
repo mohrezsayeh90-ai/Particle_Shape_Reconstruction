@@ -1,0 +1,1 @@
+Corrected Cartesian one-way particle PINN. Use the accompanying notebook. Old hard-output ansatz is used only if an optional old teacher is explicitly selected. Current training uses SmoothCartesianFlow. All units are nondimensional. Full GPU convergence has not been verified by the notebook author.

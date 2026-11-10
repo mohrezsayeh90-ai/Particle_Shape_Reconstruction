@@ -1,0 +1,52 @@
+[
+  {
+    "path": "assets/dense-duck-formation-20261104-211d7de258/checkpoints/literal_01.pt",
+    "safe_load": true,
+    "tensor_elements": 13267
+  },
+  {
+    "path": "assets/master10-magnetic-function-deeponet/packages/package_01/pretrained/checkpoint.pt",
+    "safe_load": true,
+    "tensor_elements": 60000
+  },
+  {
+    "path": "assets/master7-general-magnetic-1st-try/checkpoints/embedded_checkpoint_01.pt",
+    "safe_load": true,
+    "tensor_elements": 8898
+  },
+  {
+    "path": "assets/master8-general-magnetic-particl-2ndtry/checkpoints/embedded_checkpoint_03.pt",
+    "safe_load": true,
+    "tensor_elements": 8898
+  },
+  {
+    "path": "assets/master8-general-magnetic-particl-2ndtry/checkpoints/field_weights_01.pt",
+    "safe_load": true,
+    "tensor_elements": 4083
+  },
+  {
+    "path": "assets/master8-general-magnetic-particl-2ndtry/checkpoints/particle_weights_02.pt",
+    "safe_load": true,
+    "tensor_elements": 8898
+  },
+  {
+    "path": "assets/master9/packages/package_01/pretrained/checkpoint.pt",
+    "safe_load": true,
+    "tensor_elements": 20931
+  },
+  {
+    "path": "assets/master9-flexible-magnetic-path-controller/packages/package_01/checkpoints/fields.pt",
+    "safe_load": true,
+    "tensor_elements": 4083
+  },
+  {
+    "path": "assets/master9-flexible-magnetic-path-controller/packages/package_01/checkpoints/inverse_policy.pt",
+    "safe_load": true,
+    "tensor_elements": 4481
+  },
+  {
+    "path": "assets/master9-flexible-magnetic-path-controller/packages/package_01/checkpoints/particle.pt",
+    "safe_load": true,
+    "tensor_elements": 8898
+  }
+]

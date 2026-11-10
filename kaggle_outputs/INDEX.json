@@ -1,0 +1,2222 @@
+[
+  {
+    "ref": "mohrezsayeh/dense-duck-formation-20261104-211d7de258",
+    "captured_utc": "2026-11-10T13:28:31.472100+00:00",
+    "files": [
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/config.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_connection_denied"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/dense_duck_independent_wall_ports/release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/dense_duck_independent_wall_ports/result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/dense_duck_independent_wall_ports/weight_integrity.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/dense_duck_results.zip",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/dense_duck_six_fixed/release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/dense_duck_six_fixed/result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/dense_duck_six_fixed/weight_integrity.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/flow_validation.npz",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/optimization_config.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/original_frozen_checkpoint.pt",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/presentation/duck_presentation.pdf",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/presentation/duck_presentation.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/presentation/duck_presentation.svg",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/presentation/duck_replay.html",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/presentation/duck_validation.pdf",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/presentation/duck_validation.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/presentation/fixed_duck_trajectories.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/presentation/fixed_release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/presentation/fixed_result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/presentation/fixed_weight_integrity.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/presentation/independent_duck_trajectories.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/presentation/independent_release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/presentation/independent_result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/presentation/independent_weight_integrity.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/presentation/validation_summary.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793802215782330829/validation.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      }
+    ],
+    "listed_files": 27,
+    "downloaded_files": 0,
+    "complete": false
+  },
+  {
+    "ref": "mohrezsayeh/master-1",
+    "captured_utc": "2026-11-10T13:28:31.848500+00:00",
+    "files": [],
+    "listing_error": {
+      "type": "HTTPError",
+      "http_status": 404
+    },
+    "listed_files": 0,
+    "downloaded_files": 0,
+    "complete": false
+  },
+  {
+    "ref": "mohrezsayeh/master-2",
+    "captured_utc": "2026-11-10T13:28:32.059853+00:00",
+    "files": [
+      {
+        "name": "injection_corrected_1793615530977437677.zip",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/best_model.pt",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/config.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/field_re_0.1.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/field_re_1.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/field_re_10.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/training_history.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_random_000.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_random_001.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_random_002.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_random_003.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_random_004.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_random_005.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_random_006.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_random_007.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_random_008.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_random_009.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_random_010.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_random_011.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_summary.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_u_p0_00.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_u_p0_01.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_u_p0_02.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_u_p0_03.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_u_p0_04.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_v_p0_00.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_v_p0_01.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_v_p0_02.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_v_p0_03.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_v_p0_04.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_x_p0_00.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_x_p0_01.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_x_p0_02.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_x_p0_03.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/data/trajectory_x_p0_04.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/failures.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/fixed_history.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/fixed_probe_loss.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615828966459758.zip",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615828966459758/__pycache__/formation_core.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615828966459758/formation_control.html",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615828966459758/formation_core.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615828966459758/formation_results.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615828966459758/square_particle_1.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615828966459758/square_particle_2.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615828966459758/square_particle_3.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615828966459758/square_particle_4.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615828966459758/square_release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615828966459758/square_result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615828966459758/triangle_particle_1.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615828966459758/triangle_particle_2.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615828966459758/triangle_particle_3.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615828966459758/triangle_release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615828966459758/triangle_result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774.zip",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/__pycache__/formation_core.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/circle_10_particle_1.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/circle_10_particle_10.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/circle_10_particle_2.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/circle_10_particle_3.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/circle_10_particle_4.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/circle_10_particle_5.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/circle_10_particle_6.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/circle_10_particle_7.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/circle_10_particle_8.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/circle_10_particle_9.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/circle_10_release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/circle_10_result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/formation_control.html",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/formation_core.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/formation_results.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_7_particle_1.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_7_particle_2.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_7_particle_3.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_7_particle_4.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_7_particle_5.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_7_particle_6.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_7_particle_7.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_7_release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_7_result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_8_particle_1.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_8_particle_2.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_8_particle_3.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_8_particle_4.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_8_particle_5.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_8_particle_6.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_8_particle_7.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_8_particle_8.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_8_release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/s_8_result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/square_particle_1.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/square_particle_2.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/square_particle_3.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/square_particle_4.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/square_release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/square_result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/triangle_particle_1.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/triangle_particle_2.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/triangle_particle_3.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/triangle_release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/formation_control_1793615879339299774/triangle_result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/injection_summary.pdf",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/injection_summary.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/run_complete.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/training_loss.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/training_source.zip",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/training_summary.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/trajectory_summary.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "injection_corrected_1793615530977437677/validation.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "particle_corrected_source/README.md",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "particle_corrected_source/__pycache__/run_injection_pinn.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "particle_corrected_source/particle_pinn/__init__.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "particle_corrected_source/particle_pinn/__pycache__/__init__.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "particle_corrected_source/particle_pinn/__pycache__/fem.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "particle_corrected_source/particle_pinn/__pycache__/geometry.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "particle_corrected_source/particle_pinn/__pycache__/injection.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "particle_corrected_source/particle_pinn/__pycache__/parametric.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "particle_corrected_source/particle_pinn/__pycache__/smooth_flow_v2.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "particle_corrected_source/particle_pinn/fem.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "particle_corrected_source/particle_pinn/geometry.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "particle_corrected_source/particle_pinn/injection.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "particle_corrected_source/particle_pinn/parametric.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "particle_corrected_source/particle_pinn/smooth_flow_v2.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "particle_corrected_source/requirements.txt",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "particle_corrected_source/run_injection_pinn.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "particle_live_app.html",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      }
+    ],
+    "listed_files": 126,
+    "downloaded_files": 0,
+    "complete": false
+  },
+  {
+    "ref": "mohrezsayeh/master-5-2d-magnetic-notpinn",
+    "captured_utc": "2026-11-10T13:28:32.971981+00:00",
+    "files": [],
+    "listing_error": {
+      "type": "HTTPError",
+      "http_status": 404
+    },
+    "listed_files": 0,
+    "downloaded_files": 0,
+    "complete": false
+  },
+  {
+    "ref": "mohrezsayeh/master10-magnetic-function-deeponet",
+    "captured_utc": "2026-11-10T13:28:33.161774+00:00",
+    "files": [
+      {
+        "name": "GUIDE_FA.md",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "Master10_Magnetic_Operator.zip",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "REPORT_FA.md",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/examples/operator_field.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/magnetic_operator/README_FA.md",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/magnetic_operator/__init__.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/magnetic_operator/__pycache__/__init__.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/magnetic_operator/__pycache__/extended_checks.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/magnetic_operator/__pycache__/inference.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/magnetic_operator/__pycache__/model.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/magnetic_operator/__pycache__/physics.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/magnetic_operator/__pycache__/train.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/magnetic_operator/__pycache__/validate.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/magnetic_operator/__pycache__/waveforms.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/magnetic_operator/extended_checks.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/magnetic_operator/inference.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/magnetic_operator/model.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/magnetic_operator/physics.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/magnetic_operator/train.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/magnetic_operator/validate.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/magnetic_operator/waveforms.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/outputs/checkpoint.pt",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/outputs/chirp.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/outputs/constant_left.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/outputs/constant_right.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/outputs/extended_validation.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/outputs/gaussian_pulse.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/outputs/my_trajectory.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/outputs/progress.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/outputs/sinusoidal_two_sources.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/outputs/training.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/outputs/triangular.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/outputs/unseen_trajectories.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/outputs/validation.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/outputs/zero.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/pretrained/checkpoint.pt",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/pretrained/progress.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/pretrained/training.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/requirements.txt",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/REPORT_FA.md",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/checkpoint.pt",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/chirp.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/constant_left.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/constant_right.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/extended_validation.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/gaussian_pulse.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/gpu_training_validation_v2.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/master9_revalidation.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/my_trajectory.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/physical_scope_estimates.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/progress.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/provenance.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/sinusoidal_two_sources.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/training.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/triangular.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/unseen_trajectories.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/validation.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/results/operator/zero.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/scripts/operator/build_notebook.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/scripts/operator/export_report.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/scripts/operator/predict_csv.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/scripts/operator/run.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_operator_run/scripts/operator/submit_kaggle.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "unseen_trajectories.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      }
+    ],
+    "listed_files": 64,
+    "downloaded_files": 0,
+    "complete": false
+  },
+  {
+    "ref": "mohrezsayeh/master3-2dsimplechannel-general-up-down-particle",
+    "captured_utc": "2026-11-10T13:28:33.495684+00:00",
+    "files": [],
+    "listing_error": {
+      "type": "HTTPError",
+      "http_status": 404
+    },
+    "listed_files": 0,
+    "downloaded_files": 0,
+    "complete": false
+  },
+  {
+    "ref": "mohrezsayeh/master3-clean-revised-version",
+    "captured_utc": "2026-11-10T13:28:33.664501+00:00",
+    "files": [
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373.zip",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/README.txt",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/best_model.pt",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/config.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/duck_independent_wall_ports/duck_formation.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/duck_independent_wall_ports/duck_trajectories.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/duck_independent_wall_ports/particle_replay.html",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/duck_independent_wall_ports/release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/duck_independent_wall_ports/result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/duck_independent_wall_ports/weight_integrity.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/duck_six_fixed/duck_formation.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/duck_six_fixed/duck_trajectories.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/duck_six_fixed/particle_replay.html",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/duck_six_fixed/release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/duck_six_fixed/result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/duck_six_fixed/weight_integrity.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/flow_validation.npz",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/flow_validation.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formation_lab.html",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formation_summary.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formation_summary.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/chevron_7/formation.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/chevron_7/release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/chevron_7/replay.html",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/chevron_7/result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/chevron_7/trajectories.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/circle_10/formation.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/circle_10/release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/circle_10/replay.html",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/circle_10/result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/circle_10/trajectories.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/s_8/formation.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/s_8/release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/s_8/replay.html",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/s_8/result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/s_8/trajectories.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/square/formation.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/square/release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/square/replay.html",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/square/result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/square/trajectories.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/triangle/formation.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/triangle/release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/triangle/replay.html",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/triangle/result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/formations/triangle/trajectories.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/lookup_validation.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/optimization_config.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095.zip",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/config.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/formations/C_6/formation.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/formations/C_6/release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/formations/C_6/replay.html",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/formations/C_6/result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/formations/S_6/formation.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/formations/S_6/release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/formations/S_6/replay.html",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/formations/S_6/result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/formations/T_6/formation.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/formations/T_6/release_schedule.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/formations/T_6/replay.html",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/formations/T_6/result.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/optimization_config.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/six_station_SCT_lab.html",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/summary.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/summary.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/validation.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/six_fixed_stations_1793798739641861095/weight_integrity.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/training_complete.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/training_history.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/training_history.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/validation.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/wall_launcher_examples.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "rectangular_wall_launchers_1793798513712878373/wall_launchers_viewer.html",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      }
+    ],
+    "listed_files": 74,
+    "downloaded_files": 0,
+    "complete": false
+  },
+  {
+    "ref": "mohrezsayeh/master4",
+    "captured_utc": "2026-11-10T13:28:33.942729+00:00",
+    "files": [],
+    "listing_error": {
+      "type": "HTTPError",
+      "http_status": 404
+    },
+    "listed_files": 0,
+    "downloaded_files": 0,
+    "complete": false
+  },
+  {
+    "ref": "mohrezsayeh/master6-validation-2d-magnetic-pinn",
+    "captured_utc": "2026-11-10T13:28:34.098424+00:00",
+    "files": [],
+    "listing_error": {
+      "type": "HTTPError",
+      "http_status": 404
+    },
+    "listed_files": 0,
+    "downloaded_files": 0,
+    "complete": false
+  },
+  {
+    "ref": "mohrezsayeh/master7-general-magnetic-1st-try",
+    "captured_utc": "2026-11-10T13:28:34.248443+00:00",
+    "files": [],
+    "listing_error": {
+      "type": "HTTPError",
+      "http_status": 404
+    },
+    "listed_files": 0,
+    "downloaded_files": 0,
+    "complete": false
+  },
+  {
+    "ref": "mohrezsayeh/master8-general-magnetic-particl-2ndtry",
+    "captured_utc": "2026-11-10T13:28:34.396194+00:00",
+    "files": [],
+    "listing_error": {
+      "type": "HTTPError",
+      "http_status": 404
+    },
+    "listed_files": 0,
+    "downloaded_files": 0,
+    "complete": false
+  },
+  {
+    "ref": "mohrezsayeh/master9",
+    "captured_utc": "2026-11-10T13:28:34.597626+00:00",
+    "files": [
+      {
+        "name": "master9_run/examples/master9_target.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/master9/__init__.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/master9/__pycache__/__init__.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/master9/__pycache__/control.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/master9/__pycache__/models.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/master9/__pycache__/physics.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/master9/__pycache__/train.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/master9/__pycache__/validate.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/master9/control.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/master9/models.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/master9/physics.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/master9/train.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/master9/validate.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/outputs/checkpoint.pt",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/outputs/control_high_Re_fast_release.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/outputs/control_low_speed_high_viscosity.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/outputs/control_nominal.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/outputs/control_results.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/outputs/control_shifted_release.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/outputs/control_tests.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/outputs/physics_tests.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/outputs/training.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/outputs/training_progress.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/pretrained/checkpoint.pt",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/pretrained/training.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "master9_run/pretrained/training_progress.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      }
+    ],
+    "listed_files": 26,
+    "downloaded_files": 0,
+    "complete": false
+  },
+  {
+    "ref": "mohrezsayeh/master9-flexible-magnetic-path-controller",
+    "captured_utc": "2026-11-10T13:28:34.899211+00:00",
+    "files": [
+      {
+        "name": "magnetic_controller/checkpoints/fields.pt",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/checkpoints/inverse_policy.pt",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/checkpoints/particle.pt",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/examples/bump.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/examples/deflection.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/examples/reverse.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/examples/unreachable.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/magnetic_control/__init__.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/magnetic_control/__pycache__/__init__.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/magnetic_control/__pycache__/export.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/magnetic_control/__pycache__/fields.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/magnetic_control/__pycache__/policy.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/magnetic_control/__pycache__/runtime.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/magnetic_control/__pycache__/tracking.cpython-313.pyc",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/magnetic_control/export.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/magnetic_control/fields.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/magnetic_control/policy.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/magnetic_control/runtime.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/magnetic_control/tracking.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/results/bump.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/results/custom/control.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/results/custom/report.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/results/deflection.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/results/field_validation.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/results/reverse.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/results/tracking.png",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/results/unreachable.csv",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/results/validation.json",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/scripts/train_policy.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      },
+      {
+        "name": "magnetic_controller/scripts/validate.py",
+        "download_host": "www.kaggleusercontent.com",
+        "state": "blocked",
+        "reason": "proxy_denied_host"
+      }
+    ],
+    "listed_files": 30,
+    "downloaded_files": 0,
+    "complete": false
+  }
+]

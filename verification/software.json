@@ -6,5 +6,6 @@
     "matplotlib": "3.10.8"
   },
   "torch_environment": "/workspace/.venvs/particle-audit",
-  "torch_cpu_version": "2.15.0+cpu"
+  "torch_cpu_version": "2.15.0+cpu",
+  "reproduced_notebook": "reproduced_runs/dense-duck-cpu/execution.json"
 }

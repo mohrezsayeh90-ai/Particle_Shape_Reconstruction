@@ -1,0 +1,11 @@
+{
+  "source": "evidence/dense-duck-formation-20261104-211d7de258/dense-duck-formation-20261104-211d7de258.ipynb",
+  "source_sha256": "68211cb08980aabdbc6075bd2e294351d0fd2efc64e8b3b9323449ca1b30c413",
+  "started_utc": "20261110T133228.878708Z",
+  "fresh_training_requested": false,
+  "reoptimize_requested": false,
+  "overrides": [],
+  "status": "complete",
+  "note": "Notebook defaults still apply; some original notebooks train from scratch by default.",
+  "elapsed_seconds": 8.633173423999324
+}

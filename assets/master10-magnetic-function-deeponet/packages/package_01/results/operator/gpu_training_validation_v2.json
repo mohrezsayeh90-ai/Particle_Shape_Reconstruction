@@ -1,0 +1,119 @@
+{
+  "gpu_training": {
+    "passed": true,
+    "device": "cuda",
+    "gpu": "Tesla T4"
+  },
+  "independent_field_and_cross_terms": {
+    "passed": true,
+    "max_force_error": 1.8041124150158794e-16
+  },
+  "Master9_single_source_reduction": {
+    "passed": true,
+    "max_error": 3.3306690738754696e-16
+  },
+  "global_polarity_invariance": {
+    "passed": true
+  },
+  "quadratic_waveform_integrals": {
+    "passed": true,
+    "max_error": 1.1102230246251565e-16
+  },
+  "heldout_physics_residual": {
+    "passed": true,
+    "scaled_residual_rms": 0.010560929716199619
+  },
+  "exact_initial_position": {
+    "passed": true,
+    "max_error": 0
+  },
+  "independent_local_DOP853": {
+    "passed": false,
+    "cases": 64,
+    "max_x_um": 0.010075125525399464,
+    "max_z_um": 3.7998749650158814
+  },
+  "unseen_callable_rollouts": {
+    "passed": true,
+    "cases": [
+      {
+        "name": "zero",
+        "x_um": 0.0,
+        "z_um": 2.2863655413374318e-09,
+        "inference_seconds": 0.11565628200003175,
+        "reference_seconds": 0.7840423390000524,
+        "windows": 45
+      },
+      {
+        "name": "constant_left",
+        "x_um": 0.019405830476664773,
+        "z_um": 0.8559284777635499,
+        "inference_seconds": 0.11890072400001372,
+        "reference_seconds": 0.8147758740000199,
+        "windows": 45
+      },
+      {
+        "name": "constant_right",
+        "x_um": 0.028671781962629497,
+        "z_um": 1.3337234481842346,
+        "inference_seconds": 0.1145127050000383,
+        "reference_seconds": 0.7731064410000954,
+        "windows": 45
+      },
+      {
+        "name": "sinusoidal_two_sources",
+        "x_um": 0.00887325560355788,
+        "z_um": 0.9781046870042942,
+        "inference_seconds": 0.11797858800002814,
+        "reference_seconds": 0.8385785839999471,
+        "windows": 45
+      },
+      {
+        "name": "chirp",
+        "x_um": 0.013280654981491766,
+        "z_um": 0.7949322633439213,
+        "inference_seconds": 0.11518433300000197,
+        "reference_seconds": 0.8248125439999967,
+        "windows": 45
+      },
+      {
+        "name": "gaussian_pulse",
+        "x_um": 0.01017620000289088,
+        "z_um": 1.2136080044938824,
+        "inference_seconds": 0.11620000799996433,
+        "reference_seconds": 0.8190453350000553,
+        "windows": 45
+      },
+      {
+        "name": "triangular",
+        "x_um": 0.013866701601166495,
+        "z_um": 0.8628194664598785,
+        "inference_seconds": 0.117532395000012,
+        "reference_seconds": 0.8296929029999092,
+        "windows": 45
+      }
+    ]
+  },
+  "overdamped_vs_inertial_position": {
+    "passed": true,
+    "max_x_um": 0.0003175548929562621,
+    "max_z_um": 0.009593658218953749,
+    "relaxation_s": 3.166666666666666e-07,
+    "note": "Position only. Initial velocity and submicrosecond velocity transient are not predicted."
+  },
+  "invalid_or_underresolved_inputs_rejected": {
+    "passed": true,
+    "cases": {
+      "excess_amplitude": true,
+      "nan": true,
+      "underresolved": true
+    }
+  },
+  "future_prefix_sensitivity": {
+    "passed": true,
+    "max_x_um": 0.008408051303184026,
+    "max_z_um": 0.1740420941520604,
+    "note": "Approximate check, architecture is not strictly causal within each supplied window."
+  },
+  "all_passed": false
+}

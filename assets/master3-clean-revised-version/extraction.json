@@ -1,0 +1,11 @@
+{
+  "notebook": "master3-clean-revised-version",
+  "source": "evidence/master3-clean-revised-version/master3-clean-revised-version.ipynb",
+  "artifacts": [
+    {
+      "kind": "cached_results",
+      "path": "assets/master3-clean-revised-version/cached_results/duck_precomputed_01.json",
+      "decoded_sha256": "1f07e28eff3dfaf05f62181345ea44ff84675a46dbb846033181e3551f9abe52"
+    }
+  ]
+}

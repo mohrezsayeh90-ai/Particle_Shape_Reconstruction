@@ -1,0 +1,18 @@
+{
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "steps": 24000,
+  "batch": 1024,
+  "seconds": 450.094929327,
+  "seed": 1041,
+  "torch": "2.11.0+cu130",
+  "labelled_trajectories": 0,
+  "method": "physics-lifted branch/trunk DeepONet; overdamped ODE residual only",
+  "sensors_per_source": 17,
+  "h_tau": [
+    0.00625,
+    0.1
+  ],
+  "amplitude_constraint": "abs(a_left)+abs(a_right)<=sqrt(0.5)",
+  "checkpoint_sha256": "080b7e5dd76c98a75fca7f92cc4ec314907a7f7340c809b739b1e2eabc0e3133"
+}

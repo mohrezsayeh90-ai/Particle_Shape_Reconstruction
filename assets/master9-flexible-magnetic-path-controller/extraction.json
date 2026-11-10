@@ -1,0 +1,28 @@
+{
+  "notebook": "master9-flexible-magnetic-path-controller",
+  "source": "evidence/master9-flexible-magnetic-path-controller/master9-flexible-magnetic-path-controller.ipynb",
+  "artifacts": [
+    {
+      "kind": "source_and_weights_package",
+      "path": "assets/master9-flexible-magnetic-path-controller/packages/package_01",
+      "archive_sha256": "9ced5be5f7089531d1040d65f3e2e6fc98c9183d632c4243a516b9ad0da1385e",
+      "members": [
+        "checkpoints/fields.pt",
+        "checkpoints/inverse_policy.pt",
+        "checkpoints/particle.pt",
+        "examples/bump.csv",
+        "examples/deflection.csv",
+        "examples/reverse.csv",
+        "examples/unreachable.csv",
+        "magnetic_control/__init__.py",
+        "magnetic_control/export.py",
+        "magnetic_control/fields.py",
+        "magnetic_control/policy.py",
+        "magnetic_control/runtime.py",
+        "magnetic_control/tracking.py",
+        "scripts/train_policy.py",
+        "scripts/validate.py"
+      ]
+    }
+  ]
+}

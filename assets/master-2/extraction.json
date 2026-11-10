@@ -1,0 +1,22 @@
+{
+  "notebook": "master-2",
+  "source": "evidence/master-2/master-2.ipynb",
+  "artifacts": [
+    {
+      "kind": "source_and_weights_package",
+      "path": "assets/master-2/packages/package_01",
+      "archive_sha256": "42b1f795ca2df39d94869112632a48863adc66355c1cade2e9762e4685d773cf",
+      "members": [
+        "particle_pinn/__init__.py",
+        "particle_pinn/injection.py",
+        "particle_pinn/parametric.py",
+        "particle_pinn/geometry.py",
+        "particle_pinn/fem.py",
+        "run_injection_pinn.py",
+        "requirements.txt",
+        "particle_pinn/smooth_flow_v2.py",
+        "README.md"
+      ]
+    }
+  ]
+}

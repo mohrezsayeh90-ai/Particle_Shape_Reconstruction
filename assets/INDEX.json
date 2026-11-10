@@ -1,0 +1,685 @@
+[
+  {
+    "notebook": "dense-duck-formation-20261104-211d7de258",
+    "source": "evidence/dense-duck-formation-20261104-211d7de258/dense-duck-formation-20261104-211d7de258.ipynb",
+    "artifacts": [
+      {
+        "kind": "tensor_checkpoint",
+        "path": "assets/dense-duck-formation-20261104-211d7de258/checkpoints/literal_01.pt",
+        "sha256": "af2f21b195e2d25b877482cd527110054f42bf92200f64e39572375219e5e581"
+      },
+      {
+        "kind": "cached_results",
+        "path": "assets/dense-duck-formation-20261104-211d7de258/cached_results/dense_precomputed_01.json",
+        "decoded_sha256": "a4bd7f55a31d48f5dff7ecbfbef14603cf216cdb0b685cc3498180eca4ec5b34"
+      }
+    ]
+  },
+  {
+    "notebook": "master-1",
+    "source": "evidence/master-1/master-1.ipynb",
+    "artifacts": [
+      {
+        "kind": "source_and_weights_package",
+        "path": "assets/master-1/packages/package_01",
+        "archive_sha256": "31cfa70722112fa11bce1fa2cb7fcb9677fb91fb2a967688a5ba3e6c67b97766",
+        "members": [
+          "run_injection_pinn.py",
+          "requirements.txt",
+          "README_INJECTION_FA.md",
+          "particle_pinn/__init__.py",
+          "particle_pinn/parametric.py",
+          "particle_pinn/injection.py",
+          "particle_pinn/geometry.py",
+          "particle_pinn/fem.py",
+          "tests/test_injection.py",
+          "source_manifest.json"
+        ]
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master-1/notebook_figures/cell_004_output_00.png"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master-1/notebook_figures/cell_004_output_01.png"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master-1/notebook_figures/cell_006_output_00.png"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master-1/notebook_figures/cell_008_output_02.html"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master-1/notebook_figures/cell_008_output_04.html"
+      }
+    ]
+  },
+  {
+    "notebook": "master-2",
+    "source": "evidence/master-2/master-2.ipynb",
+    "artifacts": [
+      {
+        "kind": "source_and_weights_package",
+        "path": "assets/master-2/packages/package_01",
+        "archive_sha256": "42b1f795ca2df39d94869112632a48863adc66355c1cade2e9762e4685d773cf",
+        "members": [
+          "particle_pinn/__init__.py",
+          "particle_pinn/injection.py",
+          "particle_pinn/parametric.py",
+          "particle_pinn/geometry.py",
+          "particle_pinn/fem.py",
+          "run_injection_pinn.py",
+          "requirements.txt",
+          "particle_pinn/smooth_flow_v2.py",
+          "README.md"
+        ]
+      }
+    ]
+  },
+  {
+    "notebook": "master-5-2d-magnetic-notpinn",
+    "source": "evidence/master-5-2d-magnetic-notpinn/master-5-2d-magnetic-notpinn.ipynb",
+    "artifacts": [
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_016_output_00.png"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_016_output_01.png"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01.html"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_00.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_01.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_02.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_03.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_04.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_05.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_06.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_07.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_08.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_09.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_10.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_11.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_12.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_13.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_14.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_15.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_16.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_17.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_18.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_19.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_20.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_21.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_22.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_23.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_24.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_25.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_26.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_27.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_28.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_29.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_30.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_31.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_32.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_33.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_34.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_35.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_36.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_37.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_38.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_39.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_40.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_41.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_42.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_43.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_44.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_45.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_46.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_47.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_48.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_49.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_50.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_51.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_52.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_53.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_54.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_55.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_56.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_57.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_58.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_59.png"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_60.png"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_020_output_01.html"
+      }
+    ]
+  },
+  {
+    "notebook": "master10-magnetic-function-deeponet",
+    "source": "evidence/master10-magnetic-function-deeponet/master10-magnetic-function-deeponet.ipynb",
+    "artifacts": [
+      {
+        "kind": "source_and_weights_package",
+        "path": "assets/master10-magnetic-function-deeponet/packages/package_01",
+        "archive_sha256": "fab2aa509dc70049b1fff5d40d7feb662ac8299f3ca57a6bb487451b22fdb05a",
+        "members": [
+          "magnetic_operator/__init__.py",
+          "magnetic_operator/extended_checks.py",
+          "magnetic_operator/inference.py",
+          "magnetic_operator/model.py",
+          "magnetic_operator/physics.py",
+          "magnetic_operator/train.py",
+          "magnetic_operator/validate.py",
+          "magnetic_operator/waveforms.py",
+          "scripts/operator/build_notebook.py",
+          "scripts/operator/predict_csv.py",
+          "scripts/operator/export_report.py",
+          "scripts/operator/run.py",
+          "scripts/operator/submit_kaggle.py",
+          "magnetic_operator/README_FA.md",
+          "requirements.txt",
+          "examples/operator_field.csv",
+          "results/operator/master9_revalidation.json",
+          "results/operator/gpu_training_validation_v2.json",
+          "results/operator/physical_scope_estimates.json",
+          "results/operator/provenance.json",
+          "pretrained/checkpoint.pt",
+          "pretrained/training.json",
+          "pretrained/progress.json"
+        ]
+      }
+    ]
+  },
+  {
+    "notebook": "master3-2dsimplechannel-general-up-down-particle",
+    "source": "evidence/master3-2dsimplechannel-general-up-down-particle/master3-2dsimplechannel-general-up-down-particle.ipynb",
+    "artifacts": [
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_008_output_01.png"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_010_output_01.png"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_012_output_00.png"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_014_output_00.html"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_020_output_01.png"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_020_output_02.html"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_020_output_04.html"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_020_output_06.png"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_020_output_07.html"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_020_output_08.html"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_020_output_10.png"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_020_output_11.html"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_020_output_12.html"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_020_output_14.png"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_020_output_15.html"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_020_output_16.html"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_020_output_18.png"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_020_output_19.html"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_020_output_20.html"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_020_output_22.html"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_020_output_24.html"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_021_output_01.png"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_021_output_02.html"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_021_output_04.png"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_021_output_05.html"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_021_output_07.png"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_021_output_08.html"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_021_output_10.png"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_021_output_11.html"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_021_output_13.png"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_021_output_14.html"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_023_output_01.html"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master3-2dsimplechannel-general-up-down-particle/notebook_figures/cell_023_output_03.html"
+      }
+    ]
+  },
+  {
+    "notebook": "master3-clean-revised-version",
+    "source": "evidence/master3-clean-revised-version/master3-clean-revised-version.ipynb",
+    "artifacts": [
+      {
+        "kind": "cached_results",
+        "path": "assets/master3-clean-revised-version/cached_results/duck_precomputed_01.json",
+        "decoded_sha256": "1f07e28eff3dfaf05f62181345ea44ff84675a46dbb846033181e3551f9abe52"
+      }
+    ]
+  },
+  {
+    "notebook": "master4",
+    "source": "evidence/master4/master4.ipynb",
+    "artifacts": [
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master4/notebook_figures/cell_016_output_01.png"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master4/notebook_figures/cell_016_output_03.html"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master4/notebook_figures/cell_016_output_05.html"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master4/notebook_figures/cell_020_output_00.html"
+      }
+    ]
+  },
+  {
+    "notebook": "master6-validation-2d-magnetic-pinn",
+    "source": "evidence/master6-validation-2d-magnetic-pinn/master6-validation-2d-magnetic-pinn.ipynb",
+    "artifacts": [
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master6-validation-2d-magnetic-pinn/notebook_figures/cell_007_output_04.png"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master6-validation-2d-magnetic-pinn/notebook_figures/cell_007_output_05.png"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master6-validation-2d-magnetic-pinn/notebook_figures/cell_007_output_06.png"
+      },
+      {
+        "kind": "embedded_html",
+        "path": "assets/master6-validation-2d-magnetic-pinn/notebook_figures/cell_009_output_00.html"
+      },
+      {
+        "kind": "embedded_animation",
+        "path": "assets/master6-validation-2d-magnetic-pinn/notebook_figures/cell_009_output_00_media_00.gif"
+      }
+    ]
+  },
+  {
+    "notebook": "master7-general-magnetic-1st-try",
+    "source": "evidence/master7-general-magnetic-1st-try/master7-general-magnetic-1st-try.ipynb",
+    "artifacts": [
+      {
+        "kind": "tensor_checkpoint",
+        "path": "assets/master7-general-magnetic-1st-try/checkpoints/embedded_checkpoint_01.pt",
+        "sha256": "328690e4dc23ea6084e232c5a5535bb339d47d1a0599f24fdfb571894d6c1139"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master7-general-magnetic-1st-try/notebook_figures/cell_014_output_00.png"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master7-general-magnetic-1st-try/notebook_figures/cell_017_output_00.png"
+      }
+    ]
+  },
+  {
+    "notebook": "master8-general-magnetic-particl-2ndtry",
+    "source": "evidence/master8-general-magnetic-particl-2ndtry/master8-general-magnetic-particl-2ndtry.ipynb",
+    "artifacts": [
+      {
+        "kind": "tensor_checkpoint",
+        "path": "assets/master8-general-magnetic-particl-2ndtry/checkpoints/field_weights_01.pt",
+        "sha256": "b4ca80ba23f186f187b2a4efa589f3650b15f9afda0f3fc325070fe26179cede"
+      },
+      {
+        "kind": "tensor_checkpoint",
+        "path": "assets/master8-general-magnetic-particl-2ndtry/checkpoints/particle_weights_02.pt",
+        "sha256": "39abccd88cdf8de0d8a0660a12b873014b2efce215adbad25b5b96d308f29d03"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master8-general-magnetic-particl-2ndtry/notebook_figures/cell_009_output_00.png"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master8-general-magnetic-particl-2ndtry/notebook_figures/cell_010_output_00.png"
+      },
+      {
+        "kind": "embedded_figure",
+        "path": "assets/master8-general-magnetic-particl-2ndtry/notebook_figures/cell_014_output_01.png"
+      },
+      {
+        "kind": "tensor_checkpoint",
+        "path": "assets/master8-general-magnetic-particl-2ndtry/checkpoints/embedded_checkpoint_03.pt",
+        "sha256": "328690e4dc23ea6084e232c5a5535bb339d47d1a0599f24fdfb571894d6c1139"
+      }
+    ]
+  },
+  {
+    "notebook": "master9",
+    "source": "evidence/master9/master9.ipynb",
+    "artifacts": [
+      {
+        "kind": "source_and_weights_package",
+        "path": "assets/master9/packages/package_01",
+        "archive_sha256": "ab9c2b55ab3ed7185178b2cb826427014579eb761597f030c16be47b0d2b6193",
+        "members": [
+          "master9/__init__.py",
+          "master9/control.py",
+          "master9/models.py",
+          "master9/physics.py",
+          "master9/train.py",
+          "master9/validate.py",
+          "pretrained/checkpoint.pt",
+          "pretrained/training.json",
+          "pretrained/training_progress.json",
+          "examples/master9_target.csv"
+        ]
+      }
+    ]
+  },
+  {
+    "notebook": "master9-flexible-magnetic-path-controller",
+    "source": "evidence/master9-flexible-magnetic-path-controller/master9-flexible-magnetic-path-controller.ipynb",
+    "artifacts": [
+      {
+        "kind": "source_and_weights_package",
+        "path": "assets/master9-flexible-magnetic-path-controller/packages/package_01",
+        "archive_sha256": "9ced5be5f7089531d1040d65f3e2e6fc98c9183d632c4243a516b9ad0da1385e",
+        "members": [
+          "checkpoints/fields.pt",
+          "checkpoints/inverse_policy.pt",
+          "checkpoints/particle.pt",
+          "examples/bump.csv",
+          "examples/deflection.csv",
+          "examples/reverse.csv",
+          "examples/unreachable.csv",
+          "magnetic_control/__init__.py",
+          "magnetic_control/export.py",
+          "magnetic_control/fields.py",
+          "magnetic_control/policy.py",
+          "magnetic_control/runtime.py",
+          "magnetic_control/tracking.py",
+          "scripts/train_policy.py",
+          "scripts/validate.py"
+        ]
+      }
+    ]
+  }
+]

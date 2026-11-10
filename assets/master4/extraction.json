@@ -1,0 +1,22 @@
+{
+  "notebook": "master4",
+  "source": "evidence/master4/master4.ipynb",
+  "artifacts": [
+    {
+      "kind": "embedded_figure",
+      "path": "assets/master4/notebook_figures/cell_016_output_01.png"
+    },
+    {
+      "kind": "embedded_html",
+      "path": "assets/master4/notebook_figures/cell_016_output_03.html"
+    },
+    {
+      "kind": "embedded_html",
+      "path": "assets/master4/notebook_figures/cell_016_output_05.html"
+    },
+    {
+      "kind": "embedded_html",
+      "path": "assets/master4/notebook_figures/cell_020_output_00.html"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "notebook": "master8-general-magnetic-particl-2ndtry",
+  "source": "evidence/master8-general-magnetic-particl-2ndtry/master8-general-magnetic-particl-2ndtry.ipynb",
+  "artifacts": [
+    {
+      "kind": "tensor_checkpoint",
+      "path": "assets/master8-general-magnetic-particl-2ndtry/checkpoints/field_weights_01.pt",
+      "sha256": "b4ca80ba23f186f187b2a4efa589f3650b15f9afda0f3fc325070fe26179cede"
+    },
+    {
+      "kind": "tensor_checkpoint",
+      "path": "assets/master8-general-magnetic-particl-2ndtry/checkpoints/particle_weights_02.pt",
+      "sha256": "39abccd88cdf8de0d8a0660a12b873014b2efce215adbad25b5b96d308f29d03"
+    },
+    {
+      "kind": "embedded_figure",
+      "path": "assets/master8-general-magnetic-particl-2ndtry/notebook_figures/cell_009_output_00.png"
+    },
+    {
+      "kind": "embedded_figure",
+      "path": "assets/master8-general-magnetic-particl-2ndtry/notebook_figures/cell_010_output_00.png"
+    },
+    {
+      "kind": "embedded_figure",
+      "path": "assets/master8-general-magnetic-particl-2ndtry/notebook_figures/cell_014_output_01.png"
+    },
+    {
+      "kind": "tensor_checkpoint",
+      "path": "assets/master8-general-magnetic-particl-2ndtry/checkpoints/embedded_checkpoint_03.pt",
+      "sha256": "328690e4dc23ea6084e232c5a5535bb339d47d1a0599f24fdfb571894d6c1139"
+    }
+  ]
+}

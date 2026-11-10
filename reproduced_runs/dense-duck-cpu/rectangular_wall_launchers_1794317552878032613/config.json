@@ -1,0 +1,72 @@
+{
+  "scope": "rectangle-two-wall-launchers-eight-inputs-v1",
+  "inputs": [
+    "x",
+    "y",
+    "x_bottom",
+    "u_bottom",
+    "v_bottom",
+    "x_top",
+    "u_top",
+    "v_top"
+  ],
+  "controls": [
+    "x_bottom",
+    "u_bottom",
+    "v_bottom",
+    "x_top",
+    "u_top",
+    "v_top"
+  ],
+  "bounds": [
+    [
+      0.0,
+      2.2
+    ],
+    [
+      -0.4,
+      1.5
+    ],
+    [
+      0.15,
+      1.2
+    ],
+    [
+      0.0,
+      2.2
+    ],
+    [
+      -0.4,
+      1.5
+    ],
+    [
+      -1.2,
+      -0.15
+    ]
+  ],
+  "L": 2.2,
+  "H": 0.3,
+  "U_C": 1.0,
+  "re": 10.0,
+  "diameter": 0.025,
+  "density_ratio": 1000.0,
+  "drag": "schiller-naumann",
+  "launch_gap": 1e-05,
+  "width": 64,
+  "depth": 4,
+  "coupling": "one-way; launch controls do not alter the carrier flow",
+  "seed": 42,
+  "dtype": "torch.float32",
+  "adam_steps": 3000,
+  "samples": 768,
+  "lbfgs_rounds": 6,
+  "lbfgs_inner": 25,
+  "loss_weights": {
+    "continuity": 20.0,
+    "momentum": 1.0,
+    "developed": 5.0,
+    "invariance": 25.0,
+    "flux": 5.0
+  },
+  "time_scale": "L0/U0; Re is based on L0 and centreline U0"
+}

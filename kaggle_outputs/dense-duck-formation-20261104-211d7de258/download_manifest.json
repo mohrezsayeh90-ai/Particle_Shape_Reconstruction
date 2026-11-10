@@ -1,0 +1,171 @@
+{
+  "ref": "mohrezsayeh/dense-duck-formation-20261104-211d7de258",
+  "captured_utc": "2026-11-10T13:28:31.472100+00:00",
+  "files": [
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/config.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_connection_denied"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/dense_duck_independent_wall_ports/release_schedule.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/dense_duck_independent_wall_ports/result.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/dense_duck_independent_wall_ports/weight_integrity.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/dense_duck_results.zip",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/dense_duck_six_fixed/release_schedule.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/dense_duck_six_fixed/result.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/dense_duck_six_fixed/weight_integrity.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/flow_validation.npz",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/optimization_config.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/original_frozen_checkpoint.pt",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/presentation/duck_presentation.pdf",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/presentation/duck_presentation.png",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/presentation/duck_presentation.svg",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/presentation/duck_replay.html",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/presentation/duck_validation.pdf",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/presentation/duck_validation.png",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/presentation/fixed_duck_trajectories.png",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/presentation/fixed_release_schedule.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/presentation/fixed_result.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/presentation/fixed_weight_integrity.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/presentation/independent_duck_trajectories.png",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/presentation/independent_release_schedule.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/presentation/independent_result.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/presentation/independent_weight_integrity.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/presentation/validation_summary.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "rectangular_wall_launchers_1793802215782330829/validation.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    }
+  ],
+  "listed_files": 27,
+  "downloaded_files": 0,
+  "complete": false
+}

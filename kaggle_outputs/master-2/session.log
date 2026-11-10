@@ -1,0 +1,328 @@
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+dopamine-rl 4.1.2 requires gym<=0.25.2, but you have gym 0.26.2 which is incompatible.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+dopamine-rl 4.1.2 requires gym<=0.25.2, but you have gym 0.26.2 which is incompatible.
+
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+dopamine-rl 4.1.2 requires gym<=0.25.2, but you have gym 0.26.2 which is incompatible.
+Source ready: /kaggle/working/particle_corrected_source | CUDA: True
+NEW RUN: /kaggle/working/injection_corrected_1793615530977437677
+Previous model on common probe (None = fresh start): None
+{"step": 0, "total": 18.229167938232422, "continuity": 0.0, "momentum": 0.0, "boundary": 0.13229167461395264, "flux": 1.0, "phase": "initial_or_after_transfer", "elapsed_seconds": 0.323733218000001}
+{"step": 200, "total": 5.924062728881836, "continuity": 0.02650286816060543, "momentum": 0.020723074674606323, "boundary": 0.042022742331027985, "flux": 0.23420163989067078, "phase": "AdamW", "elapsed_seconds": 8.135480438000002}
+{"step": 400, "total": 4.065011024475098, "continuity": 0.021435316652059555, "momentum": 0.04021245241165161, "boundary": 0.026642343029379845, "flux": 0.18637153506278992, "phase": "AdamW", "elapsed_seconds": 15.513166619999993}
+{"step": 600, "total": 2.469447374343872, "continuity": 0.015991374850273132, "momentum": 0.15332719683647156, "boundary": 0.012866854667663574, "flux": 0.14192144572734833, "phase": "AdamW", "elapsed_seconds": 22.970517789000013}
+{"step": 800, "total": 1.7912169694900513, "continuity": 0.013584209606051445, "momentum": 0.1717420369386673, "boundary": 0.008388403803110123, "flux": 0.10179007053375244, "phase": "AdamW", "elapsed_seconds": 30.324510758000002}
+{"step": 1000, "total": 1.1169734001159668, "continuity": 0.010078128427267075, "momentum": 0.1708112210035324, "boundary": 0.00522067304700613, "flux": 0.04450644925236702, "phase": "AdamW", "elapsed_seconds": 37.837356046999986}
+{"step": 1200, "total": 0.6986895203590393, "continuity": 0.006044500507414341, "momentum": 0.14294001460075378, "boundary": 0.003382515860721469, "flux": 0.019321585074067116, "phase": "AdamW", "elapsed_seconds": 45.187704174000004}
+{"step": 1400, "total": 0.45767009258270264, "continuity": 0.0035357631277292967, "momentum": 0.11690695583820343, "boundary": 0.0023284144699573517, "flux": 0.007441280875355005, "phase": "AdamW", "elapsed_seconds": 52.652961602000005}
+{"step": 1600, "total": 0.3072768449783325, "continuity": 0.001924161333590746, "momentum": 0.07984203100204468, "boundary": 0.0017486496362835169, "flux": 0.0028173269238322973, "phase": "AdamW", "elapsed_seconds": 59.96756703199998}
+{"step": 1800, "total": 0.2041069120168686, "continuity": 0.0010694038355723023, "momentum": 0.052240703254938126, "boundary": 0.0011306190863251686, "flux": 0.0034832449164241552, "phase": "AdamW", "elapsed_seconds": 67.27743974600003}
+{"step": 2000, "total": 0.14111487567424774, "continuity": 0.0008712488925084472, "momentum": 0.040260232985019684, "boundary": 0.0007257796241901815, "flux": 0.002170340158045292, "phase": "AdamW", "elapsed_seconds": 74.59201407799998}
+{"step": 2200, "total": 0.1273554116487503, "continuity": 0.0006666759727522731, "momentum": 0.03301900625228882, "boundary": 0.0007304121972993016, "flux": 0.001592331100255251, "phase": "AdamW", "elapsed_seconds": 81.88525296199998}
+{"step": 2400, "total": 0.09161707758903503, "continuity": 0.0005246543441899121, "momentum": 0.026152804493904114, "boundary": 0.0004855165898334235, "flux": 0.0012839053524658084, "phase": "AdamW", "elapsed_seconds": 89.27029157700002}
+{"step": 2600, "total": 0.07643630355596542, "continuity": 0.00039576232666149735, "momentum": 0.021524827927350998, "boundary": 0.0004308761563152075, "flux": 0.0007817221921868622, "phase": "AdamW", "elapsed_seconds": 96.67187806099997}
+{"step": 2800, "total": 0.066377192735672, "continuity": 0.0003486142377369106, "momentum": 0.018265530467033386, "boundary": 0.0003790571936406195, "flux": 0.0006467310013249516, "phase": "AdamW", "elapsed_seconds": 104.03285304500002}
+{"step": 3000, "total": 0.06757991760969162, "continuity": 0.00033135857665911317, "momentum": 0.017345160245895386, "boundary": 0.0003746217116713524, "flux": 0.0012290821177884936, "phase": "AdamW", "elapsed_seconds": 111.275982495}
+{"step": 3200, "total": 0.06055925786495209, "continuity": 0.00025142377126030624, "momentum": 0.013713167048990726, "boundary": 0.000412448076531291, "flux": 0.0001145614733104594, "phase": "AdamW", "elapsed_seconds": 118.58290231699999}
+{"step": 3400, "total": 0.04509174823760986, "continuity": 0.00021952588576823473, "momentum": 0.012701922096312046, "boundary": 0.0002754738088697195, "flux": 9.038529969984666e-05, "phase": "AdamW", "elapsed_seconds": 125.81353048800003}
+{"step": 3600, "total": 0.035822369158267975, "continuity": 0.0001940875663422048, "momentum": 0.01120235025882721, "boundary": 0.00020362564828246832, "flux": 7.514050230383873e-05, "phase": "AdamW", "elapsed_seconds": 133.08493518199998}
+{"step": 3800, "total": 0.029930345714092255, "continuity": 0.00017277375445701182, "momentum": 0.009951472282409668, "boundary": 0.00016159718506969512, "flux": 7.273587834788486e-05, "phase": "AdamW", "elapsed_seconds": 140.427332336}
+{"step": 4000, "total": 0.02713676728308201, "continuity": 0.00015595299191772938, "momentum": 0.009100118651986122, "boundary": 0.0001460862986277789, "flux": 6.179177580634132e-05, "phase": "AdamW", "elapsed_seconds": 147.91304212400001}
+{"step": 4200, "total": 0.022805124521255493, "continuity": 0.00014027749421074986, "momentum": 0.00828380137681961, "boundary": 0.00011491474288050085, "flux": 4.485984754865058e-05, "phase": "AdamW", "elapsed_seconds": 155.34260350699998}
+{"step": 4400, "total": 0.018367532640695572, "continuity": 0.00012453549425117671, "momentum": 0.0076694730669260025, "boundary": 7.950995495775715e-05, "flux": 5.1270755648147315e-05, "phase": "AdamW", "elapsed_seconds": 162.69424046300003}
+{"step": 4600, "total": 0.01579597219824791, "continuity": 0.00011466465366538614, "momentum": 0.007073056418448687, "boundary": 6.213627057150006e-05, "flux": 4.319933577789925e-05, "phase": "AdamW", "elapsed_seconds": 170.03797341799998}
+{"step": 4800, "total": 0.011289231479167938, "continuity": 0.00010229903273284435, "momentum": 0.006476286798715591, "boundary": 2.5771636501303874e-05, "flux": 3.7959882320137694e-05, "phase": "AdamW", "elapsed_seconds": 177.353477189}
+{"step": 5000, "total": 0.01045701839029789, "continuity": 9.211961878463626e-05, "momentum": 0.0059567224234342575, "boundary": 2.5200253730872646e-05, "flux": 2.7575442800298333e-05, "phase": "AdamW", "elapsed_seconds": 184.67929616100002}
+{"step": 5200, "total": 0.009941461496055126, "continuity": 9.060071170097217e-05, "momentum": 0.00568090844899416, "boundary": 2.3225704353535548e-05, "flux": 2.5193547116941772e-05, "phase": "AdamW", "elapsed_seconds": 191.983663805}
+{"step": 5400, "total": 0.009379555471241474, "continuity": 8.497349335812032e-05, "momentum": 0.005476335063576698, "boundary": 2.0789026166312397e-05, "flux": 2.496942033758387e-05, "phase": "AdamW", "elapsed_seconds": 199.305434197}
+{"step": 5600, "total": 0.009098239243030548, "continuity": 8.20618006400764e-05, "momentum": 0.005230036564171314, "boundary": 2.0676829080912285e-05, "flux": 3.185686364304274e-05, "phase": "AdamW", "elapsed_seconds": 206.639962449}
+{"step": 5800, "total": 0.008709900081157684, "continuity": 7.802783511579037e-05, "momentum": 0.005100046284496784, "boundary": 1.8928512872662395e-05, "flux": 3.128905882476829e-05, "phase": "AdamW", "elapsed_seconds": 214.05835806800002}
+{"step": 6000, "total": 0.00849197804927826, "continuity": 7.656413072254509e-05, "momentum": 0.005008310545235872, "boundary": 1.810360117815435e-05, "flux": 2.8405025659594685e-05, "phase": "AdamW", "elapsed_seconds": 221.455635417}
+{"step": 6000, "total": 0.00849197804927826, "continuity": 7.656413072254509e-05, "momentum": 0.005008310545235872, "boundary": 1.810360117815435e-05, "flux": 2.8405025659594685e-05, "phase": "AdamW_final", "elapsed_seconds": 221.47520656}
+{"step": 6020, "total": 0.008651097305119038, "continuity": 7.76357192080468e-05, "momentum": 0.005034574307501316, "boundary": 1.943364623002708e-05, "flux": 2.4088889404083602e-05, "phase": "LBFGS_outer_1", "elapsed_seconds": 222.479373382}
+{"step": 6040, "total": 0.008775766007602215, "continuity": 7.903170626377687e-05, "momentum": 0.0050811767578125, "boundary": 2.0032370230183005e-05, "flux": 2.2143754904391244e-05, "phase": "LBFGS_outer_2", "elapsed_seconds": 223.38700681799997}
+{"step": 6060, "total": 0.008792492561042309, "continuity": 8.029602759052068e-05, "momentum": 0.005081151612102985, "boundary": 1.9997707568109035e-05, "flux": 2.112997208314482e-05, "phase": "LBFGS_outer_3", "elapsed_seconds": 224.29682308999998}
+{"step": 6080, "total": 0.008745867758989334, "continuity": 7.932577864266932e-05, "momentum": 0.005082614719867706, "boundary": 1.9821289242827334e-05, "flux": 1.892169711936731e-05, "phase": "LBFGS_outer_4", "elapsed_seconds": 225.20511039000002}
+{"step": 6100, "total": 0.008467935025691986, "continuity": 7.47534359106794e-05, "momentum": 0.005046669393777847, "boundary": 1.8496368284104392e-05, "flux": 1.531210909888614e-05, "phase": "LBFGS_outer_5", "elapsed_seconds": 226.12202309100002}
+{"step": 6120, "total": 0.008256945759057999, "continuity": 7.431110861944035e-05, "momentum": 0.00494361249729991, "boundary": 1.755071571096778e-05, "flux": 1.4407961316464934e-05, "phase": "LBFGS_outer_6", "elapsed_seconds": 227.134961121}
+{"step": 6140, "total": 0.008078409358859062, "continuity": 7.161943358369172e-05, "momentum": 0.004830762278288603, "boundary": 1.7460264643887058e-05, "flux": 1.384638835588703e-05, "phase": "LBFGS_outer_7", "elapsed_seconds": 228.05624179199998}
+{"step": 6160, "total": 0.007865914143621922, "continuity": 6.690454029012471e-05, "momentum": 0.004730178974568844, "boundary": 1.7197451597894542e-05, "flux": 1.5579882528982125e-05, "phase": "LBFGS_outer_8", "elapsed_seconds": 228.981366209}
+{"step": 6180, "total": 0.00767039367929101, "continuity": 6.539670721394941e-05, "momentum": 0.00460116658359766, "boundary": 1.70608200278366e-05, "flux": 1.1042186997656245e-05, "phase": "LBFGS_outer_9", "elapsed_seconds": 229.963606803}
+{"step": 6200, "total": 0.007288644555956125, "continuity": 6.357090023811907e-05, "momentum": 0.004407497122883797, "boundary": 1.543562211736571e-05, "flux": 1.323344258707948e-05, "phase": "LBFGS_outer_10", "elapsed_seconds": 230.88776791700002}
+{
+  "old_common_probe": null,
+  "new_common_probe": [
+    0.007288644555956125,
+    6.357090023811907e-05,
+    0.004407497122883797,
+    1.543562211736571e-05,
+    1.323344258707948e-05
+  ],
+  "selected_step": 6200,
+  "boundary_rms": 0.004072236362844706,
+  "boundary_max_component_error": 0.02622106298804283,
+  "note": "A lower residual alone does not establish accuracy. Inspect soft-BC errors and independent FEM validation."
+}
+Transforming over 1000 elements to C_CONTIGUOUS.
+
+Transforming over 1000 elements to C_CONTIGUOUS.
+Transforming over 1000 elements to C_CONTIGUOUS.
+
+Transforming over 1000 elements to C_CONTIGUOUS.
+Transforming over 1000 elements to C_CONTIGUOUS.
+
+Transforming over 1000 elements to C_CONTIGUOUS.
+RESULTS: /kaggle/working/injection_corrected_1793615530977437677 | export failures: 0
+{
+  "old_common_probe": null,
+  "new_common_probe": [
+    0.007288644555956125,
+    6.357090023811907e-05,
+    0.004407497122883797,
+    1.543562211736571e-05,
+    1.323344258707948e-05
+  ],
+  "selected_step": 6200,
+  "boundary_rms": 0.004072236362844706,
+  "boundary_max_component_error": 0.02622106298804283,
+  "note": "A lower residual alone does not establish accuracy. Inspect soft-BC errors and independent FEM validation."
+}
+{
+  "completed": [
+    {
+      "re": 0.1,
+      "velocity_relative_l2": 0.011453958449178072,
+      "pressure_relative_l2": 0.009231595941403445,
+      "reference": {
+        "ns": 64,
+        "nn": 14,
+        "triangles": 1638,
+        "velocity_dofs": 6858,
+        "pressure_dofs": 896,
+        "iterations": 13,
+        "relative_update": 4.063731085504727e-09,
+        "nonlinear_residual": 1.0819797655476179e-10,
+        "divergence_l2": 0.06796773849651988,
+        "solver_ok": true,
+        "updates": [
+          0.9921092146692883,
+          0.1984218566061481,
+          0.039684379360402484,
+          0.007936878486070493,
+          0.0015873764179607133,
+          0.00031747546733395995,
+          6.349513807111846e-05,
+          1.2699038206169028e-05,
+          2.539810036999531e-06,
+          5.079625482767241e-07,
+          1.0159257806447519e-07,
+          2.031854637479734e-08,
+          4.063731085504727e-09
+        ]
+      }
+    },
+    {
+      "re": 1.0,
+      "velocity_relative_l2": 0.007842345454681786,
+      "pressure_relative_l2": 0.0097870180588234,
+      "reference": {
+        "ns": 64,
+        "nn": 14,
+        "triangles": 1638,
+        "velocity_dofs": 6858,
+        "pressure_dofs": 896,
+        "iterations": 13,
+        "relative_update": 4.0673997042453665e-09,
+        "nonlinear_residual": 1.1152290320430311e-10,
+        "divergence_l2": 0.06796845243852095,
+        "solver_ok": true,
+        "updates": [
+          0.9921092146811945,
+          0.198423210040077,
+          0.039685445855743566,
+          0.007937350582510235,
+          0.0015875422213111861,
+          0.00031752681873819025,
+          6.350982897760274e-05,
+          1.2703016996733384e-05,
+          2.5408451559967218e-06,
+          5.082238289151307e-07,
+          1.0165695988300937e-07,
+          2.0334049695274575e-08,
+          4.0673997042453665e-09
+        ]
+      }
+    },
+    {
+      "re": 10.0,
+      "velocity_relative_l2": 0.018870496679618425,
+      "pressure_relative_l2": 0.019473053324801627,
+      "reference": {
+        "ns": 64,
+        "nn": 14,
+        "triangles": 1638,
+        "velocity_dofs": 6858,
+        "pressure_dofs": 896,
+        "iterations": 13,
+        "relative_update": 4.4642973480782774e-09,
+        "nonlinear_residual": 2.9493529661524323e-10,
+        "divergence_l2": 0.06803959940106899,
+        "solver_ok": true,
+        "updates": [
+          0.9921092158722358,
+          0.19855736682381683,
+          0.039791222694256,
+          0.007984544390872572,
+          0.001604276186970332,
+          0.00032276003758881667,
+          6.502105421037642e-05,
+          1.311594839923625e-05,
+          2.6491739727489122e-06,
+          5.357670507792716e-07,
+          1.0848814197856362e-07,
+          2.199437493316261e-08,
+          4.4642973480782774e-09
+        ]
+      }
+    }
+  ],
+  "skipped": false,
+  "note": "Single-resolution independent FEM check, not a mesh-convergence study."
+}
+
+Execution failures: []
+Loaded: /kaggle/working/injection_corrected_1793615530977437677/best_model.pt
+Lookup vs trained PINN relative L2: 0.020%; no retraining.
+/usr/local/lib/python3.13/dist-packages/IPython/core/display.py:724: UserWarning: Consider using IPython.display.IFrame instead
+  warnings.warn("Consider using IPython.display.IFrame instead")
+
+/usr/local/lib/python3.13/dist-packages/IPython/core/display.py:724: UserWarning: Consider using IPython.display.IFrame instead
+  warnings.warn("Consider using IPython.display.IFrame instead")
+Standalone app — also downloadable from the Kaggle Output panel:
+All results, weights and training source:
+Standalone web app:
+Frozen model: /kaggle/working/injection_corrected_1793615530977437677/best_model.pt
+Output: /kaggle/working/injection_corrected_1793615530977437677/formation_control_1793615828966459758
+Lookup velocity relative L2 vs PINN: 0.022%
+Outlet PINN / assumed-extension velocity RMS mismatch: 0.00183552
+Extension assumption: u=0, v=1-((x-1.4)/0.15)^2; no PINN extrapolation or new CFD solve.
+fast search: search 16/75, exit paths 15, 1.3s
+fast search: search 32/75, exit paths 30, 2.6s
+fast search: search 48/75, exit paths 44, 3.9s
+fast search: search 64/75, exit paths 58, 5.1s
+triangle vertex 1: best direct error 1.93555e-05
+triangle vertex 2: best direct error 1.67514e-07
+triangle vertex 3: best direct error 1.80169e-05
+triangle | success: True | max error: 1.935551642917588e-05 | minimum pair distance: 0.06495070840708289
+{'particle': 1, 'x_p0': -0.001884558691358812, 'u_p0': -0.3832593985536201, 'v_p0': 0.737316047852544, 'release_time': 3.588889070371396, 'age_at_target': 3.504309191682708, 'target_x': 1.4, 'target_y': 0.7749999999999999, 'actual_x': 1.400019355516429, 'actual_y': 0.774999999999998, 'error': 1.935551642917588e-05}
+{'particle': 2, 'x_p0': -0.09491407431840591, 'u_p0': 0.04038274179322987, 'v_p0': 1.3521246266517561, 'release_time': 0.5, 'age_at_target': 6.593198262054104, 'target_x': 1.335048094716167, 'target_y': 0.6625, 'actual_x': 1.3350450688267153, 'actual_y': 0.6624999999999864, 'error': 3.0258894516688173e-06}
+{'particle': 3, 'x_p0': 0.058610182821526885, 'u_p0': 0.2449154557591674, 'v_p0': 0.26588304826789644, 'release_time': 3.9750711101855845, 'age_at_target': 3.1181271518685194, 'target_x': 1.464951905283833, 'target_y': 0.6624999999999999, 'actual_x': 1.4649699221886787, 'actual_y': 0.662500000000007, 'error': 1.801690484581897e-05}
+square vertex 1: best direct error 2.15682e-05
+square vertex 2: best direct error 0.000109627
+square vertex 3: best direct error 0.000109627
+square vertex 4: best direct error 2.15682e-05
+square | success: True | max error: 0.00010962652855428523 | minimum pair distance: 0.03569160744736688
+{'particle': 1, 'x_p0': 0.054077124202391635, 'u_p0': -0.00036934498284146855, 'v_p0': 1.0000881452222186, 'release_time': 2.9707992025346024, 'age_at_target': 3.1073657513940733, 'target_x': 1.4530330085889909, 'target_y': 0.753033008588991, 'actual_x': 1.4530545768238843, 'actual_y': 0.7530330085889958, 'error': 2.1568234893409866e-05}
+{'particle': 2, 'x_p0': -0.09275835676364987, 'u_p0': 0.3638315048560853, 'v_p0': 0.7795544849917069, 'release_time': 0.5, 'age_at_target': 5.578164953928676, 'target_x': 1.346966991411009, 'target_y': 0.753033008588991, 'actual_x': 1.3470766179395632, 'actual_y': 0.7530330085889845, 'error': 0.00010962652855428523}
+{'particle': 3, 'x_p0': -0.09275835676364987, 'u_p0': 0.3638315048560853, 'v_p0': 0.7795544849917069, 'release_time': 0.6211468286884925, 'age_at_target': 5.457018125240183, 'target_x': 1.3469669914110087, 'target_y': 0.6469669914110089, 'actual_x': 1.347076617937463, 'actual_y': 0.6469669914108196, 'error': 0.00010962652645418736}
+{'particle': 4, 'x_p0': 0.054077124202391635, 'u_p0': -0.00036934498284146855, 'v_p0': 1.0000881452222186, 'release_time': 3.0920315977526345, 'age_at_target': 2.9861333561760413, 'target_x': 1.4530330085889909, 'target_y': 0.6469669914110089, 'actual_x': 1.4530545768220813, 'actual_y': 0.6469669914111562, 'error': 2.1568233090407674e-05}
+Download results and standalone web app:
+Frozen model: /kaggle/working/injection_corrected_1793615530977437677/best_model.pt
+Output: /kaggle/working/injection_corrected_1793615530977437677/formation_control_1793615879339299774
+Lookup velocity relative L2 vs PINN: 0.022%
+Outlet PINN / assumed-extension velocity RMS mismatch: 0.00183552
+Extension assumption: u=0, v=1-((x-1.4)/0.15)^2; no PINN extrapolation or new CFD solve.
+fast search: search 16/75, exit paths 15, 1.4s
+fast search: search 32/75, exit paths 30, 2.6s
+fast search: search 48/75, exit paths 44, 3.9s
+fast search: search 64/75, exit paths 58, 5.1s
+triangle vertex 1: best direct error 1.93282e-05
+triangle vertex 2: best direct error 3.30188e-07
+triangle vertex 3: best direct error 2.51622e-07
+triangle | success: True | max error: 1.9328208795243995e-05 | minimum pair distance: 0.06490517610573045
+{'particle': 1, 'x_p0': 0.004770746182388735, 'u_p0': -0.49233024596206704, 'v_p0': 1.405200288828059, 'release_time': 3.5977392109759783, 'age_at_target': 3.4808283089697256, 'target_x': 1.4, 'target_y': 0.7749999999999999, 'actual_x': 1.3999806717912047, 'actual_y': 0.7749999999999986, 'error': 1.9328208795243995e-05}
+{'particle': 2, 'x_p0': -0.0757567640478786, 'u_p0': -0.5, 'v_p0': 1.4146705964596369, 'release_time': 0.5, 'age_at_target': 6.578567519945704, 'target_x': 1.335048094716167, 'target_y': 0.6625, 'actual_x': 1.3350518454942863, 'actual_y': 0.6624999999999964, 'error': 3.750778119426812e-06}
+{'particle': 3, 'x_p0': 0.08713611981690403, 'u_p0': -0.45676386945510805, 'v_p0': 1.3941003818121895, 'release_time': 4.001186714514546, 'age_at_target': 3.0773808054311584, 'target_x': 1.464951905283833, 'target_y': 0.6624999999999999, 'actual_x': 1.4649521569058541, 'actual_y': 0.6625000000000086, 'error': 2.516220212189781e-07}
+square vertex 1: best direct error 1.11889e-05
+square vertex 2: best direct error 3.47258e-06
+square vertex 3: best direct error 3.47258e-06
+square vertex 4: best direct error 1.62259e-05
+square | success: True | max error: 1.622593676486872e-05 | minimum pair distance: 0.03563936995426661
+{'particle': 1, 'x_p0': 0.034597216826205035, 'u_p0': 0.5, 'v_p0': 0.2866896183854787, 'release_time': 2.9479991878945566, 'age_at_target': 3.131926461342006, 'target_x': 1.4530330085889909, 'target_y': 0.753033008588991, 'actual_x': 1.453044197459697, 'actual_y': 0.7530330085889958, 'error': 1.118887070616914e-05}
+{'particle': 2, 'x_p0': -0.07379158376165403, 'u_p0': -0.18510473864815014, 'v_p0': 0.7624243608979453, 'release_time': 0.5, 'age_at_target': 5.5799256492365625, 'target_x': 1.346966991411009, 'target_y': 0.753033008588991, 'actual_x': 1.3469704639904985, 'actual_y': 0.7530330085889847, 'error': 3.472579489516292e-06}
+{'particle': 3, 'x_p0': -0.07379158376165403, 'u_p0': -0.18510473864815014, 'v_p0': 0.7624243608979453, 'release_time': 0.6212160376656488, 'age_at_target': 5.458709611570914, 'target_x': 1.3469669914110087, 'target_y': 0.6469669914110089, 'actual_x': 1.3469704639884243, 'actual_y': 0.6469669914108215, 'error': 3.472577415619687e-06}
+{'particle': 4, 'x_p0': 0.03460375199618662, 'u_p0': 0.5, 'v_p0': 0.2866597240197756, 'release_time': 3.069203799465775, 'age_at_target': 3.0107218497707877, 'target_x': 1.4530330085889909, 'target_y': 0.6469669914110089, 'actual_x': 1.4530492345257557, 'actual_y': 0.6469669914111568, 'error': 1.622593676486872e-05}
+circle_10 vertex 1: best direct error 1.93282e-05
+circle_10 vertex 2: best direct error 0.000104388
+circle_10 vertex 3: best direct error 0.0134109
+circle_10 vertex 4: best direct error 0.0134225
+circle_10 vertex 5: best direct error 0.000104582
+circle_10 vertex 6: best direct error 1.93245e-05
+circle_10 vertex 7: best direct error 1.18905e-05
+circle_10 vertex 8: best direct error 6.66357e-06
+circle_10 vertex 9: best direct error 6.66357e-06
+circle_10 vertex 10: best direct error 9.85838e-06
+circle_10 | success: False | max error: 0.014202330045345768 | minimum pair distance: 0.01783481040128995
+{'particle': 1, 'x_p0': 0.004770746182388735, 'u_p0': -0.49233024596206704, 'v_p0': 1.405200288828059, 'release_time': 7.296439561113658, 'age_at_target': 3.505828309384885, 'target_x': 1.4, 'target_y': 0.7999999999999999, 'actual_x': 1.3999806717916867, 'actual_y': 0.7999999999999997, 'error': 1.9328208313185158e-05}
+{'particle': 2, 'x_p0': -0.09547937397083683, 'u_p0': 0.2288288888390031, 'v_p0': 0.6948596941506845, 'release_time': 4.701854825592627, 'age_at_target': 6.100413044905916, 'target_x': 1.3412214747707527, 'target_y': 0.7809016994374947, 'actual_x': 1.341367731366236, 'actual_y': 0.7809016994374934, 'error': 0.00014625659548328507}
+{'particle': 3, 'x_p0': -0.1004376500963702, 'u_p0': -0.5, 'v_p0': 1.417023490701526, 'release_time': 0.5, 'age_at_target': 10.302267870498543, 'target_x': 1.3048943483704845, 'target_y': 0.7309016994374947, 'actual_x': 1.3183052310238776, 'actual_y': 0.7309016994374947, 'error': 0.013410882653393186}
+{'particle': 4, 'x_p0': -0.1337489119502059, 'u_p0': 0.4266835752400967, 'v_p0': 0.29147762282058676, 'release_time': 0.7551356511723775, 'age_at_target': 10.047132219326166, 'target_x': 1.3048943483704845, 'target_y': 0.6690983005625052, 'actual_x': 1.3190966784158302, 'actual_y': 0.6690983005625046, 'error': 0.014202330045345768}
+{'particle': 5, 'x_p0': -0.08080556147359275, 'u_p0': -0.1883882914188137, 'v_p0': 0.7627693471961825, 'release_time': 4.899207068455792, 'age_at_target': 5.903060802042751, 'target_x': 1.3412214747707525, 'target_y': 0.6190983005625053, 'actual_x': 1.3413260565329121, 'actual_y': 0.6190983005623688, 'error': 0.0001045817621596612}
+{'particle': 6, 'x_p0': 0.004770746369450296, 'u_p0': -0.49233024588300295, 'v_p0': 1.405200288802297, 'release_time': 7.496439589603901, 'age_at_target': 3.3058282808946418, 'target_x': 1.4, 'target_y': 0.6, 'actual_x': 1.3999806754573842, 'actual_y': 0.5999999999998427, 'error': 1.9324542615661855e-05}
+{'particle': 7, 'x_p0': 0.04207869836994457, 'u_p0': 0.5, 'v_p0': 0.28648062975246896, 'release_time': 7.793230295901184, 'age_at_target': 3.0090375745973588, 'target_x': 1.4587785252292471, 'target_y': 0.6190983005625053, 'actual_x': 1.4587904156836888, 'actual_y': 0.6190983005626229, 'error': 1.1890454441720877e-05}
+{'particle': 8, 'x_p0': 0.10085627062789698, 'u_p0': 0.11412320439617851, 'v_p0': 0.7620890215344569, 'release_time': 6.945583996340057, 'age_at_target': 3.8566838741584863, 'target_x': 1.4951056516295154, 'target_y': 0.6690983005625052, 'actual_x': 1.4951123151959762, 'actual_y': 0.6690983005625052, 'error': 6.663566460840542e-06}
+{'particle': 9, 'x_p0': 0.10085627062789698, 'u_p0': 0.11412320439617851, 'v_p0': 0.7620890215344569, 'release_time': 6.842223441153246, 'age_at_target': 3.960044429345297, 'target_x': 1.4951056516295154, 'target_y': 0.7309016994374947, 'actual_x': 1.4951123151959762, 'actual_y': 0.7309016994374947, 'error': 6.663566460840542e-06}
+{'particle': 10, 'x_p0': 0.04207609703301632, 'u_p0': 0.5, 'v_p0': 0.28646361441760515, 'release_time': 7.6020759578499835, 'age_at_target': 3.2001919126485596, 'target_x': 1.4587785252292473, 'target_y': 0.7809016994374947, 'actual_x': 1.458788383610547, 'actual_y': 0.7809016994374957, 'error': 9.858381299743257e-06}
+s_7 vertex 1: best direct error 2.03474e-05
+s_7 vertex 2: best direct error 1.06534e-06
+s_7 vertex 3: best direct error 1.9849e-07
+s_7 vertex 4: best direct error 1.93283e-05
+s_7 vertex 5: best direct error 7.65129e-07
+s_7 vertex 6: best direct error 2.09333e-05
+s_7 vertex 7: best direct error 1.78754e-07
+s_7 | success: False | max error: 8.683822527388863e-05 | minimum pair distance: 0.007394434245197446
+{'particle': 1, 'x_p0': 0.057363979563508416, 'u_p0': 0.026363557967244766, 'v_p0': 1.1540299534653813, 'release_time': 4.932322601822589, 'age_at_target': 3.233033533309835, 'target_x': 1.455561238136747, 'target_y': 0.855308491935588, 'actual_x': 1.455581585531243, 'actual_y': 0.8553084919355881, 'error': 2.0347394495967563e-05}
+{'particle': 2, 'x_p0': -0.05592245804431824, 'u_p0': -0.44830850764128605, 'v_p0': 0.3310682867390913, 'release_time': 2.964637260744184, 'age_at_target': 5.200718874388239, 'target_x': 1.354628213845273, 'target_y': 0.8711335112585681, 'actual_x': 1.3547150520705469, 'actual_y': 0.8711335112585677, 'error': 8.683822527388863e-05}
+{'particle': 3, 'x_p0': -0.09531203665467146, 'u_p0': -0.25919622527448233, 'v_p0': 0.2896982692177009, 'release_time': 0.5000000000000009, 'age_at_target': 7.665356135132423, 'target_x': 1.3290249479106395, 'target_y': 0.7729542650138137, 'actual_x': 1.3290251464008722, 'actual_y': 0.7729542650138136, 'error': 1.9849023269458144e-07}
+{'particle': 4, 'x_p0': 0.004770746191799208, 'u_p0': -0.49233024595805613, 'v_p0': 1.4052002888268538, 'release_time': 4.759527873564263, 'age_at_target': 3.4058282615681605, 'target_x': 1.4000000000000001, 'target_y': 0.7, 'actual_x': 1.3999806717142305, 'actual_y': 0.6999999999999932, 'error': 1.9328285769670828e-05}
+{'particle': 5, 'x_p0': 0.057650233388953254, 'u_p0': 0.5, 'v_p0': 0.2859301237714766, 'release_time': 5.018039886311815, 'age_at_target': 3.147316248820608, 'target_x': 1.4709750520893605, 'target_y': 0.6270457349861849, 'actual_x': 1.4709758172179588, 'actual_y': 0.6270457349862021, 'error': 7.65128598256837e-07}
+{'particle': 6, 'x_p0': 0.06197590683236137, 'u_p0': -0.46760787126340675, 'v_p0': 1.3975190418614563, 'release_time': 5.337454491641575, 'age_at_target': 2.827901643490849, 'target_x': 1.445371786154726, 'target_y': 0.5288664887414314, 'actual_x': 1.4453927194573646, 'actual_y': 0.5288664887413357, 'error': 2.093330263863713e-05}
+{'particle': 7, 'x_p0': -0.06849645138845889, 'u_p0': -0.45405594492115325, 'v_p0': 0.3314467740007534, 'release_time': 2.603813463742899, 'age_at_target': 5.561542671389525, 'target_x': 1.3444387618632527, 'target_y': 0.5446915080644119, 'actual_x': 1.3444389406174995, 'actual_y': 0.5446915080659109, 'error': 1.7875424674425196e-07}
+s_8 vertex 1: best direct error 2.03474e-05
+s_8 vertex 2: best direct error 3.61957e-05
+s_8 vertex 3: best direct error 2.51131e-08
+s_8 vertex 4: best direct error 5.44427e-07
+s_8 vertex 5: best direct error 1.30994e-05
+s_8 vertex 6: best direct error 1.33193e-05
+s_8 vertex 7: best direct error 1.29942e-05
+s_8 vertex 8: best direct error 1.78754e-07
+s_8 | success: False | max error: 6.289993005159644e-05 | minimum pair distance: 0.00649429558816312
+{'particle': 1, 'x_p0': 0.057363979563508416, 'u_p0': 0.026363557967244766, 'v_p0': 1.1540299534653813, 'release_time': 5.6557072689926375, 'age_at_target': 3.233033533309835, 'target_x': 1.455561238136747, 'target_y': 0.855308491935588, 'actual_x': 1.455581585531243, 'actual_y': 0.8553084919355881, 'error': 2.0347394495967563e-05}
+{'particle': 2, 'x_p0': -0.04622168421811848, 'u_p0': -0.23655101498061942, 'v_p0': 0.28868161454577984, 'release_time': 4.376242715899411, 'age_at_target': 4.512498086403061, 'target_x': 1.3685684069754815, 'target_y': 0.8775581650705583, 'actual_x': 1.3686313069055331, 'actual_y': 0.8775581650705575, 'error': 6.289993005159644e-05}
+{'particle': 3, 'x_p0': -0.089702031768941, 'u_p0': -0.5, 'v_p0': 1.4160934050811231, 'release_time': 0.5, 'age_at_target': 8.388740802302472, 'target_x': 1.3250040796026272, 'target_y': 0.8034228566610104, 'actual_x': 1.3250071814549451, 'actual_y': 0.8034228566610104, 'error': 3.1018523178882873e-06}
+{'particle': 4, 'x_p0': -0.06289801897213024, 'u_p0': -0.039677576948686344, 'v_p0': 1.0087816841669035, 'release_time': 4.1311973729858105, 'age_at_target': 4.757543429316661, 'target_x': 1.3591567216076212, 'target_y': 0.7201557405020966, 'actual_x': 1.3591572660344846, 'actual_y': 0.7201557405020451, 'error': 5.444268633691986e-07}
+{'particle': 5, 'x_p0': 0.05610856665721911, 'u_p0': -0.470136917023947, 'v_p0': 1.3983167633459577, 'release_time': 5.892713207660918, 'age_at_target': 2.996027594641554, 'target_x': 1.4408432783923792, 'target_y': 0.6798442594979027, 'actual_x': 1.4408563777740728, 'actual_y': 0.6798442594979726, 'error': 1.3099381693582046e-05}
+{'particle': 6, 'x_p0': 0.08155947355425355, 'u_p0': -0.04987954895615182, 'v_p0': 0.43951690335362703, 'release_time': 5.71768236726366, 'age_at_target': 3.1710584350388116, 'target_x': 1.4749959203973726, 'target_y': 0.5965771433389884, 'actual_x': 1.4750092397013042, 'actual_y': 0.5965771433390061, 'error': 1.3319303931558224e-05}
+{'particle': 7, 'x_p0': 0.038554083740575534, 'u_p0': -0.3045718649425053, 'v_p0': 1.4408159298921708, 'release_time': 6.028428967635018, 'age_at_target': 2.8603118346674536, 'target_x': 1.4314315930245174, 'target_y': 0.5224418349294414, 'actual_x': 1.4314445871820345, 'actual_y': 0.522441834929158, 'error': 1.2994157517098873e-05}
+{'particle': 8, 'x_p0': -0.06849645138845889, 'u_p0': -0.45405594492115325, 'v_p0': 0.3314467740007534, 'release_time': 3.3271981309129472, 'age_at_target': 5.561542671389525, 'target_x': 1.3444387618632527, 'target_y': 0.5446915080644119, 'actual_x': 1.3444389406174995, 'actual_y': 0.5446915080659109, 'error': 1.7875424674425196e-07}
+Download results and standalone web app:
+/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 5527294 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Support files will be in __results___files/
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Writing 4708744 bytes to __results__.html

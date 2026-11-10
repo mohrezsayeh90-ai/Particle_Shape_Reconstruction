@@ -1,0 +1,65 @@
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+PyTorch: 2.11.0+cu128 | CUDA: False
+Run: /kaggle/working/rectangular_wall_launchers_1793802215782330829
+MLP: ['x', 'y', 'x_bottom', 'u_bottom', 'v_bottom', 'x_top', 'u_top', 'v_top'] -> [u,v,p]
+Fixed Re/d/rho ratio: 10.0 0.025 1000.0
+Stokes relaxation time: 0.34722222222222227
+Original frozen checkpoint loaded; unchanged physical validation passed. No neural training.
+dense_duck_six_fixed : 42 particles; original diameter = 0.025
+Reusing strict PINN result: original weights, physical settings and dense target signature matched.
+{
+  "kind": "dense_duck_six_fixed",
+  "success": true,
+  "max_error": 0.0006503281923061715,
+  "min_pair_distance": 0.026226042388156054
+}
+dense_duck_independent_wall_ports : 64 particles; original diameter = 0.025
+Reusing strict PINN result: original weights, physical settings and dense target signature matched.
+{
+  "kind": "dense_duck_independent_wall_ports",
+  "success": true,
+  "max_error": 0.00034557798287917065,
+  "min_pair_distance": 0.02628834603841357
+}
+[
+  {
+    "case": "Six fixed release sites",
+    "particles": 42,
+    "success": true,
+    "max_position_error": 0.0006503281923061715,
+    "minimum_separation": 0.026226042388156054,
+    "required_separation": 0.026000000000000002,
+    "geometric_iou": 0.9675377276409348,
+    "max_reference_error": 0.0006621383044616649,
+    "max_PINN_reference_delta": 0.0005030131238492293
+  },
+  {
+    "case": "Independent wall-release positions",
+    "particles": 64,
+    "success": true,
+    "max_position_error": 0.00034557798287917065,
+    "minimum_separation": 0.02628834603841357,
+    "required_separation": 0.026000000000000002,
+    "geometric_iou": 0.9889722945295316,
+    "max_reference_error": 0.000345581216116843,
+    "max_PINN_reference_delta": 3.550404566214648e-06
+  }
+]
+/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 1713676 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Support files will be in __results___files/
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Writing 1152998 bytes to __results__.html

@@ -1,0 +1,54 @@
+{
+  "shapes": [
+    "triangle",
+    "square",
+    "circle_10",
+    "s_8",
+    "chevron_7"
+  ],
+  "center": [
+    1.8920000000000001,
+    0.15
+  ],
+  "radius": 0.075,
+  "s_width": 0.13,
+  "s_height": 0.19,
+  "position_tolerance": 0.003,
+  "collision_margin": 0.001,
+  "clearance_reserve": 0.0003,
+  "lead_time": 0.25,
+  "age_max": 5.0,
+  "starts": 3,
+  "seed_u_speeds": [
+    0.25,
+    0.7,
+    1.2
+  ],
+  "seed_v_speeds": [
+    0.15,
+    0.22499999999999998,
+    0.3,
+    0.375,
+    0.44999999999999996,
+    0.525,
+    0.6,
+    0.675,
+    0.75,
+    0.825,
+    0.9,
+    0.975,
+    1.0499999999999998,
+    1.125,
+    1.2
+  ],
+  "candidates_per_side": 8,
+  "coarse_max_nfev": 50,
+  "direct_max_nfev": 35,
+  "collision_samples": 61,
+  "reference_tolerance": 0.004,
+  "control_mode": "independent x_launch, u_launch, v_launch and age for EVERY particle",
+  "side_mode": "each particle selects a wall from its candidate bank; held fixed in each local solve",
+  "emission_time": "T=max(age)+lead_time; release_i=T-age_i",
+  "flow_conditioning": "active wall triplet from particle i; inactive triplet at CONTROL_MID",
+  "hardware": "spatially programmable virtual wall ports, not two stationary nozzles"
+}

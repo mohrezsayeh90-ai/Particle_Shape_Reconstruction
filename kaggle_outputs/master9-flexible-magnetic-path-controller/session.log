@@ -1,0 +1,38 @@
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Controller extracted: /kaggle/working/magnetic_controller
+{
+  "max_error_Rv": 9.385064830101653e-05,
+  "rmse_Rv": 4.487042132100783e-05,
+  "max_error_um": 0.007038798622576239,
+  "completed": true,
+  "saturated_fraction": 0.0,
+  "accepted": true,
+  "oracle": false,
+  "flow_factor": 1.0,
+  "duration_s": 4.935606757101415,
+  "feedback_gain": 4.0,
+  "independent_open_loop_replay_max_error_Rv": 5.114854905254734e-05
+}
+bump {"learned_plant": {"max_error_Rv": 9.385064830101653e-05, "rmse_Rv": 4.487042132100792e-05, "max_error_um": 0.007038798622576239, "completed": true, "saturated_fraction": 0.0, "accepted": true, "oracle": false, "flow_factor": 1.0, "duration_s": 4.935606757101415, "feedback_gain": 4.0, "independent_open_loop_replay_max_error_Rv": 5.114854905254734e-05}, "independent_closed_loop": {"max_error_Rv": 8.435698332050212e-05, "rmse_Rv": 3.8041520030897546e-05, "max_error_um": 0.006326773749037659, "completed": true, "saturated_fraction": 0.0, "accepted": true, "oracle": true, "flow_factor": 1.0, "duration_s": 4.935504665730415, "feedback_gain": 4.0, "independent_open_loop_replay_max_error_Rv": 8.642452685291707e-05}}
+reverse {"learned_plant": {"max_error_Rv": 0.006466284729760069, "rmse_Rv": 0.0021120217305687417, "max_error_um": 0.4849713547320052, "completed": true, "saturated_fraction": 0.20758483033932135, "accepted": true, "oracle": false, "flow_factor": 1.0, "duration_s": 4.934494992881798, "feedback_gain": 4.0, "independent_open_loop_replay_max_error_Rv": 0.006524251892329894}, "independent_closed_loop": {"max_error_Rv": 0.007583244855151029, "rmse_Rv": 0.0026364972597682887, "max_error_um": 0.5687433641363271, "completed": true, "saturated_fraction": 0.21357285429141717, "accepted": true, "oracle": true, "flow_factor": 1.1, "duration_s": 4.485755744023613, "feedback_gain": 4.0, "independent_open_loop_replay_max_error_Rv": 0.034994764619790945}}
+deflection {"learned_plant": {"max_error_Rv": 0.00010478518667118852, "rmse_Rv": 5.1175433604971634e-05, "max_error_um": 0.007858889000339138, "completed": true, "saturated_fraction": 0.0, "accepted": true, "oracle": false, "flow_factor": 1.0, "duration_s": 4.945436284719063, "feedback_gain": 4.0, "independent_open_loop_replay_max_error_Rv": 7.228402846941318e-05}, "independent_closed_loop": {"max_error_Rv": 0.0001042174095950768, "rmse_Rv": 4.954948723292467e-05, "max_error_um": 0.00781630571963076, "completed": true, "saturated_fraction": 0.0, "accepted": true, "oracle": true, "flow_factor": 1.0, "duration_s": 4.945339804619987, "feedback_gain": 4.0, "independent_open_loop_replay_max_error_Rv": 0.00010392285720137867}}
+unreachable {"learned_plant": {"max_error_Rv": 0.5991717077157958, "rmse_Rv": 0.4105177531339103, "max_error_um": 44.93787807868468, "completed": true, "saturated_fraction": 0.9840319361277445, "accepted": false, "oracle": false, "flow_factor": 1.0, "duration_s": 4.936070204331862, "feedback_gain": 4.0, "independent_open_loop_replay_max_error_Rv": 0.5991682968028443}, "independent_closed_loop": {"max_error_Rv": 0.599168347233244, "rmse_Rv": 0.4105252886724154, "max_error_um": 44.93762604249329, "completed": true, "saturated_fraction": 0.9840319361277445, "accepted": false, "oracle": true, "flow_factor": 1.0, "duration_s": 4.9359609207375135, "feedback_gain": 4.0, "independent_open_loop_replay_max_error_Rv": 0.599168347233279}}
+Validation: True
+/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 539556 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Support files will be in __results___files/
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Writing 501403 bytes to __results__.html

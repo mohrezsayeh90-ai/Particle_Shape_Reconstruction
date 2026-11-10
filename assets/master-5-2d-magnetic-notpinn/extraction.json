@@ -1,0 +1,266 @@
+{
+  "notebook": "master-5-2d-magnetic-notpinn",
+  "source": "evidence/master-5-2d-magnetic-notpinn/master-5-2d-magnetic-notpinn.ipynb",
+  "artifacts": [
+    {
+      "kind": "embedded_figure",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_016_output_00.png"
+    },
+    {
+      "kind": "embedded_figure",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_016_output_01.png"
+    },
+    {
+      "kind": "embedded_html",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01.html"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_00.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_01.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_02.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_03.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_04.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_05.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_06.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_07.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_08.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_09.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_10.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_11.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_12.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_13.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_14.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_15.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_16.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_17.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_18.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_19.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_20.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_21.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_22.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_23.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_24.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_25.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_26.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_27.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_28.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_29.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_30.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_31.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_32.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_33.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_34.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_35.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_36.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_37.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_38.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_39.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_40.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_41.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_42.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_43.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_44.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_45.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_46.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_47.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_48.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_49.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_50.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_51.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_52.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_53.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_54.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_55.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_56.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_57.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_58.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_59.png"
+    },
+    {
+      "kind": "embedded_animation",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_018_output_01_media_60.png"
+    },
+    {
+      "kind": "embedded_html",
+      "path": "assets/master-5-2d-magnetic-notpinn/notebook_figures/cell_020_output_01.html"
+    }
+  ]
+}

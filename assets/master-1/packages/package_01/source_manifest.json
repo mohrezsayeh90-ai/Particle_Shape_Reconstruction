@@ -1,0 +1,15 @@
+{
+  "upstream": "https://github.com/mohrezsayeh90-ai/basic_particle_problem",
+  "base_commit": "e1c83f7",
+  "sha256": {
+    "run_injection_pinn.py": "49a543a1314f54eb7fc23168264bc9f2703c46defa7a5a0fc260f40a91269e47",
+    "requirements.txt": "90f7630dcf2220ca7480b03a31c9b689d8abdabca48b02ee5c4d74e6b2e20051",
+    "README_INJECTION_FA.md": "caf67d8ea75499c3524dc750c8db4d189af154cb15f9b85736ca904d9becea22",
+    "particle_pinn/__init__.py": "462695117922ca17ef19e4ee1ff43694c3efe20bc1225a9256f62b1cf4f80888",
+    "particle_pinn/parametric.py": "34a5a833554050d054fa7d590b84cbf24e8bc96f65bf2421afabd19a50f53df4",
+    "particle_pinn/injection.py": "3797fa07e4c884377fe34b56b7672ca30c9d158727ad111b358f920b4329eb22",
+    "particle_pinn/geometry.py": "c15c682c07f4dcb7d3abe10d19c705f13b8619fe7a9a2d5f952c6aac3ae0d503",
+    "particle_pinn/fem.py": "39a1052e359db655f1cec1e835ce0ef2b6ed06a9ba07e269f8532cc3baeb7033",
+    "tests/test_injection.py": "2882ef4cc044fa51e6f55e21aa6475b437f87b7729f2a5781933da54dbb66bb1"
+  }
+}

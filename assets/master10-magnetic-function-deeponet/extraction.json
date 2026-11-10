@@ -1,0 +1,36 @@
+{
+  "notebook": "master10-magnetic-function-deeponet",
+  "source": "evidence/master10-magnetic-function-deeponet/master10-magnetic-function-deeponet.ipynb",
+  "artifacts": [
+    {
+      "kind": "source_and_weights_package",
+      "path": "assets/master10-magnetic-function-deeponet/packages/package_01",
+      "archive_sha256": "fab2aa509dc70049b1fff5d40d7feb662ac8299f3ca57a6bb487451b22fdb05a",
+      "members": [
+        "magnetic_operator/__init__.py",
+        "magnetic_operator/extended_checks.py",
+        "magnetic_operator/inference.py",
+        "magnetic_operator/model.py",
+        "magnetic_operator/physics.py",
+        "magnetic_operator/train.py",
+        "magnetic_operator/validate.py",
+        "magnetic_operator/waveforms.py",
+        "scripts/operator/build_notebook.py",
+        "scripts/operator/predict_csv.py",
+        "scripts/operator/export_report.py",
+        "scripts/operator/run.py",
+        "scripts/operator/submit_kaggle.py",
+        "magnetic_operator/README_FA.md",
+        "requirements.txt",
+        "examples/operator_field.csv",
+        "results/operator/master9_revalidation.json",
+        "results/operator/gpu_training_validation_v2.json",
+        "results/operator/physical_scope_estimates.json",
+        "results/operator/provenance.json",
+        "pretrained/checkpoint.pt",
+        "pretrained/training.json",
+        "pretrained/progress.json"
+      ]
+    }
+  ]
+}

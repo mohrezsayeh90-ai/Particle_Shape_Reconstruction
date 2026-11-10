@@ -1,0 +1,393 @@
+{
+  "ref": "mohrezsayeh/master10-magnetic-function-deeponet",
+  "captured_utc": "2026-11-10T13:28:33.161774+00:00",
+  "files": [
+    {
+      "name": "GUIDE_FA.md",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "Master10_Magnetic_Operator.zip",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "REPORT_FA.md",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/examples/operator_field.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/magnetic_operator/README_FA.md",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/magnetic_operator/__init__.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/magnetic_operator/__pycache__/__init__.cpython-313.pyc",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/magnetic_operator/__pycache__/extended_checks.cpython-313.pyc",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/magnetic_operator/__pycache__/inference.cpython-313.pyc",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/magnetic_operator/__pycache__/model.cpython-313.pyc",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/magnetic_operator/__pycache__/physics.cpython-313.pyc",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/magnetic_operator/__pycache__/train.cpython-313.pyc",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/magnetic_operator/__pycache__/validate.cpython-313.pyc",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/magnetic_operator/__pycache__/waveforms.cpython-313.pyc",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/magnetic_operator/extended_checks.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/magnetic_operator/inference.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/magnetic_operator/model.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/magnetic_operator/physics.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/magnetic_operator/train.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/magnetic_operator/validate.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/magnetic_operator/waveforms.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/outputs/checkpoint.pt",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/outputs/chirp.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/outputs/constant_left.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/outputs/constant_right.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/outputs/extended_validation.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/outputs/gaussian_pulse.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/outputs/my_trajectory.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/outputs/progress.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/outputs/sinusoidal_two_sources.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/outputs/training.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/outputs/triangular.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/outputs/unseen_trajectories.png",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/outputs/validation.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/outputs/zero.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/pretrained/checkpoint.pt",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/pretrained/progress.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/pretrained/training.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/requirements.txt",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/REPORT_FA.md",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/checkpoint.pt",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/chirp.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/constant_left.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/constant_right.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/extended_validation.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/gaussian_pulse.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/gpu_training_validation_v2.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/master9_revalidation.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/my_trajectory.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/physical_scope_estimates.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/progress.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/provenance.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/sinusoidal_two_sources.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/training.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/triangular.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/unseen_trajectories.png",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/validation.json",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/results/operator/zero.csv",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/scripts/operator/build_notebook.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/scripts/operator/export_report.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/scripts/operator/predict_csv.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/scripts/operator/run.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "magnetic_operator_run/scripts/operator/submit_kaggle.py",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    },
+    {
+      "name": "unseen_trajectories.png",
+      "download_host": "www.kaggleusercontent.com",
+      "state": "blocked",
+      "reason": "proxy_denied_host"
+    }
+  ],
+  "listed_files": 64,
+  "downloaded_files": 0,
+  "complete": false
+}

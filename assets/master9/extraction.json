@@ -1,0 +1,23 @@
+{
+  "notebook": "master9",
+  "source": "evidence/master9/master9.ipynb",
+  "artifacts": [
+    {
+      "kind": "source_and_weights_package",
+      "path": "assets/master9/packages/package_01",
+      "archive_sha256": "ab9c2b55ab3ed7185178b2cb826427014579eb761597f030c16be47b0d2b6193",
+      "members": [
+        "master9/__init__.py",
+        "master9/control.py",
+        "master9/models.py",
+        "master9/physics.py",
+        "master9/train.py",
+        "master9/validate.py",
+        "pretrained/checkpoint.pt",
+        "pretrained/training.json",
+        "pretrained/training_progress.json",
+        "examples/master9_target.csv"
+      ]
+    }
+  ]
+}

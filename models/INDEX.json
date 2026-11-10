@@ -1,0 +1,72 @@
+[
+  {
+    "path": "assets/dense-duck-formation-20261104-211d7de258/checkpoints/literal_01.pt",
+    "notebook": "dense-duck-formation-20261104-211d7de258",
+    "sha256": "af2f21b195e2d25b877482cd527110054f42bf92200f64e39572375219e5e581",
+    "size_bytes": 58677,
+    "origin": "embedded literal/package in source notebook"
+  },
+  {
+    "path": "assets/master10-magnetic-function-deeponet/packages/package_01/pretrained/checkpoint.pt",
+    "notebook": "master10-magnetic-function-deeponet",
+    "sha256": "080b7e5dd76c98a75fca7f92cc4ec314907a7f7340c809b739b1e2eabc0e3133",
+    "size_bytes": 246197,
+    "origin": "embedded literal/package in source notebook"
+  },
+  {
+    "path": "assets/master7-general-magnetic-1st-try/checkpoints/embedded_checkpoint_01.pt",
+    "notebook": "master7-general-magnetic-1st-try",
+    "sha256": "328690e4dc23ea6084e232c5a5535bb339d47d1a0599f24fdfb571894d6c1139",
+    "size_bytes": 76257,
+    "origin": "embedded literal/package in source notebook"
+  },
+  {
+    "path": "assets/master8-general-magnetic-particl-2ndtry/checkpoints/embedded_checkpoint_03.pt",
+    "notebook": "master8-general-magnetic-particl-2ndtry",
+    "sha256": "328690e4dc23ea6084e232c5a5535bb339d47d1a0599f24fdfb571894d6c1139",
+    "size_bytes": 76257,
+    "origin": "embedded literal/package in source notebook"
+  },
+  {
+    "path": "assets/master8-general-magnetic-particl-2ndtry/checkpoints/field_weights_01.pt",
+    "notebook": "master8-general-magnetic-particl-2ndtry",
+    "sha256": "b4ca80ba23f186f187b2a4efa589f3650b15f9afda0f3fc325070fe26179cede",
+    "size_bytes": 45901,
+    "origin": "embedded literal/package in source notebook"
+  },
+  {
+    "path": "assets/master8-general-magnetic-particl-2ndtry/checkpoints/particle_weights_02.pt",
+    "notebook": "master8-general-magnetic-particl-2ndtry",
+    "sha256": "39abccd88cdf8de0d8a0660a12b873014b2efce215adbad25b5b96d308f29d03",
+    "size_bytes": 75995,
+    "origin": "embedded literal/package in source notebook"
+  },
+  {
+    "path": "assets/master9/packages/package_01/pretrained/checkpoint.pt",
+    "notebook": "master9",
+    "sha256": "d5f428680f2e8cecc37b261463ea6cb410e15d9a73ea54347ef195413e551300",
+    "size_bytes": 89973,
+    "origin": "embedded literal/package in source notebook"
+  },
+  {
+    "path": "assets/master9-flexible-magnetic-path-controller/packages/package_01/checkpoints/fields.pt",
+    "notebook": "master9-flexible-magnetic-path-controller",
+    "sha256": "b4ca80ba23f186f187b2a4efa589f3650b15f9afda0f3fc325070fe26179cede",
+    "size_bytes": 45901,
+    "origin": "embedded literal/package in source notebook"
+  },
+  {
+    "path": "assets/master9-flexible-magnetic-path-controller/packages/package_01/checkpoints/inverse_policy.pt",
+    "notebook": "master9-flexible-magnetic-path-controller",
+    "sha256": "a27c89f384c8b507a7ff98ef283a0d035f290f38d40de550b81bd835c7164b5b",
+    "size_bytes": 21801,
+    "origin": "embedded literal/package in source notebook"
+  },
+  {
+    "path": "assets/master9-flexible-magnetic-path-controller/packages/package_01/checkpoints/particle.pt",
+    "notebook": "master9-flexible-magnetic-path-controller",
+    "sha256": "39abccd88cdf8de0d8a0660a12b873014b2efce215adbad25b5b96d308f29d03",
+    "size_bytes": 75995,
+    "origin": "embedded literal/package in source notebook"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "case": "Six fixed release sites",
+    "particles": 42,
+    "success": true,
+    "max_position_error": 0.0006503281923061715,
+    "minimum_separation": 0.026226042388156054,
+    "required_separation": 0.026000000000000002,
+    "geometric_iou": 0.9675377276409348,
+    "max_reference_error": 0.0006621383044616649,
+    "max_PINN_reference_delta": 0.0005030131238492293
+  },
+  {
+    "case": "Independent wall-release positions",
+    "particles": 64,
+    "success": true,
+    "max_position_error": 0.00034557798287917065,
+    "minimum_separation": 0.02628834603841357,
+    "required_separation": 0.026000000000000002,
+    "geometric_iou": 0.9889722945295316,
+    "max_reference_error": 0.000345581216116843,
+    "max_PINN_reference_delta": 3.550404566214648e-06
+  }
+]

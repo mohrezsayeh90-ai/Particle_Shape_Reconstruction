@@ -1,0 +1,1324 @@
+{
+  "passed": true,
+  "cases": 81,
+  "grid": [
+    81,
+    33
+  ],
+  "worst": {
+    "velocity_relative_l2": 0.0010533384934594786,
+    "pressure_relative_l2": 0.0013384726596411929,
+    "transverse_max_abs": 0.0010157948127016425,
+    "max_condition_velocity_delta": 0.0012412667274475098,
+    "max_condition_pressure_delta_normalized": 0.0015301271341741085
+  },
+  "velocity_boundary_max_error": 2.086162567138672e-07,
+  "flux_max_relative_error": 2.526345601938651e-05,
+  "thresholds": {
+    "velocity_relative_l2": 0.002,
+    "pressure_relative_l2": 0.005,
+    "transverse_abs": 0.002,
+    "conditioning_abs": 0.002
+  },
+  "reference": "Analytical plane Poiseuille solution; no interior reference samples in training",
+  "cases_include": "All 64 corners of the six-dimensional control box, its midpoint, and random controls",
+  "scope": "Finite validation samples, not a proof over the continuum",
+  "details": [
+    {
+      "case": 0,
+      "controls": [
+        1.1,
+        0.55,
+        0.6749999999999999,
+        1.1,
+        0.55,
+        -0.6749999999999999
+      ],
+      "velocity_relative_l2": 7.457437743575471e-05,
+      "pressure_relative_l2": 0.00011949939262582861,
+      "transverse_max_abs": 0.00012179096665931866,
+      "max_condition_velocity_delta": 0.0,
+      "max_condition_pressure_delta_normalized": 0.0
+    },
+    {
+      "case": 1,
+      "controls": [
+        0.0,
+        -0.4,
+        0.15,
+        0.0,
+        -0.4,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.0001401033363874981,
+      "pressure_relative_l2": 0.00026943114798931074,
+      "transverse_max_abs": 0.0002474901848472655,
+      "max_condition_velocity_delta": 0.0003191863070242107,
+      "max_condition_pressure_delta_normalized": 0.00024013085931073874
+    },
+    {
+      "case": 2,
+      "controls": [
+        0.0,
+        -0.4,
+        0.15,
+        0.0,
+        -0.4,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.00042074741201239167,
+      "pressure_relative_l2": 0.0004444770176137782,
+      "transverse_max_abs": 0.0003707069845404476,
+      "max_condition_velocity_delta": 0.00048547983169555664,
+      "max_condition_pressure_delta_normalized": 0.0004191073530819267
+    },
+    {
+      "case": 3,
+      "controls": [
+        0.0,
+        -0.4,
+        0.15,
+        0.0,
+        1.5,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.00039582665711915553,
+      "pressure_relative_l2": 0.00042814475155610824,
+      "transverse_max_abs": 0.0003289000305812806,
+      "max_condition_velocity_delta": 0.0005351901054382324,
+      "max_condition_pressure_delta_normalized": 0.00031069733086042106
+    },
+    {
+      "case": 4,
+      "controls": [
+        0.0,
+        -0.4,
+        0.15,
+        0.0,
+        1.5,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.00032105460616974204,
+      "pressure_relative_l2": 0.00029982063410577756,
+      "transverse_max_abs": 0.0003981208137702197,
+      "max_condition_velocity_delta": 0.0004818403103854507,
+      "max_condition_pressure_delta_normalized": 0.00027280504582449794
+    },
+    {
+      "case": 5,
+      "controls": [
+        0.0,
+        -0.4,
+        0.15,
+        2.2,
+        -0.4,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.00043626102954521606,
+      "pressure_relative_l2": 0.0002920796187700814,
+      "transverse_max_abs": 0.0005332899163477123,
+      "max_condition_velocity_delta": 0.0004504878306761384,
+      "max_condition_pressure_delta_normalized": 0.0006680163787677884
+    },
+    {
+      "case": 6,
+      "controls": [
+        0.0,
+        -0.4,
+        0.15,
+        2.2,
+        -0.4,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.0004360710313315582,
+      "pressure_relative_l2": 0.001060414392451444,
+      "transverse_max_abs": 0.000632677401881665,
+      "max_condition_velocity_delta": 0.0005296021699905396,
+      "max_condition_pressure_delta_normalized": 0.0009516477584838867
+    },
+    {
+      "case": 7,
+      "controls": [
+        0.0,
+        -0.4,
+        0.15,
+        2.2,
+        1.5,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.00030695344348944883,
+      "pressure_relative_l2": 0.00014729494042490276,
+      "transverse_max_abs": 0.0004447087994776666,
+      "max_condition_velocity_delta": 0.0003362858551554382,
+      "max_condition_pressure_delta_normalized": 0.00023174285888671875
+    },
+    {
+      "case": 8,
+      "controls": [
+        0.0,
+        -0.4,
+        0.15,
+        2.2,
+        1.5,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.00038874345317795647,
+      "pressure_relative_l2": 0.00010337416774095938,
+      "transverse_max_abs": 0.0004202226409688592,
+      "max_condition_velocity_delta": 0.0004812479019165039,
+      "max_condition_pressure_delta_normalized": 0.0001496184995630756
+    },
+    {
+      "case": 9,
+      "controls": [
+        0.0,
+        -0.4,
+        1.2,
+        0.0,
+        -0.4,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.00042343547681677736,
+      "pressure_relative_l2": 0.0003794712280647068,
+      "transverse_max_abs": 0.00013198162196204066,
+      "max_condition_velocity_delta": 0.0005919337272644043,
+      "max_condition_pressure_delta_normalized": 0.0005450248718261719
+    },
+    {
+      "case": 10,
+      "controls": [
+        0.0,
+        -0.4,
+        1.2,
+        0.0,
+        -0.4,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.00016754198651521818,
+      "pressure_relative_l2": 0.000980556482039285,
+      "transverse_max_abs": 0.000248740310780704,
+      "max_condition_velocity_delta": 0.0001919956412166357,
+      "max_condition_pressure_delta_normalized": 0.0009721301030367613
+    },
+    {
+      "case": 11,
+      "controls": [
+        0.0,
+        -0.4,
+        1.2,
+        0.0,
+        1.5,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.0003214811821516449,
+      "pressure_relative_l2": 0.0006225424477863918,
+      "transverse_max_abs": 0.0004961652448400855,
+      "max_condition_velocity_delta": 0.0006112190312705934,
+      "max_condition_pressure_delta_normalized": 0.0008530400227755308
+    },
+    {
+      "case": 12,
+      "controls": [
+        0.0,
+        -0.4,
+        1.2,
+        0.0,
+        1.5,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.00021690186391386517,
+      "pressure_relative_l2": 0.00045859406390313777,
+      "transverse_max_abs": 0.0003082506009377539,
+      "max_condition_velocity_delta": 0.00027533434331417084,
+      "max_condition_pressure_delta_normalized": 0.0004992810427211225
+    },
+    {
+      "case": 13,
+      "controls": [
+        0.0,
+        -0.4,
+        1.2,
+        2.2,
+        -0.4,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.0007193787111306416,
+      "pressure_relative_l2": 0.00034273640034753687,
+      "transverse_max_abs": 0.0003041336894966662,
+      "max_condition_velocity_delta": 0.0009525418281555176,
+      "max_condition_pressure_delta_normalized": 0.000429543579230085
+    },
+    {
+      "case": 14,
+      "controls": [
+        0.0,
+        -0.4,
+        1.2,
+        2.2,
+        -0.4,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.00033484828886761,
+      "pressure_relative_l2": 0.00042395701267070507,
+      "transverse_max_abs": 0.0002346101973671466,
+      "max_condition_velocity_delta": 0.00046557188034057617,
+      "max_condition_pressure_delta_normalized": 0.00047948144492693245
+    },
+    {
+      "case": 15,
+      "controls": [
+        0.0,
+        -0.4,
+        1.2,
+        2.2,
+        1.5,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.0002122330963909995,
+      "pressure_relative_l2": 0.00041573077480696317,
+      "transverse_max_abs": 0.00016957728075794876,
+      "max_condition_velocity_delta": 0.0002523064613342285,
+      "max_condition_pressure_delta_normalized": 0.0006345618749037385
+    },
+    {
+      "case": 16,
+      "controls": [
+        0.0,
+        -0.4,
+        1.2,
+        2.2,
+        1.5,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 9.409424958555082e-05,
+      "pressure_relative_l2": 0.0005840244589154632,
+      "transverse_max_abs": 0.0001730458898236975,
+      "max_condition_velocity_delta": 0.00017269651289097965,
+      "max_condition_pressure_delta_normalized": 0.0006787452148273587
+    },
+    {
+      "case": 17,
+      "controls": [
+        0.0,
+        1.5,
+        0.15,
+        0.0,
+        -0.4,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.00014474019315909633,
+      "pressure_relative_l2": 0.00012778676316315204,
+      "transverse_max_abs": 0.0001246587053174153,
+      "max_condition_velocity_delta": 0.00021272897720336914,
+      "max_condition_pressure_delta_normalized": 0.0002650022506713867
+    },
+    {
+      "case": 18,
+      "controls": [
+        0.0,
+        1.5,
+        0.15,
+        0.0,
+        -0.4,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.0003214251033934827,
+      "pressure_relative_l2": 0.0004268741988481636,
+      "transverse_max_abs": 0.00026293957489542663,
+      "max_condition_velocity_delta": 0.00041043758392333984,
+      "max_condition_pressure_delta_normalized": 0.0007327795028686523
+    },
+    {
+      "case": 19,
+      "controls": [
+        0.0,
+        1.5,
+        0.15,
+        0.0,
+        1.5,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.0005810385601240472,
+      "pressure_relative_l2": 0.0004715499405902335,
+      "transverse_max_abs": 0.00036073639057576656,
+      "max_condition_velocity_delta": 0.0007194280624389648,
+      "max_condition_pressure_delta_normalized": 0.0003644390671979636
+    },
+    {
+      "case": 20,
+      "controls": [
+        0.0,
+        1.5,
+        0.15,
+        0.0,
+        1.5,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.00031893024331116726,
+      "pressure_relative_l2": 0.00019737087426583352,
+      "transverse_max_abs": 0.0003116856678389013,
+      "max_condition_velocity_delta": 0.0004212665371596813,
+      "max_condition_pressure_delta_normalized": 0.0004391995316836983
+    },
+    {
+      "case": 21,
+      "controls": [
+        0.0,
+        1.5,
+        0.15,
+        2.2,
+        -0.4,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.00028927595209884044,
+      "pressure_relative_l2": 0.0009053479703313372,
+      "transverse_max_abs": 0.0003453532699495554,
+      "max_condition_velocity_delta": 0.00046605669194832444,
+      "max_condition_pressure_delta_normalized": 0.0009992447448894382
+    },
+    {
+      "case": 22,
+      "controls": [
+        0.0,
+        1.5,
+        0.15,
+        2.2,
+        -0.4,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.000492521282422633,
+      "pressure_relative_l2": 0.0007368483713755229,
+      "transverse_max_abs": 0.0007186364382505417,
+      "max_condition_velocity_delta": 0.0006263875402510166,
+      "max_condition_pressure_delta_normalized": 0.0007912028813734651
+    },
+    {
+      "case": 23,
+      "controls": [
+        0.0,
+        1.5,
+        0.15,
+        2.2,
+        1.5,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.0003825122747795878,
+      "pressure_relative_l2": 0.0004095281806884761,
+      "transverse_max_abs": 0.00020810998103115708,
+      "max_condition_velocity_delta": 0.0005586147308349609,
+      "max_condition_pressure_delta_normalized": 0.0005037676310166717
+    },
+    {
+      "case": 24,
+      "controls": [
+        0.0,
+        1.5,
+        0.15,
+        2.2,
+        1.5,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.0004964470106993798,
+      "pressure_relative_l2": 0.00013921855530028916,
+      "transverse_max_abs": 0.000581225729547441,
+      "max_condition_velocity_delta": 0.0005149245262145996,
+      "max_condition_pressure_delta_normalized": 0.00023496150970458984
+    },
+    {
+      "case": 25,
+      "controls": [
+        0.0,
+        1.5,
+        1.2,
+        0.0,
+        -0.4,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.0005331522103685472,
+      "pressure_relative_l2": 0.0005617420307032492,
+      "transverse_max_abs": 0.0003551131230778992,
+      "max_condition_velocity_delta": 0.0007287263870239258,
+      "max_condition_pressure_delta_normalized": 0.0009138042223639786
+    },
+    {
+      "case": 26,
+      "controls": [
+        0.0,
+        1.5,
+        1.2,
+        0.0,
+        -0.4,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.0002455552093719323,
+      "pressure_relative_l2": 0.0011978382209437788,
+      "transverse_max_abs": 0.00029915233608335257,
+      "max_condition_velocity_delta": 0.00023734569549560547,
+      "max_condition_pressure_delta_normalized": 0.001309015555307269
+    },
+    {
+      "case": 27,
+      "controls": [
+        0.0,
+        1.5,
+        1.2,
+        0.0,
+        1.5,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.00037210133609995603,
+      "pressure_relative_l2": 0.0007942928529695392,
+      "transverse_max_abs": 0.000509650562889874,
+      "max_condition_velocity_delta": 0.0006233013700693846,
+      "max_condition_pressure_delta_normalized": 0.0007399970781989396
+    },
+    {
+      "case": 28,
+      "controls": [
+        0.0,
+        1.5,
+        1.2,
+        0.0,
+        1.5,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.00022474504842160794,
+      "pressure_relative_l2": 0.00024127964635318805,
+      "transverse_max_abs": 0.00021805870346724987,
+      "max_condition_velocity_delta": 0.0002504587173461914,
+      "max_condition_pressure_delta_normalized": 0.00037999587948434055
+    },
+    {
+      "case": 29,
+      "controls": [
+        0.0,
+        1.5,
+        1.2,
+        2.2,
+        -0.4,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.00036431651688528414,
+      "pressure_relative_l2": 0.0009166308386220383,
+      "transverse_max_abs": 0.00016052158025559038,
+      "max_condition_velocity_delta": 0.0005278587341308594,
+      "max_condition_pressure_delta_normalized": 0.0013293027877807617
+    },
+    {
+      "case": 30,
+      "controls": [
+        0.0,
+        1.5,
+        1.2,
+        2.2,
+        -0.4,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.00023919838012198454,
+      "pressure_relative_l2": 0.0007784926418564116,
+      "transverse_max_abs": 0.0003337895032018423,
+      "max_condition_velocity_delta": 0.0003780028782784939,
+      "max_condition_pressure_delta_normalized": 0.0009904666803777218
+    },
+    {
+      "case": 31,
+      "controls": [
+        0.0,
+        1.5,
+        1.2,
+        2.2,
+        1.5,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.00048404627564868234,
+      "pressure_relative_l2": 0.0003840359390466206,
+      "transverse_max_abs": 0.00013068335829302669,
+      "max_condition_velocity_delta": 0.0007148385047912598,
+      "max_condition_pressure_delta_normalized": 0.00043734637438319623
+    },
+    {
+      "case": 32,
+      "controls": [
+        0.0,
+        1.5,
+        1.2,
+        2.2,
+        1.5,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.0003574545610871742,
+      "pressure_relative_l2": 0.00021851625686733736,
+      "transverse_max_abs": 0.0001472578733228147,
+      "max_condition_velocity_delta": 0.0005370974540710449,
+      "max_condition_pressure_delta_normalized": 0.000327424582792446
+    },
+    {
+      "case": 33,
+      "controls": [
+        2.2,
+        -0.4,
+        0.15,
+        0.0,
+        -0.4,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.0002721296050986123,
+      "pressure_relative_l2": 0.0006430726214326539,
+      "transverse_max_abs": 0.0004062440129928291,
+      "max_condition_velocity_delta": 0.0005010280292481184,
+      "max_condition_pressure_delta_normalized": 0.0005645318306051195
+    },
+    {
+      "case": 34,
+      "controls": [
+        2.2,
+        -0.4,
+        0.15,
+        0.0,
+        -0.4,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.0010533384934594786,
+      "pressure_relative_l2": 0.0006798740587098152,
+      "transverse_max_abs": 0.0007522237137891352,
+      "max_condition_velocity_delta": 0.0012412667274475098,
+      "max_condition_pressure_delta_normalized": 0.0004040382045786828
+    },
+    {
+      "case": 35,
+      "controls": [
+        2.2,
+        -0.4,
+        0.15,
+        0.0,
+        1.5,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.0001767786401629269,
+      "pressure_relative_l2": 0.0001954391725800555,
+      "transverse_max_abs": 0.0002067509776679799,
+      "max_condition_velocity_delta": 0.00018996000289916992,
+      "max_condition_pressure_delta_normalized": 0.0002947503817267716
+    },
+    {
+      "case": 36,
+      "controls": [
+        2.2,
+        -0.4,
+        0.15,
+        0.0,
+        1.5,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.0007048215457693741,
+      "pressure_relative_l2": 0.00013454712634539766,
+      "transverse_max_abs": 0.00014268631639424711,
+      "max_condition_velocity_delta": 0.0009833574295043945,
+      "max_condition_pressure_delta_normalized": 0.00020852955640293658
+    },
+    {
+      "case": 37,
+      "controls": [
+        2.2,
+        -0.4,
+        0.15,
+        2.2,
+        -0.4,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.0001460544439557398,
+      "pressure_relative_l2": 0.00015615480431273524,
+      "transverse_max_abs": 0.00011389346764190122,
+      "max_condition_velocity_delta": 0.00021117925643920898,
+      "max_condition_pressure_delta_normalized": 0.00024276430485770106
+    },
+    {
+      "case": 38,
+      "controls": [
+        2.2,
+        -0.4,
+        0.15,
+        2.2,
+        -0.4,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.0005807218458235427,
+      "pressure_relative_l2": 0.0005507839073413555,
+      "transverse_max_abs": 0.0006343798013404012,
+      "max_condition_velocity_delta": 0.0006067752838134766,
+      "max_condition_pressure_delta_normalized": 0.0006725029670633376
+    },
+    {
+      "case": 39,
+      "controls": [
+        2.2,
+        -0.4,
+        0.15,
+        2.2,
+        1.5,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.00044833396075959946,
+      "pressure_relative_l2": 0.0005179050632956781,
+      "transverse_max_abs": 0.00029432601877488196,
+      "max_condition_velocity_delta": 0.0005888938903808594,
+      "max_condition_pressure_delta_normalized": 0.000757260771933943
+    },
+    {
+      "case": 40,
+      "controls": [
+        2.2,
+        -0.4,
+        0.15,
+        2.2,
+        1.5,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.00040879496739999803,
+      "pressure_relative_l2": 0.00025380141109595963,
+      "transverse_max_abs": 0.0002749804116319865,
+      "max_condition_velocity_delta": 0.0005689263343811035,
+      "max_condition_pressure_delta_normalized": 0.0003267418360337615
+    },
+    {
+      "case": 41,
+      "controls": [
+        2.2,
+        -0.4,
+        1.2,
+        0.0,
+        -0.4,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.00010143529446470079,
+      "pressure_relative_l2": 0.0003509375833755379,
+      "transverse_max_abs": 9.396754467161372e-05,
+      "max_condition_velocity_delta": 0.00019843144400510937,
+      "max_condition_pressure_delta_normalized": 0.0005709691322408617
+    },
+    {
+      "case": 42,
+      "controls": [
+        2.2,
+        -0.4,
+        1.2,
+        0.0,
+        -0.4,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.0003623532936811581,
+      "pressure_relative_l2": 0.0007313777093169505,
+      "transverse_max_abs": 0.000269737298367545,
+      "max_condition_velocity_delta": 0.0004990100860595703,
+      "max_condition_pressure_delta_normalized": 0.0005806250846944749
+    },
+    {
+      "case": 43,
+      "controls": [
+        2.2,
+        -0.4,
+        1.2,
+        0.0,
+        1.5,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.00015825722164208186,
+      "pressure_relative_l2": 0.00024477745153934894,
+      "transverse_max_abs": 0.00020596968533936888,
+      "max_condition_velocity_delta": 0.0003262361860834062,
+      "max_condition_pressure_delta_normalized": 0.00031533025321550667
+    },
+    {
+      "case": 44,
+      "controls": [
+        2.2,
+        -0.4,
+        1.2,
+        0.0,
+        1.5,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.0005110781222640451,
+      "pressure_relative_l2": 0.0013384726596411929,
+      "transverse_max_abs": 0.0004933889722451568,
+      "max_condition_velocity_delta": 0.000555574893951416,
+      "max_condition_pressure_delta_normalized": 0.0013621720718219876
+    },
+    {
+      "case": 45,
+      "controls": [
+        2.2,
+        -0.4,
+        1.2,
+        2.2,
+        -0.4,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.0004694795938193818,
+      "pressure_relative_l2": 0.0005340202129916735,
+      "transverse_max_abs": 0.0003256731724832207,
+      "max_condition_velocity_delta": 0.0005939602851867676,
+      "max_condition_pressure_delta_normalized": 0.0007386315846815705
+    },
+    {
+      "case": 46,
+      "controls": [
+        2.2,
+        -0.4,
+        1.2,
+        2.2,
+        -0.4,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.0006167839110294305,
+      "pressure_relative_l2": 0.0008296941626375995,
+      "transverse_max_abs": 0.00046549364924430847,
+      "max_condition_velocity_delta": 0.0007395744323730469,
+      "max_condition_pressure_delta_normalized": 0.0005200559389777482
+    },
+    {
+      "case": 47,
+      "controls": [
+        2.2,
+        -0.4,
+        1.2,
+        2.2,
+        1.5,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.00047295468437225894,
+      "pressure_relative_l2": 0.0004274408009911196,
+      "transverse_max_abs": 0.00038941705133765936,
+      "max_condition_velocity_delta": 0.0005855560302734375,
+      "max_condition_pressure_delta_normalized": 0.0006513379048556089
+    },
+    {
+      "case": 48,
+      "controls": [
+        2.2,
+        -0.4,
+        1.2,
+        2.2,
+        1.5,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.00046723962572031946,
+      "pressure_relative_l2": 0.0006613745139322332,
+      "transverse_max_abs": 0.0004322405729908496,
+      "max_condition_velocity_delta": 0.000527501106262207,
+      "max_condition_pressure_delta_normalized": 0.0007707205950282514
+    },
+    {
+      "case": 49,
+      "controls": [
+        2.2,
+        1.5,
+        0.15,
+        0.0,
+        -0.4,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.00045364644292624043,
+      "pressure_relative_l2": 0.0005372883002246278,
+      "transverse_max_abs": 0.0005195316043682396,
+      "max_condition_velocity_delta": 0.0006336259539239109,
+      "max_condition_pressure_delta_normalized": 0.0005969134508632123
+    },
+    {
+      "case": 50,
+      "controls": [
+        2.2,
+        1.5,
+        0.15,
+        0.0,
+        -0.4,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.0009479854002393087,
+      "pressure_relative_l2": 0.00030707598789790635,
+      "transverse_max_abs": 0.000762712094001472,
+      "max_condition_velocity_delta": 0.0011513233184814453,
+      "max_condition_pressure_delta_normalized": 0.0004912831354886293
+    },
+    {
+      "case": 51,
+      "controls": [
+        2.2,
+        1.5,
+        0.15,
+        0.0,
+        1.5,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.0006180659490736689,
+      "pressure_relative_l2": 0.0003233275294092923,
+      "transverse_max_abs": 0.0003570578119251877,
+      "max_condition_velocity_delta": 0.0008143186569213867,
+      "max_condition_pressure_delta_normalized": 0.00036351248854771256
+    },
+    {
+      "case": 52,
+      "controls": [
+        2.2,
+        1.5,
+        0.15,
+        0.0,
+        1.5,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.0006587565695627641,
+      "pressure_relative_l2": 0.0002926940351804095,
+      "transverse_max_abs": 0.0006793234497308731,
+      "max_condition_velocity_delta": 0.0007712753722444177,
+      "max_condition_pressure_delta_normalized": 0.000258174812188372
+    },
+    {
+      "case": 53,
+      "controls": [
+        2.2,
+        1.5,
+        0.15,
+        2.2,
+        -0.4,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.0007604394999613402,
+      "pressure_relative_l2": 0.001260246747285708,
+      "transverse_max_abs": 0.0010157948127016425,
+      "max_condition_velocity_delta": 0.001122059184126556,
+      "max_condition_pressure_delta_normalized": 0.0015301271341741085
+    },
+    {
+      "case": 54,
+      "controls": [
+        2.2,
+        1.5,
+        0.15,
+        2.2,
+        -0.4,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.00036274082408156255,
+      "pressure_relative_l2": 0.000312519816979605,
+      "transverse_max_abs": 0.00042019528336822987,
+      "max_condition_velocity_delta": 0.00043720006942749023,
+      "max_condition_pressure_delta_normalized": 0.0006261739181354642
+    },
+    {
+      "case": 55,
+      "controls": [
+        2.2,
+        1.5,
+        0.15,
+        2.2,
+        1.5,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.0003135062258592634,
+      "pressure_relative_l2": 0.00021477789596326295,
+      "transverse_max_abs": 0.00046395344543270767,
+      "max_condition_velocity_delta": 0.000571101438254118,
+      "max_condition_pressure_delta_normalized": 0.0002861185639631003
+    },
+    {
+      "case": 56,
+      "controls": [
+        2.2,
+        1.5,
+        0.15,
+        2.2,
+        1.5,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.0003643291740031717,
+      "pressure_relative_l2": 0.0002569969801482936,
+      "transverse_max_abs": 0.00043293609633110464,
+      "max_condition_velocity_delta": 0.0004228353500366211,
+      "max_condition_pressure_delta_normalized": 0.00032566895242780447
+    },
+    {
+      "case": 57,
+      "controls": [
+        2.2,
+        1.5,
+        1.2,
+        0.0,
+        -0.4,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.00017566881667971452,
+      "pressure_relative_l2": 0.00012014756193314121,
+      "transverse_max_abs": 0.0001407145755365491,
+      "max_condition_velocity_delta": 0.00023925304412841797,
+      "max_condition_pressure_delta_normalized": 0.0001823902130126953
+    },
+    {
+      "case": 58,
+      "controls": [
+        2.2,
+        1.5,
+        1.2,
+        0.0,
+        -0.4,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.0007565977845048232,
+      "pressure_relative_l2": 0.00016366478203723133,
+      "transverse_max_abs": 0.0004000824992544949,
+      "max_condition_velocity_delta": 0.0010207295417785645,
+      "max_condition_pressure_delta_normalized": 0.00012664902897085994
+    },
+    {
+      "case": 59,
+      "controls": [
+        2.2,
+        1.5,
+        1.2,
+        0.0,
+        1.5,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.000601667252633288,
+      "pressure_relative_l2": 0.00034045599135866837,
+      "transverse_max_abs": 0.0007726027397438884,
+      "max_condition_velocity_delta": 0.0008641071617603302,
+      "max_condition_pressure_delta_normalized": 0.00040038066799752414
+    },
+    {
+      "case": 60,
+      "controls": [
+        2.2,
+        1.5,
+        1.2,
+        0.0,
+        1.5,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.000531765728699769,
+      "pressure_relative_l2": 0.0009270806206125615,
+      "transverse_max_abs": 0.00044058109051547945,
+      "max_condition_velocity_delta": 0.0006737709045410156,
+      "max_condition_pressure_delta_normalized": 0.0010701526189222932
+    },
+    {
+      "case": 61,
+      "controls": [
+        2.2,
+        1.5,
+        1.2,
+        2.2,
+        -0.4,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.00019062373080745032,
+      "pressure_relative_l2": 0.0008724844284770887,
+      "transverse_max_abs": 0.00021753087639808655,
+      "max_condition_velocity_delta": 0.00029152617207728326,
+      "max_condition_pressure_delta_normalized": 0.0009871504735201597
+    },
+    {
+      "case": 62,
+      "controls": [
+        2.2,
+        1.5,
+        1.2,
+        2.2,
+        -0.4,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.0005534474028416478,
+      "pressure_relative_l2": 0.0010408264141433337,
+      "transverse_max_abs": 0.0002130693756043911,
+      "max_condition_velocity_delta": 0.0007773637771606445,
+      "max_condition_pressure_delta_normalized": 0.0007013732683844864
+    },
+    {
+      "case": 63,
+      "controls": [
+        2.2,
+        1.5,
+        1.2,
+        2.2,
+        1.5,
+        -1.2
+      ],
+      "velocity_relative_l2": 0.0003270655624237357,
+      "pressure_relative_l2": 9.984504980643647e-05,
+      "transverse_max_abs": 0.00043747719610109925,
+      "max_condition_velocity_delta": 0.0005340490024536848,
+      "max_condition_pressure_delta_normalized": 0.00017931786715053022
+    },
+    {
+      "case": 64,
+      "controls": [
+        2.2,
+        1.5,
+        1.2,
+        2.2,
+        1.5,
+        -0.1499999999999999
+      ],
+      "velocity_relative_l2": 0.0004376783928286214,
+      "pressure_relative_l2": 0.00014331615111561307,
+      "transverse_max_abs": 0.00038554362254217267,
+      "max_condition_velocity_delta": 0.0005438327789306641,
+      "max_condition_pressure_delta_normalized": 0.0002551512443460524
+    },
+    {
+      "case": 65,
+      "controls": [
+        1.7275568508856194,
+        1.0931327792998018,
+        1.167592818398995,
+        1.6457315004010438,
+        0.845546537653108,
+        -0.21417122862444915
+      ],
+      "velocity_relative_l2": 0.00036073890729257304,
+      "pressure_relative_l2": 0.00013856709681874365,
+      "transverse_max_abs": 0.0002340318460483104,
+      "max_condition_velocity_delta": 0.00047135353088378906,
+      "max_condition_pressure_delta_normalized": 0.0002671480178833008
+    },
+    {
+      "case": 66,
+      "controls": [
+        0.39295178783214957,
+        0.7184296986222304,
+        0.6149391310642557,
+        0.7674636661281731,
+        0.22876604149691115,
+        -1.0326628829968083
+      ],
+      "velocity_relative_l2": 0.00015267882757268478,
+      "pressure_relative_l2": 0.00015220307136306892,
+      "transverse_max_abs": 0.00017629230569582433,
+      "max_condition_velocity_delta": 0.00017756223678588867,
+      "max_condition_pressure_delta_normalized": 0.00021769784507341683
+    },
+    {
+      "case": 67,
+      "controls": [
+        2.17681967419081,
+        0.08851047493097397,
+        0.9015531102608778,
+        1.1129472622702132,
+        0.8618115152972984,
+        -0.46254040415968956
+      ],
+      "velocity_relative_l2": 0.00024932236304968505,
+      "pressure_relative_l2": 0.0004187117550290268,
+      "transverse_max_abs": 0.00011542128777364269,
+      "max_condition_velocity_delta": 0.0003358125686645508,
+      "max_condition_pressure_delta_normalized": 0.00042895838851109147
+    },
+    {
+      "case": 68,
+      "controls": [
+        0.114576508055092,
+        -0.2858166750173081,
+        1.1426203633519685,
+        0.5507709401016347,
+        0.37100849960018645,
+        -0.9102384081027998
+      ],
+      "velocity_relative_l2": 0.0002670645306444591,
+      "pressure_relative_l2": 0.0003918463023520721,
+      "transverse_max_abs": 0.0003049091901630163,
+      "max_condition_velocity_delta": 0.000420655618654564,
+      "max_condition_pressure_delta_normalized": 0.0004181319964118302
+    },
+    {
+      "case": 69,
+      "controls": [
+        0.6614365079168251,
+        0.2966771466442071,
+        0.3062293364659898,
+        0.7663497480317963,
+        0.7345476194384793,
+        -0.1561282511589066
+      ],
+      "velocity_relative_l2": 0.0003045300189619727,
+      "pressure_relative_l2": 0.00031773489277633053,
+      "transverse_max_abs": 4.512847590376623e-05,
+      "max_condition_velocity_delta": 0.00038754940032958984,
+      "max_condition_pressure_delta_normalized": 0.0004076957702636719
+    },
+    {
+      "case": 70,
+      "controls": [
+        0.407552592050346,
+        1.4869552222307831,
+        0.9748997928089539,
+        0.98591524251317,
+        1.2158455956013676,
+        -0.29607382070433597
+      ],
+      "velocity_relative_l2": 0.00011354331715910194,
+      "pressure_relative_l2": 0.0001330071595150887,
+      "transverse_max_abs": 0.00013775547267869115,
+      "max_condition_velocity_delta": 0.0001675289822742343,
+      "max_condition_pressure_delta_normalized": 0.00013391538232099265
+    },
+    {
+      "case": 71,
+      "controls": [
+        2.1277738465880067,
+        -0.07516930523116966,
+        0.8845461168292928,
+        1.8234706666745204,
+        0.8144460935863468,
+        -0.2825193426508822
+      ],
+      "velocity_relative_l2": 0.0003741992680163165,
+      "pressure_relative_l2": 0.0003881023163536592,
+      "transverse_max_abs": 0.00019456729933153838,
+      "max_condition_velocity_delta": 0.0004995465278625488,
+      "max_condition_pressure_delta_normalized": 0.0004245692980475724
+    },
+    {
+      "case": 72,
+      "controls": [
+        1.7101144052085024,
+        -0.055346459021179906,
+        0.8303817492732779,
+        0.4727298430007671,
+        -0.06734296641026516,
+        -0.6706882145379989
+      ],
+      "velocity_relative_l2": 0.00015221104833501703,
+      "pressure_relative_l2": 0.0003037238388081281,
+      "transverse_max_abs": 7.502815424231812e-05,
+      "max_condition_velocity_delta": 0.00019758939743041992,
+      "max_condition_pressure_delta_normalized": 0.000377947639208287
+    },
+    {
+      "case": 73,
+      "controls": [
+        0.8286915402131373,
+        1.3730031237887381,
+        0.16719121942996307,
+        0.4377529106785246,
+        1.0707119118753932,
+        -0.2962170779547081
+      ],
+      "velocity_relative_l2": 0.0003053410278941473,
+      "pressure_relative_l2": 0.0002317600101961042,
+      "transverse_max_abs": 0.00016909446276258677,
+      "max_condition_velocity_delta": 0.0004094243049621582,
+      "max_condition_pressure_delta_normalized": 0.00044222312862984836
+    },
+    {
+      "case": 74,
+      "controls": [
+        0.011150923534382119,
+        1.0070241288158592,
+        0.8843393272154444,
+        1.3618386749836588,
+        0.6994695947305735,
+        -0.29329847985537083
+      ],
+      "velocity_relative_l2": 0.00016005526354283964,
+      "pressure_relative_l2": 0.00026969985932058315,
+      "transverse_max_abs": 0.00012010559294139966,
+      "max_condition_velocity_delta": 0.0002560615539550781,
+      "max_condition_pressure_delta_normalized": 0.0003051866078749299
+    },
+    {
+      "case": 75,
+      "controls": [
+        1.9701590071827817,
+        0.3905982912281002,
+        0.2307294062336832,
+        2.1048109595774105,
+        0.09832946220747435,
+        -1.0323087793126413
+      ],
+      "velocity_relative_l2": 0.00019832927686745286,
+      "pressure_relative_l2": 0.0001416858166175348,
+      "transverse_max_abs": 0.00019542757945600897,
+      "max_condition_velocity_delta": 0.0002933318610303104,
+      "max_condition_pressure_delta_normalized": 0.0002181367453886196
+    },
+    {
+      "case": 76,
+      "controls": [
+        0.14045794257628239,
+        0.5221244840637326,
+        1.1688658739374762,
+        1.6630247094985764,
+        0.4766234805748193,
+        -0.3766573653684596
+      ],
+      "velocity_relative_l2": 0.00026347645261712646,
+      "pressure_relative_l2": 0.0004345477260552257,
+      "transverse_max_abs": 0.0003606130776461214,
+      "max_condition_velocity_delta": 0.0004352446412667632,
+      "max_condition_pressure_delta_normalized": 0.0004171566688455641
+    },
+    {
+      "case": 77,
+      "controls": [
+        1.3963666106028734,
+        1.353494440053618,
+        1.053650283345534,
+        0.9957093930567148,
+        1.2028313489519205,
+        -0.4288010585417321
+      ],
+      "velocity_relative_l2": 0.0001453937992881219,
+      "pressure_relative_l2": 9.089712882606925e-05,
+      "transverse_max_abs": 0.00022725577582605183,
+      "max_condition_velocity_delta": 0.00016554348985664546,
+      "max_condition_pressure_delta_normalized": 0.00021233342704363167
+    },
+    {
+      "case": 78,
+      "controls": [
+        1.9933667317737715,
+        0.1210274270160645,
+        0.47286994487253886,
+        1.1009647981124362,
+        0.021511197399217863,
+        -1.06887199687981
+      ],
+      "velocity_relative_l2": 8.097815965662739e-05,
+      "pressure_relative_l2": 0.00019574650820152658,
+      "transverse_max_abs": 9.363633580505848e-05,
+      "max_condition_velocity_delta": 0.00016272398352157325,
+      "max_condition_pressure_delta_normalized": 0.00028704514261335135
+    },
+    {
+      "case": 79,
+      "controls": [
+        1.0384049487394715,
+        0.25864926589617865,
+        0.5853511512267972,
+        0.817753808331263,
+        0.0527247262665802,
+        -0.2594635664861591
+      ],
+      "velocity_relative_l2": 0.000327367350651028,
+      "pressure_relative_l2": 0.00025385306069702294,
+      "transverse_max_abs": 0.00015235257160384208,
+      "max_condition_velocity_delta": 0.0004183053970336914,
+      "max_condition_pressure_delta_normalized": 0.0003575628506951034
+    },
+    {
+      "case": 80,
+      "controls": [
+        1.6915060915733766,
+        0.39396387778684305,
+        0.5615572220364466,
+        0.6406456334883774,
+        0.44795311152808226,
+        -0.6093527315992825
+      ],
+      "velocity_relative_l2": 0.0001795921911404651,
+      "pressure_relative_l2": 0.0001322549965602935,
+      "transverse_max_abs": 0.00013743253657594323,
+      "max_condition_velocity_delta": 0.00021982192993164062,
+      "max_condition_pressure_delta_normalized": 0.00020589612540788949
+    }
+  ]
+}

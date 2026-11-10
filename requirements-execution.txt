@@ -1,0 +1,7 @@
+-r requirements.txt
+ipython>=8
+ipykernel>=6
+nbformat>=5
+nbclient>=0.10
+jupyter-client>=8
+Pillow>=10

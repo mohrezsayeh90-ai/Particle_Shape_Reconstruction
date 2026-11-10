@@ -1,0 +1,16 @@
+{
+  "notebook": "dense-duck-formation-20261104-211d7de258",
+  "source": "evidence/dense-duck-formation-20261104-211d7de258/dense-duck-formation-20261104-211d7de258.ipynb",
+  "artifacts": [
+    {
+      "kind": "tensor_checkpoint",
+      "path": "assets/dense-duck-formation-20261104-211d7de258/checkpoints/literal_01.pt",
+      "sha256": "af2f21b195e2d25b877482cd527110054f42bf92200f64e39572375219e5e581"
+    },
+    {
+      "kind": "cached_results",
+      "path": "assets/dense-duck-formation-20261104-211d7de258/cached_results/dense_precomputed_01.json",
+      "decoded_sha256": "a4bd7f55a31d48f5dff7ecbfbef14603cf216cdb0b685cc3498180eca4ec5b34"
+    }
+  ]
+}

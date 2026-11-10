@@ -1,0 +1,43 @@
+{
+  "notebook": "master-1",
+  "source": "evidence/master-1/master-1.ipynb",
+  "artifacts": [
+    {
+      "kind": "source_and_weights_package",
+      "path": "assets/master-1/packages/package_01",
+      "archive_sha256": "31cfa70722112fa11bce1fa2cb7fcb9677fb91fb2a967688a5ba3e6c67b97766",
+      "members": [
+        "run_injection_pinn.py",
+        "requirements.txt",
+        "README_INJECTION_FA.md",
+        "particle_pinn/__init__.py",
+        "particle_pinn/parametric.py",
+        "particle_pinn/injection.py",
+        "particle_pinn/geometry.py",
+        "particle_pinn/fem.py",
+        "tests/test_injection.py",
+        "source_manifest.json"
+      ]
+    },
+    {
+      "kind": "embedded_figure",
+      "path": "assets/master-1/notebook_figures/cell_004_output_00.png"
+    },
+    {
+      "kind": "embedded_figure",
+      "path": "assets/master-1/notebook_figures/cell_004_output_01.png"
+    },
+    {
+      "kind": "embedded_figure",
+      "path": "assets/master-1/notebook_figures/cell_006_output_00.png"
+    },
+    {
+      "kind": "embedded_html",
+      "path": "assets/master-1/notebook_figures/cell_008_output_02.html"
+    },
+    {
+      "kind": "embedded_html",
+      "path": "assets/master-1/notebook_figures/cell_008_output_04.html"
+    }
+  ]
+}

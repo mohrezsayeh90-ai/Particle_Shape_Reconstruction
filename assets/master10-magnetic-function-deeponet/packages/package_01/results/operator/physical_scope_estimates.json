@@ -1,0 +1,8 @@
+{
+  "temperature_assumed_K": 298.15,
+  "brownian_diffusivity_m2_s": 1.3328522873013134e-13,
+  "one_coordinate_Brownian_RMS_at_3s_um": 0.8942658287001622,
+  "unbounded_Stokes_gravitational_settling_um_s": 0.6982846793279114,
+  "gravity_displacement_at_3s_um": 2.094854037983734,
+  "note": "Not included in trained deterministic equation. Gravity matters only through its projection onto modeled directions; estimates assume ideal Stokes medium at nominal viscosity."
+}
