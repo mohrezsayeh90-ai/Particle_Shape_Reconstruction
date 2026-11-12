@@ -493,4 +493,185 @@ class Figures:
         print('rendered',[m['id'] for m in self.manifest if m['status']=='rendered'])
 
 
-if __name__=='__main__':Figures().run()
+
+
+class ThesisFigures(Figures):
+    """Six Section 4.1 exports, reading saved results without campaign writes.
+
+    Run with --thesis. PDFs contain vector artists; PNGs are 300 dpi previews.
+    All figures are designed at 6.8 inches (17.3 cm) page width.
+    """
+    def __init__(self):
+        self.output=OUT/'thesis';self.output.mkdir(parents=True,exist_ok=True)
+        self.cases=read_json(RUN/'cases.json');self.index={c['id']:c for c in self.cases}
+        self.summary_path=RUN/'summary.csv'
+        self.summary=list(csv.DictReader(self.summary_path.open()))
+        self.completed=[];self.manifest=[]
+        for row in self.summary:
+            if row['id'] not in self.index:continue
+            path=RUN/'cases'/(row.get('reused_case') or row['id'])/'metrics.json'
+            if path.exists():self.completed.append((self.index[row['id']],read_json(path),path.parent))
+        plt.rcParams.update({'font.size':8,'axes.titlesize':8.5,'axes.labelsize':8,
+                             'legend.fontsize':7,'xtick.labelsize':7,'ytick.labelsize':7})
+
+    def selected(self,**filters):
+        return [(c,m,p) for c,m,p in self.completed if all(c.get(k)==v for k,v in filters.items())]
+
+    def save(self,fig,code,title,inputs,description):
+        if code=='F01':
+            fig.set_size_inches(6.8,7.2)
+            for legend in list(fig.legends):legend.remove()
+            for i,kind in enumerate(['Triangle','S','C','T']):
+                left,right=fig.axes[2*i:2*i+2]
+                for y in [0,.3]:left.axhline(y,color='black',lw=1.25,zorder=8,clip_on=False)
+                left.set_ylim(-.006,.306)
+                left.set_title(f'({chr(97+2*i)}) {kind} | N={3 if i==0 else 6}')
+                right.set_title(f'({chr(98+2*i)}) Final centers')
+                right.set(xlim=(1.6,2.18),ylim=(0,.30),aspect='equal')
+                for line in right.lines:
+                    if line.get_marker()=='+':line.set(marker='s',markersize=7,markerfacecolor='none',markeredgewidth=.9,zorder=9)
+                    elif line.get_marker()=='x':line.set(markersize=4,markeredgewidth=1.1,zorder=10)
+            handles=[Line2D([],[],marker='o',ls='none',mfc=COLORS['reference'],mec='black',label='Reference disks'),
+                     Line2D([],[],marker='s',ls='none',mfc='none',mec='black',label='Target centers'),
+                     Line2D([],[],marker='x',ls='none',color=COLORS['pinn'],label='PINN centers')]
+            fig.legend(handles=handles,loc='lower center',bbox_to_anchor=(.5,0),ncol=3,frameon=False)
+            fig.tight_layout(rect=(0,.035,1,1),pad=.6,h_pad=.6)
+        pdf=self.output/(code+'.pdf');png=self.output/(code+'.png')
+        fig.savefig(pdf,bbox_inches='tight',pad_inches=.04,metadata={'Title':code+' | Section 4.1','CreationDate':None,'ModDate':None})
+        fig.savefig(png,bbox_inches='tight',pad_inches=.04,dpi=300)
+        plt.close(fig)
+        self.manifest.append(dict(id=code,pdf=str(pdf.relative_to(ROOT)),png=str(png.relative_to(ROOT)),
+             embedded_caption=False,page_width_inches=6.8,description=description,
+             inputs=[dict(path=str(Path(p).relative_to(ROOT)),sha256=hashfile(p)) for p in dict.fromkeys(inputs)],
+             pdf_sha256=hashfile(pdf),png_sha256=hashfile(png)))
+
+    def f03(self):
+        fig,axes=plt.subplots(2,1,figsize=(6.8,4.7),layout='constrained');inputs=[]
+        markers=['o','s','^'];colors=['#147d92','#ba5d16','#814499'];labels=[]
+        for j,mports in enumerate([1,2,3,4,5,6,0]):
+            subset=sorted(self.selected(group='B1',N=24,m=mports),key=lambda v:v[0]['seed'])
+            assert len(subset)==3 and {c['seed'] for c,m,p in subset}=={11,29,47}
+            labels.append(('Free' if mports==0 else str(2*mports))+f"\n{sum(m['accepted'] for c,m,p in subset)}/3 accepted")
+            for k,(c,m,p) in enumerate(subset):
+                ref=m['replays']['reference'];x=j+(k-1)*.17
+                for ax,value in zip(axes,[ref['max_error'],ref['minimum']['distance']-.026]):
+                    ax.plot(x,value,marker=markers[k],color=colors[k],mfc=colors[k] if m['accepted'] else 'white',ms=4.5,ls='none',mew=.9)
+                inputs.append(p/'metrics.json')
+        axes[0].set(yscale='log',ylabel='Max. reference endpoint error',title='(a) Endpoint error | N=24')
+        axes[0].axhline(.004,color='black',ls=':',lw=.8,label='Reference limit')
+        axes[1].axhline(0,color='black',ls=':',lw=.8)
+        axes[1].set(ylabel=r'$d_{\min}^*-0.026$',title='(b) Refined clearance | N=24')
+        for ax in axes:
+            ax.set(xticks=range(7),xticklabels=labels,xlabel='Available launchers');ax.tick_params(axis='x',labelsize=7)
+            ax.axvline(5.5,color='.75',lw=.7);ax.grid(axis='y',alpha=.2)
+        axes[0].legend(handles=[Line2D([],[],marker=m,color=c,ls='none',label=f'Seed {seed}') for m,c,seed in zip(markers,colors,[11,29,47])],loc='upper right',frameon=False,fontsize=6.5)
+        self.save(fig,'F03','',inputs,'Completed N=24 comparison. All three saved starts; filled/open markers denote accepted/rejected cases. Free release is separate.')
+
+    def f05(self):
+        fig,axes=plt.subplots(2,2,figsize=(6.8,3.5),layout='constrained');inputs=[]
+        for i,(ax,shape,name) in enumerate(zip(axes.flat,['stadium','arrow','fish','perforated'],['Stadium','Arrow','Fish','Perforated stadium'])):
+            subset=self.selected(group='D1',shape=shape,N=100,mode='free',seed=11)
+            assert len(subset)==1 and subset[0][1]['accepted']
+            c,m,p=subset[0];d=np.load(p/'trajectories.npz');outline=mask_shape(shape)
+            ax.plot(*outline.exterior.xy,color='.65',lw=.65)
+            for hole in outline.interiors:ax.plot(*hole.xy,color='.65',lw=.65)
+            for xy in d['reference_endpoints']:ax.add_patch(Circle(xy,.0125,fc=COLORS['reference'],ec='#17333a',lw=.4))
+            ax.set(xlim=(1.03,2.01),ylim=(0,.30),aspect='equal',xlabel=r'$x^*$',ylabel=r'$y^*$',title=f'({chr(97+i)}) {name} | N=100, free')
+            inputs.extend([p/'metrics.json',p/'trajectories.npz'])
+        self.save(fig,'F05','',inputs,'Four accepted free-release formations, seed 11; identical spatial scaling and true disk radius 0.0125.')
+
+    def clearance_planning(self):
+        fig,axes=plt.subplots(2,2,figsize=(6.8,5.0),layout='constrained');inputs=[]
+        fish=self.selected(group='D1',shape='fish',N=100,mode='free',seed=11)[0][2]
+        folders=[RUN/'historical_replays/dense_duck_six_fixed',fish]
+        for i,(ax,p,n,name) in enumerate(zip(axes[0],folders,[42,100],['Duck','Fish'])):
+            d=np.load(p/'trajectories.npz');m=read_json(p/'metrics.json')
+            for mode,style in [('reference','-'),('pinn','--')]:
+                ax.plot(d['time'],d[mode+'_sampled_dmin'],style,color=COLORS[mode],lw=1,label=mode.upper() if mode=='pinn' else 'Reference')
+                near=m['replays'][mode]['minimum']
+                ax.plot(near['time'],near['distance'],marker='*' if mode=='reference' else 'D',ms=7 if mode=='reference' else 4,mfc=COLORS[mode] if mode=='reference' else 'none',mec=COLORS[mode],ls='none',zorder=6,label='Refined minimum' if mode=='reference' else None)
+            ax.axhline(.026,color='black',ls=':',lw=.9,label='Threshold 0.026')
+            ax.set(xlabel=r'$t^*$',ylabel=r'$d_{\min}^*(t^*)$',ylim=(.024,.09),title=f'({chr(97+i)}) {name} | N={n}')
+            if i==0:ax.legend(frameon=False,fontsize=6,loc='upper right')
+            inputs.extend([p/'metrics.json',p/'trajectories.npz'])
+        ax=axes[1,0]
+        for seed,marker,color in zip([11,29,47],['o','s','^'],['#147d92','#ba5d16','#814499']):
+            pair=[self.selected(group='G2',N=6,seed=seed,collision_aware=aware)[0] for aware in [False,True]]
+            ax.plot([0,1],[m['replays']['reference']['minimum']['distance']-.026 for c,m,p in pair],marker=marker,color=color,lw=1,ms=4,label=f'Seed {seed}')
+            inputs.extend(p/'metrics.json' for c,m,p in pair)
+        ax.axhline(0,color='black',ls=':',lw=.9);ax.set(xticks=[0,1],xticklabels=['Without penalty','With penalty'],xlim=(-.2,1.2),ylabel=r'$d_{\min}^*-0.026$',title='(c) Paired planning starts | N=6');ax.legend(frameon=False,fontsize=6)
+        candidates=self.selected(group='G2',N=6,collision_aware=False)
+        c,m,p=min(candidates,key=lambda v:v[1]['replays']['reference']['minimum']['distance'])
+        event=np.load(p/'critical_event_snapshots.npz');points=event['reference_positions'][1];pair=event['reference_pair'].astype(int)-1;center=points[pair].mean(0);ax=axes[1,1]
+        for j,xy in enumerate(points):
+            if np.isfinite(xy).all():ax.add_patch(Circle(xy,.0125,fc=COLORS['pinn'] if j in pair else '.85',ec='black',lw=.5,alpha=.7))
+        ax.plot(*points[pair].T,'o-',color='black',ms=2,lw=.7)
+        for j,offset in zip(pair,[(-23,10),(8,-16)]):ax.annotate(str(j+1),points[j],xytext=offset,textcoords='offset points',fontsize=7,arrowprops=dict(arrowstyle='-',lw=.5))
+        ax.set(xlim=(center[0]-.05,center[0]+.05),ylim=(max(0,center[1]-.05),min(.306,center[1]+.05)),aspect='equal',xlabel=r'$x^*$',ylabel=r'$y^*$',title=f"(d) Critical pair | N=6, seed {c['seed']}")
+        ax.axhline(.3,color='black',lw=1);inputs.extend([p/'critical_event_snapshots.npz',p/'metrics.json'])
+        self.save(fig,'F09_F11','',inputs,'Saved clearance curves and refined minima; paired penalty ablation and exact saved critical-pair snapshot. No new replay.')
+
+    def f06(self):
+        from matplotlib.colors import LogNorm
+        fig,axes=plt.subplots(1,2,figsize=(6.8,3.1),layout='constrained');inputs=[]
+        data=self.selected(group='E1',seed=11);assert len(data)==49
+        xs=sorted({c['center'][0] for c,m,p in data});ys=sorted({c['center'][1] for c,m,p in data})
+        edges=lambda x:np.r_[x[0]-(x[1]-x[0])/2,(np.array(x[:-1])+x[1:])/2,x[-1]+(x[-1]-x[-2])/2]
+        values=np.array([[next(m['replays']['reference']['max_error'] for c,m,p in data if c['center']==[x,y]) for x in xs] for y in ys]);assert np.all(values>0)
+        im=axes[0].pcolormesh(edges(xs),edges(ys),values,norm=LogNorm(vmin=values.min(),vmax=values.max()),cmap='viridis',shading='flat')
+        for c,m,p in data:
+            axes[0].plot(*c['center'],'o' if m['accepted'] else 'x',mfc='white',mec='black',color='black',ms=3.2,mew=.7);inputs.append(p/'metrics.json')
+        bar=fig.colorbar(im,ax=axes[0],label='Max. reference endpoint error',fraction=.055,pad=.02);bar.solids.set_rasterized(False)
+        axes[0].set(xlabel=r'$x_c^*$',ylabel=r'$y_c^*$',title='(a) Fixed launchers | N=18')
+        axes[0].axhline(.15,color='white',ls=':',lw=.8)
+        for group,color,label in [('E1',COLORS['reference'],'Fixed'),('E1_free',COLORS['pinn'],'Free')]:
+            points=sorted([v for v in self.selected(group=group,seed=11) if v[0]['center'][1]==.15],key=lambda v:v[0]['center'][0]);assert len(points)==7
+            axes[1].plot([c['center'][0] for c,m,p in points],[m['replays']['reference']['max_error'] for c,m,p in points],color=color,lw=.8,label=label)
+            for c,m,p in points:
+                axes[1].plot(c['center'][0],m['replays']['reference']['max_error'],'o' if m['accepted'] else 'x',color=color,ms=4);inputs.append(p/'metrics.json')
+        axes[1].set(yscale='log',xlabel=r'$x_c^*$',ylabel='Max. reference endpoint error',title=r'(b) Centerline $y_c^*=0.15$ | N=18')
+        axes[1].axhline(.004,color='black',ls=':',lw=.8)
+        handles,labels=axes[1].get_legend_handles_labels()
+        handles += [Line2D([],[],marker='o',color='black',ls='none',label='Accepted'),Line2D([],[],marker='x',color='black',ls='none',label='Rejected')]
+        axes[1].legend(handles=handles,frameon=False,fontsize=6,ncol=2,loc='upper right')
+        for ax in axes:ax.set_title(ax.get_title()+'\nOne start per point (seed 11)')
+        self.save(fig,'F06','',inputs,'Fixed-launcher location map with logarithmic positive endpoint errors, paired fixed/free centerline at the same seven centers; one saved start per point.')
+
+    def f07(self):
+        fig=plt.figure(figsize=(6.8,5.0),layout='constrained');grid=fig.add_gridspec(2,3,height_ratios=[1,1.1]);inputs=[]
+        for i,(q,theta) in enumerate([(1.,0),(2.,30),(2.75,90)]):
+            ax=fig.add_subplot(grid[0,i]);c,m,p=self.selected(group='F1',q=q,theta=theta,seed=11)[0];d=np.load(p/'trajectories.npz')
+            for key,style,color in [('targets','--','black'),('reference_endpoints','-',COLORS['reference'])]:
+                points=d[key];mean=points.mean(0);cov=(points-mean).T@(points-mean)/len(points);val,vec=np.linalg.eigh(cov)
+                angle=0 if q==1 else np.rad2deg(np.arctan2(vec[1,-1],vec[0,-1]))
+                ax.add_patch(Ellipse(mean,2*np.sqrt(val[-1]),2*np.sqrt(val[0]),angle=angle,fill=False,ls=style,ec=color,lw=1.2,zorder=4 if key=='targets' else 3))
+            ax.plot(*d['targets'].T,'o',mfc='none',mec='black',ms=3);ax.plot(*d['reference_endpoints'].T,'x',color=COLORS['reference'],ms=3)
+            ax.set(xlim=(1.20,1.60),ylim=(0,.30),aspect='equal',xlabel=r'$x^*$',ylabel=r'$y^*$',title=f'({chr(97+i)}) q={q}'+('\nOrientation undefined' if q==1 else f', θ={theta}°'))
+            inputs.extend([p/'metrics.json',p/'trajectories.npz'])
+        ax=fig.add_subplot(grid[1,:]);values=np.full((4,6),np.nan)
+        for i,q in enumerate([1.,1.5,2.,2.75]):
+            for j,theta in enumerate([-60,-30,0,30,60,90]):
+                subset=self.selected(group='F1',q=q,theta=theta)
+                if not subset:continue
+                values[i,j]=np.median([m['covariance']['covariance_relative_frobenius'] for c,m,p in subset])
+                ax.text(j,i,f"{sum(m['accepted'] for c,m,p in subset)}/{len(subset)}",ha='center',va='center',fontsize=8,bbox=dict(fc='white',alpha=.85,ec='none',pad=1))
+                inputs.extend(p/'metrics.json' for c,m,p in subset)
+        cmap=plt.get_cmap('viridis').copy();cmap.set_bad('.94');im=ax.pcolormesh(np.arange(7)-.5,np.arange(5)-.5,values,cmap=cmap,shading='flat');ax.set_ylim(3.5,-.5);ax.set_facecolor('.94')
+        ax.set(xticks=range(6),xticklabels=[-60,-30,0,30,60,90],yticks=range(4),yticklabels=['1 (circle)','1.5','2','2.75'],xlabel=r'$\theta$ (degrees; circle orientation undefined)',ylabel='q',title='(d) Covariance error | labels: accepted / executed starts')
+        bar=fig.colorbar(im,ax=ax,label='Median relative covariance error',fraction=.035,pad=.02);bar.solids.set_rasterized(False)
+        handles=[Line2D([],[],ls='--',color='black',label='Target covariance'),Line2D([],[],color=COLORS['reference'],label='Achieved covariance')]
+        fig.legend(handles=handles,loc='outside upper center',ncol=2,fontsize=7,frameon=False)
+        self.save(fig,'F07','',inputs,'Three seed-11 examples and central covariance-error map; counts are accepted/executed starts. Circle has no defined orientation.')
+
+    def run(self):
+        self.f01();self.f03();self.f05();self.clearance_planning();self.f06();self.f07()
+        write_json(self.output/'manifest.json',self.manifest)
+        print('Thesis figures:',', '.join(m['id'] for m in self.manifest))
+
+
+if __name__=='__main__':
+    import argparse
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--thesis',action='store_true',help='Export only the six caption-free Section 4.1 figures from saved data')
+    args=parser.parse_args()
+    (ThesisFigures() if args.thesis else Figures()).run()

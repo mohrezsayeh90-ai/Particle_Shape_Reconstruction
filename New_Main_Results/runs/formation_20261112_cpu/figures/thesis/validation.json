@@ -1,0 +1,55 @@
+{
+  "thesis_display_width_cm": 17.3,
+  "figures": [
+    {
+      "figure": "F01",
+      "pages": 1,
+      "width_inches": 6.165,
+      "vector_no_raster_images": true,
+      "embedded_Persian_caption": false,
+      "png_dpi": 300
+    },
+    {
+      "figure": "F03",
+      "pages": 1,
+      "width_inches": 6.797,
+      "vector_no_raster_images": true,
+      "embedded_Persian_caption": false,
+      "png_dpi": 300
+    },
+    {
+      "figure": "F05",
+      "pages": 1,
+      "width_inches": 6.797,
+      "vector_no_raster_images": true,
+      "embedded_Persian_caption": false,
+      "png_dpi": 300
+    },
+    {
+      "figure": "F06",
+      "pages": 1,
+      "width_inches": 6.797,
+      "vector_no_raster_images": true,
+      "embedded_Persian_caption": false,
+      "png_dpi": 300
+    },
+    {
+      "figure": "F07",
+      "pages": 1,
+      "width_inches": 6.799,
+      "vector_no_raster_images": true,
+      "embedded_Persian_caption": false,
+      "png_dpi": 300
+    },
+    {
+      "figure": "F09_F11",
+      "pages": 1,
+      "width_inches": 6.797,
+      "vector_no_raster_images": true,
+      "embedded_Persian_caption": false,
+      "png_dpi": 300
+    }
+  ],
+  "saved_campaign_files_unchanged": true,
+  "visual_review": "All six previews reviewed at thesis page width; acceptance labels and legends adjusted to avoid overlap."
+}
