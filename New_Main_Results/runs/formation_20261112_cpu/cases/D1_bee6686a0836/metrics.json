@@ -1,0 +1,235 @@
+{
+  "accepted": true,
+  "status": "accepted",
+  "failure_type": null,
+  "provenance": "new_experiment",
+  "N": 24,
+  "N_achieved": 24,
+  "configured_ports": null,
+  "used_ports": 24,
+  "port_loads": {
+    "free_0_0.97740048226199": 1,
+    "free_0_1.0313971970052": 1,
+    "free_0_1.1933909946651": 1,
+    "free_0_1.2567190101628": 1,
+    "free_0_1.4282617344636": 1,
+    "free_0_1.4457164599597": 1,
+    "free_0_1.4885255296006": 1,
+    "free_0_1.5425255189389": 1,
+    "free_0_1.5537163408039": 1,
+    "free_0_1.634716901934": 1,
+    "free_1_1.0044156754951": 1,
+    "free_1_1.029993115762": 1,
+    "free_1_1.0388017273194": 1,
+    "free_1_1.0839921717554": 1,
+    "free_1_1.0928022520851": 1,
+    "free_1_1.1379910029382": 1,
+    "free_1_1.1468027863168": 1,
+    "free_1_1.1526309783903": 1,
+    "free_1_1.1664266864552": 1,
+    "free_1_1.1787764212642": 1,
+    "free_1_1.2008031434624": 1,
+    "free_1_1.2327761253215": 1,
+    "free_1_1.2606442980377": 1,
+    "free_1_1.4978042846121": 1
+  },
+  "top_emissions": 14,
+  "bottom_emissions": 10,
+  "target_time": 1.0325878633280028,
+  "longest_duration": 0.7825878633280028,
+  "median_duration": 0.23617466826943545,
+  "release_span": 0.7377989441554041,
+  "minimum_same_port_gap": null,
+  "clock_error": 0.0,
+  "launch_bounds_ok": true,
+  "min_gap_ok": true,
+  "capacity_ok": true,
+  "fixed_coordinates_ok": true,
+  "max_endpoint_difference": 0.00010925371092749014,
+  "replays": {
+    "pinn": {
+      "completed": true,
+      "completion_fraction": 1.0,
+      "max_error": 4.012728541246901e-08,
+      "rms_error": 1.5218373200192605e-08,
+      "minimum": {
+        "distance": 0.03502865286909269,
+        "time": 0.31103416591034627,
+        "pair": [
+          10,
+          23
+        ],
+        "sampled_distance": 0.03502865296524264
+      },
+      "half_step_check": {
+        "max_endpoint_difference": 2.2950213570500635e-09,
+        "minimum_distance_difference": 9.614995605256027e-11,
+        "finer_minimum": 0.03502865286909269
+      },
+      "termination_events": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "solver": "RK45"
+    },
+    "reference": {
+      "completed": true,
+      "completion_fraction": 1.0,
+      "max_error": 0.00010922497120033506,
+      "rms_error": 4.137520528460264e-05,
+      "minimum": {
+        "distance": 0.03502830308196944,
+        "time": 0.31103416591034627,
+        "pair": [
+          10,
+          23
+        ],
+        "sampled_distance": 0.03502830308196973
+      },
+      "half_step_check": {
+        "max_endpoint_difference": 5.095246377785861e-16,
+        "minimum_distance_difference": 2.914335439641036e-16,
+        "finer_minimum": 0.03502830308196944
+      },
+      "termination_events": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "solver": "DOP853"
+    }
+  },
+  "weight_sha256": "af2f21b195e2d25b877482cd527110054f42bf92200f64e39572375219e5e581",
+  "verification_seconds": 2.4145981399997254,
+  "numerical_verification_only": true,
+  "covariance": {
+    "target_centroid": [
+      1.4609375000000002,
+      0.1490257214207425
+    ],
+    "achieved_centroid": [
+      1.4609192654525165,
+      0.14903655745640992
+    ],
+    "centroid_shift": 2.121127980396745e-05,
+    "target_covariance": [
+      [
+        0.03448796484375,
+        0.0001134425620722947
+      ],
+      [
+        0.0001134425620722947,
+        0.0020265820312500007
+      ]
+    ],
+    "achieved_covariance": [
+      [
+        0.0344870148804814,
+        0.00011273648896655533
+      ],
+      [
+        0.00011273648896655533,
+        0.0020266783102872114
+      ]
+    ],
+    "covariance_relative_frobenius": 3.9990513938796565e-05,
+    "achieved_axis_ratio": 4.125530598077799,
+    "target_axis_angle_deg": 0.20022788995703422,
+    "achieved_axis_angle_deg": 0.19898811338268274,
+    "axis_angle_error_deg": 0.001239776574351481,
+    "isotropy_rule": "omit angle if eigenvalue gap / largest < 0.05 or largest <=1e-20"
+  },
+  "occupancy": {
+    "resolution": 128,
+    "inside_coverage": 0.11171770571084726,
+    "overspill": -7.362579893149741e-16,
+    "hole_intrusion_area": 0.0
+  },
+  "occupancy_convergence": [
+    {
+      "resolution": 64,
+      "inside_coverage": 0.11170929357307212,
+      "overspill": 2.945253729448977e-16,
+      "hole_intrusion_area": 0.0
+    },
+    {
+      "resolution": 128,
+      "inside_coverage": 0.11171770571084726,
+      "overspill": -7.362579893149741e-16,
+      "hole_intrusion_area": 0.0
+    }
+  ],
+  "elapsed_seconds": 9.234588072999031,
+  "allocation_backend": "batched",
+  "stages": [
+    {
+      "stage": "coarse",
+      "nfev": 2,
+      "njev": 2,
+      "cost": 2.2423974046979854e-25,
+      "message": "`gtol` termination condition is satisfied.",
+      "solver_success": true,
+      "elapsed_seconds": 0.3186974899999768,
+      "path_integrations": 1756
+    },
+    {
+      "stage": "direct",
+      "nfev": 4,
+      "njev": 4,
+      "cost": 7.452781426630893e-17,
+      "message": "`xtol` termination condition is satisfied.",
+      "solver_success": true,
+      "elapsed_seconds": 0.9697834170001443,
+      "path_integrations": 372
+    }
+  ],
+  "optimizer_budget_exhausted": false,
+  "seed": 11,
+  "cold_start": true,
+  "budget_tier": "baseline_50_35",
+  "target_sha256": "1c47bf815347a38a22a61bcd469040b373e7b0431a2bb90390d8f241e441ec2d",
+  "layout_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+}

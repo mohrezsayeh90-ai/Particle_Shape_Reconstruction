@@ -1,0 +1,101 @@
+[
+  {
+    "stage": "coarse",
+    "nfev": 3,
+    "njev": 3,
+    "cost": 3.559039560818767e-05,
+    "message": "`gtol` termination condition is satisfied.",
+    "solver_success": true,
+    "elapsed_seconds": 1.027619861999483,
+    "path_integrations": 576,
+    "history": [
+      {
+        "evaluation": 1,
+        "cost": 3.559040427588478e-05,
+        "seconds": 0.043938627999523305
+      },
+      {
+        "evaluation": 2,
+        "cost": 3.559039562623749e-05,
+        "seconds": 0.405717031999302
+      },
+      {
+        "evaluation": 3,
+        "cost": 3.559039560818767e-05,
+        "seconds": 0.8073397279986239
+      }
+    ]
+  },
+  {
+    "stage": "direct",
+    "nfev": 12,
+    "njev": 10,
+    "cost": 3.5955578605082246e-05,
+    "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+    "solver_success": true,
+    "elapsed_seconds": 8.017746749999787,
+    "path_integrations": 768,
+    "history": [
+      {
+        "evaluation": 1,
+        "cost": 3.7668329862202324e-05,
+        "seconds": 0.3690430490005383
+      },
+      {
+        "evaluation": 2,
+        "cost": 3.647797743907606e-05,
+        "seconds": 1.4203589349999675
+      },
+      {
+        "evaluation": 3,
+        "cost": 3.625911250142369e-05,
+        "seconds": 2.1912781360006193
+      },
+      {
+        "evaluation": 4,
+        "cost": 3.6223577618100684e-05,
+        "seconds": 3.0706303410006512
+      },
+      {
+        "evaluation": 5,
+        "cost": 3.619356969628762e-05,
+        "seconds": 3.8295836779998353
+      },
+      {
+        "evaluation": 6,
+        "cost": 3.59612485605538e-05,
+        "seconds": 4.574106510001002
+      },
+      {
+        "evaluation": 7,
+        "cost": 3.595558747714518e-05,
+        "seconds": 5.201676143000441
+      },
+      {
+        "evaluation": 8,
+        "cost": 3.5955579381552524e-05,
+        "seconds": 5.8135467510001035
+      },
+      {
+        "evaluation": 9,
+        "cost": 3.595557867389876e-05,
+        "seconds": 6.509910135000609
+      },
+      {
+        "evaluation": 10,
+        "cost": 3.595557904254342e-05,
+        "seconds": 7.17354760499984
+      },
+      {
+        "evaluation": 11,
+        "cost": 3.5955579248154376e-05,
+        "seconds": 7.391254635000223
+      },
+      {
+        "evaluation": 12,
+        "cost": 3.5955578605082246e-05,
+        "seconds": 7.606225241001084
+      }
+    ]
+  }
+]

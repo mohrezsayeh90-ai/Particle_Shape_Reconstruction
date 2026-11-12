@@ -1,0 +1,201 @@
+{
+  "accepted": true,
+  "status": "accepted",
+  "failure_type": null,
+  "provenance": "new_replay_of_archived_schedule",
+  "N": 42,
+  "N_achieved": 42,
+  "configured_ports": 6,
+  "used_ports": 6,
+  "port_loads": {
+    "B1": 3,
+    "B2": 5,
+    "B3": 19,
+    "T1": 5,
+    "T2": 2,
+    "T3": 8
+  },
+  "top_emissions": 15,
+  "bottom_emissions": 27,
+  "target_time": 1.9955984292141826,
+  "longest_duration": 1.7455984292141824,
+  "median_duration": 0.38349446789829833,
+  "release_span": 1.7155983585925132,
+  "minimum_same_port_gap": 0.01662669896910418,
+  "clock_error": 4.440892098500626e-16,
+  "launch_bounds_ok": true,
+  "min_gap_ok": true,
+  "max_endpoint_difference": 0.000503010071191297,
+  "replays": {
+    "pinn": {
+      "completed": true,
+      "completion_fraction": 1.0,
+      "max_error": 0.0006503291243828956,
+      "rms_error": 0.00020067271486162814,
+      "minimum": {
+        "distance": 0.026226042338267593,
+        "time": 1.8520792578070338,
+        "pair": [
+          10,
+          36
+        ],
+        "sampled_distance": 0.026226055244643158
+      },
+      "half_step_check": {
+        "max_endpoint_difference": 3.356237363729033e-10,
+        "minimum_distance_difference": 8.928617220571589e-11,
+        "finer_minimum": 0.026226042338267593
+      },
+      "termination_events": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "solver": "RK45"
+    },
+    "reference": {
+      "completed": true,
+      "completion_fraction": 1.0,
+      "max_error": 0.0006621383092195549,
+      "rms_error": 0.00014599076301817035,
+      "minimum": {
+        "distance": 0.026048132811949044,
+        "time": 1.7314927119863062,
+        "pair": [
+          7,
+          30
+        ],
+        "sampled_distance": 0.026048433418245337
+      },
+      "half_step_check": {
+        "max_endpoint_difference": 1.1133411481696098e-15,
+        "minimum_distance_difference": 1.4224732503009818e-16,
+        "finer_minimum": 0.026048132811949044
+      },
+      "termination_events": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "solver": "DOP853"
+    }
+  },
+  "weight_sha256": "af2f21b195e2d25b877482cd527110054f42bf92200f64e39572375219e5e581",
+  "verification_seconds": 5.948261703999378,
+  "numerical_verification_only": true,
+  "covariance": {
+    "target_centroid": [
+      1.8110787976190479,
+      0.13872913166666673
+    ],
+    "achieved_centroid": [
+      1.811082284514325,
+      0.1387355863155283
+    ],
+    "centroid_shift": 7.336274981224263e-06,
+    "target_covariance": [
+      [
+        0.016386769217808572,
+        0.003524072247432618
+      ],
+      [
+        0.003524072247432618,
+        0.005103334416499371
+      ]
+    ],
+    "achieved_covariance": [
+      [
+        0.016387813116949146,
+        0.00352341952714463
+      ],
+      [
+        0.00352341952714463,
+        0.005104234936378292
+      ]
+    ],
+    "covariance_relative_frobenius": 9.283465821252635e-05,
+    "achieved_axis_ratio": 2.0613463054823695,
+    "target_axis_angle_deg": 15.99538332082048,
+    "achieved_axis_angle_deg": 15.992835475305071,
+    "axis_angle_error_deg": 0.0025478455154086532,
+    "isotropy_rule": "omit angle if eigenvalue gap / largest < 0.05 or largest <=1e-20"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "RE": 10.0,
+  "DIAMETER": 0.025,
+  "DENSITY_RATIO": 1000.0,
+  "DRAG_LAW": "schiller-naumann",
+  "LAUNCH_GAP": 1e-05,
+  "CONTROL_NAMES": [
+    "x_bottom",
+    "u_bottom",
+    "v_bottom",
+    "x_top",
+    "u_top",
+    "v_top"
+  ],
+  "SEED": 42,
+  "HOURS": 6.0,
+  "RESUME_CHECKPOINT": null,
+  "TRAJECTORY_TMAX": 20.0,
+  "TRAJECTORY_MAX_STEP": 0.035,
+  "ALLOW_UNVALIDATED_OPTIMIZATION": false,
+  "SCOPE": "rectangle-two-wall-launchers-eight-inputs-v1",
+  "SHAPES": [
+    "triangle",
+    "square",
+    "circle_10",
+    "s_8",
+    "chevron_7"
+  ],
+  "TARGET_RADIUS": 0.075,
+  "POSITION_TOLERANCE": 0.003,
+  "COLLISION_MARGIN": 0.001,
+  "LEAD_TIME": 0.25,
+  "SEED_U_SPEEDS": [
+    0.25,
+    0.7,
+    1.2
+  ],
+  "CANDIDATES_PER_SIDE": 8,
+  "OPT_STARTS": 3,
+  "COLLISION_SAMPLES": 61,
+  "PAIR_VERIFY_SAMPLES": 601,
+  "CLEARANCE_RESERVE": 0.0003,
+  "REFERENCE_TOLERANCE": 0.004,
+  "RUN_OPTIMIZATION": true,
+  "FORMATION_RESULTS": []
+}

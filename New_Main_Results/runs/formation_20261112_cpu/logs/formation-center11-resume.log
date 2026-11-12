@@ -1,0 +1,107 @@
+planned_trials 1014 geometric_capacities [{'shape': 'stadium', 'buffered_capacity': 271, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'arrow', 'buffered_capacity': 114, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'fish', 'buffered_capacity': 164, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'perforated', 'buffered_capacity': 221, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}]
+EXECUTING 21 trials, workers 2
+START E1_c009384f9cf7 small_stadium 18 fixed 3 seed 11
+START E1_5cb7fd9e2789 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+candidate_targets 10 / 18
+ALLOCATED E1_c009384f9cf7 seconds 20.72
+ALLOCATED E1_5cb7fd9e2789 seconds 20.76
+COARSE E1_c009384f9cf7 50 seconds 29.96
+COARSE E1_5cb7fd9e2789 50 seconds 31.09
+DONE E1_c009384f9cf7 rejected endpoint_error seconds 41.84
+START E1_b6df1c23e439 small_stadium 18 fixed 3 seed 11
+DONE E1_5cb7fd9e2789 rejected endpoint_error seconds 45.02
+START E1_ef71bafb795d small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+candidate_targets 10 / 18
+ALLOCATED E1_b6df1c23e439 seconds 19.04
+ALLOCATED E1_ef71bafb795d seconds 19.07
+COARSE E1_b6df1c23e439 50 seconds 29.57
+COARSE E1_ef71bafb795d 50 seconds 29.54
+DONE E1_b6df1c23e439 rejected endpoint_error seconds 45.56
+START E1_25bd3748972e small_stadium 18 fixed 3 seed 11
+DONE E1_ef71bafb795d accepted None seconds 47.65
+START E1_b0a8fdd9c26d small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+candidate_targets 10 / 18
+ALLOCATED E1_25bd3748972e seconds 18.85
+ALLOCATED E1_b0a8fdd9c26d seconds 22.46
+COARSE E1_25bd3748972e 50 seconds 29.11
+COARSE E1_b0a8fdd9c26d 50 seconds 35.62
+DONE E1_25bd3748972e accepted None seconds 48.62
+START E1_b1a361f2408b small_stadium 18 fixed 3 seed 11
+DONE E1_b0a8fdd9c26d accepted None seconds 50.43
+START E1_fcbd9757846f small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+candidate_targets 10 / 18
+ALLOCATED E1_b1a361f2408b seconds 26.11
+ALLOCATED E1_fcbd9757846f seconds 22.88
+COARSE E1_b1a361f2408b 50 seconds 37.12
+COARSE E1_fcbd9757846f 50 seconds 31.81
+DONE E1_fcbd9757846f rejected endpoint_error seconds 40.72
+START E1_ee76496b2d31 small_stadium 18 fixed 3 seed 11
+DONE E1_b1a361f2408b accepted None seconds 49.92
+START E1_218840f62bc6 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+candidate_targets 10 / 18
+ALLOCATED E1_ee76496b2d31 seconds 9.27
+ALLOCATED E1_218840f62bc6 seconds 9.08
+COARSE E1_ee76496b2d31 50 seconds 13.19
+COARSE E1_218840f62bc6 50 seconds 14.9
+DONE E1_ee76496b2d31 rejected endpoint_error seconds 21.87
+START E1_80872382c8d5 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+DONE E1_218840f62bc6 rejected endpoint_error seconds 26.77
+START E1_bf34a4e30f06 small_stadium 18 fixed 3 seed 11
+ALLOCATED E1_80872382c8d5 seconds 10.61
+candidate_targets 10 / 18
+COARSE E1_80872382c8d5 50 seconds 14.76
+ALLOCATED E1_bf34a4e30f06 seconds 8.66
+COARSE E1_bf34a4e30f06 37 seconds 12.4
+DONE E1_80872382c8d5 rejected endpoint_error seconds 22.7
+START E1_5fd1c7aa0a8d small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_5fd1c7aa0a8d seconds 9.39
+DONE E1_bf34a4e30f06 accepted None seconds 27.45
+START E1_8dea49b777be small_stadium 18 fixed 3 seed 11
+COARSE E1_5fd1c7aa0a8d 50 seconds 13.76
+DONE E1_5fd1c7aa0a8d accepted None seconds 18.85
+START E1_4e11f839d2d5 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+candidate_targets 10 / 18
+ALLOCATED E1_8dea49b777be seconds 16.05
+ALLOCATED E1_4e11f839d2d5 seconds 9.25
+COARSE E1_4e11f839d2d5 50 seconds 13.65
+COARSE E1_8dea49b777be 50 seconds 25.41
+DONE E1_4e11f839d2d5 rejected endpoint_error seconds 21.54
+START E1_929a25c6c949 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+DONE E1_8dea49b777be rejected clearance_failure seconds 34.01
+START E1_b3f041b63df1 small_stadium 18 fixed 3 seed 11
+ALLOCATED E1_929a25c6c949 seconds 7.5
+COARSE E1_929a25c6c949 50 seconds 10.71
+candidate_targets 10 / 18
+DONE E1_929a25c6c949 rejected endpoint_error seconds 15.59
+START E1_f476e305d52c small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_b3f041b63df1 seconds 14.68
+ALLOCATED E1_f476e305d52c seconds 7.04
+COARSE E1_b3f041b63df1 50 seconds 18.86
+COARSE E1_f476e305d52c 50 seconds 14.94
+DONE E1_b3f041b63df1 rejected endpoint_error seconds 29.18
+START E1_05b7e3996ef8 small_stadium 18 fixed 3 seed 11
+DONE E1_f476e305d52c rejected endpoint_error seconds 31.76
+START E1_b4b06f61d48f small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_05b7e3996ef8 seconds 25.42
+candidate_targets 10 / 18
+ALLOCATED E1_b4b06f61d48f seconds 22.74
+COARSE E1_05b7e3996ef8 40 seconds 35.44
+COARSE E1_b4b06f61d48f 50 seconds 35.34
+DONE E1_05b7e3996ef8 accepted None seconds 58.91
+START E1_d1fde5313faf small_stadium 18 fixed 3 seed 11
+DONE E1_b4b06f61d48f rejected clearance_failure seconds 54.66
+candidate_targets 10 / 18
+ALLOCATED E1_d1fde5313faf seconds 23.11
+COARSE E1_d1fde5313faf 50 seconds 27.36
+DONE E1_d1fde5313faf accepted None seconds 34.11

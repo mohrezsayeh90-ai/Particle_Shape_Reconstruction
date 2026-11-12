@@ -1,0 +1,61 @@
+{
+  "group": "G2",
+  "stage": "extended",
+  "shape": "small_stadium",
+  "N": 6,
+  "mode": "fixed",
+  "m": 3,
+  "layout": "equispaced",
+  "cap": null,
+  "min_age": 0.03,
+  "max_age": 5.0,
+  "min_gap": 0.0,
+  "center": [
+    1.52,
+    0.15
+  ],
+  "seed": 47,
+  "collision_aware": true,
+  "budget_tier": "baseline_50_35",
+  "coarse_nfev": 50,
+  "direct_nfev": 35,
+  "endpoint_nfev": 24,
+  "provenance": "new_experiment",
+  "cold_start": true,
+  "ports": [
+    {
+      "id": "B1",
+      "side": 0,
+      "x": 0.55
+    },
+    {
+      "id": "B2",
+      "side": 0,
+      "x": 1.1
+    },
+    {
+      "id": "B3",
+      "side": 0,
+      "x": 1.6500000000000001
+    },
+    {
+      "id": "T1",
+      "side": 1,
+      "x": 0.55
+    },
+    {
+      "id": "T2",
+      "side": 1,
+      "x": 1.1
+    },
+    {
+      "id": "T3",
+      "side": 1,
+      "x": 1.6500000000000001
+    }
+  ],
+  "id": "G2_2fcfecf3718c",
+  "target_sha256": "3c0a59b20bc9e357a85bef5459b79f05458e3bbeaf5632a5a81603ca22dbae51",
+  "layout_sha256": "22ecee6a8e58ef542fc385c41cc129d20519ae85736f552fbac41260577b7823",
+  "configuration_sha256": "ef03e1c3bfa66c9b225df41476fe44e280853bea87eedb118891d2762597d6ab"
+}

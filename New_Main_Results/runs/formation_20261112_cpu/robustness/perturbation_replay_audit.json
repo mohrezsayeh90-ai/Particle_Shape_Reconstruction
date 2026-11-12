@@ -1,0 +1,209 @@
+{
+  "passed": true,
+  "completed_scenarios": 26,
+  "checks": [
+    {
+      "scenario": "high_margin_axial_velocity_level1",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": null
+    },
+    {
+      "scenario": "high_margin_axial_velocity_level2",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": null
+    },
+    {
+      "scenario": "high_margin_joint_level1",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 59,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "high_margin_joint_level2",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": null
+    },
+    {
+      "scenario": "high_margin_nominal_level0",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 0,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "high_margin_port_misplacement_level1",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 0,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "high_margin_port_misplacement_level2",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 0,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "high_margin_position_level1",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 0,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "high_margin_position_level2",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 0,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "high_margin_timing_level1",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 0,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "high_margin_timing_level2",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 2,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "high_margin_transverse_velocity_level1",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 0,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "high_margin_transverse_velocity_level2",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 0,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "low_margin_axial_velocity_level1",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 1,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "low_margin_axial_velocity_level2",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 8,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "low_margin_joint_level1",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 6,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "low_margin_joint_level2",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 19,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "low_margin_nominal_level0",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 0,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "low_margin_port_misplacement_level1",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 0,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "low_margin_port_misplacement_level2",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 0,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "low_margin_position_level1",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 0,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "low_margin_position_level2",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 0,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "low_margin_timing_level1",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 0,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "low_margin_timing_level2",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 0,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "low_margin_transverse_velocity_level1",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 0,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    },
+    {
+      "scenario": "low_margin_transverse_velocity_level2",
+      "bounds_flags_checked": 64,
+      "passed": true,
+      "draw_replayed": 0,
+      "max_endpoint_error_difference": 0.0,
+      "minimum_distance_difference": 0.0
+    }
+  ],
+  "interpretation": "Parameter reconstruction and one repeated reference replay per scenario where at least one input draw was within bounds."
+}

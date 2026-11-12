@@ -1,0 +1,26 @@
+{
+  "planned_matrix_rows": 1014,
+  "distinct_planned_configurations": 921,
+  "actual_new_attempts": 170,
+  "actual_new_status_counts": {
+    "accepted": 126,
+    "rejected": 44
+  },
+  "matrix_status_counts": {
+    "accepted": 153,
+    "rejected": 49,
+    "pending": 782,
+    "excluded_before_solve": 30
+  },
+  "reused_matrix_rows": 32,
+  "historical_duck_replays": 4,
+  "historical_original_payload": "unavailable; original logs retained",
+  "historical_rerun_statuses": {
+    "A1_triangle": "rerun_accepted",
+    "A1_S": "rerun_accepted",
+    "A1_C": "rerun_accepted",
+    "A1_T": "rerun_accepted"
+  },
+  "compute_constraint": "CPU-only environment, 5 allocated CPUs. Full 1014-row matrix is resumable and exceeds this interactive first-pass budget. All pending IDs remain explicit.",
+  "scope": "Only this portable results bundle is mirrored; proposal text and existing thesis PDFs are unchanged."
+}

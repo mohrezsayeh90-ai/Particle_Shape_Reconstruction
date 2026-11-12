@@ -1,0 +1,25 @@
+{
+  "source": "dense-duck-formation-20261104-211d7de258",
+  "case": "dense_duck_independent_wall_ports",
+  "particles": 64,
+  "accepted": true,
+  "max_reference_target_error": 0.00034558121653052753,
+  "max_replayed_PINN_target_error": 0.0003455779414230085,
+  "max_reference_saved_discrepancy": 1.7267292965014958e-11,
+  "max_PINN_saved_discrepancy": 1.446904288051153e-09,
+  "reference_minimum_separation": 0.026288346094510424,
+  "reference_nearest_pair": [
+    26,
+    27
+  ],
+  "PINN_minimum_separation": 0.02628834603832586,
+  "PINN_nearest_pair": [
+    26,
+    27
+  ],
+  "required_separation": 0.026000000000000002,
+  "separation_401_to_1601_delta": 0.0,
+  "nearest_pair_half_step_endpoint_delta": 2.220446049250313e-16,
+  "clock_shift_negative_control_rejected": true,
+  "elapsed_seconds": 4.494924272999924
+}

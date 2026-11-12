@@ -1,0 +1,14 @@
+shape,mode,N
+arrow,fixed,24
+arrow,free,100
+ellipse,fixed,12
+fish,fixed,24
+fish,free,100
+perforated,fixed,24
+perforated,free,100
+small_stadium,fixed,18
+small_stadium,free,18
+smoke,fixed,6
+smoke,free,6
+stadium,fixed,24
+stadium,free,100

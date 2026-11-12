@@ -1,0 +1,52 @@
+{
+  "allocated_cpus": 5,
+  "gpu": false,
+  "completed_attempt_wall_seconds_by_group": {
+    "B1": {
+      "trials": 21,
+      "sum": 963.0145042189979,
+      "maximum": 137.16631887600124
+    },
+    "C1": {
+      "trials": 3,
+      "sum": 210.6438342700003,
+      "maximum": 138.70199351500014
+    },
+    "C1_one_shot": {
+      "trials": 3,
+      "sum": 14.626531378999061,
+      "maximum": 9.671255515999292
+    },
+    "D1": {
+      "trials": 21,
+      "sum": 12176.994093297002,
+      "maximum": 1974.8710312090006
+    },
+    "E1": {
+      "trials": 49,
+      "sum": 2402.481046564999,
+      "maximum": 99.81003076900015
+    },
+    "E1_free": {
+      "trials": 7,
+      "sum": 181.0213545229999,
+      "maximum": 42.071703051999066
+    },
+    "F1": {
+      "trials": 57,
+      "sum": 554.9452681050079,
+      "maximum": 29.12724575500033
+    },
+    "G2": {
+      "trials": 6,
+      "sum": 75.33479893799995,
+      "maximum": 26.848038705998988
+    },
+    "smoke": {
+      "trials": 3,
+      "sum": 14.512779119000697,
+      "maximum": 7.0665220030005
+    }
+  },
+  "caution": "Elapsed times overlap across processes and are not CPU billing measurements. Pending trials are listed individually; no full-matrix completion is claimed."
+}

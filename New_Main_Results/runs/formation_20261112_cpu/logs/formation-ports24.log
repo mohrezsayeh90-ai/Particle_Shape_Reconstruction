@@ -1,0 +1,100 @@
+planned_trials 1014 geometric_capacities [{'shape': 'stadium', 'buffered_capacity': 271, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'arrow', 'buffered_capacity': 114, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'fish', 'buffered_capacity': 164, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'perforated', 'buffered_capacity': 221, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}]
+EXECUTING 21 trials, workers 1
+START B1_cd46d15ee4e3 stadium 24 free 0 seed 11
+candidate_targets 10 / 24
+candidate_targets 20 / 24
+ALLOCATED B1_cd46d15ee4e3 seconds 11.17
+COARSE B1_cd46d15ee4e3 2 seconds 12.07
+DONE B1_cd46d15ee4e3 accepted None seconds 22.01
+START B1_a339583a0176 stadium 24 fixed 1 seed 11
+candidate_targets 10 / 24
+candidate_targets 20 / 24
+ALLOCATED B1_a339583a0176 seconds 17.14
+COARSE B1_a339583a0176 47 seconds 43.19
+DONE B1_a339583a0176 rejected endpoint_error seconds 86.77
+START B1_88f8669fdd7e stadium 24 fixed 2 seed 11
+candidate_targets 10 / 24
+candidate_targets 20 / 24
+ALLOCATED B1_88f8669fdd7e seconds 38.32
+COARSE B1_88f8669fdd7e 1 seconds 38.59
+DONE B1_88f8669fdd7e accepted None seconds 52.46
+START B1_fd21e57579f7 stadium 24 fixed 3 seed 11
+candidate_targets 10 / 24
+candidate_targets 20 / 24
+ALLOCATED B1_fd21e57579f7 seconds 32.73
+COARSE B1_fd21e57579f7 1 seconds 33.01
+DONE B1_fd21e57579f7 accepted None seconds 44.71
+START B1_938b965cea48 stadium 24 fixed 4 seed 11
+candidate_targets 10 / 24
+candidate_targets 20 / 24
+ALLOCATED B1_938b965cea48 seconds 108.83
+COARSE B1_938b965cea48 1 seconds 109.59
+DONE B1_938b965cea48 accepted None seconds 134.92
+START B1_53458a3f3417 stadium 24 fixed 5 seed 11
+candidate_targets 10 / 24
+candidate_targets 20 / 24
+ALLOCATED B1_53458a3f3417 seconds 117.77
+COARSE B1_53458a3f3417 1 seconds 118.06
+DONE B1_53458a3f3417 accepted None seconds 131.56
+START B1_2a7d82dd76d3 stadium 24 fixed 6 seed 11
+candidate_targets 10 / 24
+candidate_targets 20 / 24
+ALLOCATED B1_2a7d82dd76d3 seconds 113.21
+COARSE B1_2a7d82dd76d3 1 seconds 113.92
+DONE B1_2a7d82dd76d3 accepted None seconds 137.17
+START B1_f5950be7fab4 stadium 24 free 0 seed 29
+ALLOCATED B1_f5950be7fab4 seconds 2.68
+COARSE B1_f5950be7fab4 2 seconds 3.76
+DONE B1_f5950be7fab4 accepted None seconds 11.26
+START B1_58c71904688b stadium 24 fixed 1 seed 29
+ALLOCATED B1_58c71904688b seconds 3.26
+COARSE B1_58c71904688b 16 seconds 13.35
+DONE B1_58c71904688b rejected endpoint_error seconds 37.9
+START B1_8abd341a58d0 stadium 24 fixed 2 seed 29
+ALLOCATED B1_8abd341a58d0 seconds 3.82
+COARSE B1_8abd341a58d0 3 seconds 5.78
+DONE B1_8abd341a58d0 accepted None seconds 19.93
+START B1_15d37964b9c8 stadium 24 fixed 3 seed 29
+ALLOCATED B1_15d37964b9c8 seconds 2.39
+COARSE B1_15d37964b9c8 1 seconds 2.74
+DONE B1_15d37964b9c8 accepted None seconds 14.7
+START B1_72a3f2d33e49 stadium 24 fixed 4 seed 29
+ALLOCATED B1_72a3f2d33e49 seconds 2.96
+COARSE B1_72a3f2d33e49 3 seconds 3.99
+DONE B1_72a3f2d33e49 accepted None seconds 24.94
+START B1_c17c31b824b5 stadium 24 fixed 5 seed 29
+ALLOCATED B1_c17c31b824b5 seconds 7.28
+COARSE B1_c17c31b824b5 1 seconds 7.82
+DONE B1_c17c31b824b5 accepted None seconds 23.28
+START B1_ad3f75af6b09 stadium 24 fixed 6 seed 29
+ALLOCATED B1_ad3f75af6b09 seconds 4.77
+COARSE B1_ad3f75af6b09 1 seconds 5.05
+DONE B1_ad3f75af6b09 accepted None seconds 32.04
+START B1_b1044e4a7dfd stadium 24 free 0 seed 47
+ALLOCATED B1_b1044e4a7dfd seconds 1.43
+COARSE B1_b1044e4a7dfd 2 seconds 1.88
+DONE B1_b1044e4a7dfd accepted None seconds 6.76
+START B1_c3af2a79d1a9 stadium 24 fixed 1 seed 47
+ALLOCATED B1_c3af2a79d1a9 seconds 1.16
+COARSE B1_c3af2a79d1a9 5 seconds 3.0
+DONE B1_c3af2a79d1a9 rejected endpoint_error seconds 17.75
+START B1_1b4df094d81e stadium 24 fixed 2 seed 47
+ALLOCATED B1_1b4df094d81e seconds 2.28
+COARSE B1_1b4df094d81e 2 seconds 2.86
+DONE B1_1b4df094d81e rejected endpoint_error seconds 28.3
+START B1_e2070292b613 stadium 24 fixed 3 seed 47
+ALLOCATED B1_e2070292b613 seconds 3.64
+COARSE B1_e2070292b613 2 seconds 4.96
+DONE B1_e2070292b613 accepted None seconds 26.55
+START B1_8bd72f93ccec stadium 24 fixed 4 seed 47
+ALLOCATED B1_8bd72f93ccec seconds 3.65
+COARSE B1_8bd72f93ccec 1 seconds 4.32
+DONE B1_8bd72f93ccec accepted None seconds 20.4
+START B1_be5afd36d4bd stadium 24 fixed 5 seed 47
+ALLOCATED B1_be5afd36d4bd seconds 5.99
+COARSE B1_be5afd36d4bd 1 seconds 6.49
+DONE B1_be5afd36d4bd accepted None seconds 33.22
+START B1_4077396e211f stadium 24 fixed 6 seed 47
+ALLOCATED B1_4077396e211f seconds 12.91
+COARSE B1_4077396e211f 1 seconds 13.98
+DONE B1_4077396e211f accepted None seconds 56.4

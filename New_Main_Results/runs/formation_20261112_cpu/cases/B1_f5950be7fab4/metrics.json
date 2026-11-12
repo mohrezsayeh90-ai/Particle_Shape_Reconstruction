@@ -1,0 +1,234 @@
+{
+  "accepted": true,
+  "status": "accepted",
+  "failure_type": null,
+  "provenance": "new_experiment",
+  "N": 24,
+  "N_achieved": 24,
+  "configured_ports": null,
+  "used_ports": 24,
+  "port_loads": {
+    "free_0_0.68043952536089": 1,
+    "free_0_0.95972786970078": 1,
+    "free_0_1.0947233128877": 1,
+    "free_0_1.1582618014157": 1,
+    "free_0_1.1757209917889": 1,
+    "free_0_1.2567190875411": 1,
+    "free_0_1.2662617679097": 1,
+    "free_0_1.3824208166701": 1,
+    "free_0_1.3917170065468": 1,
+    "free_0_1.4012617384545": 1,
+    "free_0_1.4727164738352": 1,
+    "free_0_1.4822617284957": 1,
+    "free_0_1.5174289374359": 1,
+    "free_0_1.590261724706": 1,
+    "free_0_1.6982617314008": 1,
+    "free_0_1.8602617597434": 1,
+    "free_1_1.1287895392393": 1,
+    "free_1_1.2637895278208": 1,
+    "free_1_1.398789509744": 1,
+    "free_1_1.4797894903494": 1,
+    "free_1_1.5607894667795": 1,
+    "free_1_1.6328031809431": 1,
+    "free_1_1.6957894178348": 1,
+    "free_1_1.830789355762": 1
+  },
+  "top_emissions": 8,
+  "bottom_emissions": 16,
+  "target_time": 1.0325692886165498,
+  "longest_duration": 0.78256928861655,
+  "median_duration": 0.04850823587866057,
+  "release_span": 0.7377804869710529,
+  "minimum_same_port_gap": null,
+  "clock_error": 0.0,
+  "launch_bounds_ok": true,
+  "min_gap_ok": true,
+  "capacity_ok": true,
+  "fixed_coordinates_ok": true,
+  "max_endpoint_difference": 2.5765232235362175e-05,
+  "replays": {
+    "pinn": {
+      "completed": true,
+      "completion_fraction": 1.0,
+      "max_error": 1.3136076131455656e-08,
+      "rms_error": 4.4238077999848506e-09,
+      "minimum": {
+        "distance": 0.07143527142501259,
+        "time": 1.0325692886165498,
+        "pair": [
+          13,
+          23
+        ],
+        "sampled_distance": 0.07143527142501259
+      },
+      "half_step_check": {
+        "max_endpoint_difference": 1.0465609938995246e-09,
+        "minimum_distance_difference": 1.1830425389325328e-09,
+        "finer_minimum": 0.07143527260805513
+      },
+      "termination_events": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "solver": "RK45"
+    },
+    "reference": {
+      "completed": true,
+      "completion_fraction": 1.0,
+      "max_error": 2.5773628159527122e-05,
+      "rms_error": 7.548351765956961e-06,
+      "minimum": {
+        "distance": 0.07141247297618304,
+        "time": 1.0325692886165498,
+        "pair": [
+          13,
+          23
+        ],
+        "sampled_distance": 0.07141247297618304
+      },
+      "half_step_check": {
+        "max_endpoint_difference": 4.449557262054371e-16,
+        "minimum_distance_difference": 6.38378239159465e-16,
+        "finer_minimum": 0.07141247297618368
+      },
+      "termination_events": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "solver": "DOP853"
+    }
+  },
+  "weight_sha256": "af2f21b195e2d25b877482cd527110054f42bf92200f64e39572375219e5e581",
+  "verification_seconds": 5.979822867999246,
+  "numerical_verification_only": true,
+  "covariance": {
+    "target_centroid": [
+      1.5306874999999998,
+      0.14902572142074247
+    ],
+    "achieved_centroid": [
+      1.5306870323514852,
+      0.14902893009580778
+    ],
+    "centroid_shift": 3.24257471894704e-06,
+    "target_covariance": [
+      [
+        0.058319683593749984,
+        0.0006812034041345982
+      ],
+      [
+        0.0006812034041345982,
+        0.005261519531249999
+      ]
+    ],
+    "achieved_covariance": [
+      [
+        0.05831937401524037,
+        0.0006816569748339937
+      ],
+      [
+        0.0006816569748339937,
+        0.00526146294710532
+      ]
+    ],
+    "covariance_relative_frobenius": 1.2200028304052602e-05,
+    "achieved_axis_ratio": 3.3323257152651076,
+    "target_axis_angle_deg": 0.7354477129426584,
+    "achieved_axis_angle_deg": 0.7359406937944186,
+    "axis_angle_error_deg": 0.0004929808517601941,
+    "isotropy_rule": "omit angle if eigenvalue gap / largest < 0.05 or largest <=1e-20"
+  },
+  "occupancy": {
+    "resolution": 128,
+    "inside_coverage": 0.06166391700330171,
+    "overspill": -5.890063914519792e-16,
+    "hole_intrusion_area": 0.0
+  },
+  "occupancy_convergence": [
+    {
+      "resolution": 64,
+      "inside_coverage": 0.06165927382376014,
+      "overspill": 7.363134323622442e-16,
+      "hole_intrusion_area": 0.0
+    },
+    {
+      "resolution": 128,
+      "inside_coverage": 0.06166391700330171,
+      "overspill": -5.890063914519792e-16,
+      "hole_intrusion_area": 0.0
+    }
+  ],
+  "elapsed_seconds": 11.262130106999393,
+  "stages": [
+    {
+      "stage": "coarse",
+      "nfev": 2,
+      "njev": 2,
+      "cost": 1.0030540091317514e-25,
+      "message": "`gtol` termination condition is satisfied.",
+      "solver_success": true,
+      "elapsed_seconds": 1.0878174119989126,
+      "path_integrations": 558
+    },
+    {
+      "stage": "direct",
+      "nfev": 3,
+      "njev": 3,
+      "cost": 2.946234136772336e-17,
+      "message": "`xtol` termination condition is satisfied.",
+      "solver_success": true,
+      "elapsed_seconds": 1.2196593039989239,
+      "path_integrations": 288
+    }
+  ],
+  "optimizer_budget_exhausted": false,
+  "seed": 29,
+  "cold_start": true,
+  "budget_tier": "baseline_50_35",
+  "target_sha256": "54433faa50df6ded303461d13e48b0de694b38ed23f0fa99678640d5b3158b77",
+  "layout_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+}

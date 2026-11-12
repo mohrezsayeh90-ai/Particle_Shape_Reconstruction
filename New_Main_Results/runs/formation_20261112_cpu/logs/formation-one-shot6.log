@@ -1,0 +1,14 @@
+planned_trials 1014 geometric_capacities [{'shape': 'stadium', 'buffered_capacity': 271, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'arrow', 'buffered_capacity': 114, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'fish', 'buffered_capacity': 164, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'perforated', 'buffered_capacity': 221, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}]
+EXECUTING 3 trials, workers 1
+START C1_one_shot_6b71da99796e stadium 6 fixed 3 seed 11
+ALLOCATED C1_one_shot_6b71da99796e seconds 7.5
+COARSE C1_one_shot_6b71da99796e 1 seconds 7.54
+DONE C1_one_shot_6b71da99796e accepted None seconds 9.67
+START C1_one_shot_65cf478e0904 stadium 6 fixed 3 seed 29
+ALLOCATED C1_one_shot_65cf478e0904 seconds 0.48
+COARSE C1_one_shot_65cf478e0904 1 seconds 0.54
+DONE C1_one_shot_65cf478e0904 accepted None seconds 2.53
+START C1_one_shot_b959017b9699 stadium 6 fixed 3 seed 47
+ALLOCATED C1_one_shot_b959017b9699 seconds 0.32
+COARSE C1_one_shot_b959017b9699 1 seconds 0.36
+DONE C1_one_shot_b959017b9699 accepted None seconds 2.42

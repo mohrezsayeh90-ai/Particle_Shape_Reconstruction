@@ -1,0 +1,5 @@
+planned_trials 1014 geometric_capacities [{'shape': 'stadium', 'buffered_capacity': 271, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'arrow', 'buffered_capacity': 114, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'fish', 'buffered_capacity': 164, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'perforated', 'buffered_capacity': 221, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}]
+HISTORICAL dense_duck_independent_wall_ports True None
+HISTORICAL dense_duck_six_fixed True None
+HISTORICAL duck_independent_wall_ports True None
+HISTORICAL duck_six_fixed True None

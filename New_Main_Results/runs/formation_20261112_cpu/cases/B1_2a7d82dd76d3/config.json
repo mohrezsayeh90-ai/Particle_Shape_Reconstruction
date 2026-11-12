@@ -1,0 +1,91 @@
+{
+  "group": "B1",
+  "stage": "core",
+  "shape": "stadium",
+  "N": 24,
+  "mode": "fixed",
+  "m": 6,
+  "layout": "equispaced",
+  "cap": null,
+  "min_age": 0.03,
+  "max_age": 5.0,
+  "min_gap": 0.0,
+  "center": [
+    1.52,
+    0.15
+  ],
+  "seed": 11,
+  "collision_aware": true,
+  "budget_tier": "baseline_50_35",
+  "coarse_nfev": 50,
+  "direct_nfev": 35,
+  "endpoint_nfev": 24,
+  "provenance": "new_experiment",
+  "cold_start": true,
+  "ports": [
+    {
+      "id": "B1",
+      "side": 0,
+      "x": 0.3142857142857143
+    },
+    {
+      "id": "B2",
+      "side": 0,
+      "x": 0.6285714285714286
+    },
+    {
+      "id": "B3",
+      "side": 0,
+      "x": 0.9428571428571428
+    },
+    {
+      "id": "B4",
+      "side": 0,
+      "x": 1.2571428571428571
+    },
+    {
+      "id": "B5",
+      "side": 0,
+      "x": 1.5714285714285716
+    },
+    {
+      "id": "B6",
+      "side": 0,
+      "x": 1.8857142857142857
+    },
+    {
+      "id": "T1",
+      "side": 1,
+      "x": 0.3142857142857143
+    },
+    {
+      "id": "T2",
+      "side": 1,
+      "x": 0.6285714285714286
+    },
+    {
+      "id": "T3",
+      "side": 1,
+      "x": 0.9428571428571428
+    },
+    {
+      "id": "T4",
+      "side": 1,
+      "x": 1.2571428571428571
+    },
+    {
+      "id": "T5",
+      "side": 1,
+      "x": 1.5714285714285716
+    },
+    {
+      "id": "T6",
+      "side": 1,
+      "x": 1.8857142857142857
+    }
+  ],
+  "id": "B1_2a7d82dd76d3",
+  "target_sha256": "54433faa50df6ded303461d13e48b0de694b38ed23f0fa99678640d5b3158b77",
+  "layout_sha256": "2f26f6660ff35727b2c67289d9f5b834b068641e213a07e7f1a46a3cb0cf64cf",
+  "configuration_sha256": "4c7e6ae36c50cf1d226fbcd9449acc4da9da810c0cfaf29082c71deedff8b2fc"
+}

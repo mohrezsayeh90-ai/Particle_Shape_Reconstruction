@@ -1,0 +1,62 @@
+{
+  "group": "C1_one_shot",
+  "stage": "core",
+  "shape": "stadium",
+  "N": 6,
+  "mode": "fixed",
+  "m": 3,
+  "layout": "equispaced",
+  "cap": 1,
+  "min_age": 0.03,
+  "max_age": 5.0,
+  "min_gap": 0.0,
+  "center": [
+    1.52,
+    0.15
+  ],
+  "seed": 29,
+  "collision_aware": true,
+  "budget_tier": "baseline_50_35",
+  "coarse_nfev": 50,
+  "direct_nfev": 35,
+  "endpoint_nfev": 24,
+  "provenance": "new_experiment",
+  "cold_start": true,
+  "ports": [
+    {
+      "id": "B1",
+      "side": 0,
+      "x": 0.55
+    },
+    {
+      "id": "B2",
+      "side": 0,
+      "x": 1.1
+    },
+    {
+      "id": "B3",
+      "side": 0,
+      "x": 1.6500000000000001
+    },
+    {
+      "id": "T1",
+      "side": 1,
+      "x": 0.55
+    },
+    {
+      "id": "T2",
+      "side": 1,
+      "x": 1.1
+    },
+    {
+      "id": "T3",
+      "side": 1,
+      "x": 1.6500000000000001
+    }
+  ],
+  "id": "C1_one_shot_65cf478e0904",
+  "target_sha256": "0196d3401704dd4de76ecf5026161783d4a65528f75df4c88a4ca0aca4bec668",
+  "layout_sha256": "22ecee6a8e58ef542fc385c41cc129d20519ae85736f552fbac41260577b7823",
+  "configuration_sha256": "9908e60e9a55d04f3c0d55506183cfed4124bb22ca3cfcb3d770cc3330f08970",
+  "allocation_backend": "batched"
+}

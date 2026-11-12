@@ -1,0 +1,71 @@
+{
+  "group": "B1",
+  "stage": "core",
+  "shape": "stadium",
+  "N": 24,
+  "mode": "fixed",
+  "m": 4,
+  "layout": "equispaced",
+  "cap": null,
+  "min_age": 0.03,
+  "max_age": 5.0,
+  "min_gap": 0.0,
+  "center": [
+    1.52,
+    0.15
+  ],
+  "seed": 47,
+  "collision_aware": true,
+  "budget_tier": "baseline_50_35",
+  "coarse_nfev": 50,
+  "direct_nfev": 35,
+  "endpoint_nfev": 24,
+  "provenance": "new_experiment",
+  "cold_start": true,
+  "ports": [
+    {
+      "id": "B1",
+      "side": 0,
+      "x": 0.44000000000000006
+    },
+    {
+      "id": "B2",
+      "side": 0,
+      "x": 0.8800000000000001
+    },
+    {
+      "id": "B3",
+      "side": 0,
+      "x": 1.32
+    },
+    {
+      "id": "B4",
+      "side": 0,
+      "x": 1.7600000000000002
+    },
+    {
+      "id": "T1",
+      "side": 1,
+      "x": 0.44000000000000006
+    },
+    {
+      "id": "T2",
+      "side": 1,
+      "x": 0.8800000000000001
+    },
+    {
+      "id": "T3",
+      "side": 1,
+      "x": 1.32
+    },
+    {
+      "id": "T4",
+      "side": 1,
+      "x": 1.7600000000000002
+    }
+  ],
+  "id": "B1_8bd72f93ccec",
+  "target_sha256": "54433faa50df6ded303461d13e48b0de694b38ed23f0fa99678640d5b3158b77",
+  "layout_sha256": "e64a3a35d3065e1b05e2d0df944dab8367ab8993a959f9e7776c2992d14fe1b5",
+  "configuration_sha256": "4a94605134f78ef0876b3d4dad999cddb8ffc2a839ed8fb7ab1f7138ff9e04b8"
+}

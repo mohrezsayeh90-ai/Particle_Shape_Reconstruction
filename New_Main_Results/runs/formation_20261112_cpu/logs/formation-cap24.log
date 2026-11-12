@@ -1,0 +1,14 @@
+planned_trials 1014 geometric_capacities [{'shape': 'stadium', 'buffered_capacity': 271, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'arrow', 'buffered_capacity': 114, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'fish', 'buffered_capacity': 164, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'perforated', 'buffered_capacity': 221, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}]
+EXECUTING 3 trials, workers 1
+START C1_e7ab57781229 stadium 24 fixed 3 seed 11
+ALLOCATED C1_e7ab57781229 seconds 30.55
+COARSE C1_e7ab57781229 50 seconds 80.13
+DONE C1_e7ab57781229 rejected endpoint_error seconds 138.7
+START C1_a4b0b778723f stadium 24 fixed 3 seed 11
+ALLOCATED C1_a4b0b778723f seconds 16.79
+COARSE C1_a4b0b778723f 1 seconds 17.44
+DONE C1_a4b0b778723f accepted None seconds 46.15
+START C1_dff99c4ea398 stadium 24 fixed 3 seed 11
+ALLOCATED C1_dff99c4ea398 seconds 11.28
+COARSE C1_dff99c4ea398 1 seconds 11.91
+DONE C1_dff99c4ea398 accepted None seconds 25.79

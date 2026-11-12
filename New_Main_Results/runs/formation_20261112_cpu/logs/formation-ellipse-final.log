@@ -1,0 +1,78 @@
+planned_trials 1014 geometric_capacities [{'shape': 'stadium', 'buffered_capacity': 271, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'arrow', 'buffered_capacity': 114, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'fish', 'buffered_capacity': 164, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'perforated', 'buffered_capacity': 221, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}]
+EXECUTING 38 trials, workers 1
+START F1_093bf77f6ad7 ellipse 12 fixed 3 seed 29
+DONE F1_093bf77f6ad7 accepted None seconds 7.16
+START F1_e6ff9d553e31 ellipse 12 fixed 3 seed 29
+DONE F1_e6ff9d553e31 accepted None seconds 6.79
+START F1_8eb1a396be9b ellipse 12 fixed 3 seed 29
+DONE F1_8eb1a396be9b accepted None seconds 7.24
+START F1_b51e2580fabf ellipse 12 fixed 3 seed 29
+DONE F1_b51e2580fabf accepted None seconds 6.91
+START F1_a6f355cb9359 ellipse 12 fixed 3 seed 29
+DONE F1_a6f355cb9359 accepted None seconds 6.14
+START F1_d9b37a485353 ellipse 12 fixed 3 seed 29
+DONE F1_d9b37a485353 accepted None seconds 6.49
+START F1_80042f170261 ellipse 12 fixed 3 seed 29
+DONE F1_80042f170261 accepted None seconds 6.09
+START F1_d6619984d062 ellipse 12 fixed 3 seed 29
+DONE F1_d6619984d062 accepted None seconds 5.48
+START F1_796f48fe1a78 ellipse 12 fixed 3 seed 29
+DONE F1_796f48fe1a78 accepted None seconds 7.64
+START F1_fd3dc3bc8cfb ellipse 12 fixed 3 seed 29
+DONE F1_fd3dc3bc8cfb accepted None seconds 5.87
+START F1_bed70194569d ellipse 12 fixed 3 seed 29
+DONE F1_bed70194569d accepted None seconds 6.67
+START F1_fd66160fe62d ellipse 12 fixed 3 seed 29
+DONE F1_fd66160fe62d accepted None seconds 7.2
+START F1_9491921add15 ellipse 12 fixed 3 seed 29
+DONE F1_9491921add15 rejected endpoint_error seconds 6.49
+START F1_4750fc68545e ellipse 12 fixed 3 seed 29
+DONE F1_4750fc68545e accepted None seconds 6.46
+START F1_278eb0952e3a ellipse 12 fixed 3 seed 29
+DONE F1_278eb0952e3a accepted None seconds 10.43
+START F1_0566b9499a6e ellipse 12 fixed 3 seed 29
+DONE F1_0566b9499a6e rejected clearance_failure seconds 15.0
+START F1_bdd3f641f82e ellipse 12 fixed 3 seed 29
+DONE F1_bdd3f641f82e accepted None seconds 5.94
+START F1_6b69f2ba078d ellipse 12 fixed 3 seed 29
+DONE F1_6b69f2ba078d accepted None seconds 5.84
+START F1_0c2a38ebb1ec ellipse 12 fixed 3 seed 29
+DONE F1_0c2a38ebb1ec accepted None seconds 12.28
+START F1_fcaba403af7b ellipse 12 fixed 3 seed 47
+DONE F1_fcaba403af7b accepted None seconds 7.1
+START F1_1387e551d6fc ellipse 12 fixed 3 seed 47
+DONE F1_1387e551d6fc accepted None seconds 7.41
+START F1_39632d27fb23 ellipse 12 fixed 3 seed 47
+DONE F1_39632d27fb23 accepted None seconds 8.49
+START F1_2edb3f13dd27 ellipse 12 fixed 3 seed 47
+DONE F1_2edb3f13dd27 accepted None seconds 6.21
+START F1_bb4bd1f1d0c0 ellipse 12 fixed 3 seed 47
+DONE F1_bb4bd1f1d0c0 accepted None seconds 5.44
+START F1_e574f010cddf ellipse 12 fixed 3 seed 47
+DONE F1_e574f010cddf accepted None seconds 7.64
+START F1_2e77f194bc68 ellipse 12 fixed 3 seed 47
+DONE F1_2e77f194bc68 accepted None seconds 6.1
+START F1_b3654938a842 ellipse 12 fixed 3 seed 47
+DONE F1_b3654938a842 accepted None seconds 6.21
+START F1_596b653e3424 ellipse 12 fixed 3 seed 47
+DONE F1_596b653e3424 accepted None seconds 7.09
+START F1_0a42c3d1426e ellipse 12 fixed 3 seed 47
+DONE F1_0a42c3d1426e accepted None seconds 5.45
+START F1_deddf21fc2dc ellipse 12 fixed 3 seed 47
+DONE F1_deddf21fc2dc accepted None seconds 7.03
+START F1_98e22d70bc2f ellipse 12 fixed 3 seed 47
+DONE F1_98e22d70bc2f accepted None seconds 7.72
+START F1_606f8817f031 ellipse 12 fixed 3 seed 47
+DONE F1_606f8817f031 accepted None seconds 7.45
+START F1_7ebe10855ef8 ellipse 12 fixed 3 seed 47
+DONE F1_7ebe10855ef8 accepted None seconds 6.51
+START F1_33547f56bffc ellipse 12 fixed 3 seed 47
+DONE F1_33547f56bffc accepted None seconds 13.97
+START F1_129dd7d52e74 ellipse 12 fixed 3 seed 47
+DONE F1_129dd7d52e74 accepted None seconds 7.43
+START F1_005083a20148 ellipse 12 fixed 3 seed 47
+DONE F1_005083a20148 accepted None seconds 7.34
+START F1_1358cc43f798 ellipse 12 fixed 3 seed 47
+DONE F1_1358cc43f798 accepted None seconds 13.2
+START F1_29a3bf49cd22 ellipse 12 fixed 3 seed 47
+DONE F1_29a3bf49cd22 accepted None seconds 7.93

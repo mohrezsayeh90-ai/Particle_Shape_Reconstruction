@@ -1,0 +1,5 @@
+shape,buffered_capacity,pitch,particle_radius,buffer
+stadium,271,0.027,0.0125,0.0004
+arrow,114,0.027,0.0125,0.0004
+fish,164,0.027,0.0125,0.0004
+perforated,221,0.027,0.0125,0.0004

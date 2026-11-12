@@ -1,0 +1,217 @@
+{
+  "accepted": false,
+  "status": "rejected",
+  "failure_type": "endpoint_error",
+  "provenance": "new_experiment",
+  "N": 24,
+  "N_achieved": 24,
+  "configured_ports": 6,
+  "used_ports": 6,
+  "port_loads": {
+    "B1": 2,
+    "B2": 7,
+    "B3": 2,
+    "T1": 4,
+    "T2": 8,
+    "T3": 1
+  },
+  "top_emissions": 13,
+  "bottom_emissions": 11,
+  "target_time": 2.149202766571468,
+  "longest_duration": 1.899202766571468,
+  "median_duration": 0.5245529782965173,
+  "release_span": 1.7876665512823582,
+  "minimum_same_port_gap": 0.024564130417861207,
+  "clock_error": 0.0,
+  "launch_bounds_ok": true,
+  "min_gap_ok": true,
+  "capacity_ok": true,
+  "fixed_coordinates_ok": true,
+  "max_endpoint_difference": 0.00030407762315811553,
+  "replays": {
+    "pinn": {
+      "completed": true,
+      "completion_fraction": 1.0,
+      "max_error": 0.008414454534701235,
+      "rms_error": 0.0017175933469096055,
+      "minimum": {
+        "distance": 0.028658750868773418,
+        "time": 1.715760626196252,
+        "pair": [
+          7,
+          20
+        ],
+        "sampled_distance": 0.028659020180460067
+      },
+      "half_step_check": {
+        "max_endpoint_difference": 5.1845915370207655e-09,
+        "minimum_distance_difference": 5.427658357481935e-10,
+        "finer_minimum": 0.028658750868773418
+      },
+      "termination_events": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "solver": "RK45"
+    },
+    "reference": {
+      "completed": true,
+      "completion_fraction": 1.0,
+      "max_error": 0.008413109923585457,
+      "rms_error": 0.0017197539819451544,
+      "minimum": {
+        "distance": 0.02868546023499737,
+        "time": 1.7157622386678963,
+        "pair": [
+          7,
+          20
+        ],
+        "sampled_distance": 0.028685737310315904
+      },
+      "half_step_check": {
+        "max_endpoint_difference": 6.667118051786499e-16,
+        "minimum_distance_difference": 1.0755285551056204e-16,
+        "finer_minimum": 0.02868546023499748
+      },
+      "termination_events": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "solver": "DOP853"
+    }
+  },
+  "weight_sha256": "af2f21b195e2d25b877482cd527110054f42bf92200f64e39572375219e5e581",
+  "verification_seconds": 6.355228812999485,
+  "numerical_verification_only": true,
+  "covariance": {
+    "target_centroid": [
+      1.4609375000000002,
+      0.1490257214207425
+    ],
+    "achieved_centroid": [
+      1.4612728396276846,
+      0.14909250274507435
+    ],
+    "centroid_shift": 0.0003419245694228842,
+    "target_covariance": [
+      [
+        0.03448796484375,
+        0.0001134425620722947
+      ],
+      [
+        0.0001134425620722947,
+        0.0020265820312500007
+      ]
+    ],
+    "achieved_covariance": [
+      [
+        0.034595605717654555,
+        0.00011227597179988236
+      ],
+      [
+        0.00011227597179988236,
+        0.002023249710272283
+      ]
+    ],
+    "covariance_relative_frobenius": 0.003117564304028702,
+    "achieved_axis_ratio": 4.135515901194372,
+    "target_axis_angle_deg": 0.20022788995703422,
+    "achieved_axis_angle_deg": 0.19749377093697262,
+    "axis_angle_error_deg": 0.0027341190200615983,
+    "isotropy_rule": "omit angle if eigenvalue gap / largest < 0.05 or largest <=1e-20"
+  },
+  "occupancy": {
+    "resolution": 128,
+    "inside_coverage": 0.1117177057108473,
+    "overspill": -7.362579893149739e-16,
+    "hole_intrusion_area": 0.0
+  },
+  "occupancy_convergence": [
+    {
+      "resolution": 64,
+      "inside_coverage": 0.11170929357307213,
+      "overspill": 2.9452537294489765e-16,
+      "hole_intrusion_area": 0.0
+    },
+    {
+      "resolution": 128,
+      "inside_coverage": 0.1117177057108473,
+      "overspill": -7.362579893149739e-16,
+      "hole_intrusion_area": 0.0
+    }
+  ],
+  "elapsed_seconds": 33.21289785100089,
+  "allocation_backend": "batched",
+  "stages": [
+    {
+      "stage": "coarse",
+      "nfev": 2,
+      "njev": 2,
+      "cost": 0.00039322372485990197,
+      "message": "`xtol` termination condition is satisfied.",
+      "solver_success": true,
+      "elapsed_seconds": 0.5297651040000346,
+      "path_integrations": 7507
+    },
+    {
+      "stage": "direct",
+      "nfev": 5,
+      "njev": 5,
+      "cost": 0.00039334993043018535,
+      "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+      "solver_success": true,
+      "elapsed_seconds": 2.4543000960002246,
+      "path_integrations": 360
+    }
+  ],
+  "optimizer_budget_exhausted": false,
+  "seed": 11,
+  "cold_start": true,
+  "budget_tier": "baseline_50_35",
+  "target_sha256": "1c47bf815347a38a22a61bcd469040b373e7b0431a2bb90390d8f241e441ec2d",
+  "layout_sha256": "22ecee6a8e58ef542fc385c41cc129d20519ae85736f552fbac41260577b7823"
+}

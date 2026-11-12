@@ -1,0 +1,61 @@
+[
+  {
+    "stage": "coarse",
+    "nfev": 2,
+    "njev": 2,
+    "cost": 0.00039322372485990197,
+    "message": "`xtol` termination condition is satisfied.",
+    "solver_success": true,
+    "elapsed_seconds": 0.5297651040000346,
+    "path_integrations": 7507,
+    "history": [
+      {
+        "evaluation": 1,
+        "cost": 0.0003932237481967796,
+        "seconds": 0.04698197400102799
+      },
+      {
+        "evaluation": 2,
+        "cost": 0.00039322372485990197,
+        "seconds": 0.34757131100013794
+      }
+    ]
+  },
+  {
+    "stage": "direct",
+    "nfev": 5,
+    "njev": 5,
+    "cost": 0.00039334993043018535,
+    "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+    "solver_success": true,
+    "elapsed_seconds": 2.4543000960002246,
+    "path_integrations": 360,
+    "history": [
+      {
+        "evaluation": 1,
+        "cost": 0.00039446518398490623,
+        "seconds": 0.17249099200125784
+      },
+      {
+        "evaluation": 2,
+        "cost": 0.0003933553481027988,
+        "seconds": 0.6678725290003058
+      },
+      {
+        "evaluation": 3,
+        "cost": 0.0003933499364471844,
+        "seconds": 1.1705511730015132
+      },
+      {
+        "evaluation": 4,
+        "cost": 0.00039334993179511256,
+        "seconds": 1.656522526000117
+      },
+      {
+        "evaluation": 5,
+        "cost": 0.00039334993043018535,
+        "seconds": 2.130183068000406
+      }
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "group": "smoke",
+  "stage": "smoke",
+  "shape": "smoke",
+  "N": 6,
+  "mode": "fixed",
+  "m": 1,
+  "layout": "equispaced",
+  "cap": null,
+  "min_age": 0.03,
+  "max_age": 5.0,
+  "min_gap": 0.0,
+  "center": [
+    1.52,
+    0.15
+  ],
+  "seed": 11,
+  "collision_aware": true,
+  "budget_tier": "baseline_50_35",
+  "coarse_nfev": 50,
+  "direct_nfev": 35,
+  "endpoint_nfev": 24,
+  "provenance": "new_experiment",
+  "cold_start": true,
+  "ports": [
+    {
+      "id": "B1",
+      "side": 0,
+      "x": 1.1
+    },
+    {
+      "id": "T1",
+      "side": 1,
+      "x": 1.1
+    }
+  ],
+  "id": "smoke_483fbd684485",
+  "target_sha256": "8448af16b7fa93273ded6508ed6737e46b7eb8c9c1bb8a058a73bfb77640087a",
+  "layout_sha256": "6f9ed5e61da6c5970fe350c760bb73377624f4a8782ca5538b01655979d492cf",
+  "configuration_sha256": "eaff08a009d6d1122874375b7db812f8aca431c1869025ae69f42eed72d4d1d1"
+}

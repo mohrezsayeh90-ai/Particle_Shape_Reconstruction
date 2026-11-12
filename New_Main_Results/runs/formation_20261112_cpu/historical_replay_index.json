@@ -1,0 +1,26 @@
+[
+  {
+    "case": "dense_duck_independent_wall_ports",
+    "accepted": true,
+    "N": 64,
+    "failure": null
+  },
+  {
+    "case": "dense_duck_six_fixed",
+    "accepted": true,
+    "N": 42,
+    "failure": null
+  },
+  {
+    "case": "duck_independent_wall_ports",
+    "accepted": true,
+    "N": 28,
+    "failure": null
+  },
+  {
+    "case": "duck_six_fixed",
+    "accepted": true,
+    "N": 20,
+    "failure": null
+  }
+]

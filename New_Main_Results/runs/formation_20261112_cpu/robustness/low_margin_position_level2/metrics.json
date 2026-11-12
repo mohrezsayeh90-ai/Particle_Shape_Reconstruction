@@ -1,0 +1,26 @@
+{
+  "caseid": "F1_1358cc43f798",
+  "selection_label": "low_margin",
+  "scenario": "position",
+  "level": 2,
+  "standard_deviations": {
+    "x": 0.0012500000000000002,
+    "u": 0.025,
+    "v": 0.025,
+    "time": 0.015
+  },
+  "draws": 64,
+  "solver": "independent analytical Poiseuille / DOP853",
+  "threshold": 0.004,
+  "fixed_nominal_target_time": 1.6437535801976173,
+  "within_bounds": 64,
+  "accepted": 19,
+  "unconditional_pass_fraction": 0.296875,
+  "bounds_conditional_pass_fraction": 0.296875,
+  "failure_counts": {
+    "clearance_failure": 44,
+    "endpoint_error": 1
+  },
+  "elapsed_seconds": 66.51095184299993,
+  "interpretation": "numerical sensitivity only; not measured hardware reliability"
+}

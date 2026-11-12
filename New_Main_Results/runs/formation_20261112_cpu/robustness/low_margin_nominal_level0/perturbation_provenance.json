@@ -1,0 +1,19 @@
+{
+  "seed": 39011,
+  "generator": "numpy.random.default_rng / PCG64",
+  "draws": 64,
+  "provenance": "parameters deterministically reconstructed after the campaign from the exact saved runner logic; trial result metrics are original computed outputs",
+  "bounds_flags_match_saved_trials": true,
+  "source_case": "F1_1358cc43f798",
+  "generator_order": [
+    "nominal",
+    "position",
+    "axial_velocity",
+    "transverse_velocity",
+    "timing",
+    "joint",
+    "port_misplacement"
+  ],
+  "shared_port_order": "sorted port IDs",
+  "numpy": "2.5.4"
+}

@@ -1,0 +1,30 @@
+{
+  "group": "D1",
+  "stage": "core",
+  "shape": "fish",
+  "N": 100,
+  "mode": "free",
+  "m": 0,
+  "layout": "equispaced",
+  "cap": null,
+  "min_age": 0.03,
+  "max_age": 5.0,
+  "min_gap": 0.0,
+  "center": [
+    1.52,
+    0.15
+  ],
+  "seed": 11,
+  "collision_aware": true,
+  "budget_tier": "baseline_50_35",
+  "coarse_nfev": 50,
+  "direct_nfev": 35,
+  "endpoint_nfev": 24,
+  "provenance": "new_experiment",
+  "cold_start": true,
+  "ports": [],
+  "id": "D1_93bf6b884031",
+  "target_sha256": "4f2b9249d907040915941b8f7343015ae467e50f148e372e02df456fbd5078f4",
+  "layout_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "configuration_sha256": "b2543c95c8aba2c5b84adcab5c03dd77900897e871943a7a54e2571e1cc6696f"
+}

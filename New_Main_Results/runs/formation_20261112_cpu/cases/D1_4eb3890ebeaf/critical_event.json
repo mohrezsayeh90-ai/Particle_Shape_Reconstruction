@@ -1,0 +1,34 @@
+{
+  "reference": {
+    "refined_time": 1.0655025056764025,
+    "distance": 0.02633047630388881,
+    "pair": [
+      48,
+      99
+    ],
+    "frame_times": [
+      1.0611961275624635,
+      1.0655025056764025,
+      1.0698088837903414
+    ],
+    "minimum_at_window_end": false,
+    "minimum_at_shared_start": false,
+    "note": "Frames are restricted to the shared physical lifetime; boundary minima have no extrapolated before/after frame."
+  },
+  "pinn": {
+    "refined_time": 1.0657928898707212,
+    "distance": 0.026300481230231168,
+    "pair": [
+      91,
+      93
+    ],
+    "frame_times": [
+      1.0557928898707212,
+      1.0657928898707212,
+      1.0757928898707212
+    ],
+    "minimum_at_window_end": false,
+    "minimum_at_shared_start": false,
+    "note": "Frames are restricted to the shared physical lifetime; boundary minima have no extrapolated before/after frame."
+  }
+}

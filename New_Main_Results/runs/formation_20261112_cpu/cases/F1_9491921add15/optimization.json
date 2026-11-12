@@ -1,0 +1,86 @@
+[
+  {
+    "stage": "coarse",
+    "nfev": 1,
+    "njev": 1,
+    "cost": 5.496740679062485e-05,
+    "message": "`gtol` termination condition is satisfied.",
+    "solver_success": true,
+    "elapsed_seconds": 0.10592423399975814,
+    "path_integrations": 169,
+    "history": [
+      {
+        "evaluation": 1,
+        "cost": 5.496740679062485e-05,
+        "seconds": 0.01695472199935466
+      }
+    ]
+  },
+  {
+    "stage": "direct",
+    "nfev": 11,
+    "njev": 11,
+    "cost": 5.4756819490442894e-05,
+    "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+    "solver_success": true,
+    "elapsed_seconds": 2.6939557660007267,
+    "path_integrations": 396,
+    "history": [
+      {
+        "evaluation": 1,
+        "cost": 5.509810516038147e-05,
+        "seconds": 0.08282715900168114
+      },
+      {
+        "evaluation": 2,
+        "cost": 5.4756825250111176e-05,
+        "seconds": 0.341171211000983
+      },
+      {
+        "evaluation": 3,
+        "cost": 5.475682376356797e-05,
+        "seconds": 0.560897470000782
+      },
+      {
+        "evaluation": 4,
+        "cost": 5.4756823027504624e-05,
+        "seconds": 0.8603189500008739
+      },
+      {
+        "evaluation": 5,
+        "cost": 5.475682245294577e-05,
+        "seconds": 1.0821190280003066
+      },
+      {
+        "evaluation": 6,
+        "cost": 5.475682183862588e-05,
+        "seconds": 1.3462828800002171
+      },
+      {
+        "evaluation": 7,
+        "cost": 5.4756821516243056e-05,
+        "seconds": 1.5663450750016636
+      },
+      {
+        "evaluation": 8,
+        "cost": 5.475682063313495e-05,
+        "seconds": 1.8099925610003993
+      },
+      {
+        "evaluation": 9,
+        "cost": 5.4756820055008446e-05,
+        "seconds": 2.075066159000926
+      },
+      {
+        "evaluation": 10,
+        "cost": 5.475681961999213e-05,
+        "seconds": 2.3039213350002683
+      },
+      {
+        "evaluation": 11,
+        "cost": 5.4756819490442894e-05,
+        "seconds": 2.5489049190000514
+      }
+    ]
+  }
+]

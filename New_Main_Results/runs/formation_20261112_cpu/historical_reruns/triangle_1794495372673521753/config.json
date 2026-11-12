@@ -1,0 +1,7 @@
+{
+  "L": 2.2,
+  "H": 0.3,
+  "diameter": 0.025,
+  "density_ratio": 1000,
+  "drag": "schiller-naumann"
+}

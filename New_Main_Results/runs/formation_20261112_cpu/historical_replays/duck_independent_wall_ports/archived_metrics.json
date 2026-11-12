@@ -1,0 +1,25 @@
+{
+  "source": "master3-clean-revised-version",
+  "case": "duck_independent_wall_ports",
+  "particles": 28,
+  "accepted": true,
+  "max_reference_target_error": 1.4516036743444152e-06,
+  "max_replayed_PINN_target_error": 2.9394526885214698e-06,
+  "max_reference_saved_discrepancy": 1.5550679128782355e-11,
+  "max_PINN_saved_discrepancy": 6.642461633334898e-10,
+  "reference_minimum_separation": 0.028690438384206353,
+  "reference_nearest_pair": [
+    12,
+    26
+  ],
+  "PINN_minimum_separation": 0.02869044052850896,
+  "PINN_nearest_pair": [
+    12,
+    26
+  ],
+  "required_separation": 0.026000000000000002,
+  "separation_401_to_1601_delta": 0.0,
+  "nearest_pair_half_step_endpoint_delta": 2.5476231888929306e-16,
+  "clock_shift_negative_control_rejected": true,
+  "elapsed_seconds": 8.270112076999794
+}

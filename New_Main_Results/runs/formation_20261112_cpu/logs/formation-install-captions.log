@@ -1,0 +1,6 @@
+Using Python 3.12.14 environment at: .formation-venv
+Resolved 2 packages in 526ms
+Prepared 2 packages in 159ms
+Installed 2 packages in 6ms
+ + arabic-reshaper==3.1.0
+ + python-bidi==0.6.12

@@ -1,0 +1,8 @@
+planned_trials 1014 geometric_capacities [{'shape': 'stadium', 'buffered_capacity': 271, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'arrow', 'buffered_capacity': 114, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'fish', 'buffered_capacity': 164, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'perforated', 'buffered_capacity': 221, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}]
+EXECUTING 3 trials, workers 3
+START smoke_483fbd684485 smoke 6 fixed 1 seed 11
+START smoke_f3979fb159f1 smoke 6 fixed 3 seed 11
+START smoke_68262ed544ea smoke 6 free 0 seed 11
+DONE smoke_68262ed544ea accepted None seconds 3.59
+DONE smoke_483fbd684485 accepted None seconds 3.85
+DONE smoke_f3979fb159f1 accepted None seconds 7.07

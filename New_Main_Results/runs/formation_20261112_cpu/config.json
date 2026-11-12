@@ -1,0 +1,44 @@
+{
+  "run_id": "formation_20261112_cpu",
+  "source_revision": "c17460d",
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "physics": {
+    "L": 2.2,
+    "H": 0.3,
+    "Re": 10,
+    "diameter": 0.025,
+    "density_ratio": 1000,
+    "launch_gap": 1e-05
+  },
+  "age_bounds": [
+    0.03,
+    5.0
+  ],
+  "historical_age_bounds": "preserved in archived schedules",
+  "duration_lower_bound_harmonized": true,
+  "acceptance": {
+    "pinn_endpoint": 0.003,
+    "reference_endpoint": 0.004,
+    "endpoint_difference": 0.004,
+    "min_distance": 0.026,
+    "search_distance": 0.0263
+  },
+  "budget": {
+    "endpoint_nfev": 24,
+    "coarse_nfev": 50,
+    "direct_nfev": 35
+  },
+  "numba_planning_evaluator": "same frozen MLP, checked against PyTorch",
+  "acceptance_evaluators": [
+    "PyTorch float32 / RK45",
+    "independent analytical Poiseuille / DOP853"
+  ],
+  "weight_sha256": "af2f21b195e2d25b877482cd527110054f42bf92200f64e39572375219e5e581",
+  "worker_cpu_threads": 1,
+  "optional_layout_G5": "not scheduled; optional after core matrix",
+  "handoff_sha256": "d0a2ce91c6a6536222dca4ea56f060d9695feefceb2799eb7bb08a795446ee7b"
+}

@@ -1,0 +1,55 @@
+{
+  "provenance": "new_historical_settings_rerun",
+  "original_output_payload": "unavailable_proxy_403",
+  "source_revision": "c17460d",
+  "definitions_sha256": "b58f310275c37a274bc5763b124d52f7b6b34b60c76da7e0d138bd1bad0e2db9",
+  "checkpoint_sha256": "af2f21b195e2d25b877482cd527110054f42bf92200f64e39572375219e5e581",
+  "original_literal_constants": {
+    "RE": 10.0,
+    "DIAMETER": 0.025,
+    "DENSITY_RATIO": 1000.0,
+    "DRAG_LAW": "schiller-naumann",
+    "LAUNCH_GAP": 1e-05,
+    "CONTROL_NAMES": [
+      "x_bottom",
+      "u_bottom",
+      "v_bottom",
+      "x_top",
+      "u_top",
+      "v_top"
+    ],
+    "SEED": 42,
+    "HOURS": 6.0,
+    "RESUME_CHECKPOINT": null,
+    "TRAJECTORY_TMAX": 20.0,
+    "TRAJECTORY_MAX_STEP": 0.035,
+    "ALLOW_UNVALIDATED_OPTIMIZATION": false,
+    "SCOPE": "rectangle-two-wall-launchers-eight-inputs-v1",
+    "SHAPES": [
+      "triangle",
+      "square",
+      "circle_10",
+      "s_8",
+      "chevron_7"
+    ],
+    "TARGET_RADIUS": 0.075,
+    "POSITION_TOLERANCE": 0.003,
+    "COLLISION_MARGIN": 0.001,
+    "LEAD_TIME": 0.25,
+    "SEED_U_SPEEDS": [
+      0.25,
+      0.7,
+      1.2
+    ],
+    "CANDIDATES_PER_SIDE": 8,
+    "OPT_STARTS": 3,
+    "COLLISION_SAMPLES": 61,
+    "PAIR_VERIFY_SAMPLES": 601,
+    "CLEARANCE_RESERVE": 0.0003,
+    "REFERENCE_TOLERANCE": 0.004,
+    "RUN_OPTIMIZATION": true,
+    "FORMATION_RESULTS": []
+  },
+  "requested_case": "triangle",
+  "training_steps": 0
+}

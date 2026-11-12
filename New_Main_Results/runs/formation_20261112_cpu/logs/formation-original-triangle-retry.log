@@ -1,0 +1,5 @@
+Independent seed bank: 90 reusable paths; controls can differ for every particle.
+triangle candidate counts per particle: [16, 16, 16]
+triangle start 1: max error=4.128e-10; min separation=0.1299; 12 independent continuous decisions
+triangle start 2: max error=4.128e-10; min separation=0.1299; 12 independent continuous decisions
+triangle start 3: max error=4.128e-10; min separation=0.1299; 12 independent continuous decisions

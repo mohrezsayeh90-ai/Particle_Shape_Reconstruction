@@ -1,0 +1,5 @@
+{
+  "low_margin": "F1_1358cc43f798",
+  "high_margin": "B1_cd46d15ee4e3",
+  "rule": "minimum and maximum refined reference margin among completed accepted new cases with N<=24 at selection time; representative CPU subset, not an N=100 robustness claim"
+}

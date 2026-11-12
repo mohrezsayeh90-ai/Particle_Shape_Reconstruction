@@ -1,0 +1,51 @@
+SIX FIXED STATIONS: [('B1', 0.55), ('B2', 1.1), ('B3', 1.6500000000000001), ('T1', 0.55), ('T2', 1.1), ('T3', 1.6500000000000001)]
+Target centre: [1.8920000000000001, 0.15] | output: /workspace/Particle_Shape_Reconstruction/New_Main_Results/runs/formation_20261112_cpu/historical_reruns/letters_1794495952386815010/six_fixed_stations_1794495952471666619
+Seed bank B1 60 paths; x fixed at 0.55
+Seed bank B2 60 paths; x fixed at 1.1
+Seed bank B3 60 paths; x fixed at 1.6500000000000001
+Seed bank T1 60 paths; x fixed at 0.55
+Seed bank T2 60 paths; x fixed at 1.1
+Seed bank T3 60 paths; x fixed at 1.6500000000000001
+
+DESIGN S — 6 fixed stations / 18 continuous variables
+S B1 individual errors: [0.0, 0.0, 0.0, 0.0, 0.00766, 0.0075]
+S B2 individual errors: [0.0, 0.0, 0.0, 0.0, 0.00578, 0.00378]
+S B3 individual errors: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+S T1 individual errors: [0.00779, 0.00761, 0.0, 0.0, 0.0, 0.0]
+S T2 individual errors: [0.00583, 0.00382, 0.0, 0.0, 0.0, 0.0]
+S T3 individual errors: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+S joint start 1 lookup error 8.579007916638717e-12
+S joint start 2 lookup error 1.9243387712624735e-11
+S joint start 3 lookup error 1.9243387712624735e-11
+{"kind": "S_6", "success": true, "reason": "all numerical checks passed", "max_error": 1.595171410303373e-08, "min_pair_distance": 0.03358017098418163}
+
+DESIGN C — 6 fixed stations / 18 continuous variables
+C B1 individual errors: [0.0, 0.0, 0.0, 0.0, 0.00641, 0.0]
+C B2 individual errors: [0.0, 0.0, 0.0, 0.0, 0.00362, 0.0]
+C B3 individual errors: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+C T1 individual errors: [0.0, 0.00653, 0.0, 0.0, 0.0, 0.0]
+C T2 individual errors: [0.0, 0.00366, 0.0, 0.0, 0.0, 0.0]
+C T3 individual errors: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+C joint start 1 lookup error 2.0644261746625803e-12
+C joint start 2 lookup error 1.4516961983417156e-11
+C joint start 3 lookup error 1.50187861956922e-11
+{"kind": "C_6", "success": true, "reason": "all numerical checks passed", "max_error": 7.059822790681017e-09, "min_pair_distance": 0.03485328583533577}
+
+DESIGN T — 6 fixed stations / 18 continuous variables
+T B1 individual errors: [0.0, 0.0, 0.0, 0.0, 0.0, 0.00759]
+T B2 individual errors: [0.0, 0.0, 0.0, 0.0, 0.0, 0.00495]
+T B3 individual errors: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+T T1 individual errors: [0.00761, 0.00772, 0.00779, 0.0, 0.0, 0.0]
+T T2 individual errors: [0.00382, 0.00499, 0.00583, 0.0, 0.0, 0.0]
+T T3 individual errors: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+T joint start 1 lookup error 1.9243387712624735e-11
+T joint start 2 lookup error 4.040475125015406e-11
+T joint start 3 lookup error 6.603393052139471e-11
+{"kind": "T_6", "success": true, "reason": "all numerical checks passed", "max_error": 6.918778733615354e-09, "min_pair_distance": 0.027400497227164623}
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/IPython/core/display.py:452: UserWarning: Consider using IPython.display.IFrame instead
+  warnings.warn("Consider using IPython.display.IFrame instead")
+<IPython.core.display.HTML object>
+/workspace/Particle_Shape_Reconstruction/New_Main_Results/runs/formation_20261112_cpu/historical_reruns/letters_1794495952386815010/six_fixed_stations_1794495952471666619/six_station_SCT_lab.html
+/workspace/Particle_Shape_Reconstruction/New_Main_Results/runs/formation_20261112_cpu/historical_reruns/letters_1794495952386815010/six_fixed_stations_1794495952471666619.zip
+Finished: 3 / 3 passed.
+A failed finite search is not a proof of impossibility; station positions and target sizes were never relaxed.

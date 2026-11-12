@@ -1,0 +1,966 @@
+[
+  {
+    "id": "F01",
+    "caption_fa": "بازاجرای تازهٔ مثلث و حروف با تنظیمات تاریخی.",
+    "status": "rendered",
+    "description": "Fresh historical-setting reruns, not recovered Kaggle payloads. Missing rows are explicitly pending.",
+    "plotting_script": "plot_formation_campaign.py",
+    "inputs": [
+      {
+        "path": "runs/formation_20261112_cpu/historical_reruns/triangle_1794495372673521753/fresh_verification/metrics.json",
+        "sha256": "57caa420f81ae70e13310d8e429b3e882b8a95f30760e141715789a6168cfa0a"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_reruns/triangle_1794495372673521753/fresh_verification/trajectories.npz",
+        "sha256": "01d67e6b00134d9fd9c9b361aca05ede5ca2fd94e0e221c4c0717b0783da3794"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_reruns/triangle_1794495372673521753/original_result.json",
+        "sha256": "a53a50795aa26064046d3af2210cde8a64c7ef2dc4b116db0f899632e528e835"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_reruns/letters_1794495952386815010/fresh_verification/S_6/metrics.json",
+        "sha256": "c755c363d88d4a51021088836aed62477258fe5a36f43d9fc900d4c9fc6b4d0f"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_reruns/letters_1794495952386815010/fresh_verification/S_6/trajectories.npz",
+        "sha256": "1f6e00529a132658fd87c9e504dbebae8ad67bb4d94d3427b060a220c7e29c7b"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_reruns/letters_1794495952386815010/six_fixed_stations_1794495952471666619/formations/S_6/result.json",
+        "sha256": "9e4db461a0e1940b53ad73fbbc4af941d8c47a84c035aa453caf2dc8fd56b01b"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_reruns/letters_1794495952386815010/fresh_verification/C_6/metrics.json",
+        "sha256": "042fcc2653ff7a332d0a71d7dba623ea909e0202ab4acdb99cad2bfe526d2831"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_reruns/letters_1794495952386815010/fresh_verification/C_6/trajectories.npz",
+        "sha256": "3cf0e452f85b6d5531734c77df52fe62d5100568d07000eb50267bc75edb2d8e"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_reruns/letters_1794495952386815010/six_fixed_stations_1794495952471666619/formations/C_6/result.json",
+        "sha256": "f0f3ccdc364d15644a310f35657328413205b1565f8f4ed5453a2a070e0db678"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_reruns/letters_1794495952386815010/fresh_verification/T_6/metrics.json",
+        "sha256": "0a5bc4a16b9855515f4638143da3f8847f23bea7f79e78e91a36b77848530744"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_reruns/letters_1794495952386815010/fresh_verification/T_6/trajectories.npz",
+        "sha256": "3dc40c34b0930df94fa0c9b8d86ade8131a8f61e236ddf0428d19baf4327aa06"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_reruns/letters_1794495952386815010/six_fixed_stations_1794495952471666619/formations/T_6/result.json",
+        "sha256": "a0954b1ef14864209cfeaded190aae8588ac3aeee2d2c042172c9f6aba906cd1"
+      }
+    ],
+    "pdf": "runs/formation_20261112_cpu/figures/F01.pdf",
+    "png": "runs/formation_20261112_cpu/figures/F01.png",
+    "pdf_sha256": "083466a27655a4a35619733ffe61d102fed7bc1eefa60f71af8809dbfc2bab25",
+    "png_sha256": "01b176f0cecace6408697501a1a01ddb51e1e4f42e1042d4eb2b2c72e7ee5db8"
+  },
+  {
+    "id": "F02",
+    "caption_fa": "مقایسهٔ آرایش اردک در زمان هدف مشترک.",
+    "status": "rendered",
+    "description": "Fresh numerical replays of four archived schedules; fixed/free dense panels have different N.",
+    "plotting_script": "plot_formation_campaign.py",
+    "inputs": [
+      {
+        "path": "runs/formation_20261112_cpu/historical_replays/duck_six_fixed/metrics.json",
+        "sha256": "883728ff8322854a4413c7c82c6ebf3f67f3c6343b5937f4f7857be1cc206375"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_replays/duck_six_fixed/trajectories.npz",
+        "sha256": "369c101780cf25ad522690b0ed61d6320218ec6daf7f8ab5cf914b8242ffed49"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_replays/duck_independent_wall_ports/metrics.json",
+        "sha256": "39aa892e65efce0e80c5cb0bc66f1a316b0c115a0aa2c3fe25a77f4bde84c23f"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_replays/duck_independent_wall_ports/trajectories.npz",
+        "sha256": "e5a75fa78d07b3d83d47d00cf12d0fa15c014b73dc28e9f0c29ad5ed6d2407c1"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_replays/dense_duck_six_fixed/metrics.json",
+        "sha256": "4835a6f44296ede127442fedce83f95c57c5b4231c23c8b91af2641019c87eff"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_replays/dense_duck_six_fixed/trajectories.npz",
+        "sha256": "8199c334d22ec90aaf1620942fd80cbebe863d245587a748698ea768e61afa1c"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_replays/dense_duck_independent_wall_ports/metrics.json",
+        "sha256": "f7f025685e13eea95bcd8e1d5aa86e14d2d68e97751d5b8b5f04aa7de9fcaafd"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_replays/dense_duck_independent_wall_ports/trajectories.npz",
+        "sha256": "4516fbdf272a8c74591a0ff62bc82313f1fb1db590429397af827a0fe30f25ad"
+      }
+    ],
+    "pdf": "runs/formation_20261112_cpu/figures/F02.pdf",
+    "png": "runs/formation_20261112_cpu/figures/F02.png",
+    "pdf_sha256": "b990a3ca9087ea430d46b4e9c836ab993f2c0c7dd4305571ef43a960daca1c39",
+    "png_sha256": "08ffd26f77e9eefe486039b35589b39de5b14c3130931aa323522463cffdd173"
+  },
+  {
+    "id": "F03",
+    "caption_fa": "اثر تعداد پرتابگرها و ذرات بر کیفیت آرایش.",
+    "status": "rendered",
+    "description": "Pending cells are explicitly labelled; counts are executed starts out of three, not completed matched comparisons. Best errors and margins may come from different starts.",
+    "plotting_script": "plot_formation_campaign.py",
+    "inputs": [
+      {
+        "path": "runs/formation_20261112_cpu/figure_inputs/summary.csv",
+        "sha256": "7309ffeb83c279f7ae3320d97c0006eecfc9dbae67a44fed256e33e5f912091b"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases.json",
+        "sha256": "1f60c593b031da22f12a1c449c3a3ad992bd09bab5e1e6b81cc2ea9943c7d953"
+      }
+    ],
+    "pdf": "runs/formation_20261112_cpu/figures/F03.pdf",
+    "png": "runs/formation_20261112_cpu/figures/F03.png",
+    "pdf_sha256": "48311ec66c7a9f4c69a7ff359a84f5bb1991771b1847b0f04aa4aa31325371ad",
+    "png_sha256": "eb5a51acb772672f808aa43ccd5cecfb8782dadaa4149ca23e02f08fdf35cce8"
+  },
+  {
+    "id": "F03_ports",
+    "caption_fa": "مختصات ثابت پرتابگرها در چیدمان هم‌فاصله و تودرتو.",
+    "status": "rendered",
+    "description": "Configured port coordinates, independent of optimizer outcomes. Equispaced layouts are not nested.",
+    "plotting_script": "plot_formation_campaign.py",
+    "inputs": [
+      {
+        "path": "runs/formation_20261112_cpu/cases.json",
+        "sha256": "1f60c593b031da22f12a1c449c3a3ad992bd09bab5e1e6b81cc2ea9943c7d953"
+      }
+    ],
+    "pdf": "runs/formation_20261112_cpu/figures/F03_ports.pdf",
+    "png": "runs/formation_20261112_cpu/figures/F03_ports.png",
+    "pdf_sha256": "29f4c9471893d21af3d3b33b2ea2b9f74b33b8d87aa8157ce53ed8a0efcb4ae4",
+    "png_sha256": "09a287e8c8c7f3fbc10c6a4be8b46219f8174e90573265bdc9bffd5c7ad13ee4"
+  },
+  {
+    "id": "F04",
+    "caption_fa": "سقف انتشار، بار واقعی پرتابگرها و زمان‌بندی رهاسازی.",
+    "status": "rendered",
+    "description": "Structural exclusions are annotated outside measured colors. Actual loads and release times are read from the selected saved schedule.",
+    "plotting_script": "plot_formation_campaign.py",
+    "inputs": [
+      {
+        "path": "runs/formation_20261112_cpu/figure_inputs/summary.csv",
+        "sha256": "7309ffeb83c279f7ae3320d97c0006eecfc9dbae67a44fed256e33e5f912091b"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/C1_a4b0b778723f/release_schedule.csv",
+        "sha256": "f5ae1c73a5ae0633f3ead5c1e900321a8c3677a69e7579e192700ee0810a1e75"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/C1_a4b0b778723f/metrics.json",
+        "sha256": "95aaf84dd30f0ef9f54bb25b3faba7c4231d0e905dccd92962399ce6329ec6e9"
+      }
+    ],
+    "pdf": "runs/formation_20261112_cpu/figures/F04.pdf",
+    "png": "runs/formation_20261112_cpu/figures/F04.png",
+    "pdf_sha256": "3480d7d2155fae21b657ee44a3f87e93f8a0a6aeb5358c212d2389ab1706419b",
+    "png_sha256": "f16e945311878e59b1155e26728dcc07184583f8e97b5fee4be325c8a321badb"
+  },
+  {
+    "id": "F05",
+    "caption_fa": "آرایش‌های هدف پُر و وضعیت نتایج محاسبه‌شده.",
+    "status": "rendered",
+    "description": "Actual reference disks for executed cases; hollow target-only panels are pending, not simulated formations.",
+    "plotting_script": "plot_formation_campaign.py",
+    "inputs": [
+      {
+        "path": "runs/formation_20261112_cpu/cases/B1_cd46d15ee4e3/metrics.json",
+        "sha256": "6fce67474edde4a266086f33937ae629eced33cc1d3482d94f8c30173eaf75c5"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/B1_cd46d15ee4e3/trajectories.npz",
+        "sha256": "5e668a951e57855251840787686aac1341fb9364f4e5440280b08553f5c6e252"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_4eb3890ebeaf/metrics.json",
+        "sha256": "20d5634d9699c8c42f1fff8a847939ccce1115dfe91292e6adb3106dcc9affd7"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_4eb3890ebeaf/trajectories.npz",
+        "sha256": "3ac09b8777ecb6088feeb098ee0f9b030017b12381a88bbbd696dc5e1eb0d2c0"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_bee6686a0836/metrics.json",
+        "sha256": "50bce653e8ed26a198ea84c759f79bbc5d447337398eb00e6af3bb5cce1304f6"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_bee6686a0836/trajectories.npz",
+        "sha256": "2a78e0cada4c7688b7bf1a79eca1f6ebe95cb9e32c1b24b2f8ff1bbedb0bfd6b"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_3224954ecfff/metrics.json",
+        "sha256": "1874764396a1ad2c13f5a4223edd17e1dcb5d3e2ae9bf44213daf5d8f3d62e79"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_3224954ecfff/trajectories.npz",
+        "sha256": "ec1f447ec7430492f55c69857b1a251b40ef5c20b324fea82ed14d45ff3dfe46"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_29e006e8a0ab/metrics.json",
+        "sha256": "7672c4792b903422d9d70c126156514b8bd67ac8257284eed157914a1bce14a8"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_29e006e8a0ab/trajectories.npz",
+        "sha256": "55dc1db4e3b2c88782b17153893a5fbf6d962928eba2eddf8ca4bfd261cd11d2"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_93bf6b884031/metrics.json",
+        "sha256": "179ba9432933e0faf57c8b176c4b6f80fac328d4b8f92cfabae1a0e9e6ffcb46"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_93bf6b884031/trajectories.npz",
+        "sha256": "f62605586b46280fbfd017ed452128b525335cdad732108d4a702c98ae00eac5"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_2f6e77f24cc5/metrics.json",
+        "sha256": "a67c43edd52c8957bcc9b33c7b987a692c21f497c1d496463c227fe6838a120d"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_2f6e77f24cc5/trajectories.npz",
+        "sha256": "1d1eb3a5ac6102cad6eb7bdb59c36cfd86a0d63752e1c7d5a7a176090f01ffff"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_aa218bd9fa31/metrics.json",
+        "sha256": "5b6b829a29f6701954632e819850cbc8e6f091186413b8346a79a22126cc1f0d"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_aa218bd9fa31/trajectories.npz",
+        "sha256": "3c65f65933e3e005845f1d4bcda4570603c1a0652633798d4f86faaa5f2c717b"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/figure_inputs/summary.csv",
+        "sha256": "7309ffeb83c279f7ae3320d97c0006eecfc9dbae67a44fed256e33e5f912091b"
+      }
+    ],
+    "pdf": "runs/formation_20261112_cpu/figures/F05.pdf",
+    "png": "runs/formation_20261112_cpu/figures/F05.png",
+    "pdf_sha256": "0e6e52db375254e6bf3de06ea82ab2b9d18e639306e4a2ddb2cfeddd35c03fae",
+    "png_sha256": "cbd900580861ba9bd38617d7a4fb6ba1ad6a699ef4ae0cd94e7ebd688bebfd2b"
+  },
+  {
+    "id": "F05_occupancy",
+    "caption_fa": "پوشش، بیرون‌زدگی و نفوذ به حفره‌های ماسک.",
+    "status": "rendered",
+    "description": "Actual polygon union of physical-radius disks; circles are accepted and crosses rejected. Two polygon resolutions are saved to assess convergence.",
+    "plotting_script": "plot_formation_campaign.py",
+    "inputs": [
+      {
+        "path": "runs/formation_20261112_cpu/cases/B1_fd21e57579f7/metrics.json",
+        "sha256": "fa4f87033ebbdd0ec1c28cfa93a1f76cd280d622ffd92740c8e6351cb1a4a9e2"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/B1_15d37964b9c8/metrics.json",
+        "sha256": "b61e74be5c14744807c4e3b7d320e1d3c980dd17d462f984c94eccff5dff5c3e"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/B1_e2070292b613/metrics.json",
+        "sha256": "d97c970e6a3e5478beb112d8bca2f64609171090b63931127d4c3171884d8d25"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/B1_2a7d82dd76d3/metrics.json",
+        "sha256": "3f414f3a80bd5b3d81108cc056c90b8ff573541fd00cec3a60670135e9bcb041"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/B1_ad3f75af6b09/metrics.json",
+        "sha256": "ac7cc5201abd0c95ef90204089b28b84019bc7bd092ab3b10a2cc4ed5753fc46"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/B1_4077396e211f/metrics.json",
+        "sha256": "82c1b4fd5d61a10efc7b8a94d1122577c8efea1deac31bf4863081650603605b"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/B1_cd46d15ee4e3/metrics.json",
+        "sha256": "6fce67474edde4a266086f33937ae629eced33cc1d3482d94f8c30173eaf75c5"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/B1_f5950be7fab4/metrics.json",
+        "sha256": "2a613817f002c10669471f03a0ea9b8e5a03a737d1514de2e5c419df9f8add80"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/B1_b1044e4a7dfd/metrics.json",
+        "sha256": "64c99774b0f8e6c54d0d7fc1e0c894ce785567f4aaf463ed7b49565ad9d8cdb7"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_ab095ca543e2/metrics.json",
+        "sha256": "d9b329acb6c2a7cacd45da764c17a1183aebd8d5c22e848577900aed29f29b14"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_38b8d4e5b303/metrics.json",
+        "sha256": "df5082c6b6358eaa6d285d64f19f4b10c2747ec4db3e24309553b18b852dd58e"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_4eb3890ebeaf/metrics.json",
+        "sha256": "20d5634d9699c8c42f1fff8a847939ccce1115dfe91292e6adb3106dcc9affd7"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_d4f9efbc8e67/metrics.json",
+        "sha256": "43789eeaa4620f3bb83c1e37a5c7d33825b70cc25ccc8822b104ade8480edf81"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_c7e112c4be92/metrics.json",
+        "sha256": "b290cb596f2ee61419c573dcbcb053d8e64f78ad9429866b044aef1ca09bae83"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_bee6686a0836/metrics.json",
+        "sha256": "50bce653e8ed26a198ea84c759f79bbc5d447337398eb00e6af3bb5cce1304f6"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_d9e999d30914/metrics.json",
+        "sha256": "920ba309d90770e594eae14b2739d03ceb671eac17a5e07f140ec563df9432f3"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_f38a5e0bafba/metrics.json",
+        "sha256": "f2ea68be8eb2713fcd389e081f21136a8ddc98d930cb2567c6510ffad2c9aecd"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_3224954ecfff/metrics.json",
+        "sha256": "1874764396a1ad2c13f5a4223edd17e1dcb5d3e2ae9bf44213daf5d8f3d62e79"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_35b6b579f41e/metrics.json",
+        "sha256": "31a363bd793494724d7e60c0b2d225ac689f8d17552cff69ac6c930a826ccee6"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_955bf10ff114/metrics.json",
+        "sha256": "e5d30052bd0b1b302ac7b9fef12fb7b2741136bd8764b40da97f80b5e0cc1900"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_29e006e8a0ab/metrics.json",
+        "sha256": "7672c4792b903422d9d70c126156514b8bd67ac8257284eed157914a1bce14a8"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_3a8b1b2f8dff/metrics.json",
+        "sha256": "9af35abafe34143b85475aeaf2fbb526b0ba231f830b5f4896b1345b9bbb1d8f"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_f7fa280a3cc6/metrics.json",
+        "sha256": "4ff6ac36acb80ca7008cb5144826f9ea14696b8c938abbb31345ff3d9c6e006c"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_93bf6b884031/metrics.json",
+        "sha256": "179ba9432933e0faf57c8b176c4b6f80fac328d4b8f92cfabae1a0e9e6ffcb46"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_44eb49160481/metrics.json",
+        "sha256": "18aa940f9a00068dec8d4774de14d550df110fe3580ae6712065bfa95173ae20"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_7e092c43ae99/metrics.json",
+        "sha256": "cf0e2b4b66dc5c58103ff106e28351eb69707a30198eafcca9ac89770e9e0995"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_2f6e77f24cc5/metrics.json",
+        "sha256": "a67c43edd52c8957bcc9b33c7b987a692c21f497c1d496463c227fe6838a120d"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_19fd931edc0b/metrics.json",
+        "sha256": "1d0974d5df6e5c36b5a377fd5b11bdb258a5bb905251d12084aa43abf1fa2c28"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_a1352e05830a/metrics.json",
+        "sha256": "91bca1ba2b614c60a06dd7caea9a44e0222a671800380d2ab6c92bf41f2d9c0e"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_aa218bd9fa31/metrics.json",
+        "sha256": "5b6b829a29f6701954632e819850cbc8e6f091186413b8346a79a22126cc1f0d"
+      }
+    ],
+    "pdf": "runs/formation_20261112_cpu/figures/F05_occupancy.pdf",
+    "png": "runs/formation_20261112_cpu/figures/F05_occupancy.png",
+    "pdf_sha256": "e53f8bbe459c9b4c8c409a247db63d6e619b41244cf5c44e47c6bc33b65546c3",
+    "png_sha256": "e9e7d3b6545ef0e6d4cf98725442aba7e1f9eaf002cf4fe44dad467c59780c6c"
+  },
+  {
+    "id": "F06",
+    "caption_fa": "اثر مرکز هدف بر پذیرش، خطا و فاصلهٔ کمینه.",
+    "status": "rendered",
+    "description": "Counts are executed/planned starts. Missing cells are blank; errors/margins use medians among executed starts, with shared fixed/free color scales and true grid coordinates.",
+    "plotting_script": "plot_formation_campaign.py",
+    "inputs": [
+      {
+        "path": "runs/formation_20261112_cpu/figure_inputs/summary.csv",
+        "sha256": "7309ffeb83c279f7ae3320d97c0006eecfc9dbae67a44fed256e33e5f912091b"
+      }
+    ],
+    "pdf": "runs/formation_20261112_cpu/figures/F06.pdf",
+    "png": "runs/formation_20261112_cpu/figures/F06.png",
+    "pdf_sha256": "52dfffac87120bb134939e5e7f31ebcc048037a38845c7d36b2fbb8acffad941",
+    "png_sha256": "7a346a3aa091c56f71959c1169d53224f6d3bb621f0b14918fc3a7667eeb4616"
+  },
+  {
+    "id": "F06_slices",
+    "caption_fa": "برش‌های طولی و عرضی مرکز هدف با نمایش جداگانهٔ seedها.",
+    "status": "rendered",
+    "description": "Only executed starts are plotted; lines connect sampled centers and do not interpolate feasibility guarantees.",
+    "plotting_script": "plot_formation_campaign.py",
+    "inputs": [
+      {
+        "path": "runs/formation_20261112_cpu/figure_inputs/summary.csv",
+        "sha256": "7309ffeb83c279f7ae3320d97c0006eecfc9dbae67a44fed256e33e5f912091b"
+      }
+    ],
+    "pdf": "runs/formation_20261112_cpu/figures/F06_slices.pdf",
+    "png": "runs/formation_20261112_cpu/figures/F06_slices.png",
+    "pdf_sha256": "bcdfa5cf5ce858714f89bdf74e746f178f09f55f90cb503b7d95116d6f64d9ac",
+    "png_sha256": "ff8a6264f9cfcad5a10b6e36d9b0d66cb0d6c9aa8d486313ac6a28eb929dd945"
+  },
+  {
+    "id": "F07",
+    "caption_fa": "مقایسهٔ کوواریانس هدف و آرایش حاصل و نقشهٔ هندسهٔ بیضی.",
+    "status": "rendered",
+    "description": "Clouds show seed 11; maps include all executed starts, with executed/planned counts. One-sigma covariance ellipses, actual centroid arrows without amplification; isotropic q=1 has no orientation error.",
+    "plotting_script": "plot_formation_campaign.py",
+    "inputs": [
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_3cc8896d4d7c/metrics.json",
+        "sha256": "be72ba01bc8e7ec6a1c733e57e71929a98d969bf8d1f69353a87dfab88d13721"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_3cc8896d4d7c/trajectories.npz",
+        "sha256": "323a5ca082d3819a9d988ca0050ef8592e75bdc01ffafcb03881b029984f5f46"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_0ae7e5401c81/metrics.json",
+        "sha256": "e67504a1cf6c61e35902dcf33700d2c471435ff43f4a774154863ff6facb28d7"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_0ae7e5401c81/trajectories.npz",
+        "sha256": "1a8f4278c697244e45d119eb50e17ad75d9383972d4524088b9ebaaf0283b4eb"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_8e9085742552/metrics.json",
+        "sha256": "94f188d0a2c5231019765e83b8e3175bab21cce99d8b1c074d3014cc0dda5bbb"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_8e9085742552/trajectories.npz",
+        "sha256": "e62e3eb2aa2a7f7824ef3aea83614dc49f2339b2d12c68b549edee43a81e5175"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_57af53337d35/metrics.json",
+        "sha256": "4b1ef7f2ec7919e69aae80060804b5b61be76c0dab12f37b80796ef32e84269d"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_57af53337d35/trajectories.npz",
+        "sha256": "d3b663ccbee6e5df58c9cca4beda5a1f39d6ed7baaf6f3668e15b88dca929a73"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_45dc42f45be0/metrics.json",
+        "sha256": "4af3be717342e3b513912d3a4778c7c73cc4f1fb2394daa9e242a5e44e3db531"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_45dc42f45be0/trajectories.npz",
+        "sha256": "4a18589a275a83eda96207a26098689fca4a3fadd530cac978fe76a0c6efb61f"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_2163cfe4abb0/metrics.json",
+        "sha256": "2058521d87a1fa189b32b8667e739a784c63331da80eb430ef520255da8e419c"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_2163cfe4abb0/trajectories.npz",
+        "sha256": "862c7228e8b62f1ce7b2580c9babf2a7982cbf4211d4c47c2400bb15773c0b60"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_093bf77f6ad7/metrics.json",
+        "sha256": "be133078ffd41a174335a36b3cf24115bbf5a4c12dcccdd63ba8dbc255de20fa"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_fcaba403af7b/metrics.json",
+        "sha256": "a23a02377124ca51fd3dd27823002209b9a3567c1659a9f0a56f38c174e4162c"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_a18170b7b20e/metrics.json",
+        "sha256": "bb6d4d5f3b27d3b1091f68413165392b93e189eec50239749e51c5ffeddd2588"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_e6ff9d553e31/metrics.json",
+        "sha256": "8ff8da77ea7c9a9132a63a8dd08db48aa3eb5f0ef9a11c7c113c3ef7669cdefd"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_1387e551d6fc/metrics.json",
+        "sha256": "790783b76b3276411ade95def2ce2bff33c881a80ea0e8dd7dee5e6b8ff8bead"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_7bc1e44dfc39/metrics.json",
+        "sha256": "545d64ce2adfee92f08cfdacfae6663d05fa2eeef1044e2f1c992999a43b4095"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_8eb1a396be9b/metrics.json",
+        "sha256": "bf92da21f75cef94ae56f952c45675faf27eebd0038d51fa1c7f8c7d7e354b2c"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_39632d27fb23/metrics.json",
+        "sha256": "01c147e92f5dab6721367f197744d455f8849c7e0f498cc04362ee1cc9466d86"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_b51e2580fabf/metrics.json",
+        "sha256": "abd95793ce53736af7e420fa470b2a22b3b993f9c1319a3563daf9bc58f840d7"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_2edb3f13dd27/metrics.json",
+        "sha256": "eb61d945afdfb95482981c0c030c2d99cd56680a19ec67c3b38d9169071f49c5"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_649f74a04682/metrics.json",
+        "sha256": "4f3246e0128efbf05c7300390bebc730bd6a1c7509e8302209514e31ca7784fe"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_a6f355cb9359/metrics.json",
+        "sha256": "0e0f3d9e18d3bc657734df7febd5aadbcd904622172e7afc8af817baa0a22126"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_bb4bd1f1d0c0/metrics.json",
+        "sha256": "7e9ba26517a126a508156e21442d753d86a5b926a804f6aed0caf3657896eb20"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_4d031786433d/metrics.json",
+        "sha256": "ba116d5a19aaa9dd8cd8941a2368a1abff4713565ad05921516df80fc62ee4db"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_d9b37a485353/metrics.json",
+        "sha256": "83f0f67b515248e48fd52c23c393cf71f47db899624fd6676e9abf5eaaccbacc"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_e574f010cddf/metrics.json",
+        "sha256": "5c26808bd40a0c8a3b09303f48e80116b9bd7724bbf5c592472f544978c7b28b"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_3f246e7cd7c4/metrics.json",
+        "sha256": "db8bb5de480f7ba01222483da4e062da40673b9789fa9fa741d531facace26ca"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_80042f170261/metrics.json",
+        "sha256": "207c0dc80e2e7c0c3c2da3ff5e333cb1abbe434aeabe8aeb0ff226109aeadc71"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_2e77f194bc68/metrics.json",
+        "sha256": "048c51248e75ff8ce4a2f6b34021f9f7acd2bb21ac6ae8169f63f5ff056890c2"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_973e9b51784e/metrics.json",
+        "sha256": "b7f626154462fef5948c5b7a61e9e64e6ab8873ab9777ecfc12e99be8ce78899"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_d6619984d062/metrics.json",
+        "sha256": "b965241edcf4045e08c6605b2722588093f721c3d89f0871a6cb1b4b5463bb1f"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_b3654938a842/metrics.json",
+        "sha256": "6e7a84fe671c3f026f08c90e51e5ad681bc3f8ccdc935f62e3b83a3508323a6a"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_e01c86fddc05/metrics.json",
+        "sha256": "b42671d8f16bd2726377e998ff98ebcccf9703da38d83baaf41eeed212689832"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_796f48fe1a78/metrics.json",
+        "sha256": "50986bea1ee494636b1f1960051a532031c5d28e0215753a9004f81c95b46c0e"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_596b653e3424/metrics.json",
+        "sha256": "ce6a3fda63bfcb90ce9368a937405a8782ff98573653b4e45d5d97c7c82da2bf"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_6024296f6803/metrics.json",
+        "sha256": "50364b8b1b66a4a19c5831682c734b1c72ec065f948d1b84cc36cc1346652ca8"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_fd3dc3bc8cfb/metrics.json",
+        "sha256": "a563cdee962df280b49dfa69a303b656e79dd992b4927b67c002c1406e1f6362"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_0a42c3d1426e/metrics.json",
+        "sha256": "c5e5658808dffe96b7c8e2cdde8f16c66cc7095808a668b835ede9bbd9d7e4f7"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_bed70194569d/metrics.json",
+        "sha256": "82f89de05ca53a7801d8a2922f2a22cc970f1f01724272f77460d3279e83bb8c"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_deddf21fc2dc/metrics.json",
+        "sha256": "ea1a61849241d358f5541615c74cccb1b2f27c1aa79d25b577e43daeef8f8809"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_fb5b45e40319/metrics.json",
+        "sha256": "06bdbd475c26d0c83caf6c18f376991869c53be6068f7835e488aab2899a4d0f"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_fd66160fe62d/metrics.json",
+        "sha256": "7aa268db1a20e8ac3113ed13aa5ebad67b21f63df6e3e1a0bc955dd8f5d3882b"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_98e22d70bc2f/metrics.json",
+        "sha256": "1a0de72a46e82623ab4f9b415b567cd0ca1b7f6c6af82292e096ef03ace5fb5e"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_649727c0c517/metrics.json",
+        "sha256": "16f8b5ef6dd17f509f22217e72009f88756856581819f576f0aa97d8a33c7422"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_9491921add15/metrics.json",
+        "sha256": "138993d65bb9485fea755099e2aa16d931aeb48cc6f35c2196ea3137392833ad"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_606f8817f031/metrics.json",
+        "sha256": "74ab0346a62c614723bbbba6d090e930ced03d346a2472768bb79212fc40e47a"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_4750fc68545e/metrics.json",
+        "sha256": "500e1349dcff2e5fef244f207285923189d0896c17cf0252f007da9705e0c095"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_7ebe10855ef8/metrics.json",
+        "sha256": "b594f916f36f4f4fae2977101ac2880736f349546a6cc33c4e03865fcc4170f7"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_af4fae003dac/metrics.json",
+        "sha256": "7e54c068a58b75a2dac260fa66439bc68e46bb5f72be5a5fb7fc27c25f952c0c"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_278eb0952e3a/metrics.json",
+        "sha256": "ef68c6a1a05b4e8eca857733cb9c8119f46cc3677c284a6df83130bd66fed9da"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_33547f56bffc/metrics.json",
+        "sha256": "f86a5346d0ab44b5bca32be42806c0ab71ad26a452df5b4a878b2a5930d262df"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_0566b9499a6e/metrics.json",
+        "sha256": "a75078c3fc5e975cfee809394a993c8e8a4980fda37214d668017c3e056ad9b1"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_129dd7d52e74/metrics.json",
+        "sha256": "84f534e67eec9c2296a5135bbaeeca985709d7ca70890516a148ce8db42ee6cd"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_b5e48b0a3682/metrics.json",
+        "sha256": "ad0f113cf22c00202db1975417a169a6c4df09f1657b4f3e6aef2dca4c4511e9"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_bdd3f641f82e/metrics.json",
+        "sha256": "dc1ded06da023632cc3e95b34f203dec6f3c291c2c80118d2b05db3d15d206b1"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_005083a20148/metrics.json",
+        "sha256": "4f6958e50ba61ba3fa160d80f5090bb43c2a9838e8618a894aecb6f594067bbf"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_60b1a146fc8d/metrics.json",
+        "sha256": "8670db6293291b70ee2d418e165ff408317c6cc214fe22b96702c499e9f4bc09"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_6b69f2ba078d/metrics.json",
+        "sha256": "bc4ff89c2e9dc62672f254450cde74049ff9016290396b8ec6a9fd502e3a4ad4"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_1358cc43f798/metrics.json",
+        "sha256": "4697d0db70f46305f89dbd5d8d15495787d6dc896d73624ada6ff8baa52edada"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_0c2a38ebb1ec/metrics.json",
+        "sha256": "995e60f0444c09a593e01cd505706a3b8210c10d35a37c6c0c8e47d5d433f543"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/F1_29a3bf49cd22/metrics.json",
+        "sha256": "dec58c558c32f0964cc39b2325ba338f006425e3e67e2206e04d259838a61c92"
+      }
+    ],
+    "pdf": "runs/formation_20261112_cpu/figures/F07.pdf",
+    "png": "runs/formation_20261112_cpu/figures/F07.png",
+    "pdf_sha256": "709fbb37d18bd391950efc5e127de523edb073b5e0f5b2c7cbdabd65e13b4aa1",
+    "png_sha256": "2a1470326a678fdc8c3c4cb2246c08b0e6269cf63504613ffc52fb368e1ab4b0"
+  },
+  {
+    "id": "F08",
+    "status": "pending",
+    "reason": "central controls reused from F1; remaining locations and extended ellipse geometries pending"
+  },
+  {
+    "id": "F09",
+    "caption_fa": "فاصلهٔ کمینه، تعداد ذرات فعال و سازوکار نزدیک‌ترین جفت.",
+    "status": "rendered",
+    "description": "Lines use saved samples; open circles show refined all-pair minima. Snapshots are exact independent replays at the critical event. No trajectories are extrapolated beyond shared lifetimes.",
+    "plotting_script": "plot_formation_campaign.py",
+    "inputs": [
+      {
+        "path": "runs/formation_20261112_cpu/historical_replays/dense_duck_six_fixed/metrics.json",
+        "sha256": "4835a6f44296ede127442fedce83f95c57c5b4231c23c8b91af2641019c87eff"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_replays/dense_duck_six_fixed/trajectories.npz",
+        "sha256": "8199c334d22ec90aaf1620942fd80cbebe863d245587a748698ea768e61afa1c"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_replays/dense_duck_six_fixed/critical_event_snapshots.npz",
+        "sha256": "a86a294f516ac0e57098a4761ed0990d289c3e8d3ec5923f3a0d6bfb7d37a18d"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_replays/dense_duck_six_fixed/critical_event.json",
+        "sha256": "34938123bb16ffad3d67e05b893ab42d48add98cd00ee94859385b70a3c84b71"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_replays/dense_duck_independent_wall_ports/metrics.json",
+        "sha256": "f7f025685e13eea95bcd8e1d5aa86e14d2d68e97751d5b8b5f04aa7de9fcaafd"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_replays/dense_duck_independent_wall_ports/trajectories.npz",
+        "sha256": "4516fbdf272a8c74591a0ff62bc82313f1fb1db590429397af827a0fe30f25ad"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_replays/dense_duck_independent_wall_ports/critical_event_snapshots.npz",
+        "sha256": "43b3d895bdbf4b28333f18c29be2faa7b4431f1a101e679ae707502176e3f0d9"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/historical_replays/dense_duck_independent_wall_ports/critical_event.json",
+        "sha256": "2a4c662a10876e8f7c4f1b70f121b95edd6a704f088f71308b4fe6abd5b65ae3"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_3224954ecfff/metrics.json",
+        "sha256": "1874764396a1ad2c13f5a4223edd17e1dcb5d3e2ae9bf44213daf5d8f3d62e79"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_3224954ecfff/trajectories.npz",
+        "sha256": "ec1f447ec7430492f55c69857b1a251b40ef5c20b324fea82ed14d45ff3dfe46"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_3224954ecfff/critical_event_snapshots.npz",
+        "sha256": "254c73565c0f6e862171a483b1c32c7e6521694d32f54df264bc9c1d48c6b3cd"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_3224954ecfff/critical_event.json",
+        "sha256": "231fd04f9c735dddd7a16a6d48f2892bf39f00290b9403a3fa513a0549fdfe7c"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_93bf6b884031/metrics.json",
+        "sha256": "179ba9432933e0faf57c8b176c4b6f80fac328d4b8f92cfabae1a0e9e6ffcb46"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_93bf6b884031/trajectories.npz",
+        "sha256": "f62605586b46280fbfd017ed452128b525335cdad732108d4a702c98ae00eac5"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_93bf6b884031/critical_event_snapshots.npz",
+        "sha256": "d1188a7dd30da192d529574944b024728c2109697e5e5d837ea8925feb9e56b3"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_93bf6b884031/critical_event.json",
+        "sha256": "75d96b4b9c2b65a6360a5ec562a70ad827c4d78f5277dc10977cf674d0b44403"
+      }
+    ],
+    "pdf": "runs/formation_20261112_cpu/figures/F09.pdf",
+    "png": "runs/formation_20261112_cpu/figures/F09.png",
+    "pdf_sha256": "e3987c792d4e793ec9b918a4b0724212c18b5ab823963489492f632ad13e2e4a",
+    "png_sha256": "5dc351c6e242d0c65babcac9a769aac87d14b2fbde66d8e88d76bf274460085c"
+  },
+  {
+    "id": "F10",
+    "caption_fa": "بررسی عددی تقارن با بازتاب یک برنامهٔ پذیرفته‌شده.",
+    "status": "rendered",
+    "description": "Paired saved-schedule reflection separates exact reference symmetry from frozen-PINN asymmetry. Wall-availability optimizer comparisons remain pending.",
+    "plotting_script": "plot_formation_campaign.py",
+    "inputs": [
+      {
+        "path": "runs/formation_20261112_cpu/reflection/comparison.json",
+        "sha256": "af4c398a10ee8ce2a4890f213c4e36965a6c91443e63f76931a83cab94395c15"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/reflection/trajectories.npz",
+        "sha256": "71f75abe695ca2ff30875fe99dbec096643c13bb3c6b541e9db1afbc9310327e"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_aa218bd9fa31/trajectories.npz",
+        "sha256": "3c65f65933e3e005845f1d4bcda4570603c1a0652633798d4f86faaa5f2c717b"
+      }
+    ],
+    "pdf": "runs/formation_20261112_cpu/figures/F10.pdf",
+    "png": "runs/formation_20261112_cpu/figures/F10.png",
+    "pdf_sha256": "7fe6dc6cc00795efc1568dadeba658f89eb24e7fdb5798c46ce17caf493d4d6f",
+    "png_sha256": "3c5e26ac39ea3e37369e2a1fac04e24ad8414e55b8429936795c170a36ff5f1c"
+  },
+  {
+    "id": "F11",
+    "caption_fa": "اثر هزینهٔ فاصله بر برنامه‌ریزی و وضعیت پیمایش زمان هدف.",
+    "status": "rendered",
+    "description": "Endpoint-only removes clearance in allocation and refinement, but is verified by the same strict full acceptance test. Missing deadline cases remain pending.",
+    "plotting_script": "plot_formation_campaign.py",
+    "inputs": [
+      {
+        "path": "runs/formation_20261112_cpu/cases/G2_b4fa12a4fafe/metrics.json",
+        "sha256": "7b6030873aec1814215cebe7be73b568ca987872ca1330ed507a3b090e17c958"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/G2_e18aa2e0db8b/metrics.json",
+        "sha256": "ae0cdbc3e138d91924bc1d947cf9dd7fbeb1dd4f381f2178ed4e78b4f2d7d6b5"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/G2_315e224dacb7/metrics.json",
+        "sha256": "55807dee4fcee3bb18e6191199bbc359d1fa2bbe0bc98a972bd94b1a61b22c20"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/G2_bdc15aa9b2cb/metrics.json",
+        "sha256": "4bfb58dceae634e3655c87fde30708c8ca6f82bfb44d61ed9bdc8aebf964dd63"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/G2_505b26a09814/metrics.json",
+        "sha256": "e34e4d9052d5cbcbd56e6ec1ef1b83a68c76419683f85d7716cad9f54cd355ee"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/G2_2fcfecf3718c/metrics.json",
+        "sha256": "8ea8fa17aa42e3b0ece1630ba854c5ad90f3c362d6f319586665181a9611ab7f"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/D1_f7fa280a3cc6/metrics.json",
+        "sha256": "4ff6ac36acb80ca7008cb5144826f9ea14696b8c938abbb31345ff3d9c6e006c"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/G2_b4fa12a4fafe/critical_event_snapshots.npz",
+        "sha256": "944b71c3d520e72237d595d20513e53fab46fa1e11ea1754390892ea40bb44da"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/cases/G2_b4fa12a4fafe/critical_event.json",
+        "sha256": "6a2d80d190c0ddf81cc54e6ab112a6436af85bb70692362afaec21248be83264"
+      }
+    ],
+    "pdf": "runs/formation_20261112_cpu/figures/F11.pdf",
+    "png": "runs/formation_20261112_cpu/figures/F11.png",
+    "pdf_sha256": "9ae8c8d51a63999d16fa97a9c8f28ebbee3c68b056ef84f09fd72787da0ec648",
+    "png_sha256": "06c2da3e91df982116b9365c8c3fe7dc05d63fa5056cdac59619649cd118e862"
+  },
+  {
+    "id": "F12",
+    "caption_fa": "حساسیت عددی برنامهٔ ثابت به خطاهای رهاسازی.",
+    "status": "rendered",
+    "description": "64 seeded draws for each completed scenario; invalid draws retained. Reference-only threshold 0.004; fixed nominal T. This is numerical sensitivity, not hardware reliability.",
+    "plotting_script": "plot_formation_campaign.py",
+    "inputs": [
+      {
+        "path": "runs/formation_20261112_cpu/robustness/high_margin_axial_velocity_level1/metrics.json",
+        "sha256": "1822b9bf92e2bb78103c1f8bc96ef9cb096b8e98eabafdb0f8fe419cd2f199fa"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/high_margin_axial_velocity_level2/metrics.json",
+        "sha256": "87f8281a085152d597acccd7a29a771de69a01054bbaa8692b5355c17a422821"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/high_margin_joint_level1/metrics.json",
+        "sha256": "2394d4928bad82bca1d72eed072eb9825c3a593d0ab99681ba588a3b56ebbe51"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/high_margin_joint_level2/metrics.json",
+        "sha256": "73f3a15ab659bb6c166feb0e8bd3e9433aeb89d7f3649732f0968b0577dab0ca"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/high_margin_nominal_level0/metrics.json",
+        "sha256": "61462723cf213d39929fae6c3eeb19b035913b5c4e571b8880404cf615a899f7"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/high_margin_port_misplacement_level1/metrics.json",
+        "sha256": "36323958df7df73894ee0506e2d3e4837b0ac5289cb6d680bdb45896170c4b14"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/high_margin_port_misplacement_level2/metrics.json",
+        "sha256": "35506332cfeae8be0426f6a0761cc9b4d3a62fc3e02efba3c75508d18df3503f"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/high_margin_position_level1/metrics.json",
+        "sha256": "3fe71f4f2b116d41e2921d45b7be85304263b800cacdc1edfb182a887c24eeff"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/high_margin_position_level2/metrics.json",
+        "sha256": "e4d9dc4d7c7719fea1bcac88c0a1333459c950684e9b31c8c7a9450a35deef4d"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/high_margin_timing_level1/metrics.json",
+        "sha256": "06f2669a0c71242f6dcc0bbbabbe907a338140b69705a60ead75e6d33970e36e"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/high_margin_timing_level2/metrics.json",
+        "sha256": "a50e504a56bdf60c26f2bf23ec1a4ce3a11d5296b9704298d211064d5702cc20"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/high_margin_transverse_velocity_level1/metrics.json",
+        "sha256": "d1d5f434d2540216f8db0206fc0082070ebce002ce84cb1a39bc55ad91463014"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/high_margin_transverse_velocity_level2/metrics.json",
+        "sha256": "558767f59f4b2635a248528232c570b532a3f509c2298ba84a7e9acb9b2b03dd"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/low_margin_axial_velocity_level1/metrics.json",
+        "sha256": "d25136207f763f7cdee1a0a4971bcb3897238fbdfb0f39df4ed6c06caa586b28"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/low_margin_axial_velocity_level2/metrics.json",
+        "sha256": "e24b81844144aef2211fc93dd0149308d9070f654b462cee883665c14559aaf1"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/low_margin_joint_level1/metrics.json",
+        "sha256": "6c914298ff6a74013cf4056921c0fd6ab518f18c3ec5d64ed2346ce189ef1433"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/low_margin_joint_level2/metrics.json",
+        "sha256": "a6c91dce3149509096317fe4996bd0373729d3a9eb80a4d6255a8300864f09f6"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/low_margin_nominal_level0/metrics.json",
+        "sha256": "0ea4c008aa9965d2e7b6913fd825ea62f4c7bb08f6ab352a7529bc96bb495be5"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/low_margin_port_misplacement_level1/metrics.json",
+        "sha256": "253b13744c45f7e17879308a920b5ce3a1845ae4e90cdb3b3f20b0cebdc72939"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/low_margin_port_misplacement_level2/metrics.json",
+        "sha256": "ccb8599afdbac37af9b5232e149d07a924573c5e0399f17a778fd794754c0a32"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/low_margin_position_level1/metrics.json",
+        "sha256": "c11c3a14426e54cc5785bf3c208daf0c98fa9cb88a431170e29d537bbbef8d75"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/low_margin_position_level2/metrics.json",
+        "sha256": "36b5093b862d59f5eaf151c1e8c0addf8f4ae2f0d932592bf1e5e685e87dae73"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/low_margin_timing_level1/metrics.json",
+        "sha256": "cb4a686a66ba9acdcf8d9d9a2798ff5e58261243b5a6bc64ef845ceb246e5e72"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/low_margin_timing_level2/metrics.json",
+        "sha256": "f7c0674cdda38c83ff7f426b960d0cbd6e7cda8dc048f96710e6f782e2d6e2eb"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/low_margin_transverse_velocity_level1/metrics.json",
+        "sha256": "bc291682d6d3908b32a3ae9cc6ec690d514b45a0c7059f59e65bf5b09e4f3f58"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/low_margin_transverse_velocity_level2/metrics.json",
+        "sha256": "a7d821232a62885490898f201ebf0f4e8a341704a8ccf021bcfada37b94bf5a8"
+      },
+      {
+        "path": "runs/formation_20261112_cpu/robustness/selection.json",
+        "sha256": "5920a19dba1642dbca5d1d229019092121c6d1e0c0e4a57dd9b44b2db0a0d7de"
+      }
+    ],
+    "pdf": "runs/formation_20261112_cpu/figures/F12.pdf",
+    "png": "runs/formation_20261112_cpu/figures/F12.png",
+    "pdf_sha256": "7cd0975c2be6e3d775d7ee4204d593613cef0b8d5d3187172bfb0d6259405094",
+    "png_sha256": "58de9519786608e5f1fd0634ef753b6935772cac0e5d004aeee2bad08ba3cd52"
+  },
+  {
+    "id": "F13",
+    "status": "pending",
+    "reason": "optional held-out layout design not scheduled"
+  }
+]

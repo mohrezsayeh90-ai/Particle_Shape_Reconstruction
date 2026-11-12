@@ -1,0 +1,54 @@
+[
+  {
+    "id": "A1_triangle",
+    "status": "rerun_accepted",
+    "reason": "Fresh original-settings rerun independently verified; original Kaggle payload remains unavailable.",
+    "required_action": "recover original output package or run separately labelled historical-setting rerun",
+    "metrics": "runs/formation_20261112_cpu/historical_reruns/triangle_1794495372673521753/fresh_verification/metrics.json",
+    "accepted": true
+  },
+  {
+    "id": "A1_S",
+    "status": "rerun_accepted",
+    "reason": "Fresh original-settings rerun independently verified; original Kaggle payload remains unavailable.",
+    "required_action": "recover original output package or run separately labelled historical-setting rerun",
+    "metrics": "runs/formation_20261112_cpu/historical_reruns/letters_1794495952386815010/fresh_verification/S_6/metrics.json",
+    "accepted": true
+  },
+  {
+    "id": "A1_C",
+    "status": "rerun_accepted",
+    "reason": "Fresh original-settings rerun independently verified; original Kaggle payload remains unavailable.",
+    "required_action": "recover original output package or run separately labelled historical-setting rerun",
+    "metrics": "runs/formation_20261112_cpu/historical_reruns/letters_1794495952386815010/fresh_verification/C_6/metrics.json",
+    "accepted": true
+  },
+  {
+    "id": "A1_T",
+    "status": "rerun_accepted",
+    "reason": "Fresh original-settings rerun independently verified; original Kaggle payload remains unavailable.",
+    "required_action": "recover original output package or run separately labelled historical-setting rerun",
+    "metrics": "runs/formation_20261112_cpu/historical_reruns/letters_1794495952386815010/fresh_verification/T_6/metrics.json",
+    "accepted": true
+  },
+  {
+    "id": "G1_schedule_reflection",
+    "status": "completed",
+    "reason": "Saved accepted schedule reflected and independently replayed; see reflection/comparison.json"
+  },
+  {
+    "id": "G3_largest_accepted_fish_fallback",
+    "status": "pending_prerequisite",
+    "reason": "depends on completed fish density sweep"
+  },
+  {
+    "id": "G4_low_margin",
+    "status": "completed",
+    "reason": "13/13 declared perturbation scenarios completed, 64 draws each; see robustness/scenarios_manifest.json"
+  },
+  {
+    "id": "G4_high_margin",
+    "status": "completed",
+    "reason": "13/13 declared perturbation scenarios completed, 64 draws each; see robustness/scenarios_manifest.json"
+  }
+]

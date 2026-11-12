@@ -1,0 +1,96 @@
+[
+  {
+    "stage": "coarse",
+    "nfev": 2,
+    "njev": 2,
+    "cost": 4.808685373714554e-05,
+    "message": "`xtol` termination condition is satisfied.",
+    "solver_success": true,
+    "elapsed_seconds": 1.3203429509994749,
+    "path_integrations": 409,
+    "history": [
+      {
+        "evaluation": 1,
+        "cost": 4.8086863942495614e-05,
+        "seconds": 0.11203856300016923
+      },
+      {
+        "evaluation": 2,
+        "cost": 4.808685373714554e-05,
+        "seconds": 0.8489042370001698
+      }
+    ]
+  },
+  {
+    "stage": "direct",
+    "nfev": 12,
+    "njev": 10,
+    "cost": 4.892305894430091e-05,
+    "message": "`xtol` termination condition is satisfied.",
+    "solver_success": true,
+    "elapsed_seconds": 12.364542699000594,
+    "path_integrations": 768,
+    "history": [
+      {
+        "evaluation": 1,
+        "cost": 4.959386938624316e-05,
+        "seconds": 0.439867447999859
+      },
+      {
+        "evaluation": 2,
+        "cost": 4.934731648976612e-05,
+        "seconds": 1.7620685290003166
+      },
+      {
+        "evaluation": 3,
+        "cost": 4.91177872723751e-05,
+        "seconds": 2.97583890200076
+      },
+      {
+        "evaluation": 4,
+        "cost": 4.8930059537841095e-05,
+        "seconds": 4.454993121000371
+      },
+      {
+        "evaluation": 5,
+        "cost": 4.892334797752255e-05,
+        "seconds": 5.688509429999613
+      },
+      {
+        "evaluation": 6,
+        "cost": 4.8923132534258036e-05,
+        "seconds": 7.4345336070000485
+      },
+      {
+        "evaluation": 7,
+        "cost": 4.892308151678625e-05,
+        "seconds": 8.679342682000424
+      },
+      {
+        "evaluation": 8,
+        "cost": 4.8923064406297826e-05,
+        "seconds": 10.054544980001083
+      },
+      {
+        "evaluation": 9,
+        "cost": 4.8923069120738666e-05,
+        "seconds": 10.875187657000424
+      },
+      {
+        "evaluation": 10,
+        "cost": 4.8923061512246515e-05,
+        "seconds": 11.125821480000013
+      },
+      {
+        "evaluation": 11,
+        "cost": 4.8923068610560496e-05,
+        "seconds": 11.778606347999812
+      },
+      {
+        "evaluation": 12,
+        "cost": 4.892305894430091e-05,
+        "seconds": 11.993550716000755
+      }
+    ]
+  }
+]

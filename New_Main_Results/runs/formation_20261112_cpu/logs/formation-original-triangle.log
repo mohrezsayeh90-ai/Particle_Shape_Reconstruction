@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/Particle_Shape_Reconstruction/New_Main_Results/rerun_historical.py", line 70, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/Particle_Shape_Reconstruction/New_Main_Results/rerun_historical.py", line 56, in main
+    bank=env['independent_seed_bank'](coarse)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Particle_Shape_Reconstruction/New_Main_Results/inputs/master3_selected_definitions.py", line 268, in independent_seed_bank
+    for side, ux, speed in itertools.product((0, 1), SEED_U_SPEEDS, SEED_V_SPEEDS):
+                                                                    ^^^^^^^^^^^^^
+NameError: name 'SEED_V_SPEEDS' is not defined. Did you mean: 'SEED_U_SPEEDS'?

@@ -1,0 +1,2 @@
+rendered ['F01', 'F02', 'F03', 'F03_ports', 'F04', 'F05', 'F05_occupancy', 'F06', 'F06_slices', 'F07', 'F09', 'F10', 'F11', 'F12']
+{"passed": true, "actual_new_attempts_checked": 170, "accepted_schedules_checked": 126, "rendered_figures_checked": 14, "predeclared_matrix_rows": 1014, "failures": [], "scope": "Saved-artifact consistency, not an additional optimizer run or a mathematical proof of collision freedom."}

@@ -1,0 +1,75 @@
+{
+  "target_center": [
+    1.8920000000000001,
+    0.15
+  ],
+  "width": 0.15,
+  "height": 0.19,
+  "shapes": [
+    "S_6",
+    "C_6",
+    "T_6"
+  ],
+  "max_flight_age": 8.0,
+  "min_flight_age": 0.03,
+  "lead_time": 0.25,
+  "seed_u_count": 4,
+  "seed_v_count": 15,
+  "fits_per_station_target": 3,
+  "options_per_pair": 3,
+  "pair_fit_nfev": 32,
+  "matchings_to_test": 48,
+  "matching_restarts": 2,
+  "joint_starts": 3,
+  "joint_nfev": 45,
+  "direct_nfev": 25,
+  "collision_samples": 61,
+  "verify_samples": 801,
+  "clearance_reserve": 0.0003,
+  "position_tolerance": 0.003,
+  "reference_tolerance": 0.004,
+  "collision_margin": 0.001,
+  "seed": 512,
+  "stations": [
+    {
+      "station_id": "B1",
+      "particle": 1,
+      "side": 0,
+      "x_launch": 0.55
+    },
+    {
+      "station_id": "B2",
+      "particle": 2,
+      "side": 0,
+      "x_launch": 1.1
+    },
+    {
+      "station_id": "B3",
+      "particle": 3,
+      "side": 0,
+      "x_launch": 1.6500000000000001
+    },
+    {
+      "station_id": "T1",
+      "particle": 4,
+      "side": 1,
+      "x_launch": 0.55
+    },
+    {
+      "station_id": "T2",
+      "particle": 5,
+      "side": 1,
+      "x_launch": 1.1
+    },
+    {
+      "station_id": "T3",
+      "particle": 6,
+      "side": 1,
+      "x_launch": 1.6500000000000001
+    }
+  ],
+  "continuous_decisions": 18,
+  "position_mode": "fixed L/4,L/2,3L/4 on each wall; one shot per station",
+  "decisions": "u0,v0,flight age for each station; target assignment is discrete",
+  "target_time": "T=max(flight ages)+lead_time; release_i=T-age_i"
+}

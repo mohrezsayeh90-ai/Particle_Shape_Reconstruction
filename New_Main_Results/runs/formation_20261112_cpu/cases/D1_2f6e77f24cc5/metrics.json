@@ -1,0 +1,235 @@
+{
+  "accepted": true,
+  "status": "accepted",
+  "failure_type": null,
+  "provenance": "new_experiment",
+  "N": 24,
+  "N_achieved": 24,
+  "configured_ports": null,
+  "used_ports": 24,
+  "port_loads": {
+    "free_0_0.68043546868061": 1,
+    "free_0_0.95972786469349": 1,
+    "free_0_1.0314150614595": 1,
+    "free_0_1.1582618014404": 1,
+    "free_0_1.2567190491699": 1,
+    "free_0_1.2662617679274": 1,
+    "free_0_1.3824211992738": 1,
+    "free_0_1.4012617384607": 1,
+    "free_0_1.4822617284741": 1,
+    "free_0_1.5174262282179": 1,
+    "free_0_1.5902617247054": 1,
+    "free_0_1.6982617314003": 1,
+    "free_0_1.7792617431498": 1,
+    "free_0_1.8602617597429": 1,
+    "free_1_0.95780062270655": 1,
+    "free_1_1.1287895392646": 1,
+    "free_1_1.2637895278316": 1,
+    "free_1_1.3987895097549": 1,
+    "free_1_1.4797894903607": 1,
+    "free_1_1.5607894667909": 1,
+    "free_1_1.6328032407033": 1,
+    "free_1_1.6957894178456": 1,
+    "free_1_1.7678015287072": 1,
+    "free_1_1.8307893557713": 1
+  },
+  "top_emissions": 10,
+  "bottom_emissions": 14,
+  "target_time": 1.0325727509392624,
+  "longest_duration": 0.7825727509392625,
+  "median_duration": 0.04850821135256071,
+  "release_span": 0.7377839494138225,
+  "minimum_same_port_gap": null,
+  "clock_error": 0.0,
+  "launch_bounds_ok": true,
+  "min_gap_ok": true,
+  "capacity_ok": true,
+  "fixed_coordinates_ok": true,
+  "max_endpoint_difference": 3.281505363316267e-05,
+  "replays": {
+    "pinn": {
+      "completed": true,
+      "completion_fraction": 1.0,
+      "max_error": 1.6324375068777724e-08,
+      "rms_error": 5.030926827570466e-09,
+      "minimum": {
+        "distance": 0.039043045204231436,
+        "time": 0.940259830951929,
+        "pair": [
+          1,
+          24
+        ],
+        "sampled_distance": 0.03904304655446425
+      },
+      "half_step_check": {
+        "max_endpoint_difference": 1.4222616505101352e-09,
+        "minimum_distance_difference": 9.92052030801549e-10,
+        "finer_minimum": 0.039043045204231436
+      },
+      "termination_events": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "solver": "RK45"
+    },
+    "reference": {
+      "completed": true,
+      "completion_fraction": 1.0,
+      "max_error": 3.281781055768768e-05,
+      "rms_error": 9.832675429520551e-06,
+      "minimum": {
+        "distance": 0.03906972353202049,
+        "time": 0.9402523098614981,
+        "pair": [
+          1,
+          24
+        ],
+        "sampled_distance": 0.03906972504018093
+      },
+      "half_step_check": {
+        "max_endpoint_difference": 2.220446049250313e-16,
+        "minimum_distance_difference": 2.7755575615628914e-17,
+        "finer_minimum": 0.03906972353202052
+      },
+      "termination_events": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "solver": "DOP853"
+    }
+  },
+  "weight_sha256": "af2f21b195e2d25b877482cd527110054f42bf92200f64e39572375219e5e581",
+  "verification_seconds": 1.414497477000623,
+  "numerical_verification_only": true,
+  "covariance": {
+    "target_centroid": [
+      1.534625,
+      0.148051442841485
+    ],
+    "achieved_centroid": [
+      1.5346229869148418,
+      0.14805495087214832
+    ],
+    "centroid_shift": 4.0446002260604315e-06,
+    "target_covariance": [
+      [
+        0.07104585937499999,
+        -0.0002871686112361468
+      ],
+      [
+        -0.0002871686112361468,
+        0.005828203125
+      ]
+    ],
+    "achieved_covariance": [
+      [
+        0.07104579501090653,
+        -0.0002868425786641909
+      ],
+      [
+        -0.0002868425786641909,
+        0.005828139366627193
+      ]
+    ],
+    "covariance_relative_frobenius": 6.5917327444487785e-06,
+    "achieved_axis_ratio": 3.4918460682033436,
+    "target_axis_angle_deg": 179.7477197885856,
+    "achieved_axis_angle_deg": 179.74800619401364,
+    "axis_angle_error_deg": 0.000286405428028047,
+    "isotropy_rule": "omit angle if eigenvalue gap / largest < 0.05 or largest <=1e-20"
+  },
+  "occupancy": {
+    "resolution": 128,
+    "inside_coverage": 0.06842771031491297,
+    "overspill": -4.4175479358898437e-16,
+    "hole_intrusion_area": 0.0
+  },
+  "occupancy_convergence": [
+    {
+      "resolution": 64,
+      "inside_coverage": 0.06842255783417461,
+      "overspill": 7.363134323622442e-16,
+      "hole_intrusion_area": 0.0
+    },
+    {
+      "resolution": 128,
+      "inside_coverage": 0.06842771031491297,
+      "overspill": -4.4175479358898437e-16,
+      "hole_intrusion_area": 0.0
+    }
+  ],
+  "elapsed_seconds": 4.132807181000317,
+  "allocation_backend": "batched",
+  "stages": [
+    {
+      "stage": "coarse",
+      "nfev": 2,
+      "njev": 2,
+      "cost": 1.3290190672428196e-25,
+      "message": "`gtol` termination condition is satisfied.",
+      "solver_success": true,
+      "elapsed_seconds": 0.21101303700015706,
+      "path_integrations": 1754
+    },
+    {
+      "stage": "direct",
+      "nfev": 3,
+      "njev": 3,
+      "cost": 3.4502609284240214e-17,
+      "message": "`gtol` termination condition is satisfied.",
+      "solver_success": true,
+      "elapsed_seconds": 0.49529479400007403,
+      "path_integrations": 284
+    }
+  ],
+  "optimizer_budget_exhausted": false,
+  "seed": 11,
+  "cold_start": true,
+  "budget_tier": "baseline_50_35",
+  "target_sha256": "bc61d5ec8113546a2bd09169f3780925341325d08ef5c42566eb12b76e3c233d",
+  "layout_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+}

@@ -1,0 +1,59 @@
+planned_trials 1014 geometric_capacities [{'shape': 'stadium', 'buffered_capacity': 271, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'arrow', 'buffered_capacity': 114, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'fish', 'buffered_capacity': 164, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'perforated', 'buffered_capacity': 221, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}]
+EXECUTING 19 trials, workers 1
+START F1_3cc8896d4d7c ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_3cc8896d4d7c accepted None seconds 14.01
+START F1_a18170b7b20e ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_a18170b7b20e accepted None seconds 10.43
+START F1_7bc1e44dfc39 ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_7bc1e44dfc39 accepted None seconds 17.6
+START F1_0ae7e5401c81 ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_0ae7e5401c81 accepted None seconds 12.81
+START F1_649f74a04682 ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_649f74a04682 accepted None seconds 10.83
+START F1_4d031786433d ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_4d031786433d accepted None seconds 10.13
+START F1_3f246e7cd7c4 ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_3f246e7cd7c4 accepted None seconds 9.96
+START F1_973e9b51784e ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_973e9b51784e accepted None seconds 10.76
+START F1_e01c86fddc05 ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_e01c86fddc05 accepted None seconds 19.38
+START F1_6024296f6803 ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_6024296f6803 accepted None seconds 10.91
+START F1_8e9085742552 ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_8e9085742552 accepted None seconds 15.57
+START F1_fb5b45e40319 ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_fb5b45e40319 accepted None seconds 16.12
+START F1_649727c0c517 ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_649727c0c517 accepted None seconds 16.49
+START F1_57af53337d35 ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_57af53337d35 accepted None seconds 10.41
+START F1_af4fae003dac ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_af4fae003dac accepted None seconds 12.26
+START F1_45dc42f45be0 ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_45dc42f45be0 accepted None seconds 11.53
+START F1_b5e48b0a3682 ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_b5e48b0a3682 accepted None seconds 16.93
+START F1_60b1a146fc8d ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_60b1a146fc8d accepted None seconds 11.88
+START F1_2163cfe4abb0 ellipse 12 fixed 3 seed 11
+candidate_targets 10 / 12
+DONE F1_2163cfe4abb0 accepted None seconds 29.13

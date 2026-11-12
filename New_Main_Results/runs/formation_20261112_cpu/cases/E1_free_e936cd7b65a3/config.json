@@ -1,0 +1,31 @@
+{
+  "group": "E1_free",
+  "stage": "core",
+  "shape": "small_stadium",
+  "N": 18,
+  "mode": "free",
+  "m": 0,
+  "layout": "equispaced",
+  "cap": null,
+  "min_age": 0.03,
+  "max_age": 5.0,
+  "min_gap": 0.0,
+  "center": [
+    1.25,
+    0.15
+  ],
+  "seed": 11,
+  "collision_aware": true,
+  "budget_tier": "baseline_50_35",
+  "coarse_nfev": 50,
+  "direct_nfev": 35,
+  "endpoint_nfev": 24,
+  "provenance": "new_experiment",
+  "cold_start": true,
+  "ports": [],
+  "id": "E1_free_e936cd7b65a3",
+  "target_sha256": "50546cc3b82ae86ec8aea663af560da7240494b308840a4c16002a5c63193a4e",
+  "layout_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "configuration_sha256": "5646058fc0e46ea85cf47c89498d15eee410862b03e5a630ac330e67b3e8f7b0",
+  "allocation_backend": "batched"
+}

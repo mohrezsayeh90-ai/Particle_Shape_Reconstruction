@@ -1,0 +1,25 @@
+{
+  "source": "master3-clean-revised-version",
+  "case": "duck_six_fixed",
+  "particles": 20,
+  "accepted": true,
+  "max_reference_target_error": 0.0007615873552951613,
+  "max_replayed_PINN_target_error": 0.0007242903970441201,
+  "max_reference_saved_discrepancy": 1.4581316548547996e-11,
+  "max_PINN_saved_discrepancy": 2.236864995363385e-08,
+  "reference_minimum_separation": 0.029389324640116475,
+  "reference_nearest_pair": [
+    6,
+    17
+  ],
+  "PINN_minimum_separation": 0.029612016917020454,
+  "PINN_nearest_pair": [
+    6,
+    17
+  ],
+  "required_separation": 0.026000000000000002,
+  "separation_401_to_1601_delta": 1.3530843112619095e-16,
+  "nearest_pair_half_step_endpoint_delta": 4.494775313252277e-16,
+  "clock_shift_negative_control_rejected": true,
+  "elapsed_seconds": 2.898564754999825
+}

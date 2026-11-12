@@ -1,0 +1,27 @@
+{
+  "compiled_evaluator": {
+    "points": 128,
+    "max_velocity_abs_difference": 3.7058046833959857e-07,
+    "threshold": 3e-06,
+    "passed": true
+  },
+  "sparse_derivative": {
+    "relative_l2": 4.6919356743637767e-07,
+    "threshold": 0.005,
+    "passed": true,
+    "dense_matrix_used_only_for_small_test": [
+      192,
+      12
+    ]
+  },
+  "historical_side_mapping": {
+    "passed": true
+  },
+  "capacity_preflight": {
+    "passed": true
+  },
+  "allocation_vectorization": {
+    "passed": true,
+    "comparison": "batched versus scalar pair costs, tolerance 1e-10"
+  }
+}

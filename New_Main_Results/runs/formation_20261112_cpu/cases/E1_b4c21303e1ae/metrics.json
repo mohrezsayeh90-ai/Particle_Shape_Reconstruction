@@ -1,0 +1,180 @@
+{
+  "accepted": false,
+  "status": "rejected",
+  "failure_type": "endpoint_error",
+  "provenance": "new_experiment",
+  "N": 18,
+  "N_achieved": 18,
+  "configured_ports": 6,
+  "used_ports": 2,
+  "port_loads": {
+    "B1": 8,
+    "T1": 10
+  },
+  "top_emissions": 10,
+  "bottom_emissions": 8,
+  "target_time": 1.0128437954437848,
+  "longest_duration": 0.7628437954437849,
+  "median_duration": 0.27059652728665096,
+  "release_span": 0.7043035039449298,
+  "minimum_same_port_gap": 0.01796502069772432,
+  "clock_error": 0.0,
+  "launch_bounds_ok": true,
+  "min_gap_ok": true,
+  "capacity_ok": true,
+  "fixed_coordinates_ok": true,
+  "max_endpoint_difference": 4.953781642283678e-05,
+  "replays": {
+    "pinn": {
+      "completed": true,
+      "completion_fraction": 1.0,
+      "max_error": 0.00564511596606458,
+      "rms_error": 0.0021405130689975157,
+      "minimum": {
+        "distance": 0.026095325684263895,
+        "time": 0.9797624054299695,
+        "pair": [
+          14,
+          16
+        ],
+        "sampled_distance": 0.026095371301002798
+      },
+      "half_step_check": {
+        "max_endpoint_difference": 1.4144528715553537e-09,
+        "minimum_distance_difference": 1.6022317153585597e-09,
+        "finer_minimum": 0.026095325684263895
+      },
+      "termination_events": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "solver": "RK45"
+    },
+    "reference": {
+      "completed": true,
+      "completion_fraction": 1.0,
+      "max_error": 0.005655815003558412,
+      "rms_error": 0.0021381970563076036,
+      "minimum": {
+        "distance": 0.026080372024054468,
+        "time": 0.9797564576453991,
+        "pair": [
+          14,
+          16
+        ],
+        "sampled_distance": 0.026080421681761747
+      },
+      "half_step_check": {
+        "max_endpoint_difference": 2.237726045655905e-16,
+        "minimum_distance_difference": 3.0184188481996443e-16,
+        "finer_minimum": 0.026080372024054468
+      },
+      "termination_events": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "solver": "DOP853"
+    }
+  },
+  "weight_sha256": "af2f21b195e2d25b877482cd527110054f42bf92200f64e39572375219e5e581",
+  "verification_seconds": 3.4941327779997664,
+  "numerical_verification_only": true,
+  "covariance": {
+    "target_centroid": [
+      0.7485,
+      0.09740192378864668
+    ],
+    "achieved_centroid": [
+      0.748521045498051,
+      0.09744090128104863
+    ],
+    "centroid_shift": 4.42962515587456e-05,
+    "target_covariance": [
+      [
+        0.005607,
+        -3.897114317029981e-06
+      ],
+      [
+        -3.897114317029981e-06,
+        0.0004185
+      ]
+    ],
+    "achieved_covariance": [
+      [
+        0.0056521041661856675,
+        1.0980152955911898e-05
+      ],
+      [
+        1.0980152955911898e-05,
+        0.0004370543714622481
+      ]
+    ],
+    "covariance_relative_frobenius": 0.009446888554854212,
+    "achieved_axis_ratio": 3.5962487090056596,
+    "target_axis_angle_deg": 179.95696481937256,
+    "achieved_axis_angle_deg": 0.12063407427905304,
+    "axis_angle_error_deg": 0.16366925490649464,
+    "isotropy_rule": "omit angle if eigenvalue gap / largest < 0.05 or largest <=1e-20"
+  },
+  "elapsed_seconds": 43.38226836600006,
+  "stages": [
+    {
+      "stage": "coarse",
+      "nfev": 50,
+      "njev": 36,
+      "cost": 0.0004882825872518165,
+      "message": "The maximum number of function evaluations is exceeded.",
+      "solver_success": false,
+      "elapsed_seconds": 10.350152832001186,
+      "path_integrations": 9535
+    },
+    {
+      "stage": "direct",
+      "nfev": 35,
+      "njev": 29,
+      "cost": 0.00047528030852083455,
+      "message": "The maximum number of function evaluations is exceeded.",
+      "solver_success": false,
+      "elapsed_seconds": 9.523140206998505,
+      "path_integrations": 1674
+    }
+  ],
+  "optimizer_budget_exhausted": true,
+  "seed": 11,
+  "cold_start": true,
+  "budget_tier": "baseline_50_35",
+  "target_sha256": "18499b3d4d61cb6a93f166357b3f97b2764f946095edb8ff8d6089b870ec044d",
+  "layout_sha256": "22ecee6a8e58ef542fc385c41cc129d20519ae85736f552fbac41260577b7823"
+}

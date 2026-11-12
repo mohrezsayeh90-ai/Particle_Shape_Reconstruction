@@ -1,0 +1,210 @@
+planned_trials 1014 geometric_capacities [{'shape': 'stadium', 'buffered_capacity': 271, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'arrow', 'buffered_capacity': 114, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'fish', 'buffered_capacity': 164, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'perforated', 'buffered_capacity': 221, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}]
+EXECUTING 49 trials, workers 1
+START E1_4d5d0bb6643a small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_4d5d0bb6643a seconds 29.37
+COARSE E1_4d5d0bb6643a 50 seconds 40.11
+DONE E1_4d5d0bb6643a rejected endpoint_error seconds 52.89
+START E1_651d5f5609f1 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_651d5f5609f1 seconds 18.97
+COARSE E1_651d5f5609f1 50 seconds 27.27
+DONE E1_651d5f5609f1 accepted None seconds 51.16
+START E1_a01df1cd12a1 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_a01df1cd12a1 seconds 27.47
+COARSE E1_a01df1cd12a1 50 seconds 37.7
+DONE E1_a01df1cd12a1 accepted None seconds 60.91
+START E1_9f9674b401e3 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_9f9674b401e3 seconds 18.7
+COARSE E1_9f9674b401e3 50 seconds 29.71
+DONE E1_9f9674b401e3 accepted None seconds 52.31
+START E1_618c437f1278 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_618c437f1278 seconds 19.31
+COARSE E1_618c437f1278 50 seconds 34.98
+DONE E1_618c437f1278 accepted None seconds 64.28
+START E1_dda1484331e6 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_dda1484331e6 seconds 23.06
+COARSE E1_dda1484331e6 1 seconds 23.29
+DONE E1_dda1484331e6 accepted None seconds 31.99
+START E1_0ed7c4a54228 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_0ed7c4a54228 seconds 40.16
+COARSE E1_0ed7c4a54228 50 seconds 67.63
+DONE E1_0ed7c4a54228 accepted None seconds 96.63
+START E1_3df512680654 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_3df512680654 seconds 21.45
+COARSE E1_3df512680654 50 seconds 37.06
+DONE E1_3df512680654 rejected endpoint_error seconds 52.68
+START E1_734dcb9cdb9c small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_734dcb9cdb9c seconds 40.32
+COARSE E1_734dcb9cdb9c 50 seconds 61.89
+DONE E1_734dcb9cdb9c rejected endpoint_error seconds 93.3
+START E1_4dc7630017ad small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_4dc7630017ad seconds 37.53
+COARSE E1_4dc7630017ad 50 seconds 54.46
+DONE E1_4dc7630017ad rejected endpoint_error seconds 78.22
+START E1_60cafd05a336 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_60cafd05a336 seconds 39.5
+COARSE E1_60cafd05a336 50 seconds 56.72
+DONE E1_60cafd05a336 rejected endpoint_error seconds 77.33
+START E1_281e50c42da6 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_281e50c42da6 seconds 32.6
+COARSE E1_281e50c42da6 50 seconds 59.59
+DONE E1_281e50c42da6 rejected endpoint_error seconds 99.81
+START E1_e889dc1e9a99 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_e889dc1e9a99 seconds 40.03
+COARSE E1_e889dc1e9a99 23 seconds 46.74
+DONE E1_e889dc1e9a99 accepted None seconds 90.52
+START E1_64a9d6e82fd2 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_64a9d6e82fd2 seconds 40.32
+COARSE E1_64a9d6e82fd2 30 seconds 54.7
+DONE E1_64a9d6e82fd2 accepted None seconds 73.86
+START E1_b2a8bb9a8177 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_b2a8bb9a8177 seconds 34.29
+COARSE E1_b2a8bb9a8177 50 seconds 57.75
+DONE E1_b2a8bb9a8177 rejected endpoint_error seconds 84.57
+START E1_4c31fe758b8b small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_4c31fe758b8b seconds 18.88
+COARSE E1_4c31fe758b8b 41 seconds 27.61
+DONE E1_4c31fe758b8b accepted None seconds 46.22
+START E1_c0fab3207fdb small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_c0fab3207fdb seconds 23.01
+COARSE E1_c0fab3207fdb 1 seconds 23.41
+DONE E1_c0fab3207fdb accepted None seconds 39.65
+START E1_52bdf13fa1b7 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_52bdf13fa1b7 seconds 33.43
+COARSE E1_52bdf13fa1b7 50 seconds 46.68
+DONE E1_52bdf13fa1b7 accepted None seconds 67.41
+START E1_3fa21ef3d255 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_3fa21ef3d255 seconds 18.75
+COARSE E1_3fa21ef3d255 1 seconds 18.94
+DONE E1_3fa21ef3d255 accepted None seconds 26.2
+START E1_cf65ecbd86de small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_cf65ecbd86de seconds 21.94
+COARSE E1_cf65ecbd86de 7 seconds 25.8
+DONE E1_cf65ecbd86de accepted None seconds 53.39
+START E1_3fb541988360 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_3fb541988360 seconds 21.34
+COARSE E1_3fb541988360 1 seconds 21.57
+DONE E1_3fb541988360 accepted None seconds 43.25
+START E1_24627c7fceae small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_24627c7fceae seconds 27.73
+COARSE E1_24627c7fceae 50 seconds 36.71
+DONE E1_24627c7fceae rejected endpoint_error seconds 48.74
+START E1_b4c21303e1ae small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_b4c21303e1ae seconds 19.88
+COARSE E1_b4c21303e1ae 50 seconds 30.23
+DONE E1_b4c21303e1ae rejected endpoint_error seconds 43.38
+START E1_66b1b0b0f582 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_66b1b0b0f582 seconds 20.94
+COARSE E1_66b1b0b0f582 50 seconds 32.87
+DONE E1_66b1b0b0f582 rejected endpoint_error seconds 50.66
+START E1_f89e9427ebdf small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_f89e9427ebdf seconds 18.15
+COARSE E1_f89e9427ebdf 50 seconds 27.28
+DONE E1_f89e9427ebdf accepted None seconds 40.84
+START E1_23cab9d81cef small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_23cab9d81cef seconds 17.53
+COARSE E1_23cab9d81cef 50 seconds 22.84
+DONE E1_23cab9d81cef rejected endpoint_error seconds 41.0
+START E1_f482f54e260e small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_f482f54e260e seconds 17.26
+COARSE E1_f482f54e260e 44 seconds 25.99
+DONE E1_f482f54e260e accepted None seconds 37.04
+START E1_49e5c08d0199 small_stadium 18 fixed 3 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_49e5c08d0199 seconds 12.08
+COARSE E1_49e5c08d0199 31 seconds 19.45
+DONE E1_49e5c08d0199 accepted None seconds 37.09
+START E1_c009384f9cf7 small_stadium 18 fixed 3 seed 11
+Traceback (most recent call last):
+  File "/workspace/Particle_Shape_Reconstruction/New_Main_Results/run_formation_campaign.py", line 255, in <module>
+    seen.add(c['configuration_sha256']);selected.append(c)
+                    ^^^^^^
+  File "/workspace/Particle_Shape_Reconstruction/New_Main_Results/run_formation_campaign.py", line 246, in main
+    cases=json.loads((RUN/'cases.json').read_text());done=update_index();done={c['id']:c for c in done}
+                          ^^^^^^^^^
+  File "/workspace/Particle_Shape_Reconstruction/New_Main_Results/run_formation_campaign.py", line 140, in worker
+    def worker(case):
+                    ^^
+  File "/workspace/Particle_Shape_Reconstruction/New_Main_Results/formation/planner.py", line 103, in candidate_options
+    opt=least_squares(residual,np.clip(row,1e-8,1-1e-8),bounds=(0,1),max_nfev=24,diff_step=2e-4,ftol=1e-8,xtol=1e-8,gtol=1e-8)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/_lib/_util.py", line 717, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/optimize/_lsq/least_squares.py", line 1019, in least_squares
+    result = trf(vector_fun.fun, vector_fun.jac, x0, f0, J0, lb, ub, ftol, xtol,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/optimize/_lsq/trf.py", line 124, in trf
+    return trf_bounds(
+           ^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/optimize/_lsq/trf.py", line 376, in trf_bounds
+    J = jac(x)
+        ^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/optimize/_differentiable_functions.py", line 750, in jac
+    self._update_jac()
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/optimize/_differentiable_functions.py", line 719, in _update_jac
+    self.J = self.jac_wrapped(xp_copy(self.x), f0=self.f)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/optimize/_differentiable_functions.py", line 454, in __call__
+    J, dct = approx_derivative(
+             ^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/optimize/_numdiff.py", line 593, in approx_derivative
+    J, _nfev = _dense_difference(fun_wrapped, x0, f0, h,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/optimize/_numdiff.py", line 686, in _dense_difference
+    df = [f_eval - f0 for f_eval in f_evals]
+                                    ^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/optimize/_numdiff.py", line 879, in __call__
+    f = np.atleast_1d(self.fun(x, *self.args, **self.kwargs))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/optimize/_differentiable_functions.py", line 424, in __call__
+    return np.atleast_1d(self.fun(x))
+                         ^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/optimize/_lsq/least_squares.py", line 263, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Particle_Shape_Reconstruction/New_Main_Results/formation/planner.py", line 101, in residual
+    p=self.one_path(v,port);a=self.physical(v,port)[2]
+      ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Particle_Shape_Reconstruction/New_Main_Results/formation/planner.py", line 44, in one_path
+    c,side,age=self.physical(row,port);p=self.physics.trace(c,side,age,self.mode)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Particle_Shape_Reconstruction/New_Main_Results/formation/physics.py", line 104, in trace
+    sol=solve_ivp(rhs,[0,max(float(age),1e-8)],initial,method=method,rtol=rtol,atol=atol,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/integrate/_ivp/ivp.py", line 657, in solve_ivp
+    message = solver.step()
+              ^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/integrate/_ivp/base.py", line 201, in step
+    success, message = self._step_impl()
+                       ^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/integrate/_ivp/rk.py", line 142, in _step_impl
+    h_abs = np.abs(h)
+            ^^^^^^^^^
+KeyboardInterrupt

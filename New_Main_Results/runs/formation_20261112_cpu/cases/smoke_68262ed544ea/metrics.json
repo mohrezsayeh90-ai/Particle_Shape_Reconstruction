@@ -1,0 +1,158 @@
+{
+  "accepted": true,
+  "status": "accepted",
+  "failure_type": null,
+  "provenance": "new_experiment",
+  "N": 6,
+  "N_achieved": 6,
+  "configured_ports": null,
+  "used_ports": 6,
+  "port_loads": {
+    "free_1": 1,
+    "free_2": 1,
+    "free_3": 1,
+    "free_4": 1,
+    "free_5": 1,
+    "free_6": 1
+  },
+  "top_emissions": 0,
+  "bottom_emissions": 6,
+  "target_time": 0.8043540058624132,
+  "longest_duration": 0.5543540058624132,
+  "median_duration": 0.31791849586427984,
+  "release_span": 0.34866182861423156,
+  "minimum_same_port_gap": null,
+  "clock_error": 0.0,
+  "launch_bounds_ok": true,
+  "min_gap_ok": true,
+  "max_endpoint_difference": 1.6239766710143394e-05,
+  "replays": {
+    "pinn": {
+      "completed": true,
+      "completion_fraction": 1.0,
+      "max_error": 2.3474857226065707e-09,
+      "rms_error": 1.3713468397053132e-09,
+      "minimum": {
+        "distance": 0.04559475074307641,
+        "time": 0.6107039095142262,
+        "pair": [
+          1,
+          2
+        ],
+        "sampled_distance": 0.045594766704826824
+      },
+      "half_step_check": {
+        "max_endpoint_difference": 2.537969061872141e-10,
+        "minimum_distance_difference": 3.036672927003714e-10,
+        "finer_minimum": 0.04559475074307641
+      },
+      "termination_events": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "solver": "RK45"
+    },
+    "reference": {
+      "completed": true,
+      "completion_fraction": 1.0,
+      "max_error": 1.624018925580198e-05,
+      "rms_error": 1.0807496817425177e-05,
+      "minimum": {
+        "distance": 0.04559531296861948,
+        "time": 0.610703815719758,
+        "pair": [
+          1,
+          2
+        ],
+        "sampled_distance": 0.045595328701287866
+      },
+      "half_step_check": {
+        "max_endpoint_difference": 4.449557262054371e-16,
+        "minimum_distance_difference": 9.71445146547012e-17,
+        "finer_minimum": 0.04559531296861948
+      },
+      "termination_events": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "solver": "DOP853"
+    }
+  },
+  "weight_sha256": "af2f21b195e2d25b877482cd527110054f42bf92200f64e39572375219e5e581",
+  "verification_seconds": 0.34248294300050475,
+  "numerical_verification_only": true,
+  "covariance": {
+    "target_centroid": [
+      1.575,
+      0.15
+    ],
+    "achieved_centroid": [
+      1.574998875011519,
+      0.1500081560200132
+    ],
+    "centroid_shift": 8.23324125348586e-06,
+    "target_covariance": [
+      [
+        0.04929166666666667,
+        0.002925
+      ],
+      [
+        0.002925,
+        0.0013500000000000003
+      ]
+    ],
+    "achieved_covariance": [
+      [
+        0.049291486534965186,
+        0.002925185371851122
+      ],
+      [
+        0.002925185371851122,
+        0.00135001696696859
+      ]
+    ],
+    "covariance_relative_frobenius": 6.437095166543423e-06,
+    "achieved_axis_ratio": 6.496331136273796,
+    "target_axis_angle_deg": 3.478513189854681,
+    "achieved_axis_angle_deg": 3.478745641665597,
+    "axis_angle_error_deg": 0.00023245181091624545,
+    "isotropy_rule": "omit angle if eigenvalue gap / largest < 0.05 or largest <=1e-20"
+  },
+  "elapsed_seconds": 3.591562466999676,
+  "stages": [
+    {
+      "stage": "coarse",
+      "nfev": 2,
+      "njev": 2,
+      "cost": 6.0902024191683224e-27,
+      "message": "`gtol` termination condition is satisfied.",
+      "solver_success": true,
+      "elapsed_seconds": 0.05389057100001082,
+      "path_integrations": 440
+    },
+    {
+      "stage": "direct",
+      "nfev": 2,
+      "njev": 2,
+      "cost": 8.350787182563206e-17,
+      "message": "`gtol` termination condition is satisfied.",
+      "solver_success": true,
+      "elapsed_seconds": 0.08531392900113133,
+      "path_integrations": 48
+    }
+  ],
+  "optimizer_budget_exhausted": false,
+  "seed": 11,
+  "cold_start": true,
+  "budget_tier": "baseline_50_35",
+  "target_sha256": "8448af16b7fa93273ded6508ed6737e46b7eb8c9c1bb8a058a73bfb77640087a",
+  "layout_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+}

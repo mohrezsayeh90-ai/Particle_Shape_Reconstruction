@@ -1,0 +1,56 @@
+planned_trials 1014 geometric_capacities [{'shape': 'stadium', 'buffered_capacity': 271, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'arrow', 'buffered_capacity': 114, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'fish', 'buffered_capacity': 164, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'perforated', 'buffered_capacity': 221, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}]
+EXECUTING 9 trials, workers 2
+START D1_29e006e8a0ab fish 24 free 0 seed 11
+START D1_bee6686a0836 arrow 24 free 0 seed 11
+candidate_targets 10 / 24
+candidate_targets 10 / 24
+candidate_targets 20 / 24
+candidate_targets 20 / 24
+ALLOCATED D1_29e006e8a0ab seconds 5.13
+ALLOCATED D1_bee6686a0836 seconds 5.43
+COARSE D1_29e006e8a0ab 2 seconds COARSE5.75 
+D1_bee6686a0836 2 seconds 5.75
+DONE D1_bee6686a0836 accepted None seconds 9.23
+START D1_2f6e77f24cc5 perforated 24 free 0 seed 11
+candidate_targets 10 / 24
+candidate_targets 20 / 24
+ALLOCATED D1_2f6e77f24cc5 seconds 1.94
+COARSE D1_2f6e77f24cc5 2 seconds 2.15
+DONE D1_29e006e8a0ab accepted None seconds 12.55
+START D1_d4f9efbc8e67 arrow 24 fixed 3 seed 11
+DONE D1_2f6e77f24cc5 accepted None seconds 4.13
+START D1_35b6b579f41e fish 24 fixed 3 seed 11
+candidate_targets 10 / 24
+candidate_targets 10 / 24
+candidate_targets 20 / 24
+ALLOCATED D1_35b6b579f41e seconds 12.15
+COARSE D1_35b6b579f41e 1 seconds 12.29
+candidate_targets 20 / 24
+DONE D1_35b6b579f41e accepted None seconds 17.21
+START D1_44eb49160481 perforated 24 fixed 3 seed 11
+candidate_targets 10 / 24
+ALLOCATED D1_d4f9efbc8e67 seconds 23.7
+COARSE D1_d4f9efbc8e67 2 seconds 24.23
+candidate_targets 20 / 24
+ALLOCATED D1_44eb49160481 seconds 14.01
+COARSE D1_44eb49160481 7 seconds 14.77
+DONE D1_d4f9efbc8e67 rejected endpoint_error seconds 33.21
+START D1_c7e112c4be92 arrow 24 fixed 6 seed 11
+DONE D1_44eb49160481 rejected endpoint_error seconds 22.46
+START D1_955bf10ff114 fish 24 fixed 6 seed 11
+candidate_targets 10 / 24
+candidate_targets 10 / 24
+candidate_targets 20 / 24
+candidate_targets 20 / 24
+ALLOCATED D1_955bf10ff114 seconds 24.86
+COARSE D1_955bf10ff114 5 seconds 25.5
+ALLOCATED D1_c7e112c4be92 seconds 34.62
+COARSE D1_c7e112c4be92 1 seconds 34.82
+DONE D1_955bf10ff114 accepted None seconds 35.94
+START D1_7e092c43ae99 perforated 24 fixed 6 seed 11
+DONE D1_c7e112c4be92 accepted None seconds 43.59
+candidate_targets 10 / 24
+candidate_targets 20 / 24
+ALLOCATED D1_7e092c43ae99 seconds 29.62
+COARSE D1_7e092c43ae99 1 seconds 29.74
+DONE D1_7e092c43ae99 accepted None seconds 37.13

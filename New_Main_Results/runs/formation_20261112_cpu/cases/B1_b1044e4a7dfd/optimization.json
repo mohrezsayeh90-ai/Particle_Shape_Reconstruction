@@ -1,0 +1,51 @@
+[
+  {
+    "stage": "coarse",
+    "nfev": 2,
+    "njev": 2,
+    "cost": 1.0030540091317514e-25,
+    "message": "`gtol` termination condition is satisfied.",
+    "solver_success": true,
+    "elapsed_seconds": 0.45035377200110815,
+    "path_integrations": 558,
+    "history": [
+      {
+        "evaluation": 1,
+        "cost": 1.5399858476942443e-16,
+        "seconds": 0.05353198400007386
+      },
+      {
+        "evaluation": 2,
+        "cost": 1.0030540091317514e-25,
+        "seconds": 0.2861801569997624
+      }
+    ]
+  },
+  {
+    "stage": "direct",
+    "nfev": 3,
+    "njev": 3,
+    "cost": 2.946234136772336e-17,
+    "message": "`xtol` termination condition is satisfied.",
+    "solver_success": true,
+    "elapsed_seconds": 1.0453789860002871,
+    "path_integrations": 288,
+    "history": [
+      {
+        "evaluation": 1,
+        "cost": 7.591078303565585e-09,
+        "seconds": 0.10049965500002145
+      },
+      {
+        "evaluation": 2,
+        "cost": 7.591119688343517e-16,
+        "seconds": 0.4717357989993616
+      },
+      {
+        "evaluation": 3,
+        "cost": 2.946234136772336e-17,
+        "seconds": 0.807308010998895
+      }
+    ]
+  }
+]

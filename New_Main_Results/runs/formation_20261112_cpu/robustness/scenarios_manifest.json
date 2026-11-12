@@ -1,0 +1,210 @@
+[
+  {
+    "label": "low_margin",
+    "caseid": "F1_1358cc43f798",
+    "scenario": "nominal",
+    "level": 0,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "low_margin",
+    "caseid": "F1_1358cc43f798",
+    "scenario": "position",
+    "level": 1,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "low_margin",
+    "caseid": "F1_1358cc43f798",
+    "scenario": "position",
+    "level": 2,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "low_margin",
+    "caseid": "F1_1358cc43f798",
+    "scenario": "axial_velocity",
+    "level": 1,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "low_margin",
+    "caseid": "F1_1358cc43f798",
+    "scenario": "axial_velocity",
+    "level": 2,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "low_margin",
+    "caseid": "F1_1358cc43f798",
+    "scenario": "transverse_velocity",
+    "level": 1,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "low_margin",
+    "caseid": "F1_1358cc43f798",
+    "scenario": "transverse_velocity",
+    "level": 2,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "low_margin",
+    "caseid": "F1_1358cc43f798",
+    "scenario": "timing",
+    "level": 1,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "low_margin",
+    "caseid": "F1_1358cc43f798",
+    "scenario": "timing",
+    "level": 2,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "low_margin",
+    "caseid": "F1_1358cc43f798",
+    "scenario": "joint",
+    "level": 1,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "low_margin",
+    "caseid": "F1_1358cc43f798",
+    "scenario": "joint",
+    "level": 2,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "low_margin",
+    "caseid": "F1_1358cc43f798",
+    "scenario": "port_misplacement",
+    "level": 1,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "low_margin",
+    "caseid": "F1_1358cc43f798",
+    "scenario": "port_misplacement",
+    "level": 2,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "high_margin",
+    "caseid": "B1_cd46d15ee4e3",
+    "scenario": "nominal",
+    "level": 0,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "high_margin",
+    "caseid": "B1_cd46d15ee4e3",
+    "scenario": "position",
+    "level": 1,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "high_margin",
+    "caseid": "B1_cd46d15ee4e3",
+    "scenario": "position",
+    "level": 2,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "high_margin",
+    "caseid": "B1_cd46d15ee4e3",
+    "scenario": "axial_velocity",
+    "level": 1,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "high_margin",
+    "caseid": "B1_cd46d15ee4e3",
+    "scenario": "axial_velocity",
+    "level": 2,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "high_margin",
+    "caseid": "B1_cd46d15ee4e3",
+    "scenario": "transverse_velocity",
+    "level": 1,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "high_margin",
+    "caseid": "B1_cd46d15ee4e3",
+    "scenario": "transverse_velocity",
+    "level": 2,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "high_margin",
+    "caseid": "B1_cd46d15ee4e3",
+    "scenario": "timing",
+    "level": 1,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "high_margin",
+    "caseid": "B1_cd46d15ee4e3",
+    "scenario": "timing",
+    "level": 2,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "high_margin",
+    "caseid": "B1_cd46d15ee4e3",
+    "scenario": "joint",
+    "level": 1,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "high_margin",
+    "caseid": "B1_cd46d15ee4e3",
+    "scenario": "joint",
+    "level": 2,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "high_margin",
+    "caseid": "B1_cd46d15ee4e3",
+    "scenario": "port_misplacement",
+    "level": 1,
+    "status": "completed",
+    "draws": 64
+  },
+  {
+    "label": "high_margin",
+    "caseid": "B1_cd46d15ee4e3",
+    "scenario": "port_misplacement",
+    "level": 2,
+    "status": "completed",
+    "draws": 64
+  }
+]

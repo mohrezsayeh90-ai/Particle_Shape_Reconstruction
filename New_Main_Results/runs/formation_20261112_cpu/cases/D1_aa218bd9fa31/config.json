@@ -1,0 +1,30 @@
+{
+  "group": "D1",
+  "stage": "core",
+  "shape": "perforated",
+  "N": 100,
+  "mode": "free",
+  "m": 0,
+  "layout": "equispaced",
+  "cap": null,
+  "min_age": 0.03,
+  "max_age": 5.0,
+  "min_gap": 0.0,
+  "center": [
+    1.52,
+    0.15
+  ],
+  "seed": 11,
+  "collision_aware": true,
+  "budget_tier": "baseline_50_35",
+  "coarse_nfev": 50,
+  "direct_nfev": 35,
+  "endpoint_nfev": 24,
+  "provenance": "new_experiment",
+  "cold_start": true,
+  "ports": [],
+  "id": "D1_aa218bd9fa31",
+  "target_sha256": "3dd9b009a6e19c5d9ff3273942f865ecb49ae47bbfb6246e520da7ef77e4f851",
+  "layout_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "configuration_sha256": "29aa4a450b8c5877a852e38557873720493925967590262a139aeb371d89df45"
+}

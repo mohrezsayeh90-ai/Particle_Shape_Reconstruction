@@ -1,0 +1,146 @@
+planned_trials 1014 geometric_capacities [{'shape': 'stadium', 'buffered_capacity': 271, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'arrow', 'buffered_capacity': 114, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'fish', 'buffered_capacity': 164, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'perforated', 'buffered_capacity': 221, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}]
+EXECUTING 12 trials, workers 4
+START D1_d9e999d30914 arrow 100 fixed 3 seed 11
+START D1_3224954ecfff arrow 100 free 0 seed 11
+START D1_f38a5e0bafba arrow 100 fixed 6 seed 11
+START D1_93bf6b884031 fish 100 free 0 seed 11
+candidate_targets 10 / 100
+candidate_targets 10 / 100
+candidate_targets 20 / 100
+candidate_targets 20 / 100
+candidate_targets 30 / 100
+candidate_targets 40 / 100
+candidate_targets 30 / 100
+candidate_targets 50 / 100
+candidate_targets 60 / 100
+candidate_targets 40 / 100
+candidate_targets 70 / 100
+candidate_targets 80 / 100
+candidate_targets 50 / 100
+candidate_targets 90 / 100
+candidate_targets 10 / 100
+candidate_targets 60 / 100
+candidate_targets 100 / 100
+candidate_targets 70 / 100
+candidate_targets 80 / 100
+candidate_targets 90 / 100
+candidate_targets 10 / 100
+candidate_targets 100 / 100
+candidate_targets 20 / 100
+candidate_targets 30 / 100
+candidate_targets 20 / 100
+candidate_targets 40 / 100
+candidate_targets 50 / 100
+candidate_targets 30 / 100
+candidate_targets 60 / 100
+candidate_targets 70 / 100
+candidate_targets 40 / 100
+candidate_targets 80 / 100
+candidate_targets 90 / 100
+candidate_targets 50 / 100
+candidate_targets 100 / 100
+candidate_targets 60 / 100
+candidate_targets 70 / 100
+candidate_targets 80 / 100
+candidate_targets 90 / 100
+candidate_targets 100 / 100
+DONE D1_3224954ecfff accepted None seconds 583.64
+START D1_3a8b1b2f8dff fish 100 fixed 3 seed 11
+DONE D1_93bf6b884031 accepted None seconds 588.41
+START D1_f7fa280a3cc6 fish 100 fixed 6 seed 11
+candidate_targets 10 / 100
+candidate_targets 20 / 100
+candidate_targets 30 / 100
+candidate_targets 40 / 100
+candidate_targets 10 / 100
+candidate_targets 50 / 100
+candidate_targets 60 / 100
+candidate_targets 70 / 100
+candidate_targets 80 / 100
+candidate_targets 90 / 100
+candidate_targets 20 / 100
+candidate_targets 100 / 100
+candidate_targets 30 / 100
+candidate_targets 40 / 100
+candidate_targets 50 / 100
+candidate_targets 60 / 100
+candidate_targets 70 / 100
+candidate_targets 80 / 100
+candidate_targets 90 / 100
+candidate_targets 100 / 100
+DONE D1_d9e999d30914 rejected endpoint_error seconds 873.78
+START D1_aa218bd9fa31 perforated 100 free 0 seed 11
+candidate_targets 10 / 100
+candidate_targets 20 / 100
+candidate_targets 30 / 100
+candidate_targets 40 / 100
+candidate_targets 50 / 100
+candidate_targets 60 / 100
+candidate_targets 70 / 100
+candidate_targets 80 / 100
+candidate_targets 90 / 100
+candidate_targets 100 / 100
+DONE D1_aa218bd9fa31 accepted None seconds 270.79
+START D1_19fd931edc0b perforated 100 fixed 3 seed 11
+candidate_targets 10 / 100
+candidate_targets 20 / 100
+candidate_targets 30 / 100
+candidate_targets 40 / 100
+DONE D1_3a8b1b2f8dff rejected endpoint_error seconds 632.47
+START D1_a1352e05830a perforated 100 fixed 6 seed 11
+candidate_targets 50 / 100
+candidate_targets 60 / 100
+candidate_targets 10 / 100
+candidate_targets 70 / 100
+candidate_targets 20 / 100
+candidate_targets 80 / 100
+candidate_targets 90 / 100
+candidate_targets 30 / 100
+candidate_targets 100 / 100
+candidate_targets 40 / 100
+candidate_targets 50 / 100
+candidate_targets 60 / 100
+candidate_targets 70 / 100
+DONE D1_f38a5e0bafba rejected endpoint_error seconds 1459.48
+START D1_4eb3890ebeaf stadium 100 free 0 seed 11
+candidate_targets 10 / 100
+candidate_targets 20 / 100
+candidate_targets 30 / 100
+candidate_targets 40 / 100
+candidate_targets 50 / 100
+candidate_targets 60 / 100
+candidate_targets 70 / 100
+candidate_targets 80 / 100
+candidate_targets 80 / 100
+candidate_targets 90 / 100
+candidate_targets 100 / 100
+candidate_targets 90 / 100
+candidate_targets 100 / 100
+DONE D1_4eb3890ebeaf accepted None seconds 802.41
+START D1_ab095ca543e2 stadium 100 fixed 3 seed 11
+candidate_targets 10 / 100
+candidate_targets 20 / 100
+candidate_targets 30 / 100
+candidate_targets 40 / 100
+candidate_targets 50 / 100
+candidate_targets 60 / 100
+candidate_targets 70 / 100
+candidate_targets 80 / 100
+candidate_targets 90 / 100
+candidate_targets 100 / 100
+DONE D1_19fd931edc0b rejected endpoint_error seconds 1271.08
+START D1_38b8d4e5b303 stadium 100 fixed 6 seed 11
+candidate_targets 10 / 100
+candidate_targets 20 / 100
+candidate_targets 30 / 100
+candidate_targets 40 / 100
+candidate_targets 50 / 100
+candidate_targets 60 / 100
+candidate_targets 70 / 100
+candidate_targets 80 / 100
+candidate_targets 90 / 100
+candidate_targets 100 / 100
+DONE D1_f7fa280a3cc6 rejected endpoint_error seconds 1974.87
+DONE D1_ab095ca543e2 rejected endpoint_error seconds 754.54
+DONE D1_a1352e05830a rejected endpoint_error seconds 1814.38
+DONE D1_38b8d4e5b303 rejected endpoint_error seconds 935.68

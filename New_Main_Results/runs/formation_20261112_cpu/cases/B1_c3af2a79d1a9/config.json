@@ -1,0 +1,41 @@
+{
+  "group": "B1",
+  "stage": "core",
+  "shape": "stadium",
+  "N": 24,
+  "mode": "fixed",
+  "m": 1,
+  "layout": "equispaced",
+  "cap": null,
+  "min_age": 0.03,
+  "max_age": 5.0,
+  "min_gap": 0.0,
+  "center": [
+    1.52,
+    0.15
+  ],
+  "seed": 47,
+  "collision_aware": true,
+  "budget_tier": "baseline_50_35",
+  "coarse_nfev": 50,
+  "direct_nfev": 35,
+  "endpoint_nfev": 24,
+  "provenance": "new_experiment",
+  "cold_start": true,
+  "ports": [
+    {
+      "id": "B1",
+      "side": 0,
+      "x": 1.1
+    },
+    {
+      "id": "T1",
+      "side": 1,
+      "x": 1.1
+    }
+  ],
+  "id": "B1_c3af2a79d1a9",
+  "target_sha256": "54433faa50df6ded303461d13e48b0de694b38ed23f0fa99678640d5b3158b77",
+  "layout_sha256": "6f9ed5e61da6c5970fe350c760bb73377624f4a8782ca5538b01655979d492cf",
+  "configuration_sha256": "542b9a9b941e7dcfd1f1d2172902c8325218c30bea6be5ca643e72859baa0d92"
+}

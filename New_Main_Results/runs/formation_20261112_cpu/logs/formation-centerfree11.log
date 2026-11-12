@@ -1,0 +1,37 @@
+planned_trials 1014 geometric_capacities [{'shape': 'stadium', 'buffered_capacity': 271, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'arrow', 'buffered_capacity': 114, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'fish', 'buffered_capacity': 164, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}, {'shape': 'perforated', 'buffered_capacity': 221, 'pitch': 0.027, 'particle_radius': 0.0125, 'buffer': 0.0004}]
+EXECUTING 7 trials, workers 1
+START E1_free_037cebd4250a small_stadium 18 free 0 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_free_037cebd4250a seconds 7.23
+COARSE E1_free_037cebd4250a 2 seconds 7.87
+DONE E1_free_037cebd4250a accepted None seconds 15.01
+START E1_free_462db41a2354 small_stadium 18 free 0 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_free_462db41a2354 seconds 7.42
+COARSE E1_free_462db41a2354 2 seconds 8.11
+DONE E1_free_462db41a2354 accepted None seconds 25.01
+START E1_free_f83be54cfd0b small_stadium 18 free 0 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_free_f83be54cfd0b seconds 13.99
+COARSE E1_free_f83be54cfd0b 2 seconds 15.87
+DONE E1_free_f83be54cfd0b accepted None seconds 42.07
+START E1_free_e936cd7b65a3 small_stadium 18 free 0 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_free_e936cd7b65a3 seconds 11.6
+COARSE E1_free_e936cd7b65a3 2 seconds 13.01
+DONE E1_free_e936cd7b65a3 accepted None seconds 30.33
+START E1_free_badc768be95f small_stadium 18 free 0 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_free_badc768be95f seconds 8.85
+COARSE E1_free_badc768be95f 2 seconds 10.18
+DONE E1_free_badc768be95f accepted None seconds 22.27
+START E1_free_0bf50ce8f238 small_stadium 18 free 0 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_free_0bf50ce8f238 seconds 5.1
+COARSE E1_free_0bf50ce8f238 2 seconds 6.21
+DONE E1_free_0bf50ce8f238 accepted None seconds 22.42
+START E1_free_f0937d167686 small_stadium 18 free 0 seed 11
+candidate_targets 10 / 18
+ALLOCATED E1_free_f0937d167686 seconds 8.24
+COARSE E1_free_f0937d167686 2 seconds 9.41
+DONE E1_free_f0937d167686 accepted None seconds 23.92

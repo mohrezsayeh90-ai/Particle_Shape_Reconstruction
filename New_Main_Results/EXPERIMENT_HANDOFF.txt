@@ -1,0 +1,196 @@
+CODEX EXPERIMENT HANDOFF
+Chapter 4.1 | Nondimensional multi-particle formation by release planning
+
+1. OBJECTIVE AND SCOPE
+
+Implement and execute a reproducible numerical campaign for the Results chapter. Extend the existing Master3/Dense Duck planner to compare fixed ports, independently selectable release locations, and repeated emissions. Quantify formation quality, packing, location, orientation, and robustness. Save the data, figures, settings, and a short Persian results inventory. Retain a compact case-index CSV and publication-ready aggregate tables so the writing stage can trace every reported number. The thesis prose will be written after these results are reviewed.
+
+Research repository:
+https://github.com/mohrezsayeh90-ai/Particle_Shape_Reconstruction
+Technical baseline checked at c17460d. Inspect the current branch before editing. Develop the new campaign in this repository or its active experiment workspace. Keep Main_Proposal unchanged in this task. Do not overwrite historical runs, checkpoints, or validation artifacts.
+
+Read these sources before implementing:
+- evidence/master3-clean-revised-version/source.txt
+- evidence/dense-duck-formation-20261104-211d7de258/source.txt
+- tools/replay.py, docs/AUDIT_FA.md, docs/REPRODUCE_FA.md
+- verification/original_frozen_checkpoint.pt
+- verification/summary.json and the four case directories with release_schedule.csv, saved_result.json, and reference_trajectories.npz
+- docs/duck_comparison.pdf and the Dense Duck presentation directory
+- Kaggle source for triangle and S/C/T: https://www.kaggle.com/code/mohrezsayeh/master3-clean-revised-version
+
+2. PHYSICS, COORDINATES, AND EVALUATION CONTRACT
+
+Use the same rectangular channel and frozen flow model. All lengths, times, and velocities below are nondimensional.
+- L*=2.2, H*=0.30, Re=10, d_p*=0.025, rho_p/rho_f=1000.
+- x*=x/L_0, y*=y/L_0, t*=t U_0/L_0, and velocity divided by U_0.
+- Keep the existing Schiller–Naumann drag law and one-way coupling.
+- Use the existing launch gap 1e-5 and the existing side-specific velocity bounds. The bottom launch has v_y*>0 and the top launch has v_y*<0. The shared axial bound is [-0.40, 1.50].
+- Preserve the original source bounds and stopping events. Wall contact or axial boundary exit before the target time invalidates that trial.
+- Baseline duration bound: 5.0 in the Dense Duck family. Use [0.03,5.0] for new matched comparisons, including the free-release comparator, to make duration bounds identical. Keep historical duration bounds when reproducing archived cases. Record the lower-bound harmonization in the run metadata. Treat a changed duration bound as a separate experiment.
+- T*=max_i a_i*+0.25 and t_rel,i*=T*-a_i*. Here a_i* means duration from release to the target time.
+- Preserve d_accept*=0.026 and d_search*=0.0263. Target generation may use a larger design pitch. It does not alter the trajectory acceptance thresholds.
+
+Replay the same final candidate twice, once with the frozen PINN and once with an independently implemented planar Poiseuille carrier and DOP853, as in tools/replay.py. Verify stored checkpoint bytes and record their SHA256. Match reference and PINN release locations, times, velocities, targets, and assignments exactly. Use no training or per-case adjustment of the checkpoint. Report the independent replay as numerical verification within this model.
+
+An accepted nominal case must satisfy all five conditions:
+1. All particles exist at T* and finish both replays without an invalid boundary event.
+2. Max Euclidean target error of frozen-PINN replay <= 0.003.
+3. Max Euclidean target error of the independent reference <= 0.004.
+4. Max endpoint difference between PINN and reference <= 0.004.
+5. Minimum center distance over all pairs' shared lifetimes >= 0.026 in both replays.
+
+Define d_min(t*) from particles already released and still present. Leave it undefined when fewer than two particles are present. Include release event times in verification. Use dense ODE output, per-pair shared-clock sampling, and local refinement of sampled minima, as in tools/replay.py. Recheck the nearest pair with finer time integration. A plotting grid does not determine acceptance. Save the minimum, its time, and pair IDs in each replay. Keep this a numerical check. Do not infer continuous collision guarantees from a sampled plot.
+
+3. REUSE AND EXTEND THE PLANNER
+
+Implement a reusable planner entry point. Import or extract the existing functions into an importable module with the smallest necessary changes. Do not execute entire notebook cells at import. Reuse the flow model, physics, fixed-port and free-location parameterization, candidate search, collision objective, and sparse Jacobian where possible.
+
+A fixed port is one immovable wall coordinate and a side. A port can release repeatedly at different times. The same physical point represents one port in the entire run. In the free-location model, each particle can independently choose the side and x_launch* within the original bounds. There is no preset hardware port count in that comparator.
+
+Replace hard-coded 6-port assumptions in the new path with an explicit list of port IDs, sides, and x* values. Decode side from the port table, not integer division by three. Retain the old six-site reproduction path. In the new port-count sweep, ports are available to the optimizer and may remain idle. Save configured and used port counts separately. If imposing a cap, enforce it during assignment and candidate changes, including swaps. Sum of per-port capacities below N is structurally infeasible. A sparse minimum-cost assignment or equivalent capacity-aware matching can initialize the discrete assignment. Endpoint distance and pairwise time-overlap clearance should both inform its refinement.
+
+Use a bank of single-particle candidates, then discrete allocation, then joint time and launch-velocity refinement. For high N, use the existing two-stage coarse-to-direct approach and a sparse least-squares Jacobian with LSMR. Reuse cached path evaluations, integrate only changed controls, and chunk pair checks. At N=100 there are 4,950 pairs. Do not materialize a dense all-pair Jacobian or cache every possible pair of alternatives. A coarse shortlist of active pairs is acceptable during search if final verification examines every pair and missed near pairs can be fed back into refinement. Never use clamped paths or a coarse surrogate to declare acceptance.
+
+If useful, initialize with analytical-field candidates, as in Dense Duck. Final planning and acceptance still use the frozen PINN and both independent replays. Check sparse derivatives on a small case against finite differences away from clipping and active-set transitions. Check equivalent historical fixed-port IDs on the m=3 layout. Save failures as candidate shortage, optimizer budget exhausted, solver error, invalid boundary event, clearance failure, endpoint error, target geometric infeasibility, or structural capacity infeasibility. A failed search does not establish physical impossibility.
+
+4. TARGET SET GENERATION
+
+Design targets in the same physical nondimensional channel. Freeze target coordinates before each matched comparison. Record the mask, seed, sampling pitch, wall clearance, target minimum separation, and exact point IDs. Do not shrink disks, expand the channel, lower thresholds, or change a target after observing a failure.
+
+Filled target shapes:
+- Use a triangular/hexagonal lattice of pitch 0.027, with row spacing pitch*sqrt(3)/2 and alternating half-pitch shifts.
+- Select centers whose disks of radius 0.0125 lie inside the target mask and inside the channel. Compute a boundary distance for polygonal masks, or use a sufficiently fine distance calculation and a documented buffer of about 0.0004. The mask is an evaluation target, not an obstacle in the ODE.
+- For a count sweep, build one deterministic farthest-point ordering on the valid lattice. Start at the candidate closest to the desired center and use fixed coordinate order for ties. Use prefixes of that ordering for all requested N. Save the complete ordering. This holds mask, center and candidate lattice fixed while target density changes.
+- Screen geometric capacity before planning. If the mask cannot hold the requested N at this pitch, record the request and reason. Do not silently substitute a smaller N.
+- Use target centers rather than connected silhouettes to assign particles. For graphics, render particle disks with equal x*/y* scale and correct radius.
+
+For the filled-shape benchmark, use a shared footprint W*=0.88, B*=0.23, centered at (1.52,0.15), unless a specific experiment explicitly changes the center. Let u=(x*-x_c*)/(W*/2), v=(y*-y_c*)/(B*/2).
+A. Stadium: distance to the centerline segment of half-length (W*-B*)/2 is <=B*/2.
+B. Swallowtail arrow: polygon in (u,v):
+   (-1,-.72),(-.22,-.72),(-.22,-1),(1,0),(-.22,1),(-.22,.72),(-1,.72),(-.64,0).
+C. Fish with a forked tail: polygon in (u,v):
+   (-1,.85),(-.58,.37),(-.28,.78),(.25,.95),(.70,.72),(1,0),(.70,-.72),(.25,-.95),(-.28,-.78),(-.58,-.37),(-1,-.85),(-.82,0).
+D. Stadium with two holes: stadium A minus two ellipses centered at (u,v)=(-.38,0) and (.38,0), with semiaxes (.18,.33) in (u,v).
+The four masks have been screened geometrically at pitch 0.027 with a particle-radius buffer. Each had more than 100 candidate centers in that screen. Check counts again with the actual implementation. Geometry capacity is independent of release planning feasibility.
+
+For the center map, use a smaller stadium of W*=0.32, B*=0.11 and 18 target centers generated once about the origin. Translate the identical center pattern at each grid point. Preserve target IDs and orientation. Record the nominal center and the actual centroid of the frozen target points separately.
+
+For the ellipse study, create 12 symmetric base centers: six at radius 0.080 with angles j*pi/3 and six at radius 0.0465 with angles j*pi/3+pi/6. Apply diag(sqrt(q),1/sqrt(q)), then rotate by theta, then translate. Here q=a/b is the requested major/minor semiaxis ratio. The area of the nominal ellipse is fixed; a=0.085 sqrt(q), b=0.085/sqrt(q). Both rings lie within the nominal ellipse as center positions. The wall constraint applies to the physical disks. At q=1 the target covariance is isotropic. Test its center response; an ellipse orientation is undefined there. This construction keeps the point count, target centroid, and intrinsic target covariance controlled. Rotating a fixed-q configuration preserves the target pair distances. Use angles measured from the downstream x* axis, with counterclockwise positive. Report angle labels in degrees and use radians internally.
+
+5. EXPERIMENT MATRIX AND ORDER
+
+Use the same search budgets, stage definitions, target coordinates, and seed IDs for cases being compared within an experiment. Configure seeds 11, 29, and 47 for the main comparisons. Use one seed for screening, then apply the common multi-start protocol to all cases used for final matched comparisons. Start from the historical joint-refinement caps of 50 coarse and 35 direct evaluations per start, and the 24-evaluation endpoint fit cap from the fixed-port initializer. If more work is required, add and record a matched budget tier for the compared cases. Report the number of valid trials, failure types, and best case separately. Starts characterize planner sensitivity, not experimental measurement uncertainty. Declare screening versus final verification in each record. Record every planned case, including pending cases.
+
+A. Historical results and calibration.
+A1. Verify triangle and S/C/T outputs from their archived Master3 run. The exact trajectories are in that run's result.json / formation.png outputs. The source archive and log may lack the actual output payload. Try the archived output package. If unreachable, use the original code and saved weights to reproduce those cases without changing settings where possible; label newly computed results as reruns and retain the original logs separately. Do not infer trajectories from the reported errors.
+A2. Replay the four stored duck schedules, N=20,28,42,64, as regression checks. Reuse already verified data for the polished baseline figure and refresh provenance. Keep archived values and new calculations separate. The two dense duck runs differ in both N and release mode.
+
+B. Effect of the number of available launchers.
+B1. Use the filled stadium at N in {24,48,72,100}, as available in the fixed target mask. For m=1,2,3,4,5,6, place m ports on each wall at x_j*=j L*/(m+1), j=1..m. Label the total as 2m. Allow repeated launches and unlimited emissions per port for this sweep. Run the free-location comparator for each N. Plot success, max endpoint error, and clearance margin as functions of m and N.
+B2. Because equal spacing changes all port coordinates as m changes, add a nested-layout sensitivity series at N=48 and 100. Use successive prefixes of x*/L* = [0.50,0.25,0.75,0.125,0.875,0.375], mirrored across the two walls. Save a port-location diagram. Treat monotonic feasibility under a truly nested layout as a mathematical property of the feasible sets; finite-search outcomes may fluctuate. Do not claim monotonic results from equispaced layouts.
+
+C. Effect of permitted emissions and hardware utilization.
+C1. Hold m=3 and the port coordinates fixed. Test N in {24,48,100}. For each N, compare a cap of ceil(N/6)-1, ceil(N/6), ceil(N/6)+2, twice ceil(N/6), and unlimited launches per port. Include one-shot at N=6 and at N=24 as a sanity check. For one-shot N=6, the target must be six points in the same mask. Distinguish structural infeasibility from a failed feasible-capacity search. Report how many of the available ports are actually used.
+C2. Use the best accepted same-target schedules from B or C. Compare baseline reuse timing with a modeled per-port minimum gap delta_t*=0.02,0.04,0.08 on a representative subset. These gaps are design scenarios. Sort emissions within each port and enforce the gap between consecutive emissions during replanning. Use the same targets and other launch bounds. Evaluate each solution at its own common target time and report that time. Plot count per port, span of emission times, peak port load, and endpoint/clearance trade-off.
+
+D. Filled targets up to 100 particles.
+D1. For masks A–D use N={24,48,72,100}. Use m=3, m=6, and free location with common targets, launching rules, and timing bounds. Reuse equivalent B runs by configuration hash. Treat 100 as a required test size when the target is geometrically feasible. Report achieved and accepted counts explicitly. If 100 is not accepted, retain that result and report the largest accepted requested N with the failure mechanism. Preserve difficult and failed cases in the dataset.
+D2. Compute two occupancy metrics using the union of actual disks: inside coverage = area(M intersect union(disks))/area(M); overspill = area(union(disks) outside M)/area(union(disks)). Use the same grid or geometric union routine for each comparison. Check raster resolution convergence for headline numbers. For the perforated target, also report hole intrusion. At a fixed N, a spatial fill map or hole intrusion can distinguish different visual outcomes with similar endpoint error.
+
+E. Effect of formation center.
+E1. Translate the exact 18-target small stadium over x_c* in {0.52,0.75,1.00,1.25,1.50,1.75,1.95} and y_c* in {0.075,0.10,0.125,0.15,0.175,0.20,0.225}. Hold m=3, port locations, N, footprint and launch-time limits fixed. Mark geometric preflight exclusions on the grid. Repeat the centerline and three selected cross-sections with free release, using exactly the same targets. For heatmaps, map the true x/y grid and explicitly mark invalid, attempted-but-unaccepted, or pending cells.
+E2. Plot an axial slice at y_c*=0.15 and transverse slices at selected x_c*, retaining the per-seed markers. Report the pass fraction over starts, max error, and clearance margin. If useful, accompany the heatmap with mean durations and upstream/downstream port utilization to explain reachability.
+
+F. Ellipse aspect ratio, angle, location, and covariance.
+F1. At center (1.40,0.15), use q={1,1.5,2,2.75}. For q>1, use theta={-60,-30,0,30,60,90} degrees. Use theta=0 for q=1. Use m=3, unlimited repeated emissions, and the 12-center target construction. Keep the count and nominal ellipse area fixed. First run the full central angle/aspect grid.
+F2. Cross x_c*={0.85,1.40,1.85} with y_c*={0.115,0.15,0.185}, q={1.5,2.75}, and theta={-45,0,45,90} degrees. Add the q=1 control at each center. Record wall exclusions; compare an angle or aspect effect on matched feasible cells. Keep excluded cells visible.
+F3. Compute population covariance C=(1/N) sum_i (r_i-mu)(r_i-mu)^T for target centers and for achieved reference centers at T*. Report centroid shift, normalized Frobenius error ||C_ach-C_target||_F/||C_target||_F, achieved ratio sqrt(lambda_major/lambda_minor), and axis-angle error modulo 180 degrees. If a covariance is nearly isotropic, omit its angle when (lambda_major-lambda_minor)/lambda_major < 0.05 or lambda_major is numerically zero, and record that rule. Use one-sigma covariance ellipses as descriptors, not confidence intervals. Also report matched point errors, since a covariance match alone cannot show recovery of every target.
+F4. Use paired contrasts for (theta,y_c*) versus (-theta,H*-y_c*). For a circular target, show centroid/shape diagnostics without an angle metric. Optional after the full core matrix: use a simple descriptive model with sin(2 theta), cos(2 theta), log(q), x_c* and signed/absolute y offset to summarize interactions. Keep causal statements tied to matched comparisons. Do not pool feasibility exclusions as numeric errors.
+
+G. Additional experiments with scientific value.
+G1. Wall availability and reflection. At six total ports, use top/bottom counts (0,6),(1,5),(2,4),(3,3),(4,2),(5,1),(6,0). Use six fixed x coordinates jL*/7 and one port at each coordinate. Predeclare the top assignment in a reproducible order, for example j=[3,4,2,5,1,6], and use the complement below. For paired reflection checks, explicitly swap every wall assignment at the same x coordinate. Test y_c*=0.105,0.15,0.195 for the small stadium at x_c*=1.40. Report top/bottom utilization. In a separate numerical symmetry check, mirror an accepted schedule using y*=H*-y*, v_y*=-v_y*, and swapped walls. Verify reflected reference trajectories. Report any frozen-PINN asymmetry separately from optimizer variability.
+G2. Collision-aware planning ablation. For one small and one dense target, compare endpoint-only planning with endpoint-plus-clearance planning at the same N, layout and search budget. For endpoint-only, remove clearance costs from candidate allocation and refinement while retaining all endpoint and lifetime checks. Verify both with the same full acceptance test. Plot endpoint error versus minimum-distance margin and show where the closest pair approaches.
+G3. Time–quality trade-off. For the fish at N=48 and N=100 with m=6, vary the maximum duration at {2,3.5,5} within the same model. If the dense case is not accepted at the baseline bound, also run the largest accepted density for this mask and report both. Plot achieved T* versus clearance and error. Mark verified feasible points and identify the non-dominated accepted solutions. Do not infer a guaranteed optimal deadline.
+G4. Robustness to release errors. Select an accepted low-margin case and an accepted high-margin case. Hold the optimized schedule and nominal T* fixed. Perturb x_launch*, u_x*, v_y* and release time separately, then jointly in one declared scenario. Use nondimensional levels, e.g. standard deviations (0,0.025d_p*,0.05d_p*) for x, (0,0.01,0.025) for velocity components, and (0,0.005,0.015) for timing. In the fixed-port case, x perturbation models misplacement; apply a shared offset for each port in a separate scenario if practical. Use seeded trials and at least 64 samples per selected scenario when feasible. Check input bounds; record invalid draws rather than silently clipping. Independently replay perturbed trajectories to report numerical pass fractions and failure types. Check nominal frozen-PINN/reference agreement before perturbing. Record whether each perturbed run uses reference only or both solvers, and use the corresponding physical error threshold. Report the unconditional pass fraction over all perturbation draws and, separately, the fraction among draws within the launch bounds. Treat this as numerical sensitivity, not measured hardware reliability.
+G5. Optional layout design. Compare equispaced, nested, and a fixed tuned layout at the same m. Tune only on a declared calibration subset, freeze the coordinates, and compare on held-out targets and centers. Count layout changes and budgets. This distinguishes placement quality from nominal port count.
+
+6. METRICS AND COMPARISON RULES
+
+For each case save both replay endpoints and scheduled/actual diagnostics:
+- E_max*=max_i ||r_i*(T*)-g_i*||; E_rms*=sqrt(mean_i ||r_i*(T*)-g_i*||^2).
+- Minimum pair clearance d_min*, margin d_min*-0.026, time and pair at the minimum. Save shared-time curves for headline cases and separate any sampled minimum from the refined value.
+- Max difference between PINN and reference endpoints, completion fraction, exact N planned/replayed, pass status, termination reason and maximum wall approach if available.
+- Target coverage, inside-disk fraction or overspill, hole intrusion when applicable.
+- Configured ports, used ports, top/bottom counts, individual port loads, longest and median travel duration, T*, release span, and closest same-port emission gap.
+- Seed, starts, elapsed time, function evaluations, solver settings, weight hash, target hash and layout hash. Record whether the solve used a cold start or a neighboring-case warm start. If warm-start continuation is used, keep a cold-start comparator for representative cases.
+- For matched comparisons, show individual attempts as well as aggregates. Do not combine validation results from different budgets without labeling their tier. Keep missing/unexecuted, infeasible-before-solve, and attempted failures distinct. Report reported results as numerical simulation.
+
+7. FIGURE MANIFEST | DESIGN AND HOW TO DRAW
+
+Create vector PDF and a high-resolution PNG preview for each completed figure. Use the same typography, stroke widths, colors, and compact Persian captions throughout. Label numeric axes with x*, y*, t*, d_min*, or equivalent math notation. Separate reference and PINN by marker/line style as well as color. Use equal x*/y* scaling in spatial views. Use shared axis limits for matched panels. Add a target-region zoom instead of stretching the channel. Include a single shared legend for repeated panels. For a clearance panel, use a dashed line at 0.026. Avoid 3D decorative effects, raw notebook screenshots, and filled silhouettes that obscure the particle disks.
+
+F01 | Historical triangle and the three letters.
+Triangle: full-channel tracks, ports and final-region zoom with target/PINN/reference centers. For S/C/T, use three rows with tracks and matched-scale endpoint panels. Label station IDs and show actual target edges. Use real run data. If historical payload is missing, record it and render a reproducible rerun or leave the affected panel pending.
+
+F02 | Four archived duck formations.
+Polish the existing 2-by-2 comparison. Show real disks, target markers, 20/28/42/64 labels, and fixed/free release labels. Use archived replay data. Put errors in a companion table, allowing the panels to stay clean.
+
+F03 | Launcher count × particle count.
+Use heatmaps for acceptance and clearance, plus line/point plots of endpoint error versus m. Include free release as a separate comparator. Add the equispaced/nested port-location strip. Annotate total available ports and sample counts. Preserve categorical markers for failure and missing data.
+
+F04 | Emission cap and port reuse.
+Draw a heatmap of capacity cap versus N and a bar/strip plot of actual load per port. Add a release raster with port ID versus t* for a selected valid schedule. Annotate geometrically or structurally infeasible cases outside the measured color scale.
+
+F05 | Filled complex shapes.
+Use one row per mask and columns for selected N, e.g. 24,72,100. Show the mask as a faint contour with actual disk positions. Keep failed cases identifiable. Show a second panel or figure for coverage, overspill, and hole intrusion versus N. Use a target-mask thumbnail if it helps interpret holes or concavities.
+
+F06 | Formation center response.
+Show the x_c*–y_c* pass and clearance/error maps. Add the axial centerline slice and selected transverse cuts. Annotate wall exclusions and show fixed versus free cases on the same data scale where comparable.
+
+F07 | Ellipse geometry and covariance.
+Show selected paired target/achieved center clouds, target and achieved covariance ellipses, centroid arrows, and orientation labels. Use a fixed equal-scale inset. Add central q×theta maps for covariance error, endpoint error, and clearance. Show only meaningful orientation results.
+
+F08 | Location × ellipse geometry and symmetry.
+Use small multiples by aspect ratio and angle, with x_c*–y_c* axes. Plot paired reflected cases against the equality line and report the signed paired error. Use a matched-feasibility mask for aggregated contrasts. Keep q=1 orientation blank.
+
+F09 | Clearance over time and contact mechanisms.
+Plot d_min*(t*) for the archived 42 and 64 cases and for selected new dense cases. Start after two particles are present. Show the critical pair and positions just before, at, and just after its refined minimum. The archived reference_trajectories.npz contains sampled paths; obtain exact refined event times from independent replay if needed. Plot a release raster or active-particle-count strip on the same time axis.
+
+F10 | Wall availability and load.
+Show top-versus-bottom availability, grouped by y_c*. Add the load fraction and paired mirror comparison. Use the same streamwise hardware coordinates for wall-swapped comparisons.
+
+F11 | Deadline and planning ablation.
+Show T* against endpoint error and clearance margin. Highlight accepted Pareto cases. Add a separate pair of trajectory/clearance panels for endpoint-only versus collision-aware planning. State clearly which trials complete the entire schedule.
+
+F12 | Robustness.
+Show pass fraction and the distribution of endpoint error and clearance margin versus perturbation level. Show failure-mode counts. Separate timing, speed, and position perturbations. Label reference-only runs where applicable.
+
+F13 | Optional layout design.
+Show port layouts and paired results on held-out targets. Use the same m and target set. Include a calibration/held-out label in the figure metadata.
+
+Provide a candidate main-text set of approximately six figures (F01, F02/F05, F03, F06, F07, F09). Leave the full catalog and supplementary panels available for the later thesis edit. Do not hide unfavorable cases when selecting examples. A representative result may include a failure if it shows a mechanism.
+
+Suggested short Persian captions:
+- تشکیل آرایش‌های پایه با رهاسازی برنامه‌ریزی‌شده.
+- مقایسهٔ آرایش اردک در زمان هدف مشترک.
+- اثر تعداد پرتابگرها و ذرات بر کیفیت آرایش.
+- اثر مرکز هدف بر خطای نهایی و فاصلهٔ کمینه.
+- مقایسهٔ کوواریانس هدف و آرایش حاصل.
+- تغییر فاصلهٔ کمینهٔ ذرات در طول حرکت.
+
+8. EXECUTION ORDER, OUTPUTS, AND HANDOFF
+
+First run a small smoke test: historical replay and one small case with two fixed ports, six fixed ports, and free release. Validate side mapping, capacities, file outputs, and figure labels. Next run the central B/D/center/ellipse cases and the core port/count sweeps. Then complete the extended grids and robustness/ablation work. Use an explicit pending list and resumable case IDs. Prioritize the fixed-layout and free-location N=100 cases, the center grid, and the central ellipse sweep before optional G5. If a compute constraint prevents a run, identify the specific unfinished cases and preserve usable data. Store validated outputs as soon as they complete.
+
+Save an experiment bundle under a new named directory such as results/chapter4_formation/<run_id>/:
+- config.json and cases_manifest.csv with every planned case and status;
+- per-case target_points.csv, ports.csv, release_schedule.csv, endpoint_errors.csv, metrics.json, and trajectories.npz; store continuous arrays compactly for the cases needed for figures and retain metadata for all cases;
+- one merged summary.csv with physics, N, port layout, cap, center, angle, ratio, seed, acceptance, error, clearance, runtime, and failure type;
+- one JSON manifest identifying input data and the plotting script for every PDF;
+- all rendered figures, PNG previews, and a contact sheet;
+- Persian README with an inventory of accepted, rejected, and pending results, table-ready numbers, and the location of every figure. Distinguish old evidence, reruns, and new experiments;
+- reproduction commands, runtime requirements, checkpoint checksum, and a saved run log.
+
+Provide a resumable runner and a plotting entry point. For example, use tools/run_formation_campaign.py with a configuration file, --stage, and --resume options, and a separate plot command that reads saved results without calling the optimizer.
+
+Before handoff, verify that at least one accepted new case can be reloaded and independently replayed from its saved schedule. Cross-check figure totals against summary.csv. Confirm that failed and pending results are visibly distinct. Report the highest verified particle count per shape and release mode, the figure paths, the most informative matched comparisons, and any computation still running or pending. Leave the thesis text to the next task.

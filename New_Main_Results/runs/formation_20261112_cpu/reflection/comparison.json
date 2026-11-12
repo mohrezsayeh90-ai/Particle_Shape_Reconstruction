@@ -1,0 +1,14 @@
+{
+  "source_case": "D1_aa218bd9fa31",
+  "N": 100,
+  "accepted": true,
+  "paired_reference_symmetry": {
+    "max_endpoint_reflection_residual": 6.804363002006077e-16,
+    "signed_minimum_distance_change": 4.163336342344337e-17
+  },
+  "frozen_PINN_asymmetry": {
+    "max_endpoint_reflection_residual": 0.00010930022857372863,
+    "signed_minimum_distance_change": -4.48454131815601e-09
+  },
+  "interpretation": "Same saved schedule reflected, with no optimizer rerun; PINN asymmetry is reported separately."
+}

@@ -1,0 +1,4 @@
+kind,success,max_error,max_reference_error,min_pair_distance,reason
+S_6,True,1.595171410303373e-08,0.0003767944784546904,0.03358017098418163,all numerical checks passed
+C_6,True,7.059822790681017e-09,0.0001947838265995141,0.03485328583533577,all numerical checks passed
+T_6,True,6.918778733615354e-09,0.00028768625660684346,0.027400497227164623,all numerical checks passed
