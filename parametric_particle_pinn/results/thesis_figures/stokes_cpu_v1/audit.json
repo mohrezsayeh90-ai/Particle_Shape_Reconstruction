@@ -1,0 +1,15 @@
+{
+  "formation_status_counts": {
+    "accepted": 132,
+    "rejected": 32,
+    "preflight_rejected": 3
+  },
+  "saved_schedule_and_mask_checks": true,
+  "matched_core_and_extension_records": 167,
+  "expected_final_cases": 70,
+  "max_critical_pair_direct_check": 7.265785195720298e-13,
+  "max_refined_resolution_sensitivity": 2.078198724220215e-14,
+  "max_smoke_endpoint_fast_vs_public": 6.661338147750939e-16,
+  "max_fast_velocity_finite_difference_check": 5.2205573197738886e-11,
+  "max_closed_form_dop853_formation_endpoint_error": 1.079897061669073e-12
+}

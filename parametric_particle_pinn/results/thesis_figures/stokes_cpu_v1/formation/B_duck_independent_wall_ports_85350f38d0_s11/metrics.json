@@ -1,0 +1,141 @@
+{
+  "status": "accepted",
+  "reasons": [],
+  "target_time": 2.6269444444444443,
+  "event_tolerance": 1e-10,
+  "methods": {
+    "pinn": {
+      "completed": 28,
+      "compared_pairs": 378,
+      "expected_pairs": 378,
+      "minimum": {
+        "i": 8,
+        "j": 25,
+        "distance": 0.026595764378690247,
+        "time": 2.3746090184384414,
+        "sampled_distance": 0.026595801836558523,
+        "overlap_start": 1.9618888888888888,
+        "overlap_end": 2.6269444444444443,
+        "coarse_distance": 0.026595764378690028,
+        "near_minimum": true,
+        "refined_delta": 2.185751579730777e-16,
+        "i_terminated_before_T": false,
+        "j_terminated_before_T": false
+      },
+      "interval": "full_to_T",
+      "endpoint_max": 1.3348671786163112e-15,
+      "endpoint_rms": 4.89030296877379e-16,
+      "clearance_margin": 0.0005957643786902479,
+      "maximum_refined_resolution_delta": 5.072331443756184e-15,
+      "covariance": {
+        "target_centroid": [
+          1.9053928535714288,
+          0.12584912499999998
+        ],
+        "achieved_centroid": [
+          1.905392853571429,
+          0.125849125
+        ],
+        "centroid_shift": 2.237726045655905e-16,
+        "target_covariance": [
+          [
+            0.00850576989228892,
+            0.0006531406733708053
+          ],
+          [
+            0.0006531406733708053,
+            0.004329055426689732
+          ]
+        ],
+        "achieved_covariance": [
+          [
+            0.0085057698922889,
+            0.0006531406733707994
+          ],
+          [
+            0.0006531406733707994,
+            0.004329055426689733
+          ]
+        ],
+        "covariance_relative_frobenius": 2.1712087557356422e-15,
+        "achieved_axis_ratio": 1.4264426029334236,
+        "target_axis_angle_deg": 8.683623469941352,
+        "achieved_axis_angle_deg": 8.683623469941324,
+        "axis_angle_error_deg": 2.842170943040401e-14,
+        "isotropy_rule": "omit angle if eigenvalue gap / largest < 0.05 or largest <=1e-20"
+      }
+    },
+    "dop853": {
+      "completed": 28,
+      "compared_pairs": 378,
+      "expected_pairs": 378,
+      "minimum": {
+        "i": 8,
+        "j": 25,
+        "distance": 0.02659577463760815,
+        "time": 2.3746090898546277,
+        "sampled_distance": 0.026595812120244845,
+        "overlap_start": 1.9618888888888888,
+        "overlap_end": 2.6269444444444443,
+        "coarse_distance": 0.026595774637608042,
+        "near_minimum": true,
+        "refined_delta": 1.0755285551056204e-16,
+        "i_terminated_before_T": false,
+        "j_terminated_before_T": false
+      },
+      "interval": "full_to_T",
+      "endpoint_max": 1.7998670181810492e-08,
+      "endpoint_rms": 7.04478984566759e-09,
+      "clearance_margin": 0.0005957746376081506,
+      "maximum_refined_resolution_delta": 4.8155923693116165e-15,
+      "covariance": {
+        "target_centroid": [
+          1.9053928535714288,
+          0.12584912499999998
+        ],
+        "achieved_centroid": [
+          1.9053928506849762,
+          0.1258491249943773
+        ],
+        "centroid_shift": 2.8864581088041243e-09,
+        "target_covariance": [
+          [
+            0.00850576989228892,
+            0.0006531406733708053
+          ],
+          [
+            0.0006531406733708053,
+            0.004329055426689732
+          ]
+        ],
+        "achieved_covariance": [
+          [
+            0.008505769832106564,
+            0.0006531406527893197
+          ],
+          [
+            0.0006531406527893197,
+            0.004329055419080729
+          ]
+        ],
+        "covariance_relative_frobenius": 7.016953350619402e-09,
+        "achieved_axis_ratio": 1.4264425979849327,
+        "target_axis_angle_deg": 8.683623469941352,
+        "achieved_axis_angle_deg": 8.683623315492127,
+        "axis_angle_error_deg": 1.5444922496499203e-07,
+        "isotropy_rule": "omit angle if eigenvalue gap / largest < 0.05 or largest <=1e-20"
+      }
+    }
+  },
+  "transfer_max": 1.7998669737397183e-08,
+  "exact_vs_dop853_max": 8.627044163191295e-13,
+  "search": {
+    "allocation_sweeps": 3,
+    "candidate_scores": 1428,
+    "candidate_count": 448
+  },
+  "case_id": "B_duck_independent_wall_ports_85350f38d0_s11",
+  "engine": "direct_particle_pinn",
+  "replay": "analytical_stokes_dop853",
+  "elapsed_seconds": 1.1500374200004444
+}

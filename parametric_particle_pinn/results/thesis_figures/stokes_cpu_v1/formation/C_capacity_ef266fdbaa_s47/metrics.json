@@ -1,0 +1,11 @@
+{
+  "status": "preflight_rejected",
+  "reasons": [
+    "structural_capacity_infeasibility"
+  ],
+  "detail": "sum of available port capacities below N",
+  "case_id": "C_capacity_ef266fdbaa_s47",
+  "engine": "direct_particle_pinn",
+  "replay": "analytical_stokes_dop853",
+  "elapsed_seconds": 6.964299973333254e-05
+}

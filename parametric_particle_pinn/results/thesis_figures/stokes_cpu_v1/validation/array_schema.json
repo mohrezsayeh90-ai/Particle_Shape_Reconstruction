@@ -1,0 +1,39 @@
+{
+  "units": "x,y / L0; time * U0/L0; velocities / U0; acceleration * L0/U0^2",
+  "release_columns": [
+    "x0",
+    "y0",
+    "vx0",
+    "vy0"
+  ],
+  "state_columns": [
+    "x",
+    "y",
+    "vx",
+    "vy",
+    "ax",
+    "ay"
+  ],
+  "common_shape": [
+    70,
+    121,
+    6
+  ],
+  "per_method_display_shape": [
+    70,
+    401
+  ],
+  "residual_columns": [
+    "tau*rx/1",
+    "tau*ry/1.2"
+  ],
+  "exact_vs_dop853_max": [
+    1.1508571873264373e-12,
+    1.5921292062515136e-14,
+    3.4721114872127146e-12,
+    4.576894419017208e-14
+  ],
+  "event_convention": "one row per method per case, including zero-duration cases",
+  "acceleration_reference": "new diagnostic from Stokes RHS applied to reference state",
+  "archived_case_inventory_match": true
+}
