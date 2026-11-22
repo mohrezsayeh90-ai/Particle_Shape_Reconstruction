@@ -1,0 +1,70 @@
+{
+  "split": "dev",
+  "checkpoint": "/tmp/particle-pinn-training-v4/best.pt",
+  "case_count": 32,
+  "passed_count": 23,
+  "accepted": false,
+  "reference_event_coverage": [
+    "inlet_exit",
+    "lower_wall",
+    "outlet",
+    "upper_wall"
+  ],
+  "failed_cases": [
+    "dev_00",
+    "dev_01",
+    "dev_09",
+    "dev_13",
+    "dev_20",
+    "dev_24",
+    "dev_25",
+    "dev_28",
+    "dev_29"
+  ],
+  "worst_max_abs_position": [
+    0.09580582967335749,
+    0.010801441394315558
+  ],
+  "worst_max_abs_velocity": [
+    0.09355709897330156,
+    0.0053180562292309014
+  ],
+  "worst_rms_scaled_residual": [
+    0.0022138259446807446,
+    0.003812831629994729
+  ],
+  "worst_max_scaled_residual": [
+    0.010702257818870797,
+    0.005825083840622913
+  ],
+  "worst_event_time_error": 0.2600763324035591,
+  "matching_events": 32,
+  "worst_initial_error": 0.0,
+  "worst_independent_transverse_error": 4.604649994632837e-14,
+  "neural_batch_seconds": 0.19564442199953191,
+  "independent_ode_seconds": 0.1132027260000541,
+  "ode_over_neural": 0.5786146358945258,
+  "thresholds": {
+    "samples_per_case": 121,
+    "event_scan_step": 0.02,
+    "absolute_position_max": [
+      0.004,
+      0.0015
+    ],
+    "absolute_velocity_max": [
+      0.012,
+      0.006
+    ],
+    "scaled_residual_rms": [
+      0.025,
+      0.02
+    ],
+    "scaled_residual_max": [
+      0.1,
+      0.08
+    ],
+    "initial_max": 1e-12,
+    "event_time_max": 0.04,
+    "reference_check_max": 1e-09
+  }
+}

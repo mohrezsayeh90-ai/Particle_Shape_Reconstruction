@@ -1,0 +1,15 @@
+{
+  "id": "mohrezsayeh/parametric-particle-pinn-stokes-poiseuille",
+  "title": "Parametric Particle PINN Stokes Poiseuille",
+  "code_file": "parametric-particle-pinn-stokes-poiseuille.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

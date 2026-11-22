@@ -1,0 +1,38 @@
+{
+  "training_completed": true,
+  "best_step": 4808,
+  "final_step": 4808,
+  "best_dev_total_scaled_mse": 3.24241734796183e-13,
+  "elapsed_seconds": 33.493639288999475,
+  "torch": "2.15.0+cpu",
+  "device": "cpu",
+  "optimizer": [
+    "Adam",
+    "horizontal L-BFGS (strong Wolfe)"
+  ],
+  "normalization": [
+    [
+      0.0,
+      5.0
+    ],
+    [
+      0.0,
+      2.2
+    ],
+    [
+      0.0125,
+      0.2875
+    ],
+    [
+      -0.4,
+      1.5
+    ],
+    [
+      -1.2,
+      1.2
+    ]
+  ],
+  "initial_ansatz": "q0 + t*v0 + t^2/(t+s)*learned_correction",
+  "lbfgs_iterations": 208,
+  "lbfgs_closure_evaluations": 353
+}

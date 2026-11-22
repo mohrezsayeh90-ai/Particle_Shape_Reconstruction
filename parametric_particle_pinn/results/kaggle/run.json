@@ -1,0 +1,35 @@
+{
+  "ref": "mohrezsayeh/parametric-particle-pinn-stokes-poiseuille",
+  "status": "COMPLETE",
+  "validation_passed": 70,
+  "validation_total": 70,
+  "output_files": [
+    "parametric_particle_pinn/__init__.py",
+    "parametric_particle_pinn/__pycache__/__init__.cpython-313.pyc",
+    "parametric_particle_pinn/__pycache__/domain.cpython-313.pyc",
+    "parametric_particle_pinn/__pycache__/inference.cpython-313.pyc",
+    "parametric_particle_pinn/__pycache__/model.cpython-313.pyc",
+    "parametric_particle_pinn/__pycache__/train.cpython-313.pyc",
+    "parametric_particle_pinn/__pycache__/validate.cpython-313.pyc",
+    "parametric_particle_pinn/config.json",
+    "parametric_particle_pinn/domain.py",
+    "parametric_particle_pinn/inference.py",
+    "parametric_particle_pinn/model.py",
+    "parametric_particle_pinn/train.py",
+    "parametric_particle_pinn/validate.py",
+    "particle-pinn-runs/20261122T121314633563Z/best.pt",
+    "particle-pinn-runs/20261122T121314633563Z/config.json",
+    "particle-pinn-runs/20261122T121314633563Z/final.pt",
+    "particle-pinn-runs/20261122T121314633563Z/training.jsonl",
+    "particle-pinn-runs/20261122T121314633563Z/training_summary.json",
+    "particle-pinn-runs/20261122T121314633563Z/validation/cases.csv",
+    "particle-pinn-runs/20261122T121314633563Z/validation/errors.png",
+    "particle-pinn-runs/20261122T121314633563Z/validation/summary.json",
+    "particle-pinn-runs/20261122T121314633563Z/validation/trajectories.png"
+  ],
+  "output_download_hosts": [
+    "www.kaggleusercontent.com"
+  ],
+  "downloaded_output_files": [],
+  "download_error": "ProxyError from the Kaggle output download endpoint"
+}

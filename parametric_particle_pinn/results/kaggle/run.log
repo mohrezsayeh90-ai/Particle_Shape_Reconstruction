@@ -1,0 +1,56 @@
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Stokes relaxation time: 0.34722222222222227
+Output: /kaggle/working/particle-pinn-runs/20261122T121314633563Z
+{"phase": "initial", "step": 0, "train_scaled_mse": null, "dev_scaled_mse": [76700.97130853073, 0.3019055573217418], "elapsed_seconds": 0.05405701899996984}
+{"phase": "adam_transverse", "step": 250, "train_scaled_mse": [14.711614649838301, 0.0004997792018477083], "dev_scaled_mse": [13.265116566101092, 0.0005413220395490145], "elapsed_seconds": 2.004362531999959}
+{"phase": "adam_transverse", "step": 500, "train_scaled_mse": [5.610589193215077, 2.534618789751197e-08], "dev_scaled_mse": [5.326715301902783, 1.9850351423843e-08], "elapsed_seconds": 4.025350142999969}
+{"phase": "adam_transverse", "step": 750, "train_scaled_mse": [7.401933863871697, 2.906335504101929e-13], "dev_scaled_mse": [5.297333670937913, 2.2193594358988112e-13], "elapsed_seconds": 6.060469034999983}
+{"phase": "adam_transverse", "step": 1000, "train_scaled_mse": [6.31018266310253, 3.115936545829263e-17], "dev_scaled_mse": [5.2972416985613044, 3.000405675146279e-17], "elapsed_seconds": 8.054105936999918}
+{"phase": "adam_transverse", "step": 1250, "train_scaled_mse": [5.5631680631488125, 1.848719762916185e-19], "dev_scaled_mse": [5.297240582587678, 1.9390254702879985e-19], "elapsed_seconds": 10.016923099999985}
+{"phase": "adam_transverse", "step": 1500, "train_scaled_mse": [7.166608953892999, 3.1776934823382214e-20], "dev_scaled_mse": [5.297240526733039, 3.2395111601003554e-20], "elapsed_seconds": 11.97791327199991}
+{"phase": "adam_transverse", "step": 1600, "train_scaled_mse": [5.994834162889609, 2.627333757613524e-20], "dev_scaled_mse": [5.297240521972337, 2.5458989615786362e-20], "elapsed_seconds": 12.82208971099999}
+{"phase": "adam_horizontal", "step": 1850, "train_scaled_mse": [2.4243958660808906, 3.090074262059376e-20], "dev_scaled_mse": [2.52372641492082, 2.5458989615786362e-20], "elapsed_seconds": 14.819812552999906}
+{"phase": "adam_horizontal", "step": 2100, "train_scaled_mse": [1.2668643131879642, 2.9455744851157293e-20], "dev_scaled_mse": [1.5285783970015026, 2.5458989615786362e-20], "elapsed_seconds": 16.846061964}
+{"phase": "adam_horizontal", "step": 2350, "train_scaled_mse": [0.9207123685743496, 2.996873067550951e-20], "dev_scaled_mse": [0.8961887556787832, 2.5458989615786362e-20], "elapsed_seconds": 18.84312283700001}
+{"phase": "adam_horizontal", "step": 2600, "train_scaled_mse": [0.5637571346187644, 2.9282167756031255e-20], "dev_scaled_mse": [0.5274591915350814, 2.5458989615786362e-20], "elapsed_seconds": 20.798952928999938}
+{"phase": "adam_horizontal", "step": 2850, "train_scaled_mse": [0.42062268681718384, 2.126288679765803e-20], "dev_scaled_mse": [0.31765002653720376, 2.5458989615786362e-20], "elapsed_seconds": 22.86767758999997}
+{"phase": "adam_horizontal", "step": 3100, "train_scaled_mse": [0.19793209068430687, 2.866244014047007e-20], "dev_scaled_mse": [0.19599347340235704, 2.5458989615786362e-20], "elapsed_seconds": 24.80324684300001}
+{"phase": "adam_horizontal", "step": 3350, "train_scaled_mse": [0.1456742050679885, 2.8781828392693175e-20], "dev_scaled_mse": [0.13036484084125874, 2.5458989615786362e-20], "elapsed_seconds": 26.890327823999996}
+{"phase": "adam_horizontal", "step": 3600, "train_scaled_mse": [0.09101673050807846, 2.161514545373408e-20], "dev_scaled_mse": [0.09131476569644514, 2.5458989615786362e-20], "elapsed_seconds": 28.873178116999952}
+{"phase": "adam_horizontal", "step": 3850, "train_scaled_mse": [0.0927380844351539, 2.7001627586309698e-20], "dev_scaled_mse": [0.06980180768570148, 2.5458989615786362e-20], "elapsed_seconds": 30.860205838999946}
+{"phase": "adam_horizontal", "step": 4100, "train_scaled_mse": [0.05181300762847225, 3.1588310807617693e-20], "dev_scaled_mse": [0.05807488521670796, 2.5458989615786362e-20], "elapsed_seconds": 32.993658418999985}
+{"phase": "adam_horizontal", "step": 4350, "train_scaled_mse": [0.06858745162033225, 2.921519468367067e-20], "dev_scaled_mse": [0.05221200425204347, 2.5458989615786362e-20], "elapsed_seconds": 35.001183051}
+{"phase": "adam_horizontal", "step": 4600, "train_scaled_mse": [0.05812087158478518, 2.553237043030055e-20], "dev_scaled_mse": [0.04872073851607404, 2.5458989615786362e-20], "elapsed_seconds": 36.99217189299998}
+{"phase": "lbfgs", "step": 4650, "train_scaled_mse": [1.993283782832193e-06, 2.715907640637543e-20], "dev_scaled_mse": [1.2366707099813354e-06, 2.5458989615786362e-20], "elapsed_seconds": 38.53854794199992}
+{"phase": "lbfgs", "step": 4700, "train_scaled_mse": [2.077160961136847e-11, 2.715907640637543e-20], "dev_scaled_mse": [2.371256441570615e-11, 2.5458989615786362e-20], "elapsed_seconds": 40.52209509399995}
+{"phase": "lbfgs", "step": 4750, "train_scaled_mse": [1.7096932918490724e-12, 2.715907640637543e-20], "dev_scaled_mse": [2.100875396141249e-12, 2.5458989615786362e-20], "elapsed_seconds": 43.07213558199999}
+{"phase": "lbfgs", "step": 4800, "train_scaled_mse": [3.359100221137518e-13, 2.715907640637543e-20], "dev_scaled_mse": [4.1814869569990446e-13, 2.5458989615786362e-20], "elapsed_seconds": 45.57312166499992}
+{"phase": "lbfgs", "step": 4803, "train_scaled_mse": [3.052885851472563e-13, 2.715907640637543e-20], "dev_scaled_mse": [3.784206586260274e-13, 2.5458989615786362e-20], "elapsed_seconds": 45.763461839}
+{"phase": "lbfgs", "step": 4804, "train_scaled_mse": [2.9571850286942267e-13, 2.715907640637543e-20], "dev_scaled_mse": [3.682536674830576e-13, 2.5458989615786362e-20], "elapsed_seconds": 45.855820752}
+{"phase": "lbfgs", "step": 4805, "train_scaled_mse": [2.8644999568885855e-13, 2.715907640637543e-20], "dev_scaled_mse": [3.5513481303700513e-13, 2.5458989615786362e-20], "elapsed_seconds": 45.94620324699997}
+{"phase": "lbfgs", "step": 4806, "train_scaled_mse": [2.774734934455818e-13, 2.715907640637543e-20], "dev_scaled_mse": [3.4559250121281134e-13, 2.5458989615786362e-20], "elapsed_seconds": 46.03645875099994}
+{"phase": "lbfgs", "step": 4807, "train_scaled_mse": [2.687796139452257e-13, 2.715907640637543e-20], "dev_scaled_mse": [3.332856639441763e-13, 2.5458989615786362e-20], "elapsed_seconds": 46.12700811499997}
+{"phase": "lbfgs", "step": 4808, "train_scaled_mse": [2.6035940301097456e-13, 2.715907640637543e-20], "dev_scaled_mse": [3.2432956655996703e-13, 2.5458989615786362e-20], "elapsed_seconds": 46.21464772999991}
+[ 0.439    0.01251 -0.18     0.41   ] outlet 2.307038 valid samples: 47
+[ 0.751    0.28749  0.83    -0.27   ] outlet 1.822866 valid samples: 37
+[0.684 0.12  0.29  0.   ] outlet 1.820217 valid samples: 37
+[ 1.531  0.228 -0.17   0.65 ] upper_wall 0.106258 valid samples: 3
+Accepted: 70 / 70
+/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 682388 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Support files will be in __results___files/
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Writing 364815 bytes to __results__.html

@@ -1,0 +1,60 @@
+{
+  "split": "dev",
+  "checkpoint": "parametric_particle_pinn/results/cpu/best.pt",
+  "case_count": 32,
+  "passed_count": 32,
+  "accepted": true,
+  "reference_event_coverage": [
+    "lower_wall",
+    "outlet",
+    "time_limit",
+    "upper_wall"
+  ],
+  "failed_cases": [],
+  "worst_max_abs_position": [
+    7.597859186248002e-08,
+    7.581753003194081e-10
+  ],
+  "worst_max_abs_velocity": [
+    1.099083075883911e-06,
+    2.760792150446889e-10
+  ],
+  "worst_rms_scaled_residual": [
+    1.666592803267485e-05,
+    7.906148930292808e-10
+  ],
+  "worst_max_scaled_residual": [
+    3.655971947569281e-05,
+    1.1017140903272586e-09
+  ],
+  "worst_event_time_error": 7.99997372791239e-08,
+  "matching_events": 32,
+  "worst_initial_error": 0.0,
+  "worst_independent_transverse_error": 4.601874437071274e-14,
+  "neural_batch_seconds": 0.11800163899988547,
+  "independent_ode_seconds": 0.13049964400033787,
+  "ode_over_neural": 1.1059138254890215,
+  "thresholds": {
+    "samples_per_case": 121,
+    "event_scan_step": 0.02,
+    "absolute_position_max": [
+      0.004,
+      0.0015
+    ],
+    "absolute_velocity_max": [
+      0.012,
+      0.006
+    ],
+    "scaled_residual_rms": [
+      0.025,
+      0.02
+    ],
+    "scaled_residual_max": [
+      0.1,
+      0.08
+    ],
+    "initial_max": 1e-12,
+    "event_time_max": 0.04,
+    "reference_check_max": 1e-09
+  }
+}
